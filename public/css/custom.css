@@ -1,0 +1,109 @@
+/* public/css/custom.css */
+/* custom-login.css */
+
+.login-title {
+    margin-bottom: 40px;
+}
+
+.login-title strong {
+    font-size: 24px; 
+    font-weight: 800;
+    color: #D33026;
+}
+
+.login-title .dashboard {
+    font-weight: 200; 
+    font-size: 24px;
+}
+
+.form-container {
+    width: 256px; 
+    margin: auto;
+}
+
+.input-field {
+    height: 49px; 
+    margin: auto;
+    display: block;
+    width: 100%;
+    padding: 0 1rem;
+    background-color: white;
+    border: 1px solid #d1d5db;
+    border-radius: 0.375rem;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+}
+
+.red-button-class {
+    height: 49px; 
+    text-align: center; 
+    font-size: 14px;
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    text-transform: none;
+}
+
+.link-forgot-password,
+.link-register {
+    color: #0075FF; 
+    font-weight: 200;
+} 
+
+/* Custom CSS for SAPOA Awards Dashboard */
+
+/* SAPOA Awards */
+.sapoawards-title {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    color: #D72C20;
+}
+
+/* DASHBOARD */
+.dashboard-title {
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    color: #292929;
+}
+
+/* Forgot Password */
+.forgot-password {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #0075FF;
+    /* Adjusted with Tailwind classes in the template */
+}
+
+/* Register New Membership */
+.register-new {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    color: #0075FF;
+    /* Adjusted with Tailwind classes in the template */
+}
+
+/* Sign In Button */
+.sign-in-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px 12px;
+    background-color: #D72C20;
+    border: 1px solid #C12014;
+    border-radius: 6px;
+    color: #FFFFFF;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+}

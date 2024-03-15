@@ -1,0 +1,17 @@
+- Form * form required fields
+  - Form Section - bg-color: #f9f9f9
+    - Heading: Site Access Details - color: #a9a9a9
+    - Required *: color: #fa2016
+    - Input - bg-color: #ffffff; border: 1px solid; #dbdbdb; border-radius: 3px
+      - Username* - color: #000000
+      - Password*
+      - Confirm Password*
+    - Add Judge
+      - First Name*
+      - Surname*
+      - Company*
+      - Work Phone*
+      - Fax Number*
+      - Mobile Number*
+  - Submit Button - bg-color: #d33026; color: #FFFFFF; border: 1px solid #bd241b
+    - text: Submit

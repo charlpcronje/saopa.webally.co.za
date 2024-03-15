@@ -1,0 +1,231 @@
+layout:
+  sidebar:
+    tag: "aside"
+    classes: "flex flex-col bg-[#292929]"
+    styles: "width: 236px;"
+    children:
+      branding_block:
+        tag: "div"
+        classes: "bg-[#d33026] p-4"
+        children:
+          sapoa_awards:
+            tag: "h1"
+            text: "SAPOA Awards"
+            classes: "text-white"
+            styles: "font-weight: bold;"
+          dashboard_text:
+            tag: "h2"
+            text: "DASHBOARD"
+            classes: "text-white"
+            styles: "font-weight: 100;"
+      nav:
+        tag: "nav"
+        classes: "flex flex-col"
+        children:
+          - search_button:
+              tag: "button"
+              classes: "bg-[#313131] text-white flex items-center justify-between border-b-2 border-[#7c7c7c]"
+              styles: "height: 47px;"
+              children:
+                icon:
+                  tag: "i"
+                  classes: "bx_search"
+                text:
+                  tag: "span"
+                  text: "Search"
+              events:
+                click: "toggleSearchInputVisibility()"
+          - dashboard_button:
+              tag: "button"
+              classes: "bg-[#313131] text-white flex items-center justify-between border-b-2 border-[#7c7c7c]"
+              styles: "height: 47px;"
+              children:
+                icon:
+                  tag: "i"
+                  classes: "dashboard_white"
+                text:
+                  tag: "span"
+                  text: "Dashboard"
+              link: "/dashboard"
+          - admin_button:
+              tag: "button"
+              classes: "bg-[#313131] text-white flex items-center justify-between border-b-2 border-[#7c7c7c]"
+              styles: "height: 47px;"
+              children:
+                icon:
+                  tag: "i"
+                  classes: "downwards_chevron"
+                text:
+                  tag: "span"
+                  text: "Admin"
+              events:
+                click: "toggleSubButtons('admin')"
+            sub_buttons_admin:
+              tag: "div"
+              classes: "bg-[#5E5E5E] text-white border-b-2 border-[#7c7c7c]"
+              children:
+                - view_admins_button:
+                    tag: "button"
+                    text: "View Admins"
+                    icon: "Dot"
+                    link: "/admins"
+                - link_admins_button:
+                    tag: "button"
+                    text: "Link Admins"
+                    icon: "Dot"
+                    link: "/link-admins"
+                - add_admin_button:
+                    tag: "button"
+                    text: "Add Admin"
+                    icon: "Dot"
+                    link: "/add-admin"
+          - judges_button:
+              tag: "button"
+              classes: "bg-[#313131] text-white flex items-center justify-between border-b-2 border-[#7c7c7c]"
+              styles: "height: 47px;"
+              children:
+                icon:
+                  tag: "i"
+                  classes: "downwards_chevron"
+                text:
+                  tag: "span"
+                  text: "Judges"
+              events:
+                click: "toggleSubButtons('judges')"
+            sub_buttons_judges:
+              tag: "div"
+              classes: "bg-[#5E5E5E] text-white border-b-2 border-[#7c7c7c]"
+              children:
+                - view_judges_button:
+                    tag: "button"
+                    text: "View Judges"
+                    icon: "Dot"
+                    link: "/judges"
+                - link_judges_button:
+                    tag: "button"
+                    text: "Link Judges to Entries"
+                    icon: "Dot"
+                    link: "/link-judges"
+                - add_judge_button:
+                    tag: "button"
+                    text: "Add Judge"
+                    icon: "Dot"
+                    link: "/add-judge"
+          - entries_button:
+              tag: "button"
+              classes: "bg-[#313131] text-white flex items-center justify-between border-b-2 border-[#7c7c7c]"
+              styles: "height: 47px;"
+              children:
+                icon:
+                  tag: "i"
+                  classes: "downwards_chevron"
+                text:
+                  tag: "span"
+                  text: "Entries"
+              events:
+                click: "toggleSubButtons('entries')"
+          sub_buttons_entries:
+              tag: "div"
+              classes: "bg-[#5E5E5E] text-white border-b-2 border-[#7c7c7c]"
+              children:
+                - all_entries_button:
+                    tag: "button"
+                    text: "All Entries"
+                    icon: "Dot"
+                    link: "/entries"
+                - judge_entries_button:
+                    tag: "button"
+                    text: "Judge Entries"
+                    icon: "Dot"
+                    link: "/judge-entries"
+                - payments_button:
+                    tag: "button"
+                    text: "Payments"
+                    icon: "Dot"
+                    link: "/payments"
+          - list_users_button:
+              tag: "button"
+              text: "List Users"
+              classes: "bg-[#313131] text-white flex items-center justify-between border-b-2 border-[#7c7c7c]"
+              styles: "height: 47px;"
+              link: "/users"
+header_bar:
+  tag: "header"
+  classes: "flex justify-between items-center bg-[#292929]"
+  styles: "height: 71px; padding-top: 10px; padding-bottom: 10px;"
+  children:
+    left_aligned_nav:
+      tag: "nav"
+      classes: "flex"
+      children:
+        - hamburger_button:
+            tag: "button"
+            icon: "hamburger"
+            classes: "text-white"
+            styles: "height: 24px;"
+            event: "toggleSidebar()"
+    right_aligned_nav:
+      tag: "nav"
+      classes: "flex"
+      children:
+        - cogwheel_button:
+            tag: "button"
+            icon: "cogwheel"
+            classes: "text-white"
+            styles: "height: 24px;"
+            event: "toggleDropdown('settings')"
+        - separator_1:
+            tag: "div"
+            classes: "separator"
+            styles: "height: 24px;"
+        - user_profile_status_block:
+            tag: "div"
+            classes: "bg-[#4c4c4c] text-white flex items-center"
+            children:
+              - profile_icon:
+                  tag: "span"
+                  icon: "profile_circle"
+                  classes: "float-left"
+              - admin_text:
+                  tag: "span"
+                  text: "Administrator"
+                  classes: "float-left"
+              - status_icon:
+                  tag: "span"
+                  icon: "green_dot"
+                  text: "Online"
+                  classes: "float-left"
+        - separator_2:
+            tag: "div"
+            classes: "separator"
+            styles: "height: 24px;"
+        - flag_button:
+            tag: "button"
+            icon: "flag"
+            classes: "text-white"
+            styles: "height: 24px;"
+            event: "toggleDropdown('flag')"
+        - bell_button:
+            tag: "button"
+            icon: "bell"
+            classes: "text-white"
+            styles: "height: 24px;"
+            event: "toggleDropdown('notifications')"
+        - mail_button:
+            tag: "button"
+            icon: "mail"
+            classes: "text-white"
+            styles: "height: 24px;"
+            event: "toggleDropdown('messages')"
+content_section:
+  tag: "main"
+  classes: "flex-grow p-8"
+  children:
+    heading:
+      tag: "h1"
+      text: "Page Heading"
+      classes: "text-[#b7b7b7]"
+    breadcrumbs:
+      tag: "div"
+      classes: "text-[#9b9b9b]"
+      text: "Home > Dashboard > Users > Add Judge
