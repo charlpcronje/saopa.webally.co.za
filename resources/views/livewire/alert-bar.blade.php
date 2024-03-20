@@ -19,8 +19,7 @@
             x-transition:leave="transition ease-in duration-{{ $fadeOutTime }}"
             x-transition:leave-start="opacity-100 transform scale-100"
             x-transition:leave-end="opacity-0 transform scale-90"
-            class="fixed bottom-4 right-4 left-4 p-4 rounded-lg shadow-lg @if($type === 'info') bg-blue-500 border-blue-600 text-white @elseif($type === 'success') bg-green-500 border-green-600 text-white @elseif($type === 'warning') bg-yellow-500 border-yellow-600 text-black @elseif($type === 'error') bg-red-500 border-red-600 text-white @endif"
-        >
+            class="fixed bottom-4 right-4 left-4 p-4 rounded-lg shadow-lg @if($type === 'info') bg-blue-500 border-blue-600 text-white @elseif($type === 'success') bg-green-500 border-green-600 text-white @elseif($type === 'warning') bg-yellow-500 border-yellow-600 text-black @elseif($type === 'error') bg-red-500 border-red-600 text-white @endif">
             <div class="flex justify-between items-center">
                 <span>{{ $message }}</span>
                 @if ($sticky)

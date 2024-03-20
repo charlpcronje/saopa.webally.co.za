@@ -2,18 +2,18 @@
 
 | No. | File | Lines | Words | AI Tokens |
 | --- | ---- | ----- | ----- | --------- |
-| 1 | ./composer.json | 70 | 139 | 417 |
+| 1 | ./composer.json | 70 | 140 | 417 |
 | 2 | ./package.json | 23 | 40 | 131 |
 | 3 | ./vite.config.js | 16 | 28 | 50 |
 | 4 | ./tailwind.config.js | 23 | 38 | 96 |
 | 5 | ./postcss.config.js | 8 | 13 | 22 |
-| 6 | ./tree.md | 101 | 202 | 682 |
-| 7 | ./app/Console/Kernel.php | 29 | 52 | 102 |
-| 8 | ./app/Exceptions/Handler.php | 32 | 71 | 110 |
-| 9 | ./app/Http/Kernel.php | 74 | 169 | 339 |
-| 10 | ./app/Http/Controllers/Controller.php | 14 | 22 | 30 |
-| 11 | ./app/Http/Controllers/ProfileController.php | 62 | 102 | 286 |
-| 12 | ./app/Http/Controllers/DashboardController.php | 54 | 137 | 312 |
+| 6 | ./tree.md | 268 | 536 | 1830 |
+| 7 | ./cspell.json | 10 | 16 | 51 |
+| 8 | ./app/Console/Kernel.php | 29 | 52 | 102 |
+| 9 | ./app/Exceptions/Handler.php | 32 | 71 | 110 |
+| 10 | ./app/Http/Kernel.php | 74 | 169 | 339 |
+| 11 | ./app/Http/Controllers/Controller.php | 14 | 22 | 30 |
+| 12 | ./app/Http/Controllers/ProfileController.php | 62 | 102 | 286 |
 | 13 | ./app/Http/Controllers/JudgeController.php | 1 | 0 | 0 |
 | 14 | ./app/Http/Controllers/Auth/AuthenticatedSessionController.php | 49 | 78 | 185 |
 | 15 | ./app/Http/Controllers/Auth/ConfirmablePasswordController.php | 42 | 77 | 180 |
@@ -22,12 +22,12 @@
 | 18 | ./app/Http/Controllers/Auth/NewPasswordController.php | 63 | 201 | 402 |
 | 19 | ./app/Http/Controllers/Auth/PasswordController.php | 30 | 57 | 143 |
 | 20 | ./app/Http/Controllers/Auth/PasswordResetLinkController.php | 45 | 127 | 236 |
-| 21 | ./app/Http/Controllers/Auth/RegisteredUserController.php | 56 | 119 | 305 |
+| 21 | ./app/Http/Controllers/Auth/RegisteredUserController.php | 59 | 133 | 336 |
 | 22 | ./app/Http/Controllers/Auth/VerifyEmailController.php | 29 | 53 | 139 |
 | 23 | ./app/Http/Middleware/Authenticate.php | 18 | 47 | 72 |
 | 24 | ./app/Http/Middleware/EncryptCookies.php | 13 | 21 | 27 |
 | 25 | ./app/Http/Middleware/PreventRequestsDuringMaintenance.php | 13 | 21 | 27 |
-| 26 | ./app/Http/Middleware/RedirectIfAuthenticated.php | 26 | 51 | 107 |
+| 26 | ./app/Http/Middleware/RedirectIfAuthenticated.php | 25 | 47 | 101 |
 | 27 | ./app/Http/Middleware/TrimStrings.php | 15 | 23 | 35 |
 | 28 | ./app/Http/Middleware/TrustHosts.php | 16 | 25 | 39 |
 | 29 | ./app/Http/Middleware/TrustProxies.php | 18 | 33 | 54 |
@@ -37,84 +37,200 @@
 | 33 | ./app/Http/Middleware/CheckRole.php | 24 | 59 | 137 |
 | 34 | ./app/Http/Requests/ProfileUpdateRequest.php | 25 | 56 | 121 |
 | 35 | ./app/Http/Requests/Auth/LoginRequest.php | 86 | 183 | 405 |
-| 36 | ./app/Models/User.php | 69 | 149 | 249 |
-| 37 | ./app/Models/Entry.php | 29 | 58 | 139 |
-| 38 | ./app/Models/EntryDoc.php | 13 | 25 | 50 |
-| 39 | ./app/Models/EntryImage.php | 13 | 25 | 50 |
-| 40 | ./app/Models/Role.php | 19 | 28 | 50 |
-| 41 | ./app/Providers/AppServiceProvider.php | 25 | 41 | 59 |
-| 42 | ./app/Providers/AuthServiceProvider.php | 27 | 56 | 79 |
-| 43 | ./app/Providers/BroadcastServiceProvider.php | 20 | 31 | 53 |
-| 44 | ./app/Providers/EventServiceProvider.php | 39 | 84 | 128 |
-| 45 | ./app/Providers/RouteServiceProvider.php | 39 | 88 | 201 |
-| 46 | ./app/View/Components/AppLayout.php | 18 | 35 | 52 |
-| 47 | ./app/View/Components/GuestLayout.php | 18 | 35 | 52 |
-| 48 | ./app/View/Components/Checkbox.php | 23 | 38 | 69 |
-| 49 | ./app/View/Components/AuthCard.php | 19 | 37 | 50 |
-| 50 | ./app/View/Components/PrimaryButton.php | 14 | 20 | 31 |
-| 51 | ./app/Livewire/SvgIcon.php | 46 | 96 | 211 |
-| 52 | ./app/Livewire/SearchButton.php | 21 | 32 | 55 |
-| 53 | ./app/Livewire/LeftNavButton.php | 27 | 50 | 100 |
-| 54 | ./app/Livewire/LeftNavSubButton.php | 25 | 57 | 100 |
-| 55 | ./app/Livewire/Sidebar.php | 15 | 23 | 36 |
-| 56 | ./app/Livewire/Headerbar.php | 15 | 22 | 34 |
-| 57 | ./app/Livewire/AlertBar.php | 39 | 104 | 194 |
-| 58 | ./app/Livewire/LoginForm.php | 42 | 73 | 196 |
-| 59 | ./app/Livewire/AdminDashboard.php | 14 | 23 | 41 |
-| 60 | ./app/Livewire/JudgeProfile.php | 14 | 20 | 31 |
-| 61 | ./app/Livewire/UserProfile.php | 13 | 20 | 38 |
-| 62 | ./app/Livewire/ShowPosts.php | 14 | 18 | 29 |
-| 63 | ./app/Enums/UserRole.php | 13 | 24 | 35 |
-| 64 | ./bootstrap/app.php | 29 | 37 | 83 |
-| 65 | ./bootstrap/cache/packages.php | 84 | 159 | 273 |
-| 66 | ./bootstrap/cache/services.php | 259 | 700 | 1503 |
-| 67 | ./config/app.php | 43 | 90 | 241 |
-| 68 | ./config/auth.php | 43 | 91 | 168 |
-| 69 | ./config/broadcasting.php | 52 | 115 | 276 |
-| 70 | ./config/cache.php | 81 | 175 | 425 |
-| 71 | ./config/cors.php | 15 | 37 | 86 |
-| 72 | ./config/database.php | 77 | 190 | 505 |
-| 73 | ./config/filesystems.php | 45 | 95 | 231 |
-| 74 | ./config/hashing.php | 25 | 46 | 81 |
-| 75 | ./config/logging.php | 98 | 233 | 573 |
-| 76 | ./config/mail.php | 91 | 199 | 448 |
-| 77 | ./config/queue.php | 69 | 165 | 380 |
-| 78 | ./config/sanctum.php | 29 | 55 | 127 |
-| 79 | ./config/services.php | 23 | 48 | 116 |
-| 80 | ./config/session.php | 59 | 137 | 292 |
-| 81 | ./config/view.php | 16 | 25 | 49 |
-| 82 | ./config/livewire.php | 161 | 621 | 1707 |
-| 83 | ./config/debugbar.php | 323 | 1558 | 3346 |
-| 84 | ./resources/css/app.css | 5 | 9 | 17 |
-| 85 | ./resources/js/app.js | 3 | 4 | 6 |
-| 86 | ./resources/js/bootstrap.js | 34 | 151 | 221 |
-| 87 | ./resources/views/dashboard.blade.php | 42 | 140 | 263 |
-| 88 | ./resources/views/application.blade.php | 42 | 140 | 263 |
-| 89 | ./resources/views/addJudge.blade.php | 42 | 140 | 263 |
-| 90 | ./resources/views/livewire/svg-icon.blade.php | 4 | 19 | 52 |
-| 91 | ./resources/views/livewire/search-button.blade.php | 6 | 24 | 63 |
-| 92 | ./resources/views/livewire/left-nav-button.blade.php | 37 | 94 | 238 |
-| 93 | ./resources/views/livewire/left-nav-sub-button.blade.php | 8 | 25 | 66 |
-| 94 | ./resources/views/livewire/sidebar.blade.php | 28 | 107 | 333 |
-| 95 | ./resources/views/livewire/headerbar.blade.php | 43 | 145 | 417 |
-| 96 | ./resources/views/livewire/alert-bar.blade.php | 36 | 149 | 335 |
-| 97 | ./resources/views/livewire/login-form.blade.php | 30 | 105 | 337 |
-| 98 | ./resources/views/livewire/admin-dashboard.blade.php | 5 | 10 | 23 |
-| 99 | ./resources/views/livewire/judge-profile.blade.php | 5 | 15 | 32 |
-| 100 | ./resources/views/livewire/user-profile.blade.php | 6 | 15 | 32 |
-| 101 | ./resources/views/livewire/show-posts.blade.php | 4 | 17 | 26 |
-| 102 | ./routes/api.php | 21 | 60 | 171 |
-| 103 | ./routes/channels.php | 20 | 61 | 168 |
-| 104 | ./routes/console.php | 21 | 61 | 171 |
-| 105 | ./routes/web.php | 56 | 133 | 432 |
-| 106 | ./routes/auth.php | 61 | 88 | 429 |
-|  | Total | 4043 | 10234 | 23247 |
+| 36 | ./app/Models/User.php | 62 | 103 | 205 |
+| 37 | ./app/Models/Entry.php | 72 | 100 | 242 |
+| 38 | ./app/Models/EntryImage.php | 14 | 27 | 53 |
+| 39 | ./app/Models/Role.php | 19 | 28 | 50 |
+| 40 | ./app/Models/Invoice.php | 34 | 46 | 94 |
+| 41 | ./app/Models/Judge.php | 20 | 28 | 56 |
+| 42 | ./app/Models/Rating.php | 26 | 36 | 73 |
+| 43 | ./app/Models/Criteria.php | 16 | 22 | 37 |
+| 44 | ./app/Models/EntryDocument.php | 14 | 27 | 53 |
+| 45 | ./app/Models/EntryArchitecturalDrawing.php | 16 | 22 | 37 |
+| 46 | ./app/Models/InvoiceItem.php | 24 | 32 | 63 |
+| 47 | ./app/Providers/AppServiceProvider.php | 40 | 72 | 241 |
+| 48 | ./app/Providers/AuthServiceProvider.php | 27 | 56 | 79 |
+| 49 | ./app/Providers/BroadcastServiceProvider.php | 20 | 31 | 53 |
+| 50 | ./app/Providers/EventServiceProvider.php | 39 | 84 | 128 |
+| 51 | ./app/Providers/RouteServiceProvider.php | 39 | 88 | 201 |
+| 52 | ./app/View/Components/AppLayout.php | 18 | 35 | 52 |
+| 53 | ./app/View/Components/GuestLayout.php | 18 | 35 | 52 |
+| 54 | ./app/View/Components/Checkbox.php | 23 | 38 | 69 |
+| 55 | ./app/View/Components/AuthCard.php | 19 | 37 | 50 |
+| 56 | ./app/View/Components/PrimaryButton.php | 14 | 20 | 31 |
+| 57 | ./app/Livewire/SvgIcon.php | 46 | 96 | 211 |
+| 58 | ./app/Livewire/SearchButton.php | 21 | 32 | 55 |
+| 59 | ./app/Livewire/LeftNavButton.php | 48 | 135 | 226 |
+| 60 | ./app/Livewire/LeftNavSubButton.php | 25 | 57 | 100 |
+| 61 | ./app/Livewire/Sidebar.php | 15 | 23 | 36 |
+| 62 | ./app/Livewire/Headerbar.php | 15 | 22 | 34 |
+| 63 | ./app/Livewire/AlertBar.php | 39 | 104 | 194 |
+| 64 | ./app/Livewire/LoginForm.php | 41 | 82 | 230 |
+| 65 | ./app/Livewire/AdminDashboard.php | 14 | 23 | 41 |
+| 66 | ./app/Livewire/JudgeProfile.php | 14 | 20 | 31 |
+| 67 | ./app/Livewire/UserProfile.php | 13 | 20 | 38 |
+| 68 | ./app/Livewire/Dashboard.php | 22 | 43 | 108 |
+| 69 | ./app/Livewire/EntryTable.php | 16 | 24 | 60 |
+| 70 | ./app/Livewire/EntryDetails.php | 23 | 35 | 70 |
+| 71 | ./app/Livewire/RefurbishingEntryForm.php | 47 | 95 | 169 |
+| 72 | ./app/Livewire/InteriorDesignEntryForm.php | 47 | 96 | 170 |
+| 73 | ./app/Livewire/JudgeRegistrationForm.php | 57 | 120 | 277 |
+| 74 | ./app/Livewire/UserRegistrationForm.php | 39 | 72 | 157 |
+| 75 | ./app/Livewire/PaymentGateway.php | 58 | 125 | 276 |
+| 76 | ./app/Livewire/EntryCard.php | 22 | 34 | 57 |
+| 77 | ./app/Livewire/EntryRatingForm.php | 48 | 84 | 198 |
+| 78 | ./app/Livewire/FileUpload.php | 37 | 71 | 132 |
+| 79 | ./app/Livewire/PaymentForm.php | 60 | 141 | 280 |
+| 80 | ./app/Livewire/ProgressBar.php | 21 | 30 | 52 |
+| 81 | ./app/Livewire/CircularGraph.php | 21 | 30 | 52 |
+| 82 | ./app/Livewire/HeaderButton.php | 21 | 35 | 59 |
+| 83 | ./app/Livewire/HeaderDropdown.php | 27 | 49 | 86 |
+| 84 | ./app/Livewire/HeaderSeparator.php | 16 | 23 | 36 |
+| 85 | ./app/Livewire/UserProfileBlock.php | 14 | 18 | 29 |
+| 86 | ./app/Livewire/GoogleFont.php | 28 | 54 | 102 |
+| 87 | ./app/Livewire/Judge/Dashboard.php | 28 | 45 | 110 |
+| 88 | ./app/Livewire/Admin/Dashboard.php | 46 | 100 | 273 |
+| 89 | ./app/Livewire/User/Dashboard.php | 34 | 66 | 293 |
+| 90 | ./app/Livewire/User/EntryIndex.php | 14 | 18 | 29 |
+| 91 | ./app/Livewire/User/EntryCreate.php | 14 | 18 | 29 |
+| 92 | ./app/Livewire/User/InvoiceIndex.php | 14 | 18 | 29 |
+| 93 | ./app/Livewire/User/InvoiceShow.php | 14 | 18 | 29 |
+| 94 | ./app/Livewire/Entries/BuildingEntryForm.php | 114 | 267 | 677 |
+| 95 | ./app/Enums/UserRole.php | 13 | 24 | 35 |
+| 96 | ./bootstrap/app.php | 29 | 37 | 83 |
+| 97 | ./bootstrap/cache/packages.php | 84 | 159 | 273 |
+| 98 | ./bootstrap/cache/services.php | 259 | 700 | 1503 |
+| 99 | ./config/app.php | 43 | 90 | 241 |
+| 100 | ./config/auth.php | 43 | 91 | 168 |
+| 101 | ./config/broadcasting.php | 52 | 115 | 276 |
+| 102 | ./config/cache.php | 81 | 175 | 425 |
+| 103 | ./config/cors.php | 15 | 37 | 86 |
+| 104 | ./config/database.php | 77 | 190 | 505 |
+| 105 | ./config/filesystems.php | 45 | 95 | 231 |
+| 106 | ./config/hashing.php | 25 | 46 | 81 |
+| 107 | ./config/logging.php | 98 | 233 | 573 |
+| 108 | ./config/mail.php | 91 | 199 | 448 |
+| 109 | ./config/queue.php | 69 | 165 | 380 |
+| 110 | ./config/sanctum.php | 29 | 55 | 127 |
+| 111 | ./config/services.php | 23 | 48 | 116 |
+| 112 | ./config/session.php | 59 | 137 | 292 |
+| 113 | ./config/view.php | 16 | 25 | 49 |
+| 114 | ./config/livewire.php | 161 | 621 | 1707 |
+| 115 | ./config/debugbar.php | 323 | 1558 | 3346 |
+| 116 | ./database/migrations/2014_10_12_000000_create_users_table.php | 33 | 54 | 152 |
+| 117 | ./database/migrations/2014_10_12_100000_create_password_reset_tokens_table.php | 29 | 50 | 122 |
+| 118 | ./database/migrations/2019_08_19_000000_create_failed_jobs_table.php | 33 | 54 | 156 |
+| 119 | ./database/migrations/2019_12_14_000001_create_personal_access_tokens_table.php | 34 | 56 | 175 |
+| 120 | ./database/migrations/2024_02_28_022350_create_entries_table.php | 58 | 99 | 403 |
+| 121 | ./database/migrations/2024_02_28_022350_create_entry_docs_table.php | 29 | 50 | 157 |
+| 122 | ./database/migrations/2024_02_28_022350_create_entry_images_table.php | 29 | 49 | 156 |
+| 123 | ./database/migrations/2024_02_28_030000_date_add_role_id_to_users_table.php | 28 | 53 | 196 |
+| 124 | ./database/migrations/2024_02_28_040000_create_roles_table.php | 22 | 36 | 84 |
+| 125 | ./database/migrations/2024_02_28_045000_add_judge_details_to_users_table.php | 37 | 84 | 234 |
+| 126 | ./database/migrations/2024_03_17_045001_create_invoices_table.php | 31 | 50 | 199 |
+| 127 | ./database/migrations/2024_03_17_450002_create_invoice_items_table.php | 31 | 48 | 189 |
+| 128 | ./database/migrations/2024_03_18_013747_add_status_column_to_entries_table.php | 33 | 60 | 132 |
+| 129 | ./database/migrations/2024_03_18_020116_add_status_column_to_invoices_table.php | 33 | 60 | 132 |
+| 130 | ./public/index.php | 57 | 182 | 502 |
+| 131 | ./public/ntunnel_mysql.php | 559 | 1455 | 4169 |
+| 132 | ./public/css/custom.css | 165 | 309 | 527 |
+| 133 | ./resources/css/app.css | 5 | 9 | 17 |
+| 134 | ./resources/js/app.js | 3 | 4 | 6 |
+| 135 | ./resources/js/bootstrap.js | 34 | 151 | 221 |
+| 136 | ./resources/views/dashboard.blade.php | 42 | 140 | 263 |
+| 137 | ./resources/views/application.blade.php | 42 | 140 | 263 |
+| 138 | ./resources/views/addJudge.blade.php | 42 | 140 | 263 |
+| 139 | ./resources/views/auth/confirm-password.blade.php | 29 | 66 | 176 |
+| 140 | ./resources/views/auth/forgot-password.blade.php | 27 | 96 | 228 |
+| 141 | ./resources/views/auth/login.blade.php | 32 | 102 | 306 |
+| 142 | ./resources/views/auth/register.blade.php | 80 | 284 | 847 |
+| 143 | ./resources/views/auth/reset-password.blade.php | 41 | 112 | 354 |
+| 144 | ./resources/views/auth/verify-email.blade.php | 33 | 120 | 251 |
+| 145 | ./resources/views/components/application-logo.blade.php | 5 | 315 | 340 |
+| 146 | ./resources/views/components/auth-session-status.blade.php | 9 | 19 | 55 |
+| 147 | ./resources/views/components/danger-button.blade.php | 5 | 37 | 77 |
+| 148 | ./resources/views/components/dropdown-link.blade.php | 3 | 24 | 56 |
+| 149 | ./resources/views/components/dropdown.blade.php | 45 | 119 | 280 |
+| 150 | ./resources/views/components/input-error.blade.php | 11 | 25 | 75 |
+| 151 | ./resources/views/components/input-label.blade.php | 7 | 19 | 52 |
+| 152 | ./resources/views/components/modal.blade.php | 80 | 243 | 655 |
+| 153 | ./resources/views/components/nav-link.blade.php | 13 | 56 | 110 |
+| 154 | ./resources/views/components/primary-button.blade.php | 6 | 39 | 84 |
+| 155 | ./resources/views/components/responsive-nav-link.blade.php | 13 | 63 | 125 |
+| 156 | ./resources/views/components/secondary-button.blade.php | 5 | 38 | 78 |
+| 157 | ./resources/views/components/text-input.blade.php | 5 | 23 | 60 |
+| 158 | ./resources/views/components/checkbox.blade.php | 6 | 32 | 90 |
+| 159 | ./resources/views/components/auth-card.blade.php | 10 | 30 | 69 |
+| 160 | ./resources/views/components/left-nav.blade.php | 20 | 55 | 181 |
+| 161 | ./resources/views/components/top-nav.blade.php | 22 | 50 | 142 |
+| 162 | ./resources/views/components/layouts/main.blade.php | 33 | 73 | 225 |
+| 163 | ./resources/views/components/layouts/blank.blade.php | 21 | 50 | 166 |
+| 164 | ./resources/views/components/layouts/dashboard.blade.php | 24 | 60 | 216 |
+| 165 | ./resources/views/components/layouts/app.blade.php | 32 | 74 | 223 |
+| 166 | ./resources/views/layouts/app.blade.php | 34 | 72 | 216 |
+| 167 | ./resources/views/layouts/guest.blade.php | 33 | 93 | 268 |
+| 168 | ./resources/views/layouts/navigation.blade.php | 102 | 326 | 911 |
+| 169 | ./resources/views/profile/edit.blade.php | 31 | 60 | 175 |
+| 170 | ./resources/views/profile/partials/delete-user-form.blade.php | 57 | 171 | 419 |
+| 171 | ./resources/views/profile/partials/update-password-form.blade.php | 50 | 136 | 416 |
+| 172 | ./resources/views/profile/partials/update-profile-information-form.blade.php | 66 | 192 | 541 |
+| 173 | ./resources/views/livewire/svg-icon.blade.php | 4 | 19 | 52 |
+| 174 | ./resources/views/livewire/search-button.blade.php | 6 | 24 | 63 |
+| 175 | ./resources/views/livewire/left-nav-button.blade.php | 39 | 173 | 347 |
+| 176 | ./resources/views/livewire/left-nav-sub-button.blade.php | 8 | 25 | 66 |
+| 177 | ./resources/views/livewire/sidebar.blade.php | 27 | 109 | 351 |
+| 178 | ./resources/views/livewire/headerbar.blade.php | 30 | 63 | 195 |
+| 179 | ./resources/views/livewire/alert-bar.blade.php | 35 | 148 | 335 |
+| 180 | ./resources/views/livewire/login-form.blade.php | 30 | 104 | 333 |
+| 181 | ./resources/views/livewire/admin-dashboard.blade.php | 1 | 1 | 1 |
+| 182 | ./resources/views/livewire/judge-profile.blade.php | 5 | 15 | 32 |
+| 183 | ./resources/views/livewire/user-profile.blade.php | 6 | 15 | 32 |
+| 184 | ./resources/views/livewire/show-posts.blade.php | 4 | 17 | 26 |
+| 185 | ./resources/views/livewire/dashboard.blade.php | 30 | 49 | 175 |
+| 186 | ./resources/views/livewire/entry-table.blade.php | 28 | 84 | 275 |
+| 187 | ./resources/views/livewire/entry-details.blade.php | 30 | 57 | 179 |
+| 188 | ./resources/views/livewire/building-entry-form.blade.php | 60 | 166 | 491 |
+| 189 | ./resources/views/livewire/refurbishing-entry-form.blade.php | 60 | 169 | 494 |
+| 190 | ./resources/views/livewire/interior-design-entry-form.blade.php | 60 | 170 | 495 |
+| 191 | ./resources/views/livewire/judge-registration-form.blade.php | 1 | 0 | 0 |
+| 192 | ./resources/views/livewire/user-registration-form.blade.php | 23 | 51 | 208 |
+| 193 | ./resources/views/livewire/payment-gateway.blade.php | 29 | 70 | 274 |
+| 194 | ./resources/views/livewire/entry-card.blade.php | 19 | 69 | 218 |
+| 195 | ./resources/views/livewire/entry-rating-form.blade.php | 25 | 85 | 246 |
+| 196 | ./resources/views/livewire/file-upload.blade.php | 34 | 91 | 277 |
+| 197 | ./resources/views/livewire/payment-form.blade.php | 39 | 150 | 471 |
+| 198 | ./resources/views/livewire/progress-bar.blade.php | 8 | 24 | 71 |
+| 199 | ./resources/views/livewire/circular-graph.blade.php | 11 | 46 | 140 |
+| 200 | ./resources/views/livewire/pagination.blade.php | 47 | 118 | 420 |
+| 201 | ./resources/views/livewire/filter.blade.php | 10 | 26 | 104 |
+| 202 | ./resources/views/livewire/sorting.blade.php | 10 | 31 | 109 |
+| 203 | ./resources/views/livewire/dashboard-statistic-card.blade.php | 9 | 27 | 81 |
+| 204 | ./resources/views/livewire/notification.blade.php | 13 | 36 | 95 |
+| 205 | ./resources/views/livewire/confirmation-modal.blade.php | 12 | 59 | 152 |
+| 206 | ./resources/views/livewire/entry-index.blade.php | 4 | 10 | 20 |
+| 207 | ./resources/views/livewire/entry-create.blade.php | 4 | 10 | 19 |
+| 208 | ./resources/views/livewire/invoice-index.blade.php | 4 | 16 | 26 |
+| 209 | ./resources/views/livewire/invoice-show.blade.php | 4 | 7 | 16 |
+| 210 | ./resources/views/livewire/header-button.blade.php | 4 | 12 | 37 |
+| 211 | ./resources/views/livewire/header-dropdown.blade.php | 15 | 59 | 153 |
+| 212 | ./resources/views/livewire/header-separator.blade.php | 4 | 11 | 32 |
+| 213 | ./resources/views/livewire/user-profile-block.blade.php | 13 | 44 | 113 |
+| 214 | ./resources/views/livewire/google-font.blade.php | 8 | 38 | 100 |
+| 215 | ./resources/views/livewire/admin/dashboard.blade.php | 74 | 269 | 669 |
+| 216 | ./resources/views/livewire/judge/dashboard.blade.php | 40 | 145 | 371 |
+| 217 | ./resources/views/livewire/user/dashboard.blade.php | 78 | 262 | 780 |
+| 218 | ./routes/api.php | 21 | 60 | 171 |
+| 219 | ./routes/channels.php | 20 | 61 | 168 |
+| 220 | ./routes/console.php | 21 | 61 | 171 |
+| 221 | ./routes/web.php | 127 | 235 | 927 |
+| 222 | ./routes/auth.php | 61 | 88 | 429 |
+|  | Total | 8360 | 21054 | 52573 |
 
 
 ## Total Counts Across All Files. Tokenizer Used: NLTK's Punkt Tokenizer
-- Total Lines: 4043
-- Total Words: 10234
-- Total AI Tokens: 23247
+- Total Lines: 8360
+- Total Words: 21054
+- Total AI Tokens: 52573
 
 ## File: composer.json
 ```json
@@ -130,7 +246,7 @@
         "laravel/framework": "^10.10",
         "laravel/sanctum": "^3.3",
         "laravel/tinker": "^2.8",
-        "livewire/livewire": "^3.4"
+        "   /livewire": "^3.4"
     },
     "require-dev": {
         "barryvdh/laravel-debugbar": "^3.12",
@@ -284,6 +400,8 @@ export default {
     - [vite.config.js](vite.config.js)
     - [tailwind.config.js](tailwind.config.js)
     - [postcss.config.js](postcss.config.js)
+    - [tree.md](tree.md)
+    - [cspell.json](cspell.json)
     - **app/**
         - **Console/**
             - [Kernel.php](app/Console/Kernel.php)
@@ -294,7 +412,6 @@ export default {
             - **Controllers/**
                 - [Controller.php](app/Http/Controllers/Controller.php)
                 - [ProfileController.php](app/Http/Controllers/ProfileController.php)
-                - [DashboardController.php](app/Http/Controllers/DashboardController.php)
                 - [JudgeController.php](app/Http/Controllers/JudgeController.php)
                 - **Auth/**
                     - [AuthenticatedSessionController.php](app/Http/Controllers/Auth/AuthenticatedSessionController.php)
@@ -308,12 +425,15 @@ export default {
                     - [VerifyEmailController.php](app/Http/Controllers/Auth/VerifyEmailController.php)
             - **Middleware/**
                 - [Authenticate.php](app/Http/Middleware/Authenticate.php)
+                - [EncryptCookies.php](app/Http/Middleware/EncryptCookies.php)
+                - [PreventRequestsDuringMaintenance.php](app/Http/Middleware/PreventRequestsDuringMaintenance.php)
                 - [RedirectIfAuthenticated.php](app/Http/Middleware/RedirectIfAuthenticated.php)
                 - [TrimStrings.php](app/Http/Middleware/TrimStrings.php)
                 - [TrustHosts.php](app/Http/Middleware/TrustHosts.php)
                 - [TrustProxies.php](app/Http/Middleware/TrustProxies.php)
                 - [ValidateSignature.php](app/Http/Middleware/ValidateSignature.php)
                 - [VerifyCsrfToken.php](app/Http/Middleware/VerifyCsrfToken.php)
+                - [ForceHttpsMiddleware.php](app/Http/Middleware/ForceHttpsMiddleware.php)
                 - [CheckRole.php](app/Http/Middleware/CheckRole.php)
             - **Requests/**
                 - [ProfileUpdateRequest.php](app/Http/Requests/ProfileUpdateRequest.php)
@@ -322,9 +442,21 @@ export default {
         - **Models/**
             - [User.php](app/Models/User.php)
             - [Entry.php](app/Models/Entry.php)
-            - [EntryDoc.php](app/Models/EntryDoc.php)
             - [EntryImage.php](app/Models/EntryImage.php)
             - [Role.php](app/Models/Role.php)
+            - [Invoice.php](app/Models/Invoice.php)
+            - [Judge.php](app/Models/Judge.php)
+            - [Rating.php](app/Models/Rating.php)
+            - [Criteria.php](app/Models/Criteria.php)
+            - [EntryDocument.php](app/Models/EntryDocument.php)
+            - [EntryArchitecturalDrawing.php](app/Models/EntryArchitecturalDrawing.php)
+            - [InvoiceItem.php](app/Models/InvoiceItem.php)
+        - **Providers/**
+            - [AppServiceProvider.php](app/Providers/AppServiceProvider.php)
+            - [AuthServiceProvider.php](app/Providers/AuthServiceProvider.php)
+            - [BroadcastServiceProvider.php](app/Providers/BroadcastServiceProvider.php)
+            - [EventServiceProvider.php](app/Providers/EventServiceProvider.php)
+            - [RouteServiceProvider.php](app/Providers/RouteServiceProvider.php)
         - **View/**
             - **Components/**
                 - [AppLayout.php](app/View/Components/AppLayout.php)
@@ -344,14 +476,86 @@ export default {
             - [AdminDashboard.php](app/Livewire/AdminDashboard.php)
             - [JudgeProfile.php](app/Livewire/JudgeProfile.php)
             - [UserProfile.php](app/Livewire/UserProfile.php)
-            - [ShowPosts.php](app/Livewire/ShowPosts.php)
+            - [Dashboard.php](app/Livewire/Dashboard.php)
+            - [EntryTable.php](app/Livewire/EntryTable.php)
+            - [EntryDetails.php](app/Livewire/EntryDetails.php)
+            - [RefurbishingEntryForm.php](app/Livewire/RefurbishingEntryForm.php)
+            - [InteriorDesignEntryForm.php](app/Livewire/InteriorDesignEntryForm.php)
+            - [JudgeRegistrationForm.php](app/Livewire/JudgeRegistrationForm.php)
+            - [UserRegistrationForm.php](app/Livewire/UserRegistrationForm.php)
+            - [PaymentGateway.php](app/Livewire/PaymentGateway.php)
+            - [EntryCard.php](app/Livewire/EntryCard.php)
+            - [EntryRatingForm.php](app/Livewire/EntryRatingForm.php)
+            - [FileUpload.php](app/Livewire/FileUpload.php)
+            - [PaymentForm.php](app/Livewire/PaymentForm.php)
+            - [ProgressBar.php](app/Livewire/ProgressBar.php)
+            - [CircularGraph.php](app/Livewire/CircularGraph.php)
+            - [HeaderButton.php](app/Livewire/HeaderButton.php)
+            - [HeaderDropdown.php](app/Livewire/HeaderDropdown.php)
+            - [HeaderSeparator.php](app/Livewire/HeaderSeparator.php)
+            - [UserProfileBlock.php](app/Livewire/UserProfileBlock.php)
+            - [GoogleFont.php](app/Livewire/GoogleFont.php)
+            - **Judge/**
+                - [Dashboard.php](app/Livewire/Judge/Dashboard.php)
+            - **Admin/**
+                - [Dashboard.php](app/Livewire/Admin/Dashboard.php)
+            - **User/**
+                - [Dashboard.php](app/Livewire/User/Dashboard.php)
+                - [EntryIndex.php](app/Livewire/User/EntryIndex.php)
+                - [EntryCreate.php](app/Livewire/User/EntryCreate.php)
+                - [InvoiceIndex.php](app/Livewire/User/InvoiceIndex.php)
+                - [InvoiceShow.php](app/Livewire/User/InvoiceShow.php)
+            - **Entries/**
+                - [BuildingEntryForm.php](app/Livewire/Entries/BuildingEntryForm.php)
         - **Enums/**
             - [UserRole.php](app/Enums/UserRole.php)
     - **bootstrap/**
         - [app.php](bootstrap/app.php)
         - **cache/**
             - [packages.php](bootstrap/cache/packages.php)
+            - [services.php](bootstrap/cache/services.php)
+        - **cachemkdir/**
+    - **config/**
+        - [app.php](config/app.php)
+        - [auth.php](config/auth.php)
+        - [broadcasting.php](config/broadcasting.php)
+        - [cache.php](config/cache.php)
+        - [cors.php](config/cors.php)
+        - [database.php](config/database.php)
+        - [filesystems.php](config/filesystems.php)
+        - [hashing.php](config/hashing.php)
+        - [logging.php](config/logging.php)
+        - [mail.php](config/mail.php)
+        - [queue.php](config/queue.php)
+        - [sanctum.php](config/sanctum.php)
+        - [services.php](config/services.php)
+        - [session.php](config/session.php)
+        - [view.php](config/view.php)
+        - [livewire.php](config/livewire.php)
+        - [debugbar.php](config/debugbar.php)
     - **database/**
+        - **migrations/**
+            - [2014_10_12_000000_create_users_table.php](database/migrations/2014_10_12_000000_create_users_table.php)
+            - [2014_10_12_100000_create_password_reset_tokens_table.php](database/migrations/2014_10_12_100000_create_password_reset_tokens_table.php)
+            - [2019_08_19_000000_create_failed_jobs_table.php](database/migrations/2019_08_19_000000_create_failed_jobs_table.php)
+            - [2019_12_14_000001_create_personal_access_tokens_table.php](database/migrations/2019_12_14_000001_create_personal_access_tokens_table.php)
+            - [2024_02_28_022350_create_entries_table.php](database/migrations/2024_02_28_022350_create_entries_table.php)
+            - [2024_02_28_022350_create_entry_docs_table.php](database/migrations/2024_02_28_022350_create_entry_docs_table.php)
+            - [2024_02_28_022350_create_entry_images_table.php](database/migrations/2024_02_28_022350_create_entry_images_table.php)
+            - [2024_02_28_030000_date_add_role_id_to_users_table.php](database/migrations/2024_02_28_030000_date_add_role_id_to_users_table.php)
+            - [2024_02_28_040000_create_roles_table.php](database/migrations/2024_02_28_040000_create_roles_table.php)
+            - [2024_02_28_045000_add_judge_details_to_users_table.php](database/migrations/2024_02_28_045000_add_judge_details_to_users_table.php)
+            - [2024_03_17_045001_create_invoices_table.php](database/migrations/2024_03_17_045001_create_invoices_table.php)
+            - [2024_03_17_450002_create_invoice_items_table.php](database/migrations/2024_03_17_450002_create_invoice_items_table.php)
+            - [2024_03_18_013747_add_status_column_to_entries_table.php](database/migrations/2024_03_18_013747_add_status_column_to_entries_table.php)
+            - [2024_03_18_020116_add_status_column_to_invoices_table.php](database/migrations/2024_03_18_020116_add_status_column_to_invoices_table.php)
+    - **public/**
+        - [index.php](public/index.php)
+        - [ntunnel_mysql.php](public/ntunnel_mysql.php)
+        - **css/**
+            - [custom.css](public/css/custom.css)
+        - **images/**
+            - **icons/**
     - **resources/**
         - **css/**
             - [app.css](resources/css/app.css)
@@ -363,6 +567,46 @@ export default {
             - [dashboard.blade.php](resources/views/dashboard.blade.php)
             - [application.blade.php](resources/views/application.blade.php)
             - [addJudge.blade.php](resources/views/addJudge.blade.php)
+            - **auth/**
+                - [confirm-password.blade.php](resources/views/auth/confirm-password.blade.php)
+                - [forgot-password.blade.php](resources/views/auth/forgot-password.blade.php)
+                - [login.blade.php](resources/views/auth/login.blade.php)
+                - [register.blade.php](resources/views/auth/register.blade.php)
+                - [reset-password.blade.php](resources/views/auth/reset-password.blade.php)
+                - [verify-email.blade.php](resources/views/auth/verify-email.blade.php)
+            - **components/**
+                - [application-logo.blade.php](resources/views/components/application-logo.blade.php)
+                - [auth-session-status.blade.php](resources/views/components/auth-session-status.blade.php)
+                - [danger-button.blade.php](resources/views/components/danger-button.blade.php)
+                - [dropdown-link.blade.php](resources/views/components/dropdown-link.blade.php)
+                - [dropdown.blade.php](resources/views/components/dropdown.blade.php)
+                - [input-error.blade.php](resources/views/components/input-error.blade.php)
+                - [input-label.blade.php](resources/views/components/input-label.blade.php)
+                - [modal.blade.php](resources/views/components/modal.blade.php)
+                - [nav-link.blade.php](resources/views/components/nav-link.blade.php)
+                - [primary-button.blade.php](resources/views/components/primary-button.blade.php)
+                - [responsive-nav-link.blade.php](resources/views/components/responsive-nav-link.blade.php)
+                - [secondary-button.blade.php](resources/views/components/secondary-button.blade.php)
+                - [text-input.blade.php](resources/views/components/text-input.blade.php)
+                - [checkbox.blade.php](resources/views/components/checkbox.blade.php)
+                - [auth-card.blade.php](resources/views/components/auth-card.blade.php)
+                - [left-nav.blade.php](resources/views/components/left-nav.blade.php)
+                - [top-nav.blade.php](resources/views/components/top-nav.blade.php)
+                - **layouts/**
+                    - [main.blade.php](resources/views/components/layouts/main.blade.php)
+                    - [blank.blade.php](resources/views/components/layouts/blank.blade.php)
+                    - [dashboard.blade.php](resources/views/components/layouts/dashboard.blade.php)
+                    - [app.blade.php](resources/views/components/layouts/app.blade.php)
+            - **layouts/**
+                - [app.blade.php](resources/views/layouts/app.blade.php)
+                - [guest.blade.php](resources/views/layouts/guest.blade.php)
+                - [navigation.blade.php](resources/views/layouts/navigation.blade.php)
+            - **profile/**
+                - [edit.blade.php](resources/views/profile/edit.blade.php)
+                - **partials/**
+                    - [delete-user-form.blade.php](resources/views/profile/partials/delete-user-form.blade.php)
+                    - [update-password-form.blade.php](resources/views/profile/partials/update-password-form.blade.php)
+                    - [update-profile-information-form.blade.php](resources/views/profile/partials/update-profile-information-form.blade.php)
             - **livewire/**
                 - [svg-icon.blade.php](resources/views/livewire/svg-icon.blade.php)
                 - [search-button.blade.php](resources/views/livewire/search-button.blade.php)
@@ -376,9 +620,62 @@ export default {
                 - [judge-profile.blade.php](resources/views/livewire/judge-profile.blade.php)
                 - [user-profile.blade.php](resources/views/livewire/user-profile.blade.php)
                 - [show-posts.blade.php](resources/views/livewire/show-posts.blade.php)
+                - [dashboard.blade.php](resources/views/livewire/dashboard.blade.php)
+                - [entry-table.blade.php](resources/views/livewire/entry-table.blade.php)
+                - [entry-details.blade.php](resources/views/livewire/entry-details.blade.php)
+                - [building-entry-form.blade.php](resources/views/livewire/building-entry-form.blade.php)
+                - [refurbishing-entry-form.blade.php](resources/views/livewire/refurbishing-entry-form.blade.php)
+                - [interior-design-entry-form.blade.php](resources/views/livewire/interior-design-entry-form.blade.php)
+                - [judge-registration-form.blade.php](resources/views/livewire/judge-registration-form.blade.php)
+                - [user-registration-form.blade.php](resources/views/livewire/user-registration-form.blade.php)
+                - [payment-gateway.blade.php](resources/views/livewire/payment-gateway.blade.php)
+                - [entry-card.blade.php](resources/views/livewire/entry-card.blade.php)
+                - [entry-rating-form.blade.php](resources/views/livewire/entry-rating-form.blade.php)
+                - [file-upload.blade.php](resources/views/livewire/file-upload.blade.php)
+                - [payment-form.blade.php](resources/views/livewire/payment-form.blade.php)
+                - [progress-bar.blade.php](resources/views/livewire/progress-bar.blade.php)
+                - [circular-graph.blade.php](resources/views/livewire/circular-graph.blade.php)
+                - [pagination.blade.php](resources/views/livewire/pagination.blade.php)
+                - [filter.blade.php](resources/views/livewire/filter.blade.php)
+                - [sorting.blade.php](resources/views/livewire/sorting.blade.php)
+                - [dashboard-statistic-card.blade.php](resources/views/livewire/dashboard-statistic-card.blade.php)
+                - [notification.blade.php](resources/views/livewire/notification.blade.php)
+                - [confirmation-modal.blade.php](resources/views/livewire/confirmation-modal.blade.php)
+                - [entry-index.blade.php](resources/views/livewire/entry-index.blade.php)
+                - [entry-create.blade.php](resources/views/livewire/entry-create.blade.php)
+                - [invoice-index.blade.php](resources/views/livewire/invoice-index.blade.php)
+                - [invoice-show.blade.php](resources/views/livewire/invoice-show.blade.php)
+                - [header-button.blade.php](resources/views/livewire/header-button.blade.php)
+                - [header-dropdown.blade.php](resources/views/livewire/header-dropdown.blade.php)
+                - [header-separator.blade.php](resources/views/livewire/header-separator.blade.php)
+                - [user-profile-block.blade.php](resources/views/livewire/user-profile-block.blade.php)
+                - [google-font.blade.php](resources/views/livewire/google-font.blade.php)
+                - **admin/**
+                    - [dashboard.blade.php](resources/views/livewire/admin/dashboard.blade.php)
+                - **judge/**
+                    - [dashboard.blade.php](resources/views/livewire/judge/dashboard.blade.php)
+                - **user/**
+                    - [dashboard.blade.php](resources/views/livewire/user/dashboard.blade.php)
     - **routes/**
+        - [api.php](routes/api.php)
         - [channels.php](routes/channels.php)
+        - [console.php](routes/console.php)
         - [web.php](routes/web.php)
+        - [auth.php](routes/auth.php)
+```
+
+## File: cspell.json
+```json
+{
+    "version": "0.2",
+    "ignorePaths": [],
+    "dictionaryDefinitions": [],
+    "dictionaries": [],
+    "words": [],
+    "ignoreWords": [],
+    "import": []
+}
+
 ```
 
 ## File: app/Console/Kernel.php
@@ -607,64 +904,6 @@ class ProfileController extends Controller
         $request->session()->regenerateToken();
 
         return Redirect::to('/');
-    }
-}
-
-```
-
-## File: app/Http/Controllers/DashboardController.php
-```php
-<?php
-// app/Http/Controllers/DashboardController.php
-
-namespace App\Http\Controllers;
-
-use Illuminate\Http\Request;
-use App\Models\{Entry, Judge, Invoice, User};
-
-/**
- * DC-DashboardController-C1-A+- Handles dashboard data aggregation and display
- */
-class DashboardController extends Controller
-{
-    /**
-     * DC-index-M1-A+- Display the dashboard with aggregated data
-     * 
-     * @return \Illuminate\Http\Response
-     */
-    public function index()
-    {
-        // Fetching entries data
-        $entriesCount = Entry::count();
-        $completedEntries = Entry::where('status', 'completed')->count();
-        $disqualifiedEntries = Entry::where('status', 'disqualified')->count();
-
-        // Fetching invoice data
-        $totalInvoices = Invoice::count();
-        $paidInvoices = Invoice::where('status', 'paid')->count();
-        $pendingInvoices = Invoice::where('status', 'pending')->count();
-
-        // Fetching judges data
-        $judgesCount = Judge::count();
-        $activeJudges = Judge::where('status', 'active')->count();
-
-        // Fetching recent user activities
-        $recentUsers = User::latest()->take(5)->get();
-
-        // Preparing data for the dashboard view
-        $data = [
-            'entriesCount' => $entriesCount,
-            'completedEntries' => $completedEntries,
-            'disqualifiedEntries' => $disqualifiedEntries,
-            'totalInvoices' => $totalInvoices,
-            'paidInvoices' => $paidInvoices,
-            'pendingInvoices' => $pendingInvoices,
-            'judgesCount' => $judgesCount,
-            'activeJudges' => $activeJudges,
-            'recentUsers' => $recentUsers,
-        ];
-
-        return view('dashboard', $data);
     }
 }
 
@@ -989,6 +1228,7 @@ namespace App\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
 use App\Models\User;
+use App\Models\Role;
 use App\Providers\RouteServiceProvider;
 use Illuminate\Auth\Events\Registered;
 use Illuminate\Http\RedirectResponse;
@@ -1018,17 +1258,20 @@ class RegisteredUserController extends Controller
         $request->validate([
             'name' => ['required', 'string', 'max:255'],
             'surname' => ['required', 'string', 'max:255'],
+            'company' => ['required', 'string', 'max:255'],
+            'mobile_number' => ['required', 'string', 'max:20'],
             'email' => ['required', 'string', 'lowercase', 'email', 'max:255', 'unique:'.User::class],
             'password' => ['required', 'confirmed', Rules\Password::defaults()],
-            'role' => ['required', 'in:admin,judge,user'],
         ]);
 
         $user = User::create([
             'name' => $request->name,
             'surname' => $request->surname,
+            'company' => $request->company,
+            'mobile_number' => $request->mobile_number,
             'email' => $request->email,
             'password' => Hash::make($request->password),
-            'role_id' => Role::where('name', $request->role)->first()->id,
+            'role_id' => Role::where('name', 'user')->first()->id,
         ]);
 
         event(new Registered($user));
@@ -1038,7 +1281,6 @@ class RegisteredUserController extends Controller
         return redirect(RouteServiceProvider::HOME);
     }
 }
-
 ```
 
 ## File: app/Http/Controllers/Auth/VerifyEmailController.php
@@ -1140,11 +1382,10 @@ use App\Providers\RouteServiceProvider;
 use Closure;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
-use Symfony\Component\HttpFoundation\Response;
 
 class RedirectIfAuthenticated
 {
-    public function handle(Request $request, Closure $next, string ...$guards): Response
+    public function handle(Request $request, Closure $next, ...$guards)
     {
         $guards = empty($guards) ? [null] : $guards;
 
@@ -1451,11 +1692,6 @@ class User extends Authenticatable
 {
     use HasApiTokens, HasFactory, Notifiable;
 
-    /**
-     * The attributes that are mass assignable.
-     *
-     * @var array<int, string>
-     */
     protected $fillable = [
         'name',
         'surname',
@@ -1464,69 +1700,114 @@ class User extends Authenticatable
         'fax_number',
         'mobile_number',
         'email',
-        'password'
+        'password',
+        'role_id',
     ];
 
-    // Add the role relationship
     public function role()
     {
         return $this->belongsTo(Role::class);
     }
 
-    // Method to check if the user has a specific role
     public function hasRole($role)
     {
-        return $this->role->name === $role;
+        return $this->role && $this->role->name === $role;
     }
 
-    /*
-     * The attributes that should be hidden for serialization.
-     *
-     * @var array<int, string>
-     */
     protected $hidden = [
         'password',
         'remember_token',
+        // Add any other sensitive fields here
     ];
 
-    /**
-     * The attributes that should be cast.
-     *
-     * @var array<string, string>
-     */
     protected $casts = [
         'email_verified_at' => 'datetime',
         'password' => 'hashed',
     ];
 
-    // Method to check if the user is a judge
+    public function isAdmin()
+    {
+        return $this->hasRole('admin');
+    }
+
     public function isJudge()
     {
         return $this->hasRole('judge');
     }
-}
 
+    public function isUser()
+    {
+        return $this->hasRole('user');
+    }
+}
 ```
 
 ## File: app/Models/Entry.php
 ```php
 <?php
 // app/Models/Entry.php
+namespace App\Models;
 use Illuminate\Database\Eloquent\Model;
 
 class Entry extends Model
 {
     protected $fillable = [
-        'user_id','full_name', 'surname', 'company', 'phone_number', 'email', 'entry_title',
-        'project_category', 'description', 'owner_developer_name', 'developer_name',
-        'date_of_completion', 'capital_investment', 'economic_return', 'tenant_profile',
-        'BBBEE_status', 'overall_impact', 'design_concept', 'functionality_fit_for_purpose',
-        'facilities_user_satisfaction', 'environmentally_sustainable_design', 'social_transformation'
+        'user_id',
+        'title',    
+        'property_category', 
+        'description',    
+        'owner_client_company',   
+        'developer_name',   
+        'completion_date',   
+        'capital_investment',   
+        'economic_return',    
+        'street_address',     
+        'overall_impact',    
+        'design_concept',  
+        'tenant_convenience',  
+        'functionality_fit_for_purpose',
+        'facilities_user_satisfaction',  
+        'environmental_sustainability',
+        'BBBEE_status',     
+        'social_transformation'  
     ];
-
+    
     public function user()
     {
         return $this->belongsTo(User::class);
+    }
+
+    public function ratings()
+    {
+        return $this->hasMany(Rating::class);
+    }
+
+    public function judges()
+    {
+        return $this->belongsToMany(Judge::class, 'entry_judge');
+    }
+
+    public function invoice()
+    {
+        return $this->hasOne(Invoice::class);
+    }
+
+    public function documents()
+    {
+        return $this->hasMany(EntryDocument::class);
+    }
+    public function architecturalDrawings()
+    {
+        return $this->hasMany(EntryArchitecturalDrawing::class);
+    }
+    public function images()
+    {
+        return $this->hasMany(EntryImage::class);
+    }
+
+    public function criteriaRatings()
+    {
+        return $this->hasMany(CriteriaEntryRating::class);
     }
 
     public function docs()
@@ -1534,27 +1815,6 @@ class Entry extends Model
         return $this->hasMany(EntryDoc::class);
     }
 
-    public function images()
-    {
-        return $this->hasMany(EntryImage::class);
-    }
-}
-```
-
-## File: app/Models/EntryDoc.php
-```php
-<?php
-// app/Models/EntryDoc.php
-use Illuminate\Database\Eloquent\Model;
-
-class EntryDoc extends Model
-{
-    protected $fillable = ['entry_id', 'doc_type', 'doc_name', 'doc_path'];
-
-    public function entry()
-    {
-        return $this->belongsTo(Entry::class);
-    }
 }
 ```
 
@@ -1562,6 +1822,7 @@ class EntryDoc extends Model
 ```php
 <?php
 // app/Models/EntryImage.php
+namespace App\Models;
 use Illuminate\Database\Eloquent\Model;
 
 class EntryImage extends Model
@@ -1598,6 +1859,184 @@ class Role extends Model
 }
 ```
 
+## File: app/Models/Invoice.php
+```php
+<?php
+// app/Models/Invoice.php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+class Invoice extends Model
+{
+    protected $fillable = [
+        'user_id',
+        'payment_date',
+        'invoice_date',
+        'vat',
+        'discount',
+        'sub_total',
+        'total',
+    ];
+
+    protected $dates = [
+        'payment_date',
+        'invoice_date',
+    ];
+
+    public function user()
+    {
+        return $this->belongsTo(User::class);
+    }
+
+    public function items()
+    {
+        return $this->hasMany(InvoiceItem::class);
+    }
+}
+```
+
+## File: app/Models/Judge.php
+```php
+<?php
+// app/Models/Judge.php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+class Judge extends Model
+{
+
+    public function user()
+    {
+        return $this->belongsTo(User::class);
+    }
+
+    public function entries()
+    {
+        return $this->belongsToMany(Entry::class, 'entry_judge');
+    }
+}
+```
+
+## File: app/Models/Rating.php
+```php
+<?php
+// app/Models/Rating.php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+class Rating extends Model
+{
+    // ...
+
+    public function entry()
+    {
+        return $this->belongsTo(Entry::class);
+    }
+
+    public function judge()
+    {
+        return $this->belongsTo(Judge::class);
+    }
+
+    public function criteria()
+    {
+        return $this->belongsTo(Criteria::class);
+    }
+}
+```
+
+## File: app/Models/Criteria.php
+```php
+<?php
+// app/Models/Criteria.php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+class Criteria extends Model
+{
+    // ...
+
+    public function ratings()
+    {
+        return $this->hasMany(Rating::class);
+    }
+}
+```
+
+## File: app/Models/EntryDocument.php
+```php
+<?php
+// app/Models/EntryDoc.php
+namespace App\Models;
+use Illuminate\Database\Eloquent\Model;
+
+class EntryDocument extends Model
+{
+    protected $fillable = ['entry_id', 'doc_type', 'doc_name', 'doc_path'];
+
+    public function entry()
+    {
+        return $this->belongsTo(Entry::class);
+    }
+}
+```
+
+## File: app/Models/EntryArchitecturalDrawing.php
+```php
+<?php
+// app/Models/EntryArchitecturalDrawing.php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+class EntryArchitecturalDrawing extends Model
+{
+    // ...
+
+    public function entry()
+    {
+        return $this->belongsTo(Entry::class);
+    }
+}
+```
+
+## File: app/Models/InvoiceItem.php
+```php
+<?php
+// app/Models/InvoiceItem.php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+class InvoiceItem extends Model
+{
+    protected $fillable = [
+        'invoice_id',
+        'item',
+        'description',
+        'amount',
+        'quantity',
+        'vat',
+        'total',
+    ];
+
+    public function invoice()
+    {
+        return $this->belongsTo(Invoice::class);
+    }
+}
+```
+
 ## File: app/Providers/AppServiceProvider.php
 ```php
 <?php
@@ -1605,6 +2044,7 @@ class Role extends Model
 namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
+use Livewire\Livewire;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -1621,7 +2061,21 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
-        //
+        Livewire::component('entry-card', \App\Livewire\EntryCard::class);
+        Livewire::component('entry-rating-form', \App\Livewire\EntryRatingForm::class);
+        Livewire::component('file-upload', \App\Livewire\FileUpload::class);
+        Livewire::component('payment-form', \App\Livewire\PaymentForm::class);
+        Livewire::component('progress-bar', \App\Livewire\ProgressBar::class);
+        Livewire::component('circular-graph', \App\Livewire\CircularGraph::class);
+        Livewire::component('admin.dashboard', \App\Livewire\Admin\Dashboard::class);
+        Livewire::component('judge.dashboard', \App\Livewire\Judge\Dashboard::class);
+        Livewire::component('user.dashboard', \App\Livewire\User\Dashboard::class);
+        Livewire::component('pagination', \App\Livewire\Pagination::class);
+        Livewire::component('filter', \App\Livewire\Filter::class);
+        Livewire::component('sorting', \App\Livewire\Sorting::class);
+        Livewire::component('dashboard-statistic-card', \App\Livewire\DashboardStatisticCard::class);
+        Livewire::component('notification', \App\Livewire\Notification::class);
+        Livewire::component('confirmation-modal', \App\Livewire\ConfirmationModal::class);
     }
 }
 
@@ -1744,7 +2198,7 @@ class RouteServiceProvider extends ServiceProvider
      * Typically, users are redirected here after authentication.
      * @var string
      */
-    public const HOME = '/dashboard';
+    public const HOME = '/user/dashboard';
 
     /**
      * Define your route model bindings, pattern filters, and other route configuration.
@@ -1958,26 +2412,47 @@ class SearchButton extends Component
 ## File: app/Livewire/LeftNavButton.php
 ```php
 <?php
-// LeftNavButton.php
+// app/Livewire/LeftNavButton.php - Iteration 1 - A+
 namespace App\Livewire;
 
 use Livewire\Component;
 
+/*
+* L-LeftNavButton-C1-1-A+: Livewire Component for sidebar navigation buttons.
+* This component handles the toggle functionality of sub-buttons (accordion behavior).
+*/
 class LeftNavButton extends Component
 {
-    public $text;
-    public $icon;
-    public $link;
-    public $subButtons;
+    public string $icon;
+    public string $text;
+    public string $link;
+    public bool $hasSubButtons = false;
+    public bool $subButtonsVisible = false;
+    public string $buttonId;
 
-    public function mount($text, $icon, $link, $subButtons = [])
+    /*
+    * L-LeftNavButton-M1-1-A+: Mount the component with initial values.
+    */
+    public function mount(string $icon, string $text, string $link = '', bool $hasSubButtons = false)
     {
-        $this->text = $text;
         $this->icon = $icon;
+        $this->text = $text;
         $this->link = $link;
-        $this->subButtons = $subButtons;
+        $this->hasSubButtons = $hasSubButtons;
+        $this->buttonId = uniqid('button_');
     }
 
+    /*
+    * L-LeftNavButton-M2-1-A+: Toggle the visibility of sub-buttons.
+    */
+    public function toggleSubButtons(): void
+    {
+        $this->subButtonsVisible = !$this->subButtonsVisible;
+    }
+
+    /*
+    * L-LeftNavButton-M3-1-A+: Render the component view.
+    */
     public function render()
     {
         return view('livewire.left-nav-button');
@@ -1989,7 +2464,7 @@ class LeftNavButton extends Component
 ## File: app/Livewire/LeftNavSubButton.php
 ```php
 <?php
-// app/Http/Livewire/LeftNavSubButton.php
+// app/Livewire/LeftNavSubButton.php
 namespace App\Livewire;
 
 use Illuminate\View\View;
@@ -2081,7 +2556,7 @@ class AlertBar extends Component
         $this->fadeInTime = $fadeInTime;
         $this->fadeOutTime = $fadeOutTime;
         $this->showTime = $showTime;
-        $this->emit('alertShown');
+        $this->dispatch('alertShown');
     }
 
     public function dismiss()
@@ -2108,9 +2583,9 @@ use Illuminate\Support\Facades\Auth;
 
 class LoginForm extends Component
 {
-    public $email;
-    public $password;
-
+    public $email = "charl@fgx.co.za";
+    public $password = "Pl@tinum4334";
+    public $layout = 'layouts.app';
     protected $rules = [
         'email' => 'required|email',
         'password' => 'required',
@@ -2123,21 +2598,20 @@ class LoginForm extends Component
         if (Auth::attempt(['email' => $this->email, 'password' => $this->password])) {
             $user = Auth::user();
             if ($user->hasRole('admin')) {
-                $this->redirect(route('dashboard'));
+                $this->redirect(route('admin.dashboard'));
             } elseif ($user->hasRole('judge')) {
-                $this->redirect(route('judge.profile'));
+                $this->redirect(route('judge.dashboard'));
             } else {
-                $this->redirect(route('user.profile'));
+                $this->redirect(route('user.dashboard'));
             }
         }
-        
-
-        $this->emit('showAlert', 'Invalid credentials', 'error');
+        $this->dispatch('showAlert', 'Invalid credentials', 'error');
     }
 
+    #[Layout('layouts.blank')]
     public function render()
     {
-        return view('livewire.login-form');
+        return view('livewire.login-form')->layout('layouts.guest');
     }
 }
 ```
@@ -2195,7 +2669,657 @@ class UserProfile extends Component
 }
 ```
 
-## File: app/Livewire/ShowPosts.php
+## File: app/Livewire/Dashboard.php
+```php
+<?php
+
+namespace App\Livewire;
+
+use Livewire\Component;
+use App\Models\Entry;
+use App\Models\Invoice;
+use App\Models\Judge;
+use App\Models\User;
+
+class Dashboard extends Component
+{
+    public function render()
+    {
+        $entries = Entry::count();
+        $invoices = Invoice::count();
+        $judges = Judge::count();
+        $recentlyActiveUsers = User::orderBy('last_login_at', 'desc')->take(10)->get();
+
+        return view('livewire.dashboard', compact('entries', 'invoices', 'judges', 'recentlyActiveUsers'));
+    }
+}
+```
+
+## File: app/Livewire/EntryTable.php
+```php
+<?php
+
+namespace App\Http\Livewire\Entries;
+
+use Livewire\Component;
+use App\Models\Entry;
+
+class EntryTable extends Component
+{
+    public function render()
+    {
+        $entries = Entry::with('user')->latest()->paginate(10);
+
+        return view('livewire.entries.entry-table', compact('entries'));
+    }
+}
+```
+
+## File: app/Livewire/EntryDetails.php
+```php
+<?php
+
+namespace App\Http\Livewire\Entries;
+
+use Livewire\Component;
+use App\Models\Entry;
+
+class EntryDetails extends Component
+{
+    public $entryId;
+    public $entry;
+
+    public function mount($entryId)
+    {
+        $this->entryId = $entryId;
+        $this->entry = Entry::findOrFail($entryId);
+    }
+
+    public function render()
+    {
+        return view('livewire.entries.entry-details');
+    }
+}
+```
+
+## File: app/Livewire/RefurbishingEntryForm.php
+```php
+<?php
+
+namespace App\Http\Livewire\Entries;
+
+use Livewire\Component;
+use Livewire\WithFileUploads;
+use App\Models\Entry;
+
+class RefurbishingEntryForm extends Component
+{
+    use WithFileUploads;
+
+    // Declare properties for form fields
+    public $firstName;
+    public $surname;
+    // ...
+
+    protected $rules = [
+        'firstName' => 'required',
+        'surname' => 'required',
+        // ...
+    ];
+
+    public function render()
+    {
+        return view('livewire.entries.refurbishing-entry-form');
+    }
+
+    public function submit()
+    {
+        $this->validate();
+
+        // Process and store the entry data
+        $entry = Entry::create([
+            'first_name' => $this->firstName,
+            'surname' => $this->surname,
+            // ...
+        ]);
+
+        // Process and store the uploaded files
+        // ...
+
+        // Redirect or show success message
+        session()->flash('success', 'Refurbishing entry submitted successfully.');
+        $this->reset();
+    }
+}
+```
+
+## File: app/Livewire/InteriorDesignEntryForm.php
+```php
+<?php
+
+namespace App\Http\Livewire\Entries;
+
+use Livewire\Component;
+use Livewire\WithFileUploads;
+use App\Models\Entry;
+
+class InteriorDesignEntryForm extends Component
+{
+    use WithFileUploads;
+
+    // Declare properties for form fields
+    public $firstName;
+    public $surname;
+    // ...
+
+    protected $rules = [
+        'firstName' => 'required',
+        'surname' => 'required',
+        // ...
+    ];
+
+    public function render()
+    {
+        return view('livewire.entries.interior-design-entry-form');
+    }
+
+    public function submit()
+    {
+        $this->validate();
+
+        // Process and store the entry data
+        $entry = Entry::create([
+            'first_name' => $this->firstName,
+            'surname' => $this->surname,
+            // ...
+        ]);
+
+        // Process and store the uploaded files
+        // ...
+
+        // Redirect or show success message
+        session()->flash('success', 'Interior design entry submitted successfully.');
+        $this->reset();
+    }
+}
+```
+
+## File: app/Livewire/JudgeRegistrationForm.php
+```php
+<?php
+
+namespace App\Http\Livewire\Judges;
+
+use Livewire\Component;
+use App\Models\Judge;
+
+class JudgeRegistrationForm extends Component
+{
+    public $email;
+    public $password;
+    public $confirmPassword;
+    public $firstName;
+    public $surname;
+    public $company;
+    public $workPhone;
+    public $faxNumber;
+    public $mobileNumber;
+
+    protected $rules = [
+        'email' => 'required|email|unique:judges',
+        'password' => 'required|min:8',
+        'confirmPassword' => 'required|same:password',
+        'firstName' => 'required',
+        'surname' => 'required',
+        'company' => 'required',
+        'workPhone' => 'required|numeric',
+        'faxNumber' => 'nullable|numeric',
+        'mobileNumber' => 'required|numeric',
+    ];
+
+    public function render()
+    {
+        return view('livewire.judges.judge-registration-form');
+    }
+
+    public function submit()
+    {
+        $this->validate();
+
+        // Create the judge record
+        $judge = Judge::create([
+            'email' => $this->email,
+            'password' => bcrypt($this->password),
+            'first_name' => $this->firstName,
+            'surname' => $this->surname,
+            'company' => $this->company,
+            'work_phone' => $this->workPhone,
+            'fax_number' => $this->faxNumber,
+            'mobile_number' => $this->mobileNumber,
+        ]);
+
+        // Redirect or show success message
+        session()->flash('success', 'Judge registered successfully.');
+        $this->reset();
+    }
+}
+```
+
+## File: app/Livewire/UserRegistrationForm.php
+```php
+<?php
+
+namespace App\Http\Livewire\Users;
+
+use Livewire\Component;
+use App\Models\User;
+
+class UserRegistrationForm extends Component
+{
+    public $email;
+    public $password;
+    public $confirmPassword;
+
+    protected $rules = [
+        'email' => 'required|email|unique:users',
+        'password' => 'required|min:8',
+        'confirmPassword' => 'required|same:password',
+    ];
+
+    public function render()
+    {
+        return view('livewire.users.user-registration-form');
+    }
+
+    public function submit()
+    {
+        $this->validate();
+
+        // Create the user record
+        $user = User::create([
+            'email' => $this->email,
+            'password' => bcrypt($this->password),
+        ]);
+
+        // Redirect or show success message
+        session()->flash('success', 'User registered successfully.');
+        $this->reset();
+    }
+}
+```
+
+## File: app/Livewire/PaymentGateway.php
+```php
+<?php
+
+namespace App\Http\Livewire\Payments;
+
+use Livewire\Component;
+use App\Models\Payment;
+use App\Services\PeachPaymentsService;
+
+class PaymentGateway extends Component
+{
+    public $paymentAmount;
+    public $cardNumber;
+    public $cardExpiry;
+    public $cardCvv;
+
+    protected $rules = [
+        'paymentAmount' => 'required|numeric',
+        'cardNumber' => 'required|numeric',
+        'cardExpiry' => 'required|date_format:m/y',
+        'cardCvv' => 'required|numeric|digits:3',
+    ];
+
+    public function render()
+    {
+        return view('livewire.payments.payment-gateway');
+    }
+
+    public function submit()
+    {
+        $this->validate();
+
+        // Process the payment using Peach Payments API
+        $peachPayments = new PeachPaymentsService();
+        $paymentResponse = $peachPayments->processPayment(
+            $this->paymentAmount,
+            $this->cardNumber,
+            $this->cardExpiry,
+            $this->cardCvv
+        );
+
+        if ($paymentResponse->isSuccessful()) {
+            // Create the payment record
+            $payment = Payment::create([
+                'entry_id' => session('entryId'),
+                'payment_amount' => $this->paymentAmount,
+                'payment_status' => 'paid',
+                'transaction_id' => $paymentResponse->getTransactionId(),
+                'payment_date' => now(),
+            ]);
+
+            // Redirect or show success message
+            session()->flash('success', 'Payment processed successfully.');
+            $this->reset();
+        } else {
+            // Handle payment failuresession()->flash('error', 'Payment processing failed. Please try again.');
+        }
+    }
+}
+```
+
+## File: app/Livewire/EntryCard.php
+```php
+<?php
+// app/Livewire/EntryCard.php
+
+namespace App\Livewire;
+
+use Livewire\Component;
+use App\Models\Entry;
+
+class EntryCard extends Component
+{
+    public Entry $entry;
+
+    public function mount(Entry $entry)
+    {
+        $this->entry = $entry;
+    }
+
+    public function render()
+    {
+        return view('livewire.entry-card');
+    }
+}
+```
+
+## File: app/Livewire/EntryRatingForm.php
+```php
+<?php
+// app/Livewire/EntryRatingForm.php
+
+namespace App\Livewire;
+
+use Livewire\Component;
+use App\Models\Entry;
+use App\Models\Criteria;
+use App\Models\Rating;
+
+class EntryRatingForm extends Component
+{
+    public Entry $entry;
+    public $ratings = [];
+
+    protected $rules = [
+        'ratings.*' => 'required|integer|between:1,10',
+    ];
+
+    public function mount(Entry $entry)
+    {
+        $this->entry = $entry;
+    }
+
+    public function submitRating()
+    {
+        $this->validate();
+
+        foreach ($this->ratings as $criterionId => $score) {
+            Rating::create([
+                'entry_id' => $this->entry->id,
+                'criterion_id' => $criterionId,
+                'score' => $score,
+                'judge_id' => auth()->user()->id,
+            ]);
+        }
+
+        $this->reset('ratings');
+
+        $this->emit('ratingSubmitted');
+    }
+
+    public function render()
+    {
+        $criteria = Criteria::all();
+        return view('livewire.entry-rating-form', compact('criteria'));
+    }
+}
+```
+
+## File: app/Livewire/FileUpload.php
+```php
+<?php
+// app/Http/Livewire/FileUpload.php
+
+namespace App\Http\Livewire;
+
+use Livewire\Component;
+use Livewire\WithFileUploads;
+
+class FileUpload extends Component
+{
+    use WithFileUploads;
+
+    public $file;
+
+    protected $rules = [
+        'file' => 'required|file|max:10240', // Max file size of 10MB
+    ];
+
+    public function upload()
+    {
+        $this->validate();
+
+        // Move the uploaded file to the desired location
+        $path = $this->file->store('uploads');
+
+        // Perform any additional actions or database operations
+
+        session()->flash('success', 'File uploaded successfully.');
+
+        $this->reset('file');
+    }
+
+    public function render()
+    {
+        return view('livewire.file-upload');
+    }
+}
+```
+
+## File: app/Livewire/PaymentForm.php
+```php
+<?php
+// app/Http/Livewire/PaymentForm.php
+
+namespace App\Http\Livewire;
+
+use Livewire\Component;
+use App\Services\PaymentGateway;
+
+class PaymentForm extends Component
+{
+    public $amount;
+    public $cardNumber;
+    public $expiryMonth;
+    public $expiryYear;
+    public $cvv;
+
+    protected $rules = [
+        'amount' => 'required|numeric|min:0',
+        'cardNumber' => 'required|string',
+        'expiryMonth' => 'required|string|size:2',
+        'expiryYear' => 'required|string|size:4',
+        'cvv' => 'required|string|size:3',
+    ];
+
+    public function processPayment()
+    {
+        $this->validate();
+
+        // Create an instance of the payment gateway service
+        $paymentGateway = new PaymentGateway();
+
+        // Prepare the payment data
+        $paymentData = [
+            'amount' => $this->amount,
+            'cardNumber' => $this->cardNumber,
+            'expiryMonth' => $this->expiryMonth,
+            'expiryYear' => $this->expiryYear,
+            'cvv' => $this->cvv,
+        ];
+
+        // Process the payment through the payment gateway
+        $response = $paymentGateway->processPayment($paymentData);
+
+        if ($response->isSuccessful()) {
+            // Payment successful, perform any additional actions or database operations
+
+            session()->flash('success', 'Payment processed successfully.');
+
+            $this->reset();
+        } else {
+            // Payment failed, display error message
+            session()->flash('error', 'Payment processing failed. Please try again.');
+        }
+    }
+
+    public function render()
+    {
+        return view('livewire.payment-form');
+    }
+}
+```
+
+## File: app/Livewire/ProgressBar.php
+```php
+<?php
+// app/Http/Livewire/ProgressBar.php
+
+namespace App\Http\Livewire;
+
+use Livewire\Component;
+
+class ProgressBar extends Component
+{
+    public $progress;
+
+    public function mount($progress)
+    {
+        $this->progress = $progress;
+    }
+
+    public function render()
+    {
+        return view('livewire.progress-bar');
+    }
+}
+```
+
+## File: app/Livewire/CircularGraph.php
+```php
+<?php
+// app/Livewire/CircularGraph.php
+
+namespace App\Livewire;
+
+use Livewire\Component;
+
+class CircularGraph extends Component
+{
+    public $percentage;
+
+    public function mount($percentage)
+    {
+        $this->percentage = $percentage;
+    }
+
+    public function render()
+    {
+        return view('livewire.circular-graph');
+    }
+}
+```
+
+## File: app/Livewire/HeaderButton.php
+```php
+<?php
+// app/Livewire/HeaderButton.php
+namespace App\Livewire;
+
+use Illuminate\View\View;
+use Livewire\Component;
+
+class HeaderButton extends Component
+{
+    public string $icon;
+
+    public function mount(string $icon)
+    {
+        $this->icon = $icon;
+    }
+
+    public function render(): View
+    {
+        return view('livewire.header-button');
+    }
+}
+```
+
+## File: app/Livewire/HeaderDropdown.php
+```php
+<?php
+// app/Livewire/HeaderDropdown.php
+namespace App\Livewire;
+
+use Illuminate\View\View;
+use Livewire\Component;
+
+class HeaderDropdown extends Component
+{
+    public string $icon;
+    public bool $isOpen = false;
+
+    public function mount(string $icon)
+    {
+        $this->icon = $icon;
+    }
+
+    public function toggleDropdown(): void
+    {
+        $this->isOpen = !$this->isOpen;
+    }
+
+    public function render(): View
+    {
+        return view('livewire.header-dropdown');
+    }
+}
+```
+
+## File: app/Livewire/HeaderSeparator.php
+```php
+<?php
+
+// app/Livewire/HeaderSeparator.php
+namespace App\Livewire;
+
+use Illuminate\View\View;
+use Livewire\Component;
+
+class HeaderSeparator extends Component
+{
+    public function render(): View
+    {
+        return view('livewire.header-separator');
+    }
+}
+
+```
+
+## File: app/Livewire/UserProfileBlock.php
 ```php
 <?php
 
@@ -2203,14 +3327,356 @@ namespace App\Livewire;
 
 use Livewire\Component;
 
-class ShowPosts extends Component
+class UserProfileBlock extends Component
 {
     public function render()
     {
-        return view('livewire.show-posts');
+        return view('livewire.user-profile-block');
     }
 }
 
+```
+
+## File: app/Livewire/GoogleFont.php
+```php
+<?php
+// app/Livewire/GoogleFont.php
+namespace App\Livewire;
+
+use Livewire\Component;
+use Illuminate\Validation\ValidationException;
+
+class GoogleFont extends Component
+{
+    public $font;
+    public $weights;
+
+    public function mount()
+    {
+        if (empty($this->font) || empty($this->weights)) {
+            throw ValidationException::withMessages([
+                'font' => 'The font property is required.',
+                'weights' => 'The weights property is required.',
+            ]);
+        }
+    }
+
+    public function render()
+    {
+        return view('livewire.google-font');
+    }
+}
+
+```
+
+## File: app/Livewire/Judge/Dashboard.php
+```php
+<?php
+// app/Livewire/Judge/Dashboard.php
+
+namespace App\Livewire\Judge;
+
+use Livewire\Component;
+use App\Models\Entry;
+use App\Models\Criteria;
+
+class Dashboard extends Component
+{
+    public $assignedEntries;
+    public $ratingCriteria;
+
+    public function mount()
+    {
+        $this->assignedEntries = Entry::whereHas('judges', function ($query) {
+            $query->where('user_id', auth()->user()->id);
+        })->get();
+        
+        $this->ratingCriteria = Criteria::all();
+    }
+
+    public function render()
+    {
+        return view('livewire.judge.dashboard');
+    }
+}
+```
+
+## File: app/Livewire/Admin/Dashboard.php
+```php
+<?php
+// app/Livewire/Admin/Dashboard.php
+
+namespace App\Livewire\Admin;
+
+use Livewire\Component;
+use App\Models\Entry;
+use App\Models\Invoice;
+use App\Models\Judge;
+use App\Models\User;
+
+class Dashboard extends Component
+{
+    public $totalEntries;
+    public $entriesPercentage;
+    public $totalInvoices;
+    public $invoicesPercentage;
+    public $totalJudges;
+    public $judgesPercentage;
+    public $totalUsers;
+    public $usersPercentage;
+    public $recentEntries;
+
+    public function mount()
+    {
+        $this->totalEntries = Entry::count();
+        $this->entriesPercentage = $this->calculatePercentage($this->totalEntries, Entry::count());
+        $this->totalInvoices = Invoice::count();
+        $this->invoicesPercentage = $this->calculatePercentage($this->totalInvoices, Invoice::count());
+        $this->totalJudges = Judge::count();
+        $this->judgesPercentage = $this->calculatePercentage($this->totalJudges, Judge::count());
+        $this->totalUsers = User::count();
+        $this->usersPercentage = $this->calculatePercentage($this->totalUsers, User::count());
+        $this->recentEntries = Entry::latest()->take(5)->get();
+    }
+
+    private function calculatePercentage($value, $total)
+    {
+        return $total > 0 ? round(($value / $total) * 100) : 0;
+    }
+
+    public function render()
+    {
+        return view('livewire.admin.dashboard');
+    }
+}
+```
+
+## File: app/Livewire/User/Dashboard.php
+```php
+<?php
+// app/Livewire/User/Dashboard.php
+
+namespace App\Livewire\User;
+
+use Livewire\Component;
+use App\Models\Entry;
+use App\Models\Invoice;
+
+
+class Dashboard extends Component
+{
+    
+    public $entries;
+    public $invoices;
+    public $paymentHistory;
+
+    public function mount()
+    {
+        $this->entries = Entry::where('user_id', auth()->user()->id)->latest()->take(5)->get();
+        $this->invoices = Invoice::where('user_id', auth()->user()->id)->latest()->take(5)->get();
+    }
+
+    #[Layout('layouts.dashboard')]
+    public function render()
+    {
+        $totalEntries = Entry::where('user_id', auth()->user()->id)->count();
+        $completedEntries = Entry::where('user_id', auth()->user()->id)->where('status', 'completed')->count();
+        $totalInvoices = Invoice::where('user_id', auth()->user()->id)->count();
+        $paidInvoices = Invoice::where('user_id', auth()->user()->id)->where('status', 'paid')->count();
+
+        return view('livewire.user.dashboard', compact('totalEntries', 'completedEntries', 'totalInvoices', 'paidInvoices'));
+    }
+}
+```
+
+## File: app/Livewire/User/EntryIndex.php
+```php
+<?php
+
+namespace App\Livewire\User;
+
+use Livewire\Component;
+
+class EntryIndex extends Component
+{
+    public function render()
+    {
+        return view('livewire.entry-index');
+    }
+}
+
+```
+
+## File: app/Livewire/User/EntryCreate.php
+```php
+<?php
+
+namespace App\Livewire\User;
+
+use Livewire\Component;
+
+class EntryCreate extends Component
+{
+    public function render()
+    {
+        return view('livewire.entry-create');
+    }
+}
+
+```
+
+## File: app/Livewire/User/InvoiceIndex.php
+```php
+<?php
+
+namespace App\Livewire\User;
+
+use Livewire\Component;
+
+class InvoiceIndex extends Component
+{
+    public function render()
+    {
+        return view('livewire.invoice-index');
+    }
+}
+
+```
+
+## File: app/Livewire/User/InvoiceShow.php
+```php
+<?php
+
+namespace App\Livewire\User;
+
+use Livewire\Component;
+
+class InvoiceShow extends Component
+{
+    public function render()
+    {
+        return view('livewire.invoice-show');
+    }
+}
+
+```
+
+## File: app/Livewire/Entries/BuildingEntryForm.php
+```php
+<?php
+
+namespace App\Livewire\Entries;
+
+use Livewire\Component;
+use Livewire\WithFileUploads;
+use App\Models\Entry;
+
+class BuildingEntryForm extends Component
+{
+    use WithFileUploads;
+
+    public $firstName;
+    public $surname;
+    public $company;
+    public $phoneNumber;
+    public $email;
+    public $entryTitle;
+    public $projectCategory;
+    public $ownerClientCompany;
+    public $developerName;
+    public $completionDate;
+    public $capitalInvestment;
+    public $economicReturn;
+    public $streetAddress;
+    public $architecturalDrawings;
+    public $generalImages;
+    public $otherImages;
+    public $beforeImages;
+    public $beeStatus;
+    public $tenantProfile;
+    public $overallImpact;
+    public $designConcept;
+    public $tenantConvenience;
+    public $functionality;
+    public $facilities;
+    public $environmentalSustainability;
+    public $socialTransformation;
+
+    protected $rules = [
+        'firstName' => 'required',
+        'surname' => 'required',
+        'company' => 'required',
+        'phoneNumber' => 'required|numeric',
+        'email' => 'required|email',
+        'entryTitle' => 'required',
+        'projectCategory' => 'required',
+        'ownerClientCompany' => 'required',
+        'developerName' => 'required',
+        'completionDate' => 'required|date',
+        'capitalInvestment' => 'required|numeric',
+        'economicReturn' => 'required|numeric',
+        'streetAddress' => 'required',
+        'architecturalDrawings' => 'required|mimes:pdf,dwg|max:10240',
+        'generalImages' => 'required|image|max:5120',
+        'otherImages.*' => 'nullable|image|max:5120',
+        'beforeImages.*' => 'nullable|image|max:5120',
+        'beeStatus' => 'required|mimes:pdf|max:5120',
+        'tenantProfile' => 'required|mimes:pdf|max:5120',
+        'overallImpact' => 'required',
+        'designConcept' => 'required',
+        'tenantConvenience' => 'required',
+        'functionality' => 'required',
+        'facilities' => 'required',
+        'environmentalSustainability' => 'required',
+        'socialTransformation' => 'required',
+    ];
+
+    public function render()
+    {
+        return view('livewire.entries.building-entry-form');
+    }
+
+    public function submit()
+    {
+        $this->validate();
+
+        // Process and store the entry data
+        $entry = Entry::create([
+            'first_name' => $this->firstName,
+            'surname' => $this->surname,
+            'company' => $this->company,
+            'phone_number' => $this->phoneNumber,
+            'email' => $this->email,
+            'entry_title' => $this->entryTitle,
+            'project_category' => $this->projectCategory,
+            'owner_client_company' => $this->ownerClientCompany,
+            'developer_name' => $this->developerName,
+            'completion_date' => $this->completionDate,
+            'capital_investment' => $this->capitalInvestment,
+            'economic_return' => $this->economicReturn,
+            'street_address' => $this->streetAddress,
+            'overall_impact' => $this->overallImpact,
+            'design_concept' => $this->designConcept,
+            'tenant_convenience' => $this->tenantConvenience,
+            'functionality' => $this->functionality,
+            'facilities' => $this->facilities,
+            'environmental_sustainability' => $this->environmentalSustainability,
+            'social_transformation' => $this->socialTransformation,
+        ]);
+
+        // Process and store the uploaded files
+        $this->architecturalDrawings->store('architectural-drawings', 'public');
+        $this->generalImages->store('general-images', 'public');
+        $this->otherImages->store('other-images', 'public');
+        $this->beforeImages->store('before-images', 'public');
+        $this->beeStatus->store('bee-status', 'public');
+        $this->tenantProfile->store('tenant-profile', 'public');
+
+        // Redirect or show success message
+        session()->flash('success', 'Building entry submitted successfully.');
+        $this->reset();
+    }
+}
 ```
 
 ## File: app/Enums/UserRole.php
@@ -3447,67 +4913,10 @@ return [
 
 return [
 
-    /*
-    |---------------------------------------------------------------------------
-    | Class Namespace
-    |---------------------------------------------------------------------------
-    |
-    | This value sets the root class namespace for Livewire component classes in
-    | your application. This value will change where component auto-discovery
-    | finds components. It's also referenced by the file creation commands.
-    |
-    */
-
     'class_namespace' => 'App\\Livewire',
-
-    /*
-    |---------------------------------------------------------------------------
-    | View Path
-    |---------------------------------------------------------------------------
-    |
-    | This value is used to specify where Livewire component Blade templates are
-    | stored when running file creation commands like `artisan make:livewire`.
-    | It is also used if you choose to omit a component's render() method.
-    |
-    */
-
     'view_path' => resource_path('views/livewire'),
-
-    /*
-    |---------------------------------------------------------------------------
-    | Layout
-    |---------------------------------------------------------------------------
-    | The view that will be used as the layout when rendering a single component
-    | as an entire page via `Route::get('/post/create', CreatePost::class);`.
-    | In this case, the view returned by CreatePost will render into $slot.
-    |
-    */
-
     'layout' => 'components.layouts.app',
-
-    /*
-    |---------------------------------------------------------------------------
-    | Lazy Loading Placeholder
-    |---------------------------------------------------------------------------
-    | Livewire allows you to lazy load components that would otherwise slow down
-    | the initial page load. Every component can have a custom placeholder or
-    | you can define the default placeholder view for all components below.
-    |
-    */
-
     'lazy_placeholder' => null,
-
-    /*
-    |---------------------------------------------------------------------------
-    | Temporary File Uploads
-    |---------------------------------------------------------------------------
-    |
-    | Livewire handles file uploads by storing uploads in a temporary directory
-    | before the file is stored permanently. All file uploads are directed to
-    | a global endpoint for temporary storage. You may configure this below:
-    |
-    */
-
     'temporary_file_upload' => [
         'disk' => null,        // Example: 'local', 's3'              | Default: 'default'
         'rules' => null,       // Example: ['file', 'mimes:png,jpg']  | Default: ['required', 'file', 'max:12288'] (12MB)
@@ -3521,85 +4930,14 @@ return [
         'max_upload_time' => 5, // Max duration (in minutes) before an upload is invalidated...
     ],
 
-    /*
-    |---------------------------------------------------------------------------
-    | Render On Redirect
-    |---------------------------------------------------------------------------
-    |
-    | This value determines if Livewire will run a component's `render()` method
-    | after a redirect has been triggered using something like `redirect(...)`
-    | Setting this to true will render the view once more before redirecting
-    |
-    */
-
     'render_on_redirect' => false,
-
-    /*
-    |---------------------------------------------------------------------------
-    | Eloquent Model Binding
-    |---------------------------------------------------------------------------
-    |
-    | Previous versions of Livewire supported binding directly to eloquent model
-    | properties using wire:model by default. However, this behavior has been
-    | deemed too "magical" and has therefore been put under a feature flag.
-    |
-    */
-
     'legacy_model_binding' => false,
-
-    /*
-    |---------------------------------------------------------------------------
-    | Auto-inject Frontend Assets
-    |---------------------------------------------------------------------------
-    |
-    | By default, Livewire automatically injects its JavaScript and CSS into the
-    | <head> and <body> of pages containing Livewire components. By disabling
-    | this behavior, you need to use @livewireStyles and @livewireScripts.
-    |
-    */
-
     'inject_assets' => true,
-
-    /*
-    |---------------------------------------------------------------------------
-    | Navigate (SPA mode)
-    |---------------------------------------------------------------------------
-    |
-    | By adding `wire:navigate` to links in your Livewire application, Livewire
-    | will prevent the default link handling and instead request those pages
-    | via AJAX, creating an SPA-like effect. Configure this behavior here.
-    |
-    */
-
     'navigate' => [
         'show_progress_bar' => true,
         'progress_bar_color' => '#2299dd',
     ],
-
-    /*
-    |---------------------------------------------------------------------------
-    | HTML Morph Markers
-    |---------------------------------------------------------------------------
-    |
-    | Livewire intelligently "morphs" existing HTML into the newly rendered HTML
-    | after each update. To make this process more reliable, Livewire injects
-    | "markers" into the rendered Blade surrounding @if, @class & @foreach.
-    |
-    */
-
     'inject_morph_markers' => true,
-
-    /*
-    |---------------------------------------------------------------------------
-    | Pagination Theme
-    |---------------------------------------------------------------------------
-    |
-    | When enabling Livewire's pagination feature by using the `WithPagination`
-    | trait, Livewire will use Tailwind templates to render pagination views
-    | on the page. If you want Bootstrap CSS, you can specify: "bootstrap"
-    |
-    */
-
     'pagination_theme' => 'tailwind',
 ];
 
@@ -3610,40 +4948,11 @@ return [
 <?php
 
 return [
-
-    /*
-     |--------------------------------------------------------------------------
-     | Debugbar Settings
-     |--------------------------------------------------------------------------
-     |
-     | Debugbar is enabled by default, when debug is set to true in app.php.
-     | You can override the value by setting enable to true or false instead of null.
-     |
-     | You can provide an array of URI's that must be ignored (eg. 'api/*')
-     |
-     */
-
     'enabled' => env('DEBUGBAR_ENABLED', null),
     'except' => [
         'telescope*',
         'horizon*',
     ],
-
-    /*
-     |--------------------------------------------------------------------------
-     | Storage settings
-     |--------------------------------------------------------------------------
-     |
-     | DebugBar stores data for session/ajax requests.
-     | You can disable this, so the debugbar stores data in headers/session,
-     | but this can cause problems with large data collectors.
-     | By default, file storage (in the storage folder) is used. Redis and PDO
-     | can also be used. For PDO, run the package migrations first.
-     |
-     | Warning: Enabling storage.open will allow everyone to access previous
-     | request, do not enable open storage in publicly available environments!
-     | Specify a callback if you want to limit based on IP or authentication.
-     */
     'storage' => [
         'enabled'    => true,
         'open'       => env('DEBUGBAR_OPEN_STORAGE', false), // bool/callback.
@@ -3654,117 +4963,15 @@ return [
         'hostname'   => '127.0.0.1', // Hostname to use with the "socket" driver
         'port'       => 2304, // Port to use with the "socket" driver
     ],
-
-    /*
-    |--------------------------------------------------------------------------
-    | Editor
-    |--------------------------------------------------------------------------
-    |
-    | Choose your preferred editor to use when clicking file name.
-    |
-    | Supported: "phpstorm", "vscode", "vscode-insiders", "vscode-remote",
-    |            "vscode-insiders-remote", "vscodium", "textmate", "emacs",
-    |            "sublime", "atom", "nova", "macvim", "idea", "netbeans",
-    |            "xdebug", "espresso"
-    |
-    */
-
     'editor' => env('DEBUGBAR_EDITOR') ?: env('IGNITION_EDITOR', 'phpstorm'),
-
-    /*
-    |--------------------------------------------------------------------------
-    | Remote Path Mapping
-    |--------------------------------------------------------------------------
-    |
-    | If you are using a remote dev server, like Laravel Homestead, Docker, or
-    | even a remote VPS, it will be necessary to specify your path mapping.
-    |
-    | Leaving one, or both of these, empty or null will not trigger the remote
-    | URL changes and Debugbar will treat your editor links as local files.
-    |
-    | "remote_sites_path" is an absolute base path for your sites or projects
-    | in Homestead, Vagrant, Docker, or another remote development server.
-    |
-    | Example value: "/home/vagrant/Code"
-    |
-    | "local_sites_path" is an absolute base path for your sites or projects
-    | on your local computer where your IDE or code editor is running on.
-    |
-    | Example values: "/Users/<name>/Code", "C:\Users\<name>\Documents\Code"
-    |
-    */
-
     'remote_sites_path' => env('DEBUGBAR_REMOTE_SITES_PATH'),
     'local_sites_path' => env('DEBUGBAR_LOCAL_SITES_PATH', env('IGNITION_LOCAL_SITES_PATH')),
-
-    /*
-     |--------------------------------------------------------------------------
-     | Vendors
-     |--------------------------------------------------------------------------
-     |
-     | Vendor files are included by default, but can be set to false.
-     | This can also be set to 'js' or 'css', to only include javascript or css vendor files.
-     | Vendor files are for css: font-awesome (including fonts) and highlight.js (css files)
-     | and for js: jquery and highlight.js
-     | So if you want syntax highlighting, set it to true.
-     | jQuery is set to not conflict with existing jQuery scripts.
-     |
-     */
-
     'include_vendors' => true,
-
-    /*
-     |--------------------------------------------------------------------------
-     | Capture Ajax Requests
-     |--------------------------------------------------------------------------
-     |
-     | The Debugbar can capture Ajax requests and display them. If you don't want this (ie. because of errors),
-     | you can use this option to disable sending the data through the headers.
-     |
-     | Optionally, you can also send ServerTiming headers on ajax requests for the Chrome DevTools.
-     |
-     | Note for your request to be identified as ajax requests they must either send the header
-     | X-Requested-With with the value XMLHttpRequest (most JS libraries send this), or have application/json as a Accept header.
-     |
-     | By default `ajax_handler_auto_show` is set to true allowing ajax requests to be shown automatically in the Debugbar.
-     | Changing `ajax_handler_auto_show` to false will prevent the Debugbar from reloading.
-     */
-
     'capture_ajax' => true,
     'add_ajax_timing' => false,
     'ajax_handler_auto_show' => true,
-
-    /*
-     |--------------------------------------------------------------------------
-     | Custom Error Handler for Deprecated warnings
-     |--------------------------------------------------------------------------
-     |
-     | When enabled, the Debugbar shows deprecated warnings for Symfony components
-     | in the Messages tab.
-     |
-     */
     'error_handler' => false,
-
-    /*
-     |--------------------------------------------------------------------------
-     | Clockwork integration
-     |--------------------------------------------------------------------------
-     |
-     | The Debugbar can emulate the Clockwork headers, so you can use the Chrome
-     | Extension, without the server-side code. It uses Debugbar collectors instead.
-     |
-     */
     'clockwork' => false,
-
-    /*
-     |--------------------------------------------------------------------------
-     | DataCollectors
-     |--------------------------------------------------------------------------
-     |
-     | Enable/disable DataCollectors
-     |
-     */
-
     'collectors' => [
         'phpinfo'         => true,  // Php version
         'messages'        => true,  // Messages
@@ -3791,16 +4998,6 @@ return [
         'livewire'        => true,  // Display Livewire (when available)
         'jobs'            => false, // Display dispatched jobs
     ],
-
-    /*
-     |--------------------------------------------------------------------------
-     | Extra options
-     |--------------------------------------------------------------------------
-     |
-     | Configure some DataCollectors
-     |
-     */
-
     'options' => [
         'time' => [
             'memory_usage' => false,  // Calculated by subtracting memory start and end, it may be inaccurate
@@ -3864,71 +5061,1289 @@ return [
             'values' => true, // collect cache values
         ],
     ],
-
-    /*
-     |--------------------------------------------------------------------------
-     | Inject Debugbar in Response
-     |--------------------------------------------------------------------------
-     |
-     | Usually, the debugbar is added just before </body>, by listening to the
-     | Response after the App is done. If you disable this, you have to add them
-     | in your template yourself. See http://phpdebugbar.com/docs/rendering.html
-     |
-     */
-
     'inject' => true,
-
-    /*
-     |--------------------------------------------------------------------------
-     | DebugBar route prefix
-     |--------------------------------------------------------------------------
-     |
-     | Sometimes you want to set route prefix to be used by DebugBar to load
-     | its resources from. Usually the need comes from misconfigured web server or
-     | from trying to overcome bugs like this: http://trac.nginx.org/nginx/ticket/97
-     |
-     */
     'route_prefix' => '_debugbar',
-
-    /*
-     |--------------------------------------------------------------------------
-     | DebugBar route middleware
-     |--------------------------------------------------------------------------
-     |
-     | Additional middleware to run on the Debugbar routes
-     */
     'route_middleware' => [],
-
-    /*
-     |--------------------------------------------------------------------------
-     | DebugBar route domain
-     |--------------------------------------------------------------------------
-     |
-     | By default DebugBar route served from the same domain that request served.
-     | To override default domain, specify it as a non-empty value.
-     */
     'route_domain' => null,
-
-    /*
-     |--------------------------------------------------------------------------
-     | DebugBar theme
-     |--------------------------------------------------------------------------
-     |
-     | Switches between light and dark theme. If set to auto it will respect system preferences
-     | Possible values: auto, light, dark
-     */
     'theme' => env('DEBUGBAR_THEME', 'dark'),
-
-    /*
-     |--------------------------------------------------------------------------
-     | Backtrace stack limit
-     |--------------------------------------------------------------------------
-     |
-     | By default, the DebugBar limits the number of frames returned by the 'debug_backtrace()' function.
-     | If you need larger stacktraces, you can increase this number. Setting it to 0 will result in no limit.
-     */
     'debug_backtrace_limit' => 50,
 ];
+
+```
+
+## File: database/migrations/2014_10_12_000000_create_users_table.php
+```php
+<?php
+// database/migrations/2014_10_12_000000_create_users_table.php
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
+
+return new class extends Migration
+{
+    /**
+     * Run the migrations.
+     */
+    public function up(): void
+    {
+        Schema::create('users', function (Blueprint $table) {
+            $table->id();
+            $table->string('name');
+            $table->string('email')->unique();
+            $table->timestamp('email_verified_at')->nullable();
+            $table->string('password');
+            $table->rememberToken();
+            $table->timestamps();
+        });
+    }
+
+    /**
+     * Reverse the migrations.
+     */
+    public function down(): void
+    {
+        Schema::dropIfExists('users');
+    }
+};
+
+```
+
+## File: database/migrations/2014_10_12_100000_create_password_reset_tokens_table.php
+```php
+<?php
+// database/migrations/2014_10_12_100000_create_password_reset_tokens_table.php
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
+
+return new class extends Migration
+{
+    /**
+     * Run the migrations.
+     */
+    public function up(): void
+    {
+        Schema::create('password_reset_tokens', function (Blueprint $table) {
+            $table->string('email')->primary();
+            $table->string('token');
+            $table->timestamp('created_at')->nullable();
+        });
+    }
+
+    /**
+     * Reverse the migrations.
+     */
+    public function down(): void
+    {
+        Schema::dropIfExists('password_reset_tokens');
+    }
+};
+
+```
+
+## File: database/migrations/2019_08_19_000000_create_failed_jobs_table.php
+```php
+<?php
+// database/migrations/2019_08_19_000000_create_failed_jobs_table.php
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
+
+return new class extends Migration
+{
+    /**
+     * Run the migrations.
+     */
+    public function up(): void
+    {
+        Schema::create('failed_jobs', function (Blueprint $table) {
+            $table->id();
+            $table->string('uuid')->unique();
+            $table->text('connection');
+            $table->text('queue');
+            $table->longText('payload');
+            $table->longText('exception');
+            $table->timestamp('failed_at')->useCurrent();
+        });
+    }
+
+    /**
+     * Reverse the migrations.
+     */
+    public function down(): void
+    {
+        Schema::dropIfExists('failed_jobs');
+    }
+};
+
+```
+
+## File: database/migrations/2019_12_14_000001_create_personal_access_tokens_table.php
+```php
+<?php
+// database/migrations/2019_12_14_000001_create_personal_access_tokens_table.php
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
+
+return new class extends Migration
+{
+    /**
+     * Run the migrations.
+     */
+    public function up(): void
+    {
+        Schema::create('personal_access_tokens', function (Blueprint $table) {
+            $table->id();
+            $table->morphs('tokenable');
+            $table->string('name');
+            $table->string('token', 64)->unique();
+            $table->text('abilities')->nullable();
+            $table->timestamp('last_used_at')->nullable();
+            $table->timestamp('expires_at')->nullable();
+            $table->timestamps();
+        });
+    }
+
+    /**
+     * Reverse the migrations.
+     */
+    public function down(): void
+    {
+        Schema::dropIfExists('personal_access_tokens');
+    }
+};
+
+```
+
+## File: database/migrations/2024_02_28_022350_create_entries_table.php
+```php
+<?php
+// database/migrations/date_create_entries_table.php
+
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
+
+return new class extends Migration
+{
+    public function up()
+    {
+        Schema::create('entries', function (Blueprint $table) {
+            $table->id();
+            $table->unsignedBigInteger('user_id');
+            $table->string('full_name');
+            $table->string('surname');
+            $table->string('company');
+            $table->string('phone_number');
+            $table->string('email');
+            $table->string('entry_title');
+            $table->string('project_category');
+            $table->text('description');
+            $table->string('owner_developer_name');
+            $table->string('developer_name');
+            $table->date('date_of_completion');
+            $table->decimal('capital_investment', 19, 4);
+            $table->decimal('economic_return', 19, 4);
+            $table->text('tenant_profile');
+            $table->string('BBBEE_status');
+            $table->text('overall_impact');
+            $table->text('design_concept');
+            $table->text('functionality_fit_for_purpose');
+            $table->text('facilities_user_satisfaction');
+            $table->text('environmentally_sustainable_design');
+            $table->text('social_transformation');
+            $table->timestamps();
+            // Add indexes for performance optimization
+            $table->index('project_category');
+            $table->index('date_of_completion');
+
+            // Foreign key constraint
+            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
+
+            // Indexes
+            $table->index('user_id'); // Index for user_id
+        });
+    }
+
+    public function down()
+    {
+        Schema::table('entries', function (Blueprint $table) {
+            $table->dropForeign(['user_id']); // Drop foreign key constraint
+            $table->dropIndex(['user_id']); // Drop index for user_id
+        });
+        Schema::dropIfExists('entries');
+    }
+};
+
+```
+
+## File: database/migrations/2024_02_28_022350_create_entry_docs_table.php
+```php
+<?php
+// database/migrations/date_create_entry_docs_table.php
+
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
+
+return new class extends Migration
+{
+    public function up()
+    {
+        Schema::create('entry_docs', function (Blueprint $table) {
+            $table->id();
+            $table->foreignId('entry_id')->constrained('entries')->onDelete('cascade');
+            $table->enum('doc_type', ['general_doc', 'other'])->default('general_doc');
+            $table->string('doc_name');
+            $table->string('doc_path');
+            $table->timestamps();
+            // Index for entry_id for faster query performance
+            $table->index('entry_id');
+        });
+    }
+
+    public function down()
+    {
+        Schema::dropIfExists('entry_docs');
+    }
+};
+
+```
+
+## File: database/migrations/2024_02_28_022350_create_entry_images_table.php
+```php
+<?php
+// database/migrations/date_create_entry_images_table.php
+
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
+
+return new class extends Migration
+{
+    public function up()
+    {
+        Schema::create('entry_images', function (Blueprint $table) {
+            $table->id();
+            $table->foreignId('entry_id')->constrained('entries')->onDelete('cascade');
+            $table->enum('image_type', ['general_image', 'architectural_drawing'])->default('general_image');
+            $table->string('image_name');
+            $table->string('image_path');
+            $table->timestamps();
+            // Index for entry_id for better performance
+            $table->index('entry_id');
+        });
+    }
+
+    public function down()
+    {
+        Schema::dropIfExists('entry_images');
+    }
+};
+
+```
+
+## File: database/migrations/2024_02_28_030000_date_add_role_id_to_users_table.php
+```php
+<?php
+// database/migrations/2024_02_28_030000_date_add_role_id_to_users_table.php
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
+
+return new class extends Migration
+{
+    public function up()
+    {
+        Schema::table('users', function (Blueprint $table) {
+            $table->unsignedBigInteger('role_id')->after('id')->default(1);
+            $table->foreign('role_id')->references('id')->on('roles')->onDelete('cascade');
+            $table->foreignId('role_id')->after('id')->default(1)->constrained('roles')->onDelete('cascade');
+            // Adding an index for role_id for optimized queries
+            $table->index('role_id');
+        });
+    }
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
+    public function down()
+    {
+        Schema::table('users', function (Blueprint $table) {
+            $table->dropForeign(['role_id']);
+            $table->dropColumn('role_id');
+        });
+    }
+};
+
+```
+
+## File: database/migrations/2024_02_28_040000_create_roles_table.php
+```php
+<?php
+// database/migrations/2024_02_28_040000_create_roles_table.php
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
+
+return new class extends Migration
+{
+    public function up()
+    {
+        Schema::create('roles', function (Blueprint $table) {
+            $table->id();
+            $table->string('name');
+            $table->timestamps();
+        });
+    }
+
+    public function down()
+    {
+        Schema::dropIfExists('roles');
+    }
+};
+```
+
+## File: database/migrations/2024_02_28_045000_add_judge_details_to_users_table.php
+```php
+<?php
+// database/migrations/2024_02_28_040000_create_roles_table.php
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
+
+return new class extends Migration
+{
+    /**
+     * Run the migrations to add judge-specific details to the users table.
+     *
+     * @return void
+     */
+    public function up()
+    {
+        Schema::table('users', function (Blueprint $table) {
+            $table->string('surname')->after('name');
+            $table->string('company')->nullable()->after('surname');
+            $table->string('work_phone')->nullable()->after('company');
+            $table->string('fax_number')->nullable()->after('work_phone');
+            $table->string('mobile_number')->after('fax_number');
+        });
+    }
+
+    /**
+     * Reverse the migrations to remove judge-specific details from the users table.
+     *
+     * @return void
+     */
+    public function down()
+    {
+        Schema::table('users', function (Blueprint $table) {
+            $table->dropColumn(['surname', 'company', 'work_phone', 'fax_number', 'mobile_number']);
+        });
+    }
+};
+
+```
+
+## File: database/migrations/2024_03_17_045001_create_invoices_table.php
+```php
+<?php
+// database/migrations/YYYY_MM_DD_HHMMSS_create_invoices_table.php
+
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
+
+class CreateInvoicesTable extends Migration
+{
+    public function up()
+    {
+        Schema::create('invoices', function (Blueprint $table) {
+            $table->id();
+            $table->unsignedBigInteger('user_id');
+            $table->date('payment_date')->nullable();
+            $table->date('invoice_date');
+            $table->decimal('vat', 10, 2)->default(0);
+            $table->decimal('discount', 10, 2)->default(0);
+            $table->decimal('sub_total', 10, 2);
+            $table->decimal('total', 10, 2);
+            $table->timestamps();
+
+            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
+        });
+    }
+
+    public function down()
+    {
+        Schema::dropIfExists('invoices');
+    }
+}
+```
+
+## File: database/migrations/2024_03_17_450002_create_invoice_items_table.php
+```php
+<?php
+// database/migrations/YYYY_MM_DD_HHMMSS_create_invoice_items_table.php
+
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
+
+class CreateInvoiceItemsTable extends Migration
+{
+    public function up()
+    {
+        Schema::create('invoice_items', function (Blueprint $table) {
+            $table->id();
+            $table->unsignedBigInteger('invoice_id');
+            $table->string('item');
+            $table->text('description')->nullable();
+            $table->decimal('amount', 10, 2);
+            $table->integer('quantity');
+            $table->decimal('vat', 10, 2)->default(0);
+            $table->decimal('total', 10, 2);
+            $table->timestamps();
+
+            $table->foreign('invoice_id')->references('id')->on('invoices')->onDelete('cascade');
+        });
+    }
+
+    public function down()
+    {
+        Schema::dropIfExists('invoice_items');
+    }
+}
+```
+
+## File: database/migrations/2024_03_18_013747_add_status_column_to_entries_table.php
+```php
+<?php
+
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
+
+class AddStatusColumnToEntriesTable extends Migration
+{
+    /**
+     * Run the migrations.
+     *
+     * @return void
+     */
+    public function up()
+    {
+        Schema::table('entries', function (Blueprint $table) {
+            $table->enum('status', ['pending', 'completed', 'paid'])->default('pending');
+        });
+    }
+
+    /**
+     * Reverse the migrations.
+     *
+     * @return void
+     */
+    public function down()
+    {
+        Schema::table('entries', function (Blueprint $table) {
+            $table->dropColumn('status');
+        });
+    }
+}
+
+```
+
+## File: database/migrations/2024_03_18_020116_add_status_column_to_invoices_table.php
+```php
+<?php
+
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
+
+class AddStatusColumnToInvoicesTable extends Migration
+{
+    /**
+     * Run the migrations.
+     *
+     * @return void
+     */
+    public function up()
+    {
+        Schema::table('invoices', function (Blueprint $table) {
+            $table->enum('status', ['pending', 'completed', 'paid'])->default('pending');
+        });
+    }
+
+    /**
+     * Reverse the migrations.
+     *
+     * @return void
+     */
+    public function down()
+    {
+        Schema::table('invoices', function (Blueprint $table) {
+            $table->dropColumn('status');
+        });
+    }
+}
+
+```
+
+## File: public/index.php
+```php
+<?php
+// public/index.php
+
+use Illuminate\Contracts\Http\Kernel;
+use Illuminate\Http\Request;
+
+define('LARAVEL_START', microtime(true));
+
+
+if (file_exists($maintenance = __DIR__.'/../storage/framework/maintenance.php')) {
+    require $maintenance;
+}
+
+require __DIR__.'/../vendor/autoload.php';
+
+$app = require_once __DIR__.'/../bootstrap/app.php';
+
+$kernel = $app->make(Kernel::class);
+
+$response = $kernel->handle(
+    $request = Request::capture()
+)->send();
+
+$kernel->terminate($request, $response);
+
+```
+
+## File: public/ntunnel_mysql.php
+```php
+<?php
+// public/ntunnel_mysql.php
+$versionNum = 206; // remark: require update CC_HTTP_TUNNEL_SCRIPT_LATEST_VERSION_MYSQL
+
+//set allowTestMenu to false to disable System/Server test page
+$allowTestMenu = true;
+
+$use_mysqli = function_exists("mysqli_connect");
+
+header("Content-Type: text/plain; charset=x-user-defined");
+error_reporting(0);
+set_time_limit(0);
+
+function phpversion_int()
+{
+	list($maVer, $miVer, $edVer) = preg_split("(/|\.|-)", phpversion());
+	return $maVer*10000 + $miVer*100 + $edVer;
+}
+
+if (phpversion_int() < 50300)
+{
+	set_magic_quotes_runtime(0);
+}
+
+function GetLongBinary($num)
+{
+	return pack("N",$num);
+}
+
+function GetShortBinary($num)
+{
+	return pack("n",$num);
+}
+
+function GetDummy($count)
+{
+	$str = "";
+	for($i=0;$i<$count;$i++)
+		$str .= "\x00";
+	return $str;
+}
+
+function GetBlock($val)
+{
+	$len = strlen($val);
+	if( $len < 254 )
+		return chr($len).$val;
+	else
+		return "\xFE".GetLongBinary($len).$val;
+}
+
+function EchoHeader($errno)
+{
+    global $versionNum;
+
+	$str = GetLongBinary(1111);
+	$str .= GetShortBinary($versionNum);
+	$str .= GetLongBinary($errno);
+	$str .= GetDummy(6);
+	echo $str;
+}
+
+function EchoConnInfo($conn)
+{
+	if ($GLOBALS['use_mysqli']) {
+		$str = GetBlock(mysqli_get_host_info($conn));
+		$str .= GetBlock(mysqli_get_proto_info($conn));
+		$str .= GetBlock(mysqli_get_server_info($conn));
+		echo $str;
+	} else {
+		$str = GetBlock(mysql_get_host_info($conn));
+		$str .= GetBlock(mysql_get_proto_info($conn));
+		$str .= GetBlock(mysql_get_server_info($conn));
+		echo $str;
+	}
+}
+
+function EchoResultSetHeader($errno, $affectrows, $insertid, $numfields, $numrows)
+{
+	$str = GetLongBinary($errno);
+	$str .= GetLongBinary($affectrows);
+	$str .= GetLongBinary($insertid);
+	$str .= GetLongBinary($numfields);
+	$str .= GetLongBinary($numrows);
+	$str .= GetDummy(12);
+	echo $str;
+}
+
+function EchoFieldsHeader($res, $numfields)
+{
+	$str = "";
+	for( $i = 0; $i < $numfields; $i++ ) {
+		if ($GLOBALS['use_mysqli']) {
+			$finfo = mysqli_fetch_field_direct($res, $i);
+			$str .= GetBlock($finfo->name);
+			$str .= GetBlock($finfo->table);
+			
+			$type = $finfo->type;
+			$length = $finfo->length;
+		
+			$str .= GetLongBinary($type);
+	
+			$intflag = $finfo->flags;
+			$str .= GetLongBinary($intflag);
+	
+			$str .= GetLongBinary($length);
+		} else {
+			$str .= GetBlock(mysql_field_name($res, $i));
+			$str .= GetBlock(mysql_field_table($res, $i));
+	
+			$type = mysql_field_type($res, $i);
+			$length = mysql_field_len($res, $i);
+			switch ($type) {
+				case "int":
+					if( $length > 11 ) $type = 8;
+					else $type = 3;
+					break;
+				case "real":
+					if( $length == 12 ) $type = 4;
+					elseif( $length == 22 ) $type = 5;
+					else $type = 0;
+					break;
+				case "null":
+					$type = 6;
+					break;
+				case "timestamp":
+					$type = 7;
+					break;
+				case "date":
+					$type = 10;
+					break;
+				case "time":
+					$type = 11;
+					break;
+				case "datetime":
+					$type = 12;
+					break;
+				case "year":
+					$type = 13;
+					break;
+				case "blob":
+					if( $length > 16777215 ) $type = 251;
+					elseif( $length > 65535 ) $type = 250;
+					elseif( $length > 255 ) $type = 252;
+					else $type = 249;
+					break;
+				default:
+					$type = 253;
+			}
+			$str .= GetLongBinary($type);
+	
+			$flags = explode( " ", mysql_field_flags ( $res, $i ) );
+			$intflag = 0;
+			if(in_array( "not_null", $flags )) $intflag += 1;
+			if(in_array( "primary_key", $flags )) $intflag += 2;
+			if(in_array( "unique_key", $flags )) $intflag += 4;
+			if(in_array( "multiple_key", $flags )) $intflag += 8;
+			if(in_array( "blob", $flags )) $intflag += 16;
+			if(in_array( "unsigned", $flags )) $intflag += 32;
+			if(in_array( "zerofill", $flags )) $intflag += 64;
+			if(in_array( "binary", $flags)) $intflag += 128;
+			if(in_array( "enum", $flags )) $intflag += 256;
+			if(in_array( "auto_increment", $flags )) $intflag += 512;
+			if(in_array( "timestamp", $flags )) $intflag += 1024;
+			if(in_array( "set", $flags )) $intflag += 2048;
+			$str .= GetLongBinary($intflag);
+	
+			$str .= GetLongBinary($length);
+		}
+	}
+	echo $str;
+}
+
+function EchoData($res, $numfields, $numrows)
+{
+	for( $i = 0; $i < $numrows; $i++ ) {
+		$str = "";
+		$row = null;
+		if ($GLOBALS['use_mysqli'])
+			$row = mysqli_fetch_row( $res );
+		else
+			$row = mysql_fetch_row( $res );
+		for( $j = 0; $j < $numfields; $j++ ){
+			if( is_null($row[$j]) )
+				$str .= "\xFF";
+			else
+				$str .= GetBlock($row[$j]);
+		}
+		echo $str;
+	}
+}
+
+
+function doSystemTest()
+{
+    global $versionNum;
+
+	function output($description, $succ, $resStr) {
+		echo "<tr><td class=\"TestDesc\">$description</td><td ";
+		echo ($succ)? "class=\"TestSucc\">$resStr[0]</td></tr>" : "class=\"TestFail\">$resStr[1]</td></tr>";
+	}
+	output("PHP version >= 4.0.5", phpversion_int() >= 40005, array("Yes (".phpversion().")", "No (".phpversion().")"));
+	output("mysql_connect() available", function_exists("mysql_connect"), array("Yes", "No"));
+	output("mysqli_connect() available", function_exists("mysqli_connect"), array("Yes", "No"));
+	if (phpversion_int() >= 40302 && substr($_SERVER["SERVER_SOFTWARE"], 0, 6) == "Apache" && function_exists("apache_get_modules")){
+		if (in_array("mod_security2", apache_get_modules()))
+			output("Mod Security 2 installed", false, array("No", "Yes"));
+	}
+    output("Current tunnel file version", true, array((int)($versionNum / 100) .".". ($versionNum % 100), ""));
+}
+
+/////////////////////////////////////////////////////////////////////////////
+////
+
+	if (phpversion_int() < 40005) {
+		EchoHeader(201);
+		echo GetBlock("unsupported php version");
+		exit();
+	}
+
+	if (phpversion_int() < 40010) {
+		global $HTTP_POST_VARS;
+		$_POST = &$HTTP_POST_VARS;	
+	}
+
+	if (!isset($_POST["actn"]) || !isset($_POST["host"]) || !isset($_POST["port"]) || !isset($_POST["login"])) {
+		$testMenu = $allowTestMenu;
+		if (!$testMenu){
+			EchoHeader(202);
+			echo GetBlock("invalid parameters");
+			exit();
+		}
+	}
+
+	if (!$testMenu){
+		if ($_POST["encodeBase64"] == '1') {
+			for($i=0;$i<count($_POST["q"]);$i++)
+				$_POST["q"][$i] = base64_decode($_POST["q"][$i]);
+		}
+		
+		if (!function_exists("mysql_connect") && !function_exists("mysqli_connect")) {
+			EchoHeader(203);
+			echo GetBlock("MySQL not supported on the server");
+			exit();
+		}
+		
+		$errno_c = 0;
+		$hs = $_POST["host"];
+		if ($use_mysqli) {
+			mysqli_report(MYSQLI_REPORT_OFF);
+
+			if( $_POST["port"] ) 
+				$conn = mysqli_connect($hs, $_POST["login"], $_POST["password"], '', $_POST["port"]);
+			else
+				$conn = mysqli_connect($hs, $_POST["login"], $_POST["password"]);
+			$errno_c = mysqli_connect_errno();
+			if($errno_c > 0) {
+				EchoHeader($errno_c);
+				echo GetBlock(mysqli_connect_error());
+				exit;
+			}
+			if (phpversion_int() >= 50005){  // for unicode database name
+				mysqli_set_charset($conn, 'UTF8');
+			}
+
+			if(($errno_c <= 0) && ( $_POST["db"] != "" )) {
+				$res = mysqli_select_db($conn, $_POST["db"] );
+				$errno_c = mysqli_errno($conn);
+			}
+
+			EchoHeader($errno_c);
+			if($errno_c > 0) {
+				echo GetBlock(mysqli_error($conn));
+			} elseif($_POST["actn"] == "C") {
+				EchoConnInfo($conn);
+			} elseif($_POST["actn"] == "Q") {
+				for($i=0;$i<count($_POST["q"]);$i++) {
+					$query = $_POST["q"][$i];
+					if($query == "") continue;
+					if (phpversion_int() < 50400){  
+						if(get_magic_quotes_gpc())
+							$query = stripslashes($query);
+					}
+					mysqli_real_query($conn, $query);
+                    $res = false;
+                    if (mysqli_field_count($conn))
+                        $res = mysqli_store_result($conn);
+					$errno = mysqli_errno($conn);
+					$affectedrows = mysqli_affected_rows($conn);
+					$insertid = mysqli_insert_id($conn);				
+					if (false !== $res) {
+						$numfields = mysqli_field_count($conn);
+						$numrows = mysqli_num_rows($res);
+					}
+					else {
+						$numfields = 0;
+						$numrows = 0;
+					}
+					EchoResultSetHeader($errno, $affectedrows, $insertid, $numfields, $numrows);
+					if($errno > 0)
+						echo GetBlock(mysqli_error($conn));
+					else {
+						if($numfields > 0) {
+							EchoFieldsHeader($res, $numfields);
+							EchoData($res, $numfields, $numrows);
+						} else {
+							if(phpversion_int() >= 40300)
+								echo GetBlock(mysqli_info($conn));
+							else
+								echo GetBlock("");
+						}
+					}
+					if($i<(count($_POST["q"])-1))
+						echo "\x01";
+					else
+						echo "\x00";
+					if (false !== $res)
+						mysqli_free_result($res);
+				}
+			}
+		} else {
+			if( $_POST["port"] ) $hs .= ":".$_POST["port"];
+			$conn = mysql_connect($hs, $_POST["login"], $_POST["password"]);
+			$errno_c = mysql_errno();
+			if (phpversion_int() >= 50203){  // for unicode database name
+				mysql_set_charset('UTF8', $conn);
+			}
+			if(($errno_c <= 0) && ( $_POST["db"] != "" )) {
+				$res = mysql_select_db( $_POST["db"], $conn);
+				$errno_c = mysql_errno();
+			}
+			
+			EchoHeader($errno_c);
+			if($errno_c > 0) {
+				echo GetBlock(mysql_error());
+			} elseif($_POST["actn"] == "C") {
+				EchoConnInfo($conn);
+			} elseif($_POST["actn"] == "Q") {
+				for($i=0;$i<count($_POST["q"]);$i++) {
+					$query = $_POST["q"][$i];
+					if($query == "") continue;
+					if (phpversion_int() < 50400){  
+						if(get_magic_quotes_gpc())
+							$query = stripslashes($query);
+					}
+					$res = mysql_query($query, $conn);
+					$errno = mysql_errno();
+					$affectedrows = mysql_affected_rows($conn);
+					$insertid = mysql_insert_id($conn);
+					$numfields = mysql_num_fields($res);
+					$numrows = mysql_num_rows($res);
+					EchoResultSetHeader($errno, $affectedrows, $insertid, $numfields, $numrows);
+					if($errno > 0)
+						echo GetBlock(mysql_error());
+					else {
+						if($numfields > 0) {
+							EchoFieldsHeader($res, $numfields);
+							EchoData($res, $numfields, $numrows);
+						} else {
+							if(phpversion_int() >= 40300)
+								echo GetBlock(mysql_info($conn));
+							else
+								echo GetBlock("");
+						}
+					}
+					if($i<(count($_POST["q"])-1))
+						echo "\x01";
+					else
+						echo "\x00";
+					mysql_free_result($res);
+				}
+			}
+		}
+		exit();
+	}
+
+	header("Content-Type: text/html");
+
+?>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+	<title>Navicat HTTP Tunnel Tester</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+	<style type="text/css">
+		body{
+			margin: 30px;
+			font-family: Tahoma;
+			font-weight: normal;
+			font-size: 14px;
+			color: #222222;
+		}
+		table{
+			width: 100%;
+			border: 0px;
+		}
+		input{
+			font-family:Tahoma,sans-serif;
+			border-style:solid;
+			border-color:#666666;
+			border-width:1px;
+		}
+		fieldset{
+			border-style:solid;
+			border-color:#666666;
+			border-width:1px;
+		}
+		.Title1{
+			font-size: 30px;
+			color: #003366;
+		}
+		.Title2{
+			font-size: 10px;
+			color: #999966;
+		}
+		.TestDesc{
+			width:70%
+		}
+		.TestSucc{
+			color: #00BB00;
+		}
+		.TestFail{
+			color: #DD0000;
+		}
+		.mysql{
+		}
+		.pgsql{
+			display:none;
+		}
+		.sqlite{
+			display:none;
+		}
+		#page{
+			max-width: 42em;
+			min-width: 36em;
+			border-width: 0px;
+			margin: auto auto;
+		}
+		#host, #dbfile{
+			width: 300px;
+		}
+		#port{
+			width: 75px;
+		}
+		#login, #password, #db{
+			width: 150px;
+		}
+		#Copyright{
+			text-align: right;
+			font-size: 10px;
+			color: #888888;
+		}
+	</style>
+	<script type="text/javascript">
+	function getInternetExplorerVersion(){
+		var ver = -1;
+		if (navigator.appName == "Microsoft Internet Explorer"){
+			var regex = new RegExp("MSIE ([0-9]{1,}[\.0-9]{0,})");
+			if (regex.exec(navigator.userAgent))
+				ver = parseFloat(RegExp.$1);
+		}
+		return ver;
+	}
+	function setText(element, text, succ){
+		element.className = (succ)?"TestSucc":"TestFail";
+		element.innerHTML = text;
+	}
+	function getByteAt(str, offset){
+		return str.charCodeAt(offset) & 0xff;
+	}
+	function getIntAt(binStr, offset){
+		return (getByteAt(binStr, offset) << 24)+
+			(getByteAt(binStr, offset+1) << 16)+
+			(getByteAt(binStr, offset+2) << 8)+
+			(getByteAt(binStr, offset+3) >>> 0);
+	}
+	function getBlockStr(binStr, offset){
+		if (getByteAt(binStr, offset) < 254)
+			return binStr.substring(offset+1, offset+1+binStr.charCodeAt(offset));
+		else
+			return binStr.substring(offset+5, offset+5+getIntAt(binStr, offset+1));
+	}
+	function doServerTest(){
+		var version = getInternetExplorerVersion();
+		if (version==-1 || version>=9.0){
+			var xmlhttp = (window.XMLHttpRequest)? new XMLHttpRequest() : xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+			
+			xmlhttp.onreadystatechange=function(){
+				var outputDiv = document.getElementById("ServerTest");
+				if (xmlhttp.readyState == 4){
+					if (xmlhttp.status == 200){
+						var errno = getIntAt(xmlhttp.responseText, 6);
+						if (errno == 0)
+							setText(outputDiv, "Connection Success!", true);
+						else
+							setText(outputDiv, parseInt(errno)+" - "+getBlockStr(xmlhttp.responseText, 16), false);
+					}else
+						setText(outputDiv, "HTTP Error - "+xmlhttp.status, false);
+				}
+			}
+			
+			var params = "";
+			var form = document.getElementById("TestServerForm");
+			for (var i=0; i<form.elements.length; i++){
+				if (i>0) params += "&";
+				params += form.elements[i].id+"="+form.elements[i].value.replace("&", "%26");
+			}
+			
+			document.getElementById("ServerTest").className = "";
+			document.getElementById("ServerTest").innerHTML = "Connecting...";
+			xmlhttp.open("POST", "", true);
+			xmlhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+			xmlhttp.setRequestHeader("Content-length", params.length);
+			xmlhttp.setRequestHeader("Connection", "close");
+			xmlhttp.send(params);
+		}else{
+			document.getElementById("ServerTest").className = "";
+			document.getElementById("ServerTest").innerHTML = "Internet Explorer "+version+" is not supported, please use Internet explorer 9.0 or above, firefox, chrome or safari";
+		}
+	}
+	</script>
+</head>
+
+<body>
+<div id="page">
+<p>
+	<font class="Title1">Navicat&trade;</font><br>
+	<font class="Title2">The gateway to your database!</font>
+</p>
+<fieldset>
+	<legend>System Environment Test</legend>
+	<table>
+		<tr style="<?php echo "display:none"; ?>"><td width=70%>PHP installed properly</td><td class="TestFail">No</td></tr>
+		<?php echo doSystemTest();?>
+	</table>
+</fieldset>
+<br>
+<fieldset>
+	<legend>Server Test</legend>
+	<form id="TestServerForm" action="#" onSubmit="return false;">
+	<input type=hidden id="actn" value="C">
+	<table>
+		<tr class="mysql"><td width="35%">Hostname/IP Address:</td><td><input type=text id="host" placeholder="localhost"></td></tr>
+		<tr class="mysql"><td>Port:</td><td><input type=text id="port" placeholder="3306"></td></tr>
+		<tr class="pgsql"><td>Initial Database:</td><td><input type=text id="db" placeholder="template1"></td></tr>
+		<tr class="mysql"><td>Username:</td><td><input type=text id="login" placeholder="root"></td></tr>
+		<tr class="mysql"><td>Password:</td><td><input type=password id="password" placeholder=""></td></tr>
+		<tr class="sqlite"><td>Database File:</td><td><input type=text id="dbfile" placeholder="sqlite.db"></td></tr>
+		<tr><td></td><td><br><input id="TestButton" type="submit" value="Test Connection" onClick="doServerTest()"></td></tr>
+	</table>
+	</form>
+	<div id="ServerTest"><br></div>
+</fieldset>
+<p id="Copyright">Copyright &copy; PremiumSoft &trade; CyberTech Ltd. All Rights Reserved.</p>
+</div>
+</body>
+</html>
+```
+
+## File: public/css/custom.css
+```css
+/* public/css/custom.css */
+
+
+/* Paddings */
+.padding-left-5 {
+    padding-left: 5px !important;
+}
+
+.padding-right-5 {
+    padding-right: 5px !important;
+}
+
+.padding-top-5 {
+    padding-top: 5px !important;
+}
+
+.padding-bottom-5 {
+    padding-bottom: 5px !important;
+}
+
+.padding-top-15 {
+    padding-top:15px !important;
+}
+.padding-top--5 {
+    padding-top:-5px !important;
+} 
+
+margin-right-10 {
+    margin-right:10px !important;
+}
+/* Margins */
+.margin-left-5 {
+    margin-left:5px !important;
+}
+
+/* custom-login.css */
+* {
+   font-family: "Inter", sans-serif;
+}
+
+.login-title {
+    margin-bottom: 40px;
+}
+
+.login-title strong {
+    font-size: 24px; 
+    font-weight: 800;
+    color: #D33026;
+}
+
+.login-title .dashboard {
+    font-weight: 200; 
+    font-size: 24px;
+}
+
+.form-container {
+    width: 256px; 
+    margin: auto;
+}
+
+.input-field {
+    height: 49px; 
+    margin: auto;
+    display: block;
+    width: 100%;
+    padding: 0 1rem;
+    background-color: white;
+    border: 1px solid #d1d5db;
+    border-radius: 0.375rem;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+}
+
+.red-button-class {
+    height: 49px; 
+    text-align: center; 
+    font-size: 14px;
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    text-transform: none;
+}
+
+.link-forgot-password,
+.link-register {
+    color: #0075FF; 
+    font-weight: 200;
+} 
+
+/* Custom CSS for SAPOA Awards Dashboard */
+
+/* SAPOA Awards */
+.sapoawards-title {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    color: #D72C20;
+}
+
+/* DASHBOARD */
+.dashboard-title {
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    color: #292929;
+}
+
+/* Forgot Password */
+.forgot-password {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #0075FF;
+    /* Adjusted with Tailwind classes in the template */
+}
+
+/* Register New Membership */
+.register-new {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    color: #0075FF;
+    /* Adjusted with Tailwind classes in the template */
+}
+
+/* Sign In Button */
+.sign-in-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px 12px;
+    background-color: #D72C20;
+    border: 1px solid #C12014;
+    border-radius: 6px;
+    color: #FFFFFF;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+}
+
+/* Header bar */
+.header-bar-icon-button {
+    margin-right: 10px;
+    padding-top: 5px;
+}
+
+.user-profile-block {
+    background-color:#4C4C4C; 
+    border-radius:5px; 
+    padding-left:10px; 
+    padding-right:10px; 
+    padding-top:5px;
+    padding-bottom:5px; 
+    padding-top:5px
+}
+
+
 
 ```
 
@@ -3961,28 +6376,6 @@ import axios from 'axios';
 window.axios = axios;
 
 window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
-
-/**
- * Echo exposes an expressive API for subscribing to channels and listening
- * for events that are broadcast by Laravel. Echo and event broadcasting
- * allows your team to easily build robust real-time web applications.
- */
-
-// import Echo from 'laravel-echo';
-
-// import Pusher from 'pusher-js';
-// window.Pusher = Pusher;
-
-// window.Echo = new Echo({
-//     broadcaster: 'pusher',
-//     key: import.meta.env.VITE_PUSHER_APP_KEY,
-//     cluster: import.meta.env.VITE_PUSHER_APP_CLUSTER ?? 'mt1',
-//     wsHost: import.meta.env.VITE_PUSHER_HOST ? import.meta.env.VITE_PUSHER_HOST : `ws-${import.meta.env.VITE_PUSHER_APP_CLUSTER}.pusher.com`,
-//     wsPort: import.meta.env.VITE_PUSHER_PORT ?? 80,
-//     wssPort: import.meta.env.VITE_PUSHER_PORT ?? 443,
-//     forceTLS: (import.meta.env.VITE_PUSHER_SCHEME ?? 'https') === 'https',
-//     enabledTransports: ['ws', 'wss'],
-// });
 
 ```
 
@@ -4124,11 +6517,1024 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 
 ```
 
+## File: resources/views/auth/confirm-password.blade.php
+```php
+{{-- resources/views/auth/confirm-password.blade.php --}}
+<x-guest-layout>
+    <div class="mb-4 text-sm text-gray-600">
+        {{ __('This is a secure area of the application. Please confirm your password before continuing.') }}
+    </div>
+
+    <form method="POST" action="{{ route('password.confirm') }}">
+        @csrf
+
+        <!-- Password -->
+        <div>
+            <x-input-label for="password" :value="__('Password')" />
+
+            <x-text-input id="password" class="block mt-1 w-full"
+                            type="password"
+                            name="password"
+                            required autocomplete="current-password" />
+
+            <x-input-error :messages="$errors->get('password')" class="mt-2" />
+        </div>
+
+        <div class="flex justify-end mt-4">
+            <x-primary-button>
+                {{ __('Confirm') }}
+            </x-primary-button>
+        </div>
+    </form>
+</x-guest-layout>
+
+```
+
+## File: resources/views/auth/forgot-password.blade.php
+```php
+{{-- resources/views/auth/forgot-password.blade.php --}}
+<x-guest-layout>
+    <div class="mb-4 text-sm text-gray-600">
+        {{ __('Forgot your password? No problem. Just let us know your email address and we will email you a password reset link that will allow you to choose a new one.') }}
+    </div>
+
+    <!-- Session Status -->
+    <x-auth-session-status class="mb-4" :status="session('status')" />
+
+    <form method="POST" action="{{ route('password.email') }}">
+        @csrf
+
+        <!-- Email Address -->
+        <div>
+            <x-input-label for="email" :value="__('Email')" />
+            <x-text-input id="email" class="block mt-1 w-full" type="email" name="email" :value="old('email')" required autofocus />
+            <x-input-error :messages="$errors->get('email')" class="mt-2" />
+        </div>
+
+        <div class="flex items-center justify-end mt-4">
+            <x-primary-button>
+                {{ __('Email Password Reset Link') }}
+            </x-primary-button>
+        </div>
+    </form>
+</x-guest-layout>
+
+```
+
+## File: resources/views/auth/login.blade.php
+```php
+{{-- resources/views/auth/login.blade.php --}}
+<x-guest-layout>
+    <div class="flex items-center justify-center min-h-screen">
+        <div class="w-full max-w-md p-6 bg-white rounded">
+            <div class="login-title text-center">
+                <h1 class="font-bold"><strong>SAPOA Awards</strong><span class="dashboard text-gray-700"> DASHBOARD</span></h1>
+            </div>
+
+            <form method="POST" action="{{ route('login') }}" class="form-container">
+                @csrf
+                <div>
+                    <div class="mb-4 flex justify-center">
+                        <input id="email" type="text" name="email" required autofocus placeholder="Email" class="input-field" />
+                    </div>
+                    <div class="mb-6">
+                        <input id="password" type="password" name="password" required placeholder="Password" class="input-field" />
+                    </div>
+                </div>
+                <div class="mb-6">
+                    <x-primary-button class="w-full red-button-class">
+                        {{ __('Sign In') }}
+                    </x-primary-button>
+                </div>
+                <div class="flex flex-col items-start text-sm">
+                    <a href="{{ route('password.request') }}" class="link-forgot-password font-semibold hover:underline mb-2">{{ __('Forgot Password') }}</a>
+                    <a href="{{ route('register') }}" class="link-register font-semibold hover:underline">{{ __('Register New Membership') }}</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</x-guest-layout>
+
+```
+
+## File: resources/views/auth/register.blade.php
+```php
+{{-- resources/views/auth/register.blade.php --}}
+<x-guest-layout>
+    <div class="flex items-center justify-center min-h-screen">
+        <div class="w-full max-w-2xl p-6 bg-white rounded"> <!-- Adjusted max width for two columns -->
+            <div class="login-title text-center">
+                <h1 class="font-bold"><strong>SAPOA Awards</strong><span class="dashboard text-gray-700"> REGISTRATION</span></h1>
+            </div>
+
+            <form method="POST" action="{{ route('register') }}" class="form-container">
+                @csrf
+                <div class="flex flex-wrap -mx-3"> <!-- Added for two-column layout -->
+                    <div class="w-full md:w-1/2 px-3 mb-4"> <!-- Column 1 -->
+                        <div class="mb-4 flex justify-center">
+                            <input id="name" type="text" name="name" value="{{ old('name') }}" required autofocus placeholder="Name" class="input-field @error('name') is-invalid @enderror" />
+                            @error('name')
+                                <span class="invalid-feedback" role="alert">
+                                    <strong>{{ $message }}</strong>
+                                </span>
+                            @enderror
+                        </div>
+                        <div class="mb-4 flex justify-center">
+                            <input id="surname" type="text" name="surname" value="{{ old('surname') }}" required placeholder="Surname" class="input-field @error('surname') is-invalid @enderror" />
+                            @error('surname')
+                                <span class="invalid-feedback" role="alert">
+                                    <strong>{{ $message }}</strong>
+                                </span>
+                            @enderror
+                        </div>
+                        <div class="mb-4 flex justify-center">
+                            <input id="company" type="text" name="company" value="{{ old('company') }}" required placeholder="Company" class="input-field @error('company') is-invalid @enderror" />
+                            @error('company')
+                                <span class="invalid-feedback" role="alert">
+                                    <strong>{{ $message }}</strong>
+                                </span>
+                            @enderror
+                        </div>
+                    </div>
+                    <div class="w-full md:w-1/2 px-3"> <!-- Column 2 -->
+                        <div class="mb-4 flex justify-center">
+                            <input id="mobile_number" type="text" name="mobile_number" value="{{ old('mobile_number') }}" required placeholder="Mobile Number" class="input-field @error('mobile_number') is-invalid @enderror" />
+                            @error('mobile_number')
+                                <span class="invalid-feedback" role="alert">
+                                    <strong>{{ $message }}</strong>
+                                </span>
+                            @enderror
+                        </div>
+                        <div class="mb-4 flex justify-center">
+                            <input id="email" type="email" name="email" value="{{ old('email') }}" required placeholder="Email" class="input-field @error('email') is-invalid @enderror" />
+                            @error('email')
+                                <span class="invalid-feedback" role="alert">
+                                    <strong>{{ $message }}</strong>
+                                </span>
+                            @enderror
+                        </div>
+                        <div class="mb-4 flex justify-center">
+                            <input id="password" type="password" name="password" required placeholder="Password" class="input-field @error('password') is-invalid @enderror" />
+                            @error('password')
+                                <span class="invalid-feedback" role="alert">
+                                    <strong>{{ $message }}</strong>
+                                </span>
+                            @enderror
+                        </div>
+                        <div class="mb-6 flex justify-center">
+                            <input id="password_confirmation" type="password" name="password_confirmation" required placeholder="Confirm Password" class="input-field" />
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-6">
+                    <x-primary-button class="w-full red-button-class">
+                        {{ __('Register') }}
+                    </x-primary-button>
+                </div>
+                <div class="flex flex-col items-start text-sm">
+                    <a href="{{ route('login') }}" class="link-register font-semibold hover:underline">{{ __('Already have an account? Login') }}</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</x-guest-layout>
+
+```
+
+## File: resources/views/auth/reset-password.blade.php
+```php
+{{-- resources/views/auth/reset-password.blade.php --}}
+<x-guest-layout>
+    <form method="POST" action="{{ route('password.store') }}">
+        @csrf
+
+        <!-- Password Reset Token -->
+        <input type="hidden" name="token" value="{{ $request->route('token') }}">
+
+        <!-- Email Address -->
+        <div>
+            <x-input-label for="email" :value="__('Email')" />
+            <x-text-input id="email" class="block mt-1 w-full" type="email" name="email" :value="old('email', $request->email)" required autofocus autocomplete="username" />
+            <x-input-error :messages="$errors->get('email')" class="mt-2" />
+        </div>
+
+        <!-- Password -->
+        <div class="mt-4">
+            <x-input-label for="password" :value="__('Password')" />
+            <x-text-input id="password" class="block mt-1 w-full" type="password" name="password" required autocomplete="new-password" />
+            <x-input-error :messages="$errors->get('password')" class="mt-2" />
+        </div>
+
+        <!-- Confirm Password -->
+        <div class="mt-4">
+            <x-input-label for="password_confirmation" :value="__('Confirm Password')" />
+
+            <x-text-input id="password_confirmation" class="block mt-1 w-full"
+                                type="password"
+                                name="password_confirmation" required autocomplete="new-password" />
+
+            <x-input-error :messages="$errors->get('password_confirmation')" class="mt-2" />
+        </div>
+
+        <div class="flex items-center justify-end mt-4">
+            <x-primary-button>
+                {{ __('Reset Password') }}
+            </x-primary-button>
+        </div>
+    </form>
+</x-guest-layout>
+
+```
+
+## File: resources/views/auth/verify-email.blade.php
+```php
+{{-- resources/views/auth/verify-email.blade.php --}}
+<x-guest-layout>
+    <div class="mb-4 text-sm text-gray-600">
+        {{ __('Thanks for signing up! Before getting started, could you verify your email address by clicking on the link we just emailed to you? If you didn\'t receive the email, we will gladly send you another.') }}
+    </div>
+
+    @if (session('status') == 'verification-link-sent')
+        <div class="mb-4 font-medium text-sm text-green-600">
+            {{ __('A new verification link has been sent to the email address you provided during registration.') }}
+        </div>
+    @endif
+
+    <div class="mt-4 flex items-center justify-between">
+        <form method="POST" action="{{ route('verification.send') }}">
+            @csrf
+
+            <div>
+                <x-primary-button>
+                    {{ __('Resend Verification Email') }}
+                </x-primary-button>
+            </div>
+        </form>
+
+        <form method="POST" action="{{ route('logout') }}">
+            @csrf
+
+            <button type="submit" class="underline text-sm text-gray-600 hover:text-gray-900 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                {{ __('Log Out') }}
+            </button>
+        </form>
+    </div>
+</x-guest-layout>
+
+```
+
+
+## File: resources/views/components/auth-session-status.blade.php
+```php
+{{-- resources/views/components/auth-session-status.blade.php --}}
+@props(['status'])
+
+@if ($status)
+    <div {{ $attributes->merge(['class' => 'font-medium text-sm text-green-600']) }}>
+        {{ $status }}
+    </div>
+@endif
+
+```
+
+## File: resources/views/components/danger-button.blade.php
+```php
+{{-- resources/views/components/danger-button.blade.php --}}
+<button {{ $attributes->merge(['type' => 'submit', 'class' => 'inline-flex items-center px-4 py-2 bg-red-600 border border-transparent rounded-md font-semibold text-xs text-white uppercase tracking-widest hover:bg-red-500 active:bg-red-700 focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-2 transition ease-in-out duration-150']) }}>
+    {{ $slot }}
+</button>
+
+```
+
+## File: resources/views/components/dropdown-link.blade.php
+```php
+{{-- resources/views/components/dropdown-link.blade.php --}}
+<a {{ $attributes->merge(['class' => 'block w-full px-4 py-2 text-start text-sm leading-5 text-gray-700 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 transition duration-150 ease-in-out']) }}>{{ $slot }}</a>
+
+```
+
+## File: resources/views/components/dropdown.blade.php
+```php
+{{-- resources/views/components/dropdown.blade.php --}}
+@props(['align' => 'right', 'width' => '48', 'contentClasses' => 'py-1 bg-white'])
+
+@php
+switch ($align) {
+    case 'left':
+        $alignmentClasses = 'ltr:origin-top-left rtl:origin-top-right start-0';
+        break;
+    case 'top':
+        $alignmentClasses = 'origin-top';
+        break;
+    case 'right':
+    default:
+        $alignmentClasses = 'ltr:origin-top-right rtl:origin-top-left end-0';
+        break;
+}
+
+switch ($width) {
+    case '48':
+        $width = 'w-48';
+        break;
+}
+@endphp
+
+<div class="relative" x-data="{ open: false }" @click.outside="open = false" @close.stop="open = false">
+    <div @click="open = ! open">
+        {{ $trigger }}
+    </div>
+
+    <div x-show="open"
+            x-transition:enter="transition ease-out duration-200"
+            x-transition:enter-start="opacity-0 scale-95"
+            x-transition:enter-end="opacity-100 scale-100"
+            x-transition:leave="transition ease-in duration-75"
+            x-transition:leave-start="opacity-100 scale-100"
+            x-transition:leave-end="opacity-0 scale-95"
+            class="absolute z-50 mt-2 {{ $width }} rounded-md shadow-lg {{ $alignmentClasses }}"
+            style="display: none;"
+            @click="open = false">
+        <div class="rounded-md ring-1 ring-black ring-opacity-5 {{ $contentClasses }}">
+            {{ $content }}
+        </div>
+    </div>
+</div>
+
+```
+
+## File: resources/views/components/input-error.blade.php
+```php
+{{-- resources/views/components/input-error.blade.php --}}
+@props(['messages'])
+
+@if ($messages)
+    <ul {{ $attributes->merge(['class' => 'text-sm text-red-600 space-y-1']) }}>
+        @foreach ((array) $messages as $message)
+            <li>{{ $message }}</li>
+        @endforeach
+    </ul>
+@endif
+
+```
+
+## File: resources/views/components/input-label.blade.php
+```php
+{{-- resources/views/components/input-label.blade.php --}}
+@props(['value'])
+
+<label {{ $attributes->merge(['class' => 'block font-medium text-sm text-gray-700']) }}>
+    {{ $value ?? $slot }}
+</label>
+
+```
+
+## File: resources/views/components/modal.blade.php
+```php
+{{-- resources/views/components/modal.blade.php --}}
+@props([
+    'name',
+    'show' => false,
+    'maxWidth' => '2xl'
+])
+
+@php
+$maxWidth = [
+    'sm' => 'sm:max-w-sm',
+    'md' => 'sm:max-w-md',
+    'lg' => 'sm:max-w-lg',
+    'xl' => 'sm:max-w-xl',
+    '2xl' => 'sm:max-w-2xl',
+][$maxWidth];
+@endphp
+
+<div
+    x-data="{
+        show: @js($show),
+        focusables() {
+            // All focusable element types...
+            let selector = 'a, button, input:not([type=\'hidden\']), textarea, select, details, [tabindex]:not([tabindex=\'-1\'])'
+            return [...$el.querySelectorAll(selector)]
+                // All non-disabled elements...
+                .filter(el => ! el.hasAttribute('disabled'))
+        },
+        firstFocusable() { return this.focusables()[0] },
+        lastFocusable() { return this.focusables().slice(-1)[0] },
+        nextFocusable() { return this.focusables()[this.nextFocusableIndex()] || this.firstFocusable() },
+        prevFocusable() { return this.focusables()[this.prevFocusableIndex()] || this.lastFocusable() },
+        nextFocusableIndex() { return (this.focusables().indexOf(document.activeElement) + 1) % (this.focusables().length + 1) },
+        prevFocusableIndex() { return Math.max(0, this.focusables().indexOf(document.activeElement)) -1 },
+    }"
+    x-init="$watch('show', value => {
+        if (value) {
+            document.body.classList.add('overflow-y-hidden');
+            {{ $attributes->has('focusable') ? 'setTimeout(() => firstFocusable().focus(), 100)' : '' }}
+        } else {
+            document.body.classList.remove('overflow-y-hidden');
+        }
+    })"
+    x-on:open-modal.window="$event.detail == '{{ $name }}' ? show = true : null"
+    x-on:close-modal.window="$event.detail == '{{ $name }}' ? show = false : null"
+    x-on:close.stop="show = false"
+    x-on:keydown.escape.window="show = false"
+    x-on:keydown.tab.prevent="$event.shiftKey || nextFocusable().focus()"
+    x-on:keydown.shift.tab.prevent="prevFocusable().focus()"
+    x-show="show"
+    class="fixed inset-0 overflow-y-auto px-4 py-6 sm:px-0 z-50"
+    style="display: {{ $show ? 'block' : 'none' }};"
+>
+    <div
+        x-show="show"
+        class="fixed inset-0 transform transition-all"
+        x-on:click="show = false"
+        x-transition:enter="ease-out duration-300"
+        x-transition:enter-start="opacity-0"
+        x-transition:enter-end="opacity-100"
+        x-transition:leave="ease-in duration-200"
+        x-transition:leave-start="opacity-100"
+        x-transition:leave-end="opacity-0"
+    >
+        <div class="absolute inset-0 bg-gray-500 opacity-75"></div>
+    </div>
+
+    <div
+        x-show="show"
+        class="mb-6 bg-white rounded-lg overflow-hidden shadow-xl transform transition-all sm:w-full {{ $maxWidth }} sm:mx-auto"
+        x-transition:enter="ease-out duration-300"
+        x-transition:enter-start="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
+        x-transition:enter-end="opacity-100 translate-y-0 sm:scale-100"
+        x-transition:leave="ease-in duration-200"
+        x-transition:leave-start="opacity-100 translate-y-0 sm:scale-100"
+        x-transition:leave-end="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
+    >
+        {{ $slot }}
+    </div>
+</div>
+
+```
+
+## File: resources/views/components/nav-link.blade.php
+```php
+{{-- resources/views/components/nav-link.blade.php --}}
+@props(['active'])
+
+@php
+$classes = ($active ?? false)
+            ? 'inline-flex items-center px-1 pt-1 border-b-2 border-indigo-400 text-sm font-medium leading-5 text-gray-900 focus:outline-none focus:border-indigo-700 transition duration-150 ease-in-out'
+            : 'inline-flex items-center px-1 pt-1 border-b-2 border-transparent text-sm font-medium leading-5 text-gray-500 hover:text-gray-700 hover:border-gray-300 focus:outline-none focus:text-gray-700 focus:border-gray-300 transition duration-150 ease-in-out';
+@endphp
+
+<a {{ $attributes->merge(['class' => $classes]) }}>
+    {{ $slot }}
+</a>
+
+```
+
+## File: resources/views/components/primary-button.blade.php
+```php
+{{-- resources/views/components/primary-button.blade.php --}}
+<!-- resources/views/components/primary-button.blade.php -->
+<button {{ $attributes->merge(['type' => 'submit', 'class' => 'inline-flex items-center px-4 py-2 bg-red-600 border border-transparent rounded-md font-semibold text-xs text-white uppercase tracking-widest hover:bg-red-700 active:bg-red-900 focus:outline-none focus:border-red-900 focus:ring focus:ring-red-300 disabled:opacity-25 transition']) }}>
+    {{ $slot }}
+</button>
+
+```
+
+## File: resources/views/components/responsive-nav-link.blade.php
+```php
+{{-- resources/views/components/responsive-nav-link.blade.php --}}
+@props(['active'])
+
+@php
+$classes = ($active ?? false)
+            ? 'block w-full ps-3 pe-4 py-2 border-l-4 border-indigo-400 text-start text-base font-medium text-indigo-700 bg-indigo-50 focus:outline-none focus:text-indigo-800 focus:bg-indigo-100 focus:border-indigo-700 transition duration-150 ease-in-out'
+            : 'block w-full ps-3 pe-4 py-2 border-l-4 border-transparent text-start text-base font-medium text-gray-600 hover:text-gray-800 hover:bg-gray-50 hover:border-gray-300 focus:outline-none focus:text-gray-800 focus:bg-gray-50 focus:border-gray-300 transition duration-150 ease-in-out';
+@endphp
+
+<a {{ $attributes->merge(['class' => $classes]) }}>
+    {{ $slot }}
+</a>
+
+```
+
+## File: resources/views/components/secondary-button.blade.php
+```php
+{{-- resources/views/components/secondary-button.blade.php --}}
+<button {{ $attributes->merge(['type' => 'button', 'class' => 'inline-flex items-center px-4 py-2 bg-white border border-gray-300 rounded-md font-semibold text-xs text-gray-700 uppercase tracking-widest shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 disabled:opacity-25 transition ease-in-out duration-150']) }}>
+    {{ $slot }}
+</button>
+
+```
+
+## File: resources/views/components/text-input.blade.php
+```php
+{{-- resources/views/components/text-input.blade.php --}}
+@props(['disabled' => false])
+
+<input {{ $disabled ? 'disabled' : '' }} {!! $attributes->merge(['class' => 'border-gray-300 focus:border-indigo-500 focus:ring-indigo-500 rounded-md shadow-sm']) !!}>
+
+```
+
+## File: resources/views/components/checkbox.blade.php
+```php
+{{-- resources/views/components/checkbox.blade.php --}}
+<div>
+    <input type="checkbox" id="{{ $id }}" {{ $attributes->merge(['class' => 'rounded border-gray-300 text-indigo-600 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50']) }}>
+    <label for="{{ $id }}" class="ml-2 block text-sm text-gray-600">{{ $label }}</label>
+</div>
+
+```
+
+## File: resources/views/components/auth-card.blade.php
+```php
+{{-- resources/views/components/auth-card.blade.php --}}
+<div {{ $attributes->merge(['class' => 'max-w-md w-full space-y-8']) }}>
+    <div>
+        {{ $logo ?? '' }}
+    </div>
+    <div class="rounded-lg bg-white px-6 py-8 shadow-lg text-left">
+        {{ $slot }}
+    </div>
+</div>
+
+```
+
+## File: resources/views/components/left-nav.blade.php
+```php
+{{-- resources/views/components/left-nav.blade.php --}}
+{{-- /resources/views/components/left-nav.blade.php --}}
+<div x-data="leftNavComponent" @click.away="activeMenu = ''">
+    <ul class="nav-links">
+        <li>
+            <a href="#" @click="toggleSubMenu('dashboard')" :class="{'active': isActive('dashboard')}">Dashboard</a>
+            <div x-show="isActive('dashboard')">
+                {{-- Sub-menu items for Dashboard --}}
+            </div>
+        </li>
+        <li>
+            <a href="#" @click="toggleSubMenu('entries')" :class="{'active': isActive('entries')}">Entries</a>
+            <div x-show="isActive('entries')">
+                {{-- Sub-menu items for Entries --}}
+            </div>
+        </li>
+        {{-- Repeat for other main menu items --}}
+    </ul>
+</div>
+
+```
+
+## File: resources/views/components/top-nav.blade.php
+```php
+{{-- resources/views/components/top-nav.blade.php --}}
+{{-- /resources/views/components/top-nav.blade.php --}}
+<div x-data="topNavComponent">
+    <div class="top-nav">
+        {{-- Profile Button --}}
+        <div @click.away="profileDropdownOpen = false">
+            <button @click="toggleProfileDropdown()">Profile</button>
+            <div x-show="profileDropdownOpen">
+                {{-- Profile dropdown items --}}
+            </div>
+        </div>
+
+        {{-- Settings Button --}}
+        <div @click.away="settingsDropdownOpen = false">
+            <button @click="toggleSettingsDropdown()">Settings</button>
+            <div x-show="settingsDropdownOpen">
+                {{-- Settings dropdown items --}}
+            </div>
+        </div>
+    </div>
+</div>
+
+```
+
+## File: resources/views/components/layouts/main.blade.php
+```php
+{{-- resources/views/components/layouts/app.blade.php --}}
+<!DOCTYPE html>
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ config('app.name', 'SAPOA Awards') }}</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.bunny.net">
+    <link href="https://fonts.bunny.net/css?family=inter:400,700&display=swap" rel="stylesheet" />
+
+    <!-- Styles -->
+    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+</head>
+<body>
+    <div class="flex">
+        <!-- Sidebar -->
+        <livewire:sidebar />
+        
+        <div class="flex-1">
+            <!-- Header Bar -->
+            <livewire:headerbar />
+    
+            <!-- Main Content -->
+            <main class="main-content p-4">
+                {{ $slot }}
+            </main>
+        </div>
+    </div>
+    
+</body>
+</html>
+```
+
+## File: resources/views/components/layouts/blank.blade.php
+```php
+<!DOCTYPE html>
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>{{ $title ?? 'Page Title' }}</title>
+
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.bunny.net">
+        <link href="https://fonts.bunny.net/css?family=inter:400,700&display=swap" rel="stylesheet" />
+
+        <!-- Styles and Script -->
+        @vite(['resources/css/app.css', 'resources/js/app.js'])
+        <link href="{{ asset('css/custom.css') }}" rel="stylesheet">
+    </head>
+    <body>
+        {{ $slot }}
+    </body>
+</html>
+
+```
+
+## File: resources/views/components/layouts/dashboard.blade.php
+```php
+<!DOCTYPE html>
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>{{ $title ?? 'Page Title' }}</title>
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.bunny.net">
+        <link href="https://fonts.bunny.net/css?family=inter:400,700&display=swap" rel="stylesheet" />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+        
+        <!-- Styles and Script -->
+        @vite(['resources/css/app.css', 'resources/js/app.js'])
+        <link href="{{ asset('css/custom.css') }}" rel="stylesheet">
+    </head>
+    <body>
+        {{ $slot }}
+    </body>
+</html>
+
+```
+
+## File: resources/views/components/layouts/app.blade.php
+```php
+{{-- resources/views/components/layouts/app.blade.php --}}
+<!DOCTYPE html>
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ config('app.name', 'SAPOA Awards') }}</title>
+    
+    <!-- Fonts -->
+    <livewire:google-font font="Inter" weights="100..900" />
+
+    <!-- Styles and Script -->
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
+    <link href="{{ asset('css/custom.css') }}" rel="stylesheet">
+</head>
+<body>
+    <div class="flex">
+        <!-- Sidebar -->
+        <livewire:sidebar />
+        
+        <div class="flex-1">
+            <!-- Header Bar -->
+            <livewire:headerbar />
+    
+            <!-- Main Content -->
+            <main class="main-content p-4">
+                {{ $slot }}
+            </main>
+        </div>
+    </div>    
+</body>
+</html>
+```
+
+## File: resources/views/layouts/app.blade.php
+```php
+{{-- resources/views/layouts/app.blade.php --}}
+<!DOCTYPE html>
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ config('app.name', 'SAPOA Awards') }}</title>
+    <!-- Styles -->
+    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    @livewireStyles
+</head>
+<body>
+    <div class="flex">
+        <!-- Sidebar -->
+        <livewire:sidebar />
+        
+        <div class="flex-1">
+            <!-- Header Bar -->
+            <livewire:headerbar />
+    
+            <!-- Main Content -->
+            <main class="main-content p-4">
+                {{ $slot }}
+            </main>
+        </div>
+    </div>
+    
+    <!-- Scripts -->
+    <script src="{{ asset('js/app.js') }}"></script>
+    @livewireScripts
+</body>
+</html>
+
+
+```
+
+## File: resources/views/layouts/guest.blade.php
+```php
+{{-- resources/views/layouts/guest.blade.php --}}
+<!DOCTYPE html>
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+    <title>{{ config('app.name', 'SAPOA Awards') }}</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.bunny.net">
+    <link href="https://fonts.bunny.net/css?family=inter:400,700&display=swap" rel="stylesheet" />
+
+    <!-- Styles -->
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
+
+    <!-- Custom Styles -->
+    <link href="{{ asset('css/custom.css') }}" rel="stylesheet">
+    @livewireStyles
+</head>
+<body class="font-figtree text-gray-900 antialiased">
+    <livewire:alert-bar />
+    <div class="min-h-screen flex flex-col items-center justify-center">
+        <!-- Main Content -->
+        <div class="w-full flex flex-col items-center mt-20">
+            <div class="w-full sm:max-w-md px-6 py-4 bg-white overflow-hidden sm:rounded-lg">
+                {{ $slot }}
+            </div>
+        </div>
+    </div>
+    @livewireScripts
+</body>
+</html>
+
+```
+
+
+## File: resources/views/profile/edit.blade.php
+```php
+{{-- resources/views/profile/edit.blade.php --}}
+<x-app-layout>
+    <x-slot name="header">
+        <h2 class="font-semibold text-xl text-gray-800 leading-tight">
+            {{ __('Profile') }}
+        </h2>
+    </x-slot>
+
+    <div class="py-12">
+        <div class="max-w-7xl mx-auto sm:px-6 lg:px-8 space-y-6">
+            <div class="p-4 sm:p-8 bg-white shadow sm:rounded-lg">
+                <div class="max-w-xl">
+                    @include('profile.partials.update-profile-information-form')
+                </div>
+            </div>
+
+            <div class="p-4 sm:p-8 bg-white shadow sm:rounded-lg">
+                <div class="max-w-xl">
+                    @include('profile.partials.update-password-form')
+                </div>
+            </div>
+
+            <div class="p-4 sm:p-8 bg-white shadow sm:rounded-lg">
+                <div class="max-w-xl">
+                    @include('profile.partials.delete-user-form')
+                </div>
+            </div>
+        </div>
+    </div>
+</x-app-layout>
+
+```
+
+## File: resources/views/profile/partials/delete-user-form.blade.php
+```php
+{{-- resources/views/profile/partials/delete-user-form.blade.php --}}
+<section class="space-y-6">
+    <header>
+        <h2 class="text-lg font-medium text-gray-900">
+            {{ __('Delete Account') }}
+        </h2>
+
+        <p class="mt-1 text-sm text-gray-600">
+            {{ __('Once your account is deleted, all of its resources and data will be permanently deleted. Before deleting your account, please download any data or information that you wish to retain.') }}
+        </p>
+    </header>
+
+    <x-danger-button
+        x-data=""
+        x-on:click.prevent="$dispatch('open-modal', 'confirm-user-deletion')"
+    >{{ __('Delete Account') }}</x-danger-button>
+
+    <x-modal name="confirm-user-deletion" :show="$errors->userDeletion->isNotEmpty()" focusable>
+        <form method="post" action="{{ route('profile.destroy') }}" class="p-6">
+            @csrf
+            @method('delete')
+
+            <h2 class="text-lg font-medium text-gray-900">
+                {{ __('Are you sure you want to delete your account?') }}
+            </h2>
+
+            <p class="mt-1 text-sm text-gray-600">
+                {{ __('Once your account is deleted, all of its resources and data will be permanently deleted. Please enter your password to confirm you would like to permanently delete your account.') }}
+            </p>
+
+            <div class="mt-6">
+                <x-input-label for="password" value="{{ __('Password') }}" class="sr-only" />
+
+                <x-text-input
+                    id="password"
+                    name="password"
+                    type="password"
+                    class="mt-1 block w-3/4"
+                    placeholder="{{ __('Password') }}"
+                />
+
+                <x-input-error :messages="$errors->userDeletion->get('password')" class="mt-2" />
+            </div>
+
+            <div class="mt-6 flex justify-end">
+                <x-secondary-button x-on:click="$dispatch('close')">
+                    {{ __('Cancel') }}
+                </x-secondary-button>
+
+                <x-danger-button class="ms-3">
+                    {{ __('Delete Account') }}
+                </x-danger-button>
+            </div>
+        </form>
+    </x-modal>
+</section>
+
+```
+
+## File: resources/views/profile/partials/update-password-form.blade.php
+```php
+{{-- resources/views/profile/partials/update-password-form.blade.php --}}
+<section>
+    <header>
+        <h2 class="text-lg font-medium text-gray-900">
+            {{ __('Update Password') }}
+        </h2>
+
+        <p class="mt-1 text-sm text-gray-600">
+            {{ __('Ensure your account is using a long, random password to stay secure.') }}
+        </p>
+    </header>
+
+    <form method="post" action="{{ route('password.update') }}" class="mt-6 space-y-6">
+        @csrf
+        @method('put')
+
+        <div>
+            <x-input-label for="update_password_current_password" :value="__('Current Password')" />
+            <x-text-input id="update_password_current_password" name="current_password" type="password" class="mt-1 block w-full" autocomplete="current-password" />
+            <x-input-error :messages="$errors->updatePassword->get('current_password')" class="mt-2" />
+        </div>
+
+        <div>
+            <x-input-label for="update_password_password" :value="__('New Password')" />
+            <x-text-input id="update_password_password" name="password" type="password" class="mt-1 block w-full" autocomplete="new-password" />
+            <x-input-error :messages="$errors->updatePassword->get('password')" class="mt-2" />
+        </div>
+
+        <div>
+            <x-input-label for="update_password_password_confirmation" :value="__('Confirm Password')" />
+            <x-text-input id="update_password_password_confirmation" name="password_confirmation" type="password" class="mt-1 block w-full" autocomplete="new-password" />
+            <x-input-error :messages="$errors->updatePassword->get('password_confirmation')" class="mt-2" />
+        </div>
+
+        <div class="flex items-center gap-4">
+            <x-primary-button>{{ __('Save') }}</x-primary-button>
+
+            @if (session('status') === 'password-updated')
+                <p
+                    x-data="{ show: true }"
+                    x-show="show"
+                    x-transition
+                    x-init="setTimeout(() => show = false, 2000)"
+                    class="text-sm text-gray-600"
+                >{{ __('Saved.') }}</p>
+            @endif
+        </div>
+    </form>
+</section>
+
+```
+
+## File: resources/views/profile/partials/update-profile-information-form.blade.php
+```php
+{{-- resources/views/profile/partials/update-profile-information-form.blade.php --}}
+<section>
+    <header>
+        <h2 class="text-lg font-medium text-gray-900">
+            {{ __('Profile Information') }}
+        </h2>
+
+        <p class="mt-1 text-sm text-gray-600">
+            {{ __("Update your account's profile information and email address.") }}
+        </p>
+    </header>
+
+    <form id="send-verification" method="post" action="{{ route('verification.send') }}">
+        @csrf
+    </form>
+
+    <form method="post" action="{{ route('profile.update') }}" class="mt-6 space-y-6">
+        @csrf
+        @method('patch')
+
+        <div>
+            <x-input-label for="name" :value="__('Name')" />
+            <x-text-input id="name" name="name" type="text" class="mt-1 block w-full" :value="old('name', $user->name)" required autofocus autocomplete="name" />
+            <x-input-error class="mt-2" :messages="$errors->get('name')" />
+        </div>
+
+        <div>
+            <x-input-label for="email" :value="__('Email')" />
+            <x-text-input id="email" name="email" type="email" class="mt-1 block w-full" :value="old('email', $user->email)" required autocomplete="username" />
+            <x-input-error class="mt-2" :messages="$errors->get('email')" />
+
+            @if ($user instanceof \Illuminate\Contracts\Auth\MustVerifyEmail && ! $user->hasVerifiedEmail())
+                <div>
+                    <p class="text-sm mt-2 text-gray-800">
+                        {{ __('Your email address is unverified.') }}
+
+                        <button form="send-verification" class="underline text-sm text-gray-600 hover:text-gray-900 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                            {{ __('Click here to re-send the verification email.') }}
+                        </button>
+                    </p>
+
+                    @if (session('status') === 'verification-link-sent')
+                        <p class="mt-2 font-medium text-sm text-green-600">
+                            {{ __('A new verification link has been sent to your email address.') }}
+                        </p>
+                    @endif
+                </div>
+            @endif
+        </div>
+
+        <div class="flex items-center gap-4">
+            <x-primary-button>{{ __('Save') }}</x-primary-button>
+
+            @if (session('status') === 'profile-updated')
+                <p
+                    x-data="{ show: true }"
+                    x-show="show"
+                    x-transition
+                    x-init="setTimeout(() => show = false, 2000)"
+                    class="text-sm text-gray-600"
+                >{{ __('Saved.') }}</p>
+            @endif
+        </div>
+    </form>
+</section>
+
+```
+
 ## File: resources/views/livewire/svg-icon.blade.php
 ```php
 {{-- resources/views/livewire/svg-icon.blade.php --}}
 <div class="{{ $class }}">
-    <img src="{{ asset('icons/' . $icon . '.svg') }}" alt="{{ $icon }}">
+    <img src="{{ asset('images/icons/' . $icon . '.svg') }}" alt="{{ $icon }}">
 </div>
 ```
 
@@ -4144,43 +7550,45 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 
 ## File: resources/views/livewire/left-nav-button.blade.php
 ```php
-{{-- resources/views/livewire/left-nav-button.blade.php --}}
+{{-- resources/views/livewire/left-nav-button.blade.php - Iteration 2 - A+ --}}
 <div>
+    {{-- Check if this is a link or a button with sub-buttons --}}
     @if ($link)
-        <a
-            href="{{ $link }}"
-            class="flex items-center justify-between w-full px-4 py-2 text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none"
-        >
+        {{-- Render as a link if there is a link provided --}}
+        <a href="{{ $link }}" class="flex items-center justify-between w-full px-4 py-2 text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none">
             <div class="flex items-center">
                 <livewire:svg-icon :icon="$icon" class="w-5 h-5 mr-2" />
                 <span>{{ $text }}</span>
             </div>
         </a>
     @else
-        <button
+        {{-- Render as a button if sub-buttons are present --}}
+        <button 
             wire:click="toggleSubButtons"
+            aria-expanded="{{ $subButtonsVisible ? 'true' : 'false' }}"
             class="flex items-center justify-between w-full px-4 py-2 text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none"
         >
             <div class="flex items-center">
                 <livewire:svg-icon :icon="$icon" class="w-5 h-5 mr-2" />
                 <span>{{ $text }}</span>
             </div>
+            {{-- Conditionally show the dropdown icon if there are sub-buttons --}}
             @if ($hasSubButtons)
                 <livewire:svg-icon
                     icon="chevron_down"
-                    class="w-4 h-4 ml-2 transition-transform duration-200 transform"
-                    :class="{ 'rotate-180': $subButtonsVisible }"
+                    class="w-4 h-4 ml-2 transition-transform duration-200 transform {{ $subButtonsVisible ? 'rotate-180' : '' }}"
                 />
             @endif
         </button>
-
+        {{-- Render the sub-buttons if they are set to be visible --}}
         @if ($hasSubButtons && $subButtonsVisible)
             <div class="ml-4 mt-1 space-y-1">
-                {{ $slot }}
+                {{ $slot }} {{-- Sub-buttons will be injected here --}}
             </div>
         @endif
     @endif
 </div>
+
 ```
 
 ## File: resources/views/livewire/left-nav-sub-button.blade.php
@@ -4199,10 +7607,9 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 ```php
 {{-- resources/views/livewire/sidebar.blade.php --}}
 <aside class="sidebar bg-gray-800 text-white w-64 min-h-screen">
-    <div class="branding-block bg-gray-900 p-4">
+    <div class="branding-block" style="background-color:#D33026; padding:18px">
         <!-- Branding block content -->
-        <h1 class="text-xl font-bold">SAPOA Awards</h1>
-        <h2 class="text-gray-400">Dashboard</h2>
+        <h2 class="font-bold" style="font-size:14px; font-weight:bold">SAPOA Awards <span class="text-sm" style="font-weight:100">DASHBOARD</span></h2>
     </div>
     <nav class="left-navigation p-4 space-y-2">
         <livewire:left-nav-button icon="search" text="Search" />
@@ -4230,46 +7637,33 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 ## File: resources/views/livewire/headerbar.blade.php
 ```php
 {{-- resources/views/livewire/headerbar.blade.php --}}
-<!-- resources/views/livewire/headerbar.blade.php -->
-<header class="headerbar bg-gray-800 text-white p-4">
-    <div class="flex justify-between items-center">
-        <!-- Left Aligned Nav -->
-        <nav class="left-nav">
-            <livewire:header-button icon="hamburger" />
-        </nav>
+<header class="bg-gray-800 text-white flex justify-between items-center py-2 px-4" style="height:58px">
+    <div>
+        <livewire:header-button icon="hamburger" />
+    </div>
 
-        <!-- Right Aligned Nav -->
-        <nav class="right-nav space-x-4">
-            <livewire:header-dropdown icon="cogwheel">
-                <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Settings</a>
-                <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Profile</a>
-                <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Logout</a>
-            </livewire:header-dropdown>
-
-            <livewire:header-separator />
-
+    <div class="flex items-center space-x-3">
+        <div class="header-bar-icon-button">
+            <livewire:header-button icon="flag"/>
+        </div>
+        <div class="header-bar-icon-button">
+            <livewire:header-button icon="bell" />
+        </div>
+        <div class="header-bar-icon-button">
+            <livewire:header-button icon="mail" />
+        </div>
+        <div class="header-bar-icon-button padding-top-15">
+            <livewire:svg-icon icon="separator"/>
+        </div>
+        <div class="padding-top--5 margin-right-10">
             <livewire:user-profile-block />
-
-            <livewire:header-separator />
-
-            <livewire:header-dropdown icon="flag">
-                <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">English</a>
-                <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Español</a>
-                <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Français</a>
-            </livewire:header-dropdown>
-
-            <livewire:header-dropdown icon="bell">
-                <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Notification 1</a>
-                <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Notification 2</a>
-                <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Notification 3</a>
-            </livewire:header-dropdown>
-
-            <livewire:header-dropdown icon="mail">
-                <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Message 1</a>
-                <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Message 2</a>
-                <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Message 3</a>
-            </livewire:header-dropdown>
-        </nav>
+        </div>
+        <div class="header-bar-icon-button" style="padding-top:15px">
+            <livewire:svg-icon icon="separator"/>
+        </div>
+        <div>
+            <livewire:header-dropdown icon="cogwheel" />
+        </div>
     </div>
 </header>
 ```
@@ -4297,8 +7691,7 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
             x-transition:leave="transition ease-in duration-{{ $fadeOutTime }}"
             x-transition:leave-start="opacity-100 transform scale-100"
             x-transition:leave-end="opacity-0 transform scale-90"
-            class="fixed bottom-4 right-4 left-4 p-4 rounded-lg shadow-lg @if($type === 'info') bg-blue-500 border-blue-600 text-white @elseif($type === 'success') bg-green-500 border-green-600 text-white @elseif($type === 'warning') bg-yellow-500 border-yellow-600 text-black @elseif($type === 'error') bg-red-500 border-red-600 text-white @endif"
-        >
+            class="fixed bottom-4 right-4 left-4 p-4 rounded-lg shadow-lg @if($type === 'info') bg-blue-500 border-blue-600 text-white @elseif($type === 'success') bg-green-500 border-green-600 text-white @elseif($type === 'warning') bg-yellow-500 border-yellow-600 text-black @elseif($type === 'error') bg-red-500 border-red-600 text-white @endif">
             <div class="flex justify-between items-center">
                 <span>{{ $message }}</span>
                 @if ($sticky)
@@ -4336,9 +7729,9 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
             @error('password') <span class="text-red-500">{{ $message }}</span> @enderror
         </div>
         <div class="mb-6">
-            <button type="submit" class="w-full red-button-class">
+            <x-primary-button class="w-full red-button-class">
                 {{ __('Sign In') }}
-            </button>
+            </x-primary-button>
         </div>
         <div class="flex flex-col items-start text-sm">
             <a href="{{ route('password.request') }}" class="link-forgot-password font-semibold hover:underline mb-2">{{ __('Forgot Password') }}</a>
@@ -4350,11 +7743,7 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 
 ## File: resources/views/livewire/admin-dashboard.blade.php
 ```php
-{{-- resources/views/livewire/admin-dashboard.blade.php --}}
-<div>
-    {{-- Be like water. --}}
-</div>
-
+www
 ```
 
 ## File: resources/views/livewire/judge-profile.blade.php
@@ -4382,6 +7771,948 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
     {{-- A good traveler has no fixed plans and is not intent upon arriving. --}}
 </div>
 
+```
+
+## File: resources/views/livewire/dashboard.blade.php
+```php
+<div>
+    <div class="grid grid-cols-3 gap-4">
+        <div>
+            <h2>Entries</h2>
+            <div class="text-4xl">{{ $entries }}</div>
+        </div>
+
+        <div>
+            <h2>Invoices</h2>
+            <div class="text-4xl">{{ $invoices }}</div>
+        </div>
+
+        <div>
+            <h2>Judges</h2>
+            <div class="text-4xl">{{ $judges }}</div>
+        </div>
+    </div>
+
+    <div class="mt-8">
+        <h2>Recently Active Users</h2>
+        <ul>
+            @foreach ($recentlyActiveUsers as $user)
+                <li>
+                    <span>{{ $user->name }}</span>
+                    <span>{{ $user->last_login_at }}</span>
+                </li>
+            @endforeach
+        </ul>
+    </div>
+</div>
+```
+
+## File: resources/views/livewire/entry-table.blade.php
+```php
+<div>
+    <table class="table-auto w-full">
+        <thead>
+            <tr>
+                <th class="px-4 py-2">Entry Title</th>
+                <th class="px-4 py-2">Candidate</th>
+                <th class="px-4 py-2">Date Created</th>
+                <th class="px-4 py-2">Email</th>
+                <th class="px-4 py-2">Invoice Paid</th>
+                <th class="px-4 py-2">Submission Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach ($entries as $entry)
+                <tr>
+                    <td class="border px-4 py-2">{{ $entry->title }}</td>
+                    <td class="border px-4 py-2">{{ $entry->user->name }}</td>
+                    <td class="border px-4 py-2">{{ $entry->created_at->format('Y-m-d') }}</td>
+                    <td class="border px-4 py-2">{{ $entry->user->email }}</td>
+                    <td class="border px-4 py-2">{{ $entry->invoice_paid ? 'Yes' : 'No' }}</td>
+                    <td class="border px-4 py-2">{{ $entry->submission_status }}</td>
+                </tr>
+            @endforeach
+        </tbody>
+    </table>
+
+    {{ $entries->links() }}
+</div>
+```
+
+## File: resources/views/livewire/entry-details.blade.php
+```php
+<div>
+    <h1>{{ $entry->title }}</h1>
+
+    <div>
+        <h2>Property Category</h2>
+        <p>{{ $entry->property_category }}</p>
+    </div>
+
+    <div>
+        <h2>Description</h2>
+        <p>{{ $entry->description }}</p>
+    </div>
+
+    <div>
+        <h2>General Images</h2>
+        @foreach ($entry->generalImages as $image)
+            <img src="{{ $image->url }}" alt="General Image">
+        @endforeach
+    </div>
+
+    <div>
+        <h2>Architectural Drawings</h2>
+        @foreach ($entry->architecturalDrawings as $drawing)
+            <img src="{{ $drawing->url }}" alt="Architectural Drawing">
+        @endforeach
+    </div>
+
+    <!-- Add more sections for displaying entry details -->
+
+</div>
+```
+
+## File: resources/views/livewire/building-entry-form.blade.php
+```php
+<div>
+    <form wire:submit.prevent="submit" class="space-y-4">
+        <!-- Basic Details Section -->
+        <div>
+            <h2>Basic Details</h2>
+            <div>
+                <label for="firstName">First Name</label>
+                <input type="text" id="firstName" wire:model="firstName">
+                @error('firstName') <span class="text-red-500">{{ $message }}</span> @enderror
+            </div>
+            <!-- Add more fields for Basic Details section -->
+        </div>
+
+        <!-- General Information Section -->
+        <div>
+            <h2>General Information</h2>
+            <div>
+                <label for="ownerClientCompany">Owner/Client/Company Name</label>
+                <input type="text" id="ownerClientCompany" wire:model="ownerClientCompany">
+                @error('ownerClientCompany') <span class="text-red-500">{{ $message }}</span> @enderror
+            </div>
+            <!-- Add more fields for General Information section -->
+        </div>
+
+        <!-- Team Section -->
+        <div>
+            <h2>The Team</h2>
+            <div>
+                <label for="architects">Architects</label>
+                <input type="text" id="architects" wire:model="architects">
+                @error('architects') <span class="text-red-500">{{ $message }}</span> @enderror
+            </div>
+            <!-- Add more fields for Team section -->
+        </div>
+
+        <!-- File Uploads Section -->
+        <div>
+            <h2>File Uploads</h2>
+            <div>
+                <label for="architecturalDrawings">Architectural Drawings</label>
+                <input type="file" id="architecturalDrawings" wire:model="architecturalDrawings">
+                @error('architecturalDrawings') <span class="text-red-500">{{ $message }}</span> @enderror
+            </div>
+            <!-- Add more fields for File Uploads section -->
+        </div>
+
+        <!-- Descriptions Section -->
+        <div>
+            <h2>Descriptions</h2>
+            <div>
+                <label for="overallImpact">Overall Impact</label>
+                <textarea id="overallImpact" wire:model="overallImpact"></textarea>
+                @error('overallImpact') <span class="text-red-500">{{ $message }}</span> @enderror
+            </div>
+            <!-- Add more fields for Descriptions section -->
+        </div>
+
+        <button type="submit">Submit</button>
+    </form>
+</div>
+```
+
+## File: resources/views/livewire/refurbishing-entry-form.blade.php
+```php
+<div>
+    <form wire:submit.prevent="submit" class="space-y-4">
+        <!-- Entry Basic Details Section -->
+        <div>
+            <h2>Entry Basic Details</h2>
+            <div>
+                <label for="firstName">First Name</label>
+                <input type="text" id="firstName" wire:model="firstName">
+                @error('firstName') <span class="text-red-500">{{ $message }}</span> @enderror
+            </div>
+            <!-- Add more fields for Entry Basic Details section -->
+        </div>
+
+        <!-- General Information Section -->
+        <div>
+            <h2>General Information</h2>
+            <div>
+                <label for="ownerClientCompany">Owner/Client/Company Name</label>
+                <input type="text" id="ownerClientCompany" wire:model="ownerClientCompany">
+                @error('ownerClientCompany') <span class="text-red-500">{{ $message }}</span> @enderror
+            </div>
+            <!-- Add more fields for General Information section -->
+        </div>
+
+        <!-- Team Section -->
+        <div>
+            <h2>The Team</h2>
+            <div>
+                <label for="architects">Architects</label>
+                <input type="text" id="architects" wire:model="architects">
+                @error('architects') <span class="text-red-500">{{ $message }}</span> @enderror
+            </div>
+            <!-- Add more fields for Team section -->
+        </div>
+
+        <!-- File Uploads Section -->
+        <div>
+            <h2>File Uploads</h2>
+            <div>
+                <label for="architecturalDrawings">Architectural Drawings</label>
+                <input type="file" id="architecturalDrawings" wire:model="architecturalDrawings">
+                @error('architecturalDrawings') <span class="text-red-500">{{ $message }}</span> @enderror
+            </div>
+            <!-- Add more fields for File Uploads section -->
+        </div>
+
+        <!-- Descriptions Section -->
+        <div>
+            <h2>Descriptions</h2>
+            <div>
+                <label for="overallImpact">Overall Impact</label>
+                <textarea id="overallImpact" wire:model="overallImpact"></textarea>
+                @error('overallImpact') <span class="text-red-500">{{ $message }}</span> @enderror
+            </div>
+            <!-- Add more fields for Descriptions section -->
+        </div>
+
+        <button type="submit">Submit</button>
+    </form>
+</div>
+```
+
+## File: resources/views/livewire/interior-design-entry-form.blade.php
+```php
+<div>
+    <form wire:submit.prevent="submit" class="space-y-4">
+        <!-- Entry Basic Details Section -->
+        <div>
+            <h2>Entry Basic Details</h2>
+            <div>
+                <label for="firstName">First Name</label>
+                <input type="text" id="firstName" wire:model="firstName">
+                @error('firstName') <span class="text-red-500">{{ $message }}</span> @enderror
+            </div>
+            <!-- Add more fields for Entry Basic Details section -->
+        </div>
+
+        <!-- General Information Section -->
+        <div>
+            <h2>General Information</h2>
+            <div>
+                <label for="ownerClientCompany">Owner/Client/Company Name</label>
+                <input type="text" id="ownerClientCompany" wire:model="ownerClientCompany">
+                @error('ownerClientCompany') <span class="text-red-500">{{ $message }}</span> @enderror
+            </div>
+            <!-- Add more fields for General Information section -->
+        </div>
+
+        <!-- Team Section -->
+        <div>
+            <h2>The Team</h2>
+            <div>
+                <label for="architects">Architects</label>
+                <input type="text" id="architects" wire:model="architects">
+                @error('architects') <span class="text-red-500">{{ $message }}</span> @enderror
+            </div>
+            <!-- Add more fields for Team section -->
+        </div>
+
+        <!-- File Uploads Section -->
+        <div>
+            <h2>File Uploads</h2>
+            <div>
+                <label for="generalImages">General Images</label>
+                <input type="file" id="generalImages" wire:model="generalImages" multiple>
+                @error('generalImages') <span class="text-red-500">{{ $message }}</span> @enderror
+            </div>
+            <!-- Add more fields for File Uploads section -->
+        </div>
+
+        <!-- Descriptions Section -->
+        <div>
+            <h2>Descriptions</h2>
+            <div>
+                <label for="overallImpact">Overall Impact</label>
+                <textarea id="overallImpact" wire:model="overallImpact"></textarea>
+                @error('overallImpact') <span class="text-red-500">{{ $message }}</span> @enderror
+            </div>
+            <!-- Add more fields for Descriptions section -->
+        </div>
+
+        <button type="submit">Submit</button>
+    </form>
+</div>
+```
+
+## File: resources/views/livewire/judge-registration-form.blade.php
+```php
+
+```
+
+## File: resources/views/livewire/user-registration-form.blade.php
+```php
+<div>
+    <form wire:submit.prevent="submit" class="space-y-4">
+        <div>
+            <label for="email">Email</label>
+            <input type="email" id="email" wire:model="email">
+            @error('email') <span class="text-red-500">{{ $message }}</span> @enderror
+        </div>
+
+        <div>
+            <label for="password">Password</label>
+            <input type="password" id="password" wire:model="password">
+            @error('password') <span class="text-red-500">{{ $message }}</span> @enderror
+        </div>
+
+        <div>
+            <label for="confirmPassword">Confirm Password</label>
+            <input type="password" id="confirmPassword" wire:model="confirmPassword">
+            @error('confirmPassword') <span class="text-red-500">{{ $message }}</span> @enderror
+        </div>
+
+        <button type="submit">Register</button>
+    </form>
+</div>
+```
+
+## File: resources/views/livewire/payment-gateway.blade.php
+```php
+<div>
+    <form wire:submit.prevent="submit" class="space-y-4">
+        <div>
+            <label for="paymentAmount">Payment Amount</label>
+            <input type="number" id="paymentAmount" wire:model="paymentAmount">
+            @error('paymentAmount') <span class="text-red-500">{{ $message }}</span> @enderror
+        </div>
+
+        <div>
+            <label for="cardNumber">Card Number</label>
+            <input type="text" id="cardNumber" wire:model="cardNumber">
+            @error('cardNumber') <span class="text-red-500">{{ $message }}</span> @enderror
+        </div>
+
+        <div>
+            <label for="cardExpiry">Card Expiry</label>
+            <input type="text" id="cardExpiry" wire:model="cardExpiry" placeholder="MM/YY">
+            @error('cardExpiry') <span class="text-red-500">{{ $message }}</span> @enderror
+        </div>
+
+        <div>
+            <label for="cardCvv">Card CVV</label>
+            <input type="text" id="cardCvv" wire:model="cardCvv">
+            @error('cardCvv') <span class="text-red-500">{{ $message }}</span> @enderror
+        </div>
+
+        <button type="submit">Process Payment</button>
+    </form>
+</div>
+```
+
+## File: resources/views/livewire/entry-card.blade.php
+```php
+{{-- resources/views/livewire/entry-card.blade.php --}}
+<div class="bg-white rounded-lg shadow-md p-6">
+    <div class="flex justify-between items-center mb-4">
+        <h3 class="text-xl font-semibold">{{ $entry->title }}</h3>
+        <span class="text-gray-500">{{ $entry->created_at->format('M d, Y') }}</span>
+    </div>
+    <div class="mb-4">
+        <p class="text-gray-600">{{ Str::limit($entry->description, 100) }}</p>
+    </div>
+    <div class="flex justify-between items-center">
+        <div class="flex items-center">
+            <span class="text-gray-500 mr-2">Status:</span>
+            <span class="font-semibold {{ $entry->status === 'submitted' ? 'text-green-500' : 'text-yellow-500' }}">
+                {{ ucfirst($entry->status) }}
+            </span>
+        </div>
+        <a href="{{ route('entries.show', $entry) }}" class="text-blue-500 hover:underline">View Details</a>
+    </div>
+</div>
+```
+
+## File: resources/views/livewire/entry-rating-form.blade.php
+```php
+<div>
+    <h3 class="text-lg font-semibold mb-4">Rate Entry</h3>
+    <form wire:submit.prevent="submitRating">
+        @foreach ($criteria as $criterion)
+            <div class="mb-4">
+                <label for="rating_{{ $criterion->id }}" class="block text-gray-700 font-bold mb-2">
+                    {{ $criterion->name }}
+                </label>
+                <div class="flex items-center">
+                    @for ($i = 1; $i <= 10; $i++)
+                        <label class="inline-flex items-center mr-4">
+                            <input type="radio" class="form-radio" name="rating_{{ $criterion->id }}" value="{{ $i }}" wire:model="ratings.{{ $criterion->id }}">
+                            <span class="ml-2">{{ $i }}</span>
+                        </label>
+                    @endfor
+                </div>
+                @error('ratings.' . $criterion->id) <span class="text-red-500 text-sm">{{ $message }}</span> @enderror
+            </div>
+        @endforeach
+        <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+            Submit Rating
+        </button>
+    </form>
+</div>
+
+```
+
+## File: resources/views/livewire/file-upload.blade.php
+```php
+<div>
+    <div class="mb-4">
+        <label for="file" class="block text-gray-700 font-bold mb-2">Select File</label>
+        <input type="file" id="file" wire:model="file" class="form-input w-full">
+        @error('file') <span class="text-red-500 text-sm">{{ $message }}</span> @enderror
+    </div>
+    
+    @if ($file)
+        <div class="mb-4">
+            <p class="text-gray-700 font-bold mb-2">Selected File:</p>
+            <p>{{ $file->getClientOriginalName() }}</p>
+        </div>
+        
+        <div class="mb-4" wire:loading wire:target="file">
+            <progress max="100" class="w-full"></progress>
+        </div>
+    @endif
+    
+    @if (session()->has('success'))
+        <div class="bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded mb-4">
+            {{ session('success') }}
+        </div>
+    @endif
+    
+    @if (session()->has('error'))
+        <div class="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded mb-4">
+            {{ session('error') }}
+        </div>
+    @endif
+    
+    <button type="button" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" wire:click="upload">
+        Upload
+    </button>
+</div>
+```
+
+## File: resources/views/livewire/payment-form.blade.php
+```php
+<div>
+    <h3 class="text-lg font-semibold mb-4">Payment Details</h3>
+    <form wire:submit.prevent="processPayment">
+        <div class="mb-4">
+            <label for="amount" class="block text-gray-700 font-bold mb-2">Amount</label>
+            <input type="number" id="amount" wire:model="amount" class="form-input w-full" placeholder="Enter amount">
+            @error('amount') <span class="text-red-500 text-sm">{{ $message }}</span> @enderror
+        </div>
+        
+        <div class="mb-4">
+            <label for="cardNumber" class="block text-gray-700 font-bold mb-2">Card Number</label>
+            <input type="text" id="cardNumber" wire:model="cardNumber" class="form-input w-full" placeholder="Enter card number">
+            @error('cardNumber') <span class="text-red-500 text-sm">{{ $message }}</span> @enderror
+        </div>
+        
+        <div class="flex mb-4">
+            <div class="w-1/2 mr-2">
+                <label for="expiryMonth" class="block text-gray-700 font-bold mb-2">Expiry Month</label>
+                <input type="text" id="expiryMonth" wire:model="expiryMonth" class="form-input w-full" placeholder="MM">
+                @error('expiryMonth') <span class="text-red-500 text-sm">{{ $message }}</span> @enderror
+            </div>
+            <div class="w-1/2 ml-2">
+                <label for="expiryYear" class="block text-gray-700 font-bold mb-2">Expiry Year</label>
+                <input type="text" id="expiryYear" wire:model="expiryYear" class="form-input w-full" placeholder="YYYY">
+                @error('expiryYear') <span class="text-red-500 text-sm">{{ $message }}</span> @enderror
+            </div>
+        </div>
+        
+        <div class="mb-4">
+            <label for="cvv" class="block text-gray-700 font-bold mb-2">CVV</label>
+            <input type="text" id="cvv" wire:model="cvv" class="form-input w-full" placeholder="Enter CVV">
+            @error('cvv') <span class="text-red-500 text-sm">{{ $message }}</span> @enderror
+        </div>
+        
+        <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+            Pay Now
+        </button>
+    </form>
+</div>
+```
+
+## File: resources/views/livewire/progress-bar.blade.php
+```php
+<div>
+    <div class="bg-gray-200 rounded-full overflow-hidden">
+        <div class="h-2 bg-blue-500 rounded-full" style="width: {{ $progress }}%"></div>
+    </div>
+    <div class="text-center mt-2">
+        <span class="text-sm font-semibold">{{ $progress }}%</span>
+    </div>
+</div>
+```
+
+## File: resources/views/livewire/circular-graph.blade.php
+```php
+<div class="relative">
+    <svg class="w-40 h-40">
+        <circle class="text-gray-300" stroke-width="10" stroke="currentColor" fill="transparent" r="60" cx="80" cy="80" />
+        <circle class="text-blue-500" stroke-width="10" stroke="currentColor" fill="transparent" r="60" cx="80" cy="80" stroke-dasharray="{{ $percentage * 2.4 }},240" />
+    </svg>
+    <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+        <div class="text-center">
+            <span class="text-3xl font-bold">{{ $percentage }}%</span>
+        </div>
+    </div>
+</div>
+```
+
+## File: resources/views/livewire/pagination.blade.php
+```php
+<div class="flex justify-center mt-8">
+    @if ($paginator->hasPages())
+        <nav role="navigation" aria-label="Pagination Navigation" class="flex justify-between">
+            <span class="mr-4">
+                Showing {{ $paginator->firstItem() }} to {{ $paginator->lastItem() }} of {{ $paginator->total() }} results
+            </span>
+
+            <ul class="pagination flex">
+                @if ($paginator->onFirstPage())
+                    <li class="page-item disabled" aria-disabled="true">
+                        <span class="page-link">&laquo;</span>
+                    </li>
+                @else
+                    <li class="page-item">
+                        <button type="button" wire:click="previousPage" class="page-link">&laquo;</button>
+                    </li>
+                @endif
+
+                @foreach ($elements as $element)
+                    @if (is_string($element))
+                        <li class="page-item disabled" aria-disabled="true"><span class="page-link">{{ $element }}</span></li>
+                    @endif
+
+                    @if (is_array($element))
+                        @foreach ($element as $page => $url)
+                            @if ($page == $paginator->currentPage())
+                                <li class="page-item active" aria-current="page"><span class="page-link">{{ $page }}</span></li>
+                            @else
+                                <li class="page-item"><button type="button" wire:click="gotoPage({{ $page }})" class="page-link">{{ $page }}</button></li>
+                            @endif
+                        @endforeach
+                    @endif
+                @endforeach
+
+                @if ($paginator->hasMorePages())
+                    <li class="page-item">
+                        <button type="button" wire:click="nextPage" class="page-link">&raquo;</button>
+                    </li>
+                @else
+                    <li class="page-item disabled" aria-disabled="true">
+                        <span class="page-link">&raquo;</span>
+                    </li>
+                @endif
+            </ul>
+        </nav>
+    @endif
+</div>
+```
+
+## File: resources/views/livewire/filter.blade.php
+```php
+<div class="mb-4">
+    <label for="filter" class="block text-gray-700 font-bold mb-2">Filter</label>
+    <select id="filter" wire:model="selectedFilter" class="form-select w-full">
+        <option value="">All</option>
+        <option value="submitted">Submitted</option>
+        <option value="in_review">In Review</option>
+        <option value="approved">Approved</option>
+        <option value="rejected">Rejected</option>
+    </select>
+</div>
+```
+
+## File: resources/views/livewire/sorting.blade.php
+```php
+{{-- resources/views/livewire/sorting.blade.php --}}
+<div class="mb-4">
+    <label for="sorting" class="block text-gray-700 font-bold mb-2">Sort By</label>
+    <select id="sorting" wire:model="selectedSorting" class="form-select w-full">
+        <option value="created_at_desc">Newest First</option>
+        <option value="created_at_asc">Oldest First</option>
+        <option value="title_asc">Title (A-Z)</option>
+        <option value="title_desc">Title (Z-A)</option>
+    </select>
+</div>
+```
+
+## File: resources/views/livewire/dashboard-statistic-card.blade.php
+```php
+<div class="bg-white rounded-lg shadow-md p-6">
+    <div class="flex items-center justify-between">
+        <div>
+            <h3 class="text-xl font-semibold">{{ $title }}</h3>
+            <p class="text-gray-500">{{ $subtitle }}</p>
+        </div>
+        <div class="text-4xl font-bold">{{ $value }}</div>
+    </div>
+</div>
+```
+
+## File: resources/views/livewire/notification.blade.php
+```php
+<div class="fixed bottom-4 right-4 z-50">
+    @if (session()->has('success'))
+        <div class="bg-green-500 text-white px-4 py-3 rounded-lg shadow-md mb-4">
+            {{ session('success') }}
+        </div>
+    @endif
+
+    @if (session()->has('error'))
+        <div class="bg-red-500 text-white px-4 py-3 rounded-lg shadow-md mb-4">
+            {{ session('error') }}
+        </div>
+    @endif
+</div>
+```
+
+## File: resources/views/livewire/confirmation-modal.blade.php
+```php
+<div class="fixed z-10 inset-0 overflow-y-auto" style="display: {{ $show ? 'block' : 'none' }}">
+    <div class="flex items-center justify-center min-h-screen">
+        <div class="bg-white rounded-lg shadow-md p-6">
+            <h3 class="text-xl font-semibold mb-4">{{ $title }}</h3>
+            <p class="mb-4">{{ $message }}</p>
+            <div class="flex justify-end">
+                <button wire:click="cancel" class="bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded mr-2">Cancel</button>
+                <button wire:click="confirm" class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded">Confirm</button>
+            </div> 
+        </div> 
+    </div> 
+</div>
+```
+
+## File: resources/views/livewire/entry-index.blade.php
+```php
+<div>
+    {{-- Do your work, then step back. --}}
+</div>
+
+```
+
+## File: resources/views/livewire/entry-create.blade.php
+```php
+<div>
+    {{-- Success is as dangerous as failure. --}}
+</div>
+
+```
+
+## File: resources/views/livewire/invoice-index.blade.php
+```php
+<div>
+    {{-- Because she competes with no one, no one can compete with her. --}}
+</div>
+
+```
+
+## File: resources/views/livewire/invoice-show.blade.php
+```php
+<div>
+    {{-- Be like water. --}}
+</div>
+
+```
+
+## File: resources/views/livewire/header-button.blade.php
+```php
+{{--  resources/views/livewire/header-button.blade.php --}}
+<button class="text-white focus:outline-none"> 
+    <livewire:svg-icon :icon="$icon" class="w-6 h-6" />
+</button>
+```
+
+## File: resources/views/livewire/header-dropdown.blade.php
+```php
+{{--  resources/views/livewire/header-dropdown.blade.php --}}
+<div class="inline-flex relative">
+    <button class="text-white focus:outline-none" wire:click="toggleDropdown">
+        <livewire:svg-icon :icon="$icon" class="w-6 h-6" />
+    </button>
+
+    @if ($isOpen)
+        <div class="absolute right-0 mt-2 w-48 bg-white rounded-md shadow-lg z-10">
+            <!-- Dropdown menu items -->
+            <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Option 1</a>
+            <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Option 2</a>
+            <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Option 3</a>
+        </div>
+    @endif
+</div>
+```
+
+## File: resources/views/livewire/header-separator.blade.php
+```php
+{{--  resources/views/livewire/header-separator.blade.php --}}
+<div class="inline-block relative mx-2" style="height: 50px;">
+    <div></div>
+</div>
+```
+
+## File: resources/views/livewire/user-profile-block.blade.php
+```php
+{{-- resources/views/livewire/user-profile-block.blade.php --}}
+<div class="inline-flex items-center justify-between w-full user-profile-block">
+    <div class="flex items-center">
+        <livewire:svg-icon icon="profile_circle" class="w-8 h-8" />
+    </div>
+    <div class="flex flex-col">
+        <div class="text-white font-bold text-xs padding-left-5">Administrator</div>
+        <div class="flex items-center padding-left-5">
+            <livewire:svg-icon icon="green-dot" class="w-2 h-2 mr-2" />
+            <div class="text-white text-xs margin-left-5"> Online</div>
+        </div>
+    </div>
+</div>
+```
+
+## File: resources/views/livewire/google-font.blade.php
+```php
+{{-- G-L-GF-V1-A+ - View for the GoogleFont Livewire component --}}
+<div>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    {{-- Dynamically constructs the Google Font URL using component properties --}}
+    <link href="https://fonts.googleapis.com/css2?family={{ urlencode($font) }}:wght@<?php echo $weights; ?>&display=swap" rel="stylesheet">
+</div>
+
+```
+
+## File: resources/views/livewire/admin/dashboard.blade.php
+```php
+<div>
+    <h2 class="text-2xl font-semibold mb-4">Admin Dashboard</h2>
+    
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
+        <!-- Entries Statistics -->
+        <div class="bg-white rounded-lg shadow-md p-6">
+            <h3 class="text-lg font-semibold mb-4">Entries</h3>
+            <div class="flex items-center justify-between">
+                <span class="text-3xl font-bold">{{ $totalEntries }}</span>
+                <livewire:circular-graph :percentage="$entriesPercentage" />
+            </div>
+        </div>
+        
+        <!-- Invoices Statistics -->
+        <div class="bg-white rounded-lg shadow-md p-6">
+            <h3 class="text-lg font-semibold mb-4">Invoices</h3>
+            <div class="flex items-center justify-between">
+                <span class="text-3xl font-bold">{{ $totalInvoices }}</span>
+                <livewire:circular-graph :percentage="$invoicesPercentage" />
+            </div>
+        </div>
+        
+        <!-- Judges Statistics -->
+        <div class="bg-white rounded-lg shadow md p-6">
+            <h3 class="text-lg font-semibold mb-4">Judges</h3>
+        <div class="flex items-center justify-between">
+            <span class="text-3xl font-bold">{{ $totalJudges }}</span>
+            <livewire:circular-graph :percentage="$judgesPercentage" />
+        </div>
+    </div>
+            <!-- Users Statistics -->
+    <div class="bg-white rounded-lg shadow-md p-6">
+        <h3 class="text-lg font-semibold mb-4">Users</h3>
+        <div class="flex items-center justify-between">
+            <span class="text-3xl font-bold">{{ $totalUsers }}</span>
+            <livewire:circular-graph :percentage="$usersPercentage" />
+        </div>
+    </div>
+</div>
+
+<!-- Recent Entries -->
+<div class="bg-white rounded-lg shadow-md p-6 mb-8">
+    <h3 class="text-lg font-semibold mb-4">Recent Entries</h3>
+    <table class="min-w-full divide-y divide-gray-200">
+        <thead>
+            <tr>
+                <th class="px-6 py-3 bg-gray-50 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Title</th>
+                <th class="px-6 py-3 bg-gray-50 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Submitted By</th>
+                <th class="px-6 py-3 bg-gray-50 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Date</th>
+                <th class="px-6 py-3 bg-gray-50 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Status</th>
+            </tr>
+        </thead>
+        <tbody class="bg-white divide-y divide-gray-200">
+            @foreach ($recentEntries as $entry)
+                <tr>
+                    <td class="px-6 py-4 whitespace-nowrap">{{ $entry->title }}</td>
+                    <td class="px-6 py-4 whitespace-nowrap">{{ $entry->user->name }}</td>
+                    <td class="px-6 py-4 whitespace-nowrap">{{ $entry->created_at->format('M d, Y') }}</td>
+                    <td class="px-6 py-4 whitespace-nowrap">
+                        <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full {{ $entry->status === 'submitted' ? 'bg-green-100 text-green-800' : 'bg-yellow-100 text-yellow-800' }}">
+                            {{ ucfirst($entry->status) }}
+                        </span>
+                    </td>
+                </tr>
+            @endforeach
+        </tbody>
+    </table>
+</div>
+
+<!-- User Management -->
+<div class="bg-white rounded-lg shadow-md p-6">
+    <h3 class="text-lg font-semibold mb-4">User Management</h3>
+    <!-- Add user management functionalities -->
+</div>
+```
+
+## File: resources/views/livewire/judge/dashboard.blade.php
+```php
+<div>
+    <h2 class="text-2xl font-semibold mb-4">Judge Dashboard</h2>
+    
+    <!-- Assigned Entries -->
+    <div class="bg-white rounded-lg shadow-md p-6 mb-8">
+        <h3 class="text-lg font-semibold mb-4">Assigned Entries</h3>
+        <table class="min-w-full divide-y divide-gray-200">
+            <thead>
+                <tr>
+                    <th class="px-6 py-3 bg-gray-50 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Title</th>
+                    <th class="px-6 py-3 bg-gray-50 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Submitted By</th>
+                    <th class="px-6 py-3 bg-gray-50 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Date</th>
+                    <th class="px-6 py-3 bg-gray-50 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Action</th>
+                </tr>
+            </thead>
+            <tbody class="bg-white divide-y divide-gray-200">
+                @foreach ($assignedEntries as $entry)
+                    <tr>
+                        <td class="px-6 py-4 whitespace-nowrap">{{ $entry->title }}</td>
+                        <td class="px-6 py-4 whitespace-nowrap">{{ $entry->user->name }}</td>
+                        <td class="px-6 py-4 whitespace-nowrap">{{ $entry->created_at->format('M d, Y') }}</td>
+                        <td class="px-6 py-4 whitespace-nowrap">
+                            <a href="{{ route('judge.entries.show', $entry) }}" class="text-indigo-600 hover:text-indigo-900">Review</a>
+                        </td>
+                    </tr>
+                @endforeach
+            </tbody>
+        </table>
+    </div>
+    
+    <!-- Rating Criteria -->
+    <div class="bg-white rounded-lg shadow-md p-6">
+        <h3 class="text-lg font-semibold mb-4">Rating Criteria</h3>
+        <ul class="list-disc pl-6">
+            @foreach ($ratingCriteria as $criterion)
+                <li class="mb-2">{{ $criterion->name }}</li>
+            @endforeach
+        </ul>
+    </div>
+</div>
+```
+
+## File: resources/views/livewire/user/dashboard.blade.php
+```php
+<div>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
+        <div class="bg-white p-6 rounded-lg shadow">
+            <h3 class="text-xl font-semibold mb-4">Entries</h3>
+            <p class="text-4xl font-bold">{{ $totalEntries }}</p>
+            <p class="mt-2">{{ $completedEntries }} of {{ $totalEntries }} entries completed</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow">
+            <h3 class="text-xl font-semibold mb-4">Invoices</h3>
+            <p class="text-4xl font-bold">{{ $paidInvoices }} of {{ $totalInvoices }} invoices paid</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow">
+            <h3 class="text-xl font-semibold mb-4">Competitions</h3>
+            <p class="text-4xl font-bold">No active competitions</p>
+        </div>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div class="bg-white p-6 rounded-lg shadow">
+            <h3 class="text-xl font-semibold mb-4">Latest Entries</h3>
+            <table class="w-full">
+                <thead>
+                    <tr>
+                        <th class="py-2 px-4 bg-gray-100">Title</th>
+                        <th class="py-2 px-4 bg-gray-100">Date Created</th>
+                        <th class="py-2 px-4 bg-gray-100">Status</th>
+                        <th class="py-2 px-4 bg-gray-100">Missing Info</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach ($entries as $entry)
+                        <tr>
+                            <td class="py-2 px-4">{{ $entry->title }}</td>
+                            <td class="py-2 px-4">{{ $entry->created_at->format('Y-m-d') }}</td>
+                            <td class="py-2 px-4">{{ ucfirst($entry->status) }}</td>
+                            <td class="py-2 px-4">{{ $entry->missing_info }}</td>
+                        </tr>
+                    @endforeach
+                </tbody>
+            </table>
+            <div class="mt-4">
+                <a href="{{ route('entries.create') }}" class="inline-block bg-blue-500 text-white py-2 px-4 rounded">Add Entry</a>
+                <a href="{{ route('entries.index') }}" class="inline-block bg-gray-200 text-gray-700 py-2 px-4 rounded">View All Entries</a>
+            </div>
+        </div>
+
+        <div class="bg-white p-6 rounded-lg shadow">
+            <h3 class="text-xl font-semibold mb-4">Latest Invoices</h3>
+            <table class="w-full">
+                <thead>
+                    <tr>
+                        <th class="py-2 px-4 bg-gray-100">Invoice Number</th>
+                        <th class="py-2 px-4 bg-gray-100">Date Created</th>
+                        <th class="py-2 px-4 bg-gray-100">Sent To</th>
+                        <th class="py-2 px-4 bg-gray-100">Status</th>
+                        <th class="py-2 px-4 bg-gray-100"></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach ($invoices as $invoice)
+                        <tr>
+                            <td class="py-2 px-4">{{ $invoice->invoice_number }}</td>
+                            <td class="py-2 px-4">{{ $invoice->created_at->format('Y-m-d') }}</td>
+                            <td class="py-2 px-4">{{ $invoice->sent_to }}</td>
+                            <td class="py-2 px-4">{{ ucfirst($invoice->status) }}</td>
+                            <td class="py-2 px-4">
+                                <a href="{{ route('invoices.show', $invoice) }}" class="text-blue-500">View</a>
+                            </td>
+                        </tr>
+                    @endforeach
+                </tbody>
+            </table>
+            <div class="mt-4">
+                <a href="{{ route('invoices.index') }}" class="inline-block bg-gray-200 text-gray-700 py-2 px-4 rounded">View All Invoices</a>
+            </div>
+        </div>
+    </div>
+</div>
 ```
 
 ## File: routes/api.php
@@ -4462,59 +8793,130 @@ Artisan::command('inspire', function () {
 ```php
 <?php
 // routes/web.php
-
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\Auth\AuthenticatedSessionController;
 use App\Http\Controllers\Auth\PasswordResetLinkController;
+use App\Http\Controllers\Auth\NewPasswordController;
 use App\Http\Controllers\Auth\RegisteredUserController;
 
+use App\Livewire\Admin\Dashboard as AdminDashboard;
+use App\Livewire\Judge\Dashboard as JudgeDashboard;
+use App\Livewire\User\Dashboard as UserDashboard;
 
-/** Full Page Components */
 
-use App\Livewire\JudgeProfile;
-use App\Livewire\UserProfile;
+// Authentication
+
+# Login
+// Login page with Livewire
+Route::get('/login',\App\Livewire\LoginForm::class)->name('login');
+
+# Logout
+Route::post('/logout', [AuthenticatedSessionController::class, 'destroy'])
+                ->middleware('auth')
+                ->name('logout');
+
+
+
+
+
+
+Route::get('/', function () {
+    return view('auth.register');
+})->name('register');
+
+// Route::post('/register', [RegisterUserController::class, 'register'])->name('register');
+
 
 Route::middleware(['auth'])->group(function () {
-    //Route::get('/dashboard', \App\Livewire\AdminDashboard::class)->name('dashboard')->middleware('role:admin');
-    // Route::get('/judge/profile', JudgeProfile::class)->name('judge.profile')->middleware('role:judge');
-    // Route::get('/user/profile', UserProfile::class)->name('user.profile')->middleware('role:user');
+    Route::get('/admin/dashboard', AdminDashboard::class)->name('admin.dashboard');
+    Route::get('/judge/dashboard', JudgeDashboard::class)->name('judge.dashboard');
+    Route::get('/user/dashboard', UserDashboard::class)->name('user.dashboard');
+
+    Route::get('/entries', \App\Livewire\User\EntryIndex::class)->name('entries.index');
+    Route::get('/entries/create', \App\Livewire\User\EntryCreate::class)->name('entries.create');
+    Route::get('/invoices', \App\Livewire\User\InvoiceIndex::class)->name('invoices.index');
+    Route::get('/invoices/{invoice}', \App\Livewire\User\InvoiceShow::class)->name('invoices.show');
+    
+    
+    Route::get('/entries/{entry}', function ($entry) {
+        return view('entries.show', ['entry' => $entry]);
+    })->name('entries.show');
+    
+    Route::get('/judge/entries/{entry}', function ($entry) {
+        return view('judge.entries.show', ['entry' => $entry]);
+    })->name('judge.entries.show');
 });
+
+// Route::get('/forgot-password', function () {
+//     return view('auth.forgot-password');
+// })->name('password.request');
+
+// Route::get('/reset-password/{token}', function ($token) {
+//     return view('auth.reset-password', ['token' => $token]);
+// })->name('password.reset');
+
+// Route::get('/email/verify', function () {
+//     return view('auth.verify-email');
+// })->middleware('auth')->name('verification.notice');
+
+// Route::get('/email/verify/{id}/{hash}', function (EmailVerificationRequest $request) {
+//     $request->fulfill();
+//     return redirect('/home');
+// })->middleware(['auth', 'signed'])->name('verification.verify');
+
+// Route::get('/email/resend', function (Request $request) {
+//     $request->user()->sendEmailVerificationNotification();
+//     return back()->with('message', 'Verification link sent!');
+// })->middleware(['auth', 'throttle:6,1'])->name('verification.send');
+
+
+
+
 
 /** Authentication routes */
 // Login page
+Route::get('/login',\App\Livewire\LoginForm::class)->name('login');
+
 // Route::get('/login', [AuthenticatedSessionController::class, 'create'])
-//                 ->middleware('guest')
-//                 ->name('login');
+//                  ->middleware('guest')
+//                  ->name('login');
 // // Handle login POST
 // Route::post('/login', [AuthenticatedSessionController::class, 'store'])
 //                 ->middleware('guest');
-// // Forgot password page
-// Route::get('/forgot-password', [PasswordResetLinkController::class, 'create'])
-//                 ->middleware('guest')
-//                 ->name('password.request');
-// // Handle forgot password POST
-// Route::post('/forgot-password', [PasswordResetLinkController::class, 'store'])
-//                 ->middleware('guest')
-//                 ->name('password.email');
-// // Registration page
-// Route::get('/register', [RegisteredUserController::class, 'create'])
-//                 ->middleware('guest')
-//                 ->name('register');
-// // Handle registration POST
-// Route::post('/register', [RegisteredUserController::class, 'store'])
-//                 ->middleware('guest');
 // // Logout POST
-// Route::post('/logout', [AuthenticatedSessionController::class, 'destroy'])
+// Route::get('/logout', [AuthenticatedSessionController::class, 'destroy'])
 //                 ->middleware('auth')
 //                 ->name('logout');
-                
-/** Guest Routes */
-Route::get('/addJudge', function () {
-    return view('addJudge');
-});
+// Route::post('/login', [AuthenticatedSessionController::class, 'store'])->name('login');
 
 
-require __DIR__.'/auth.php';
+
+
+// Forgot password page
+Route::get('/forgot-password', [PasswordResetLinkController::class, 'create'])
+                ->middleware('guest')
+                ->name('password.request');
+
+// Handle forgot password POST
+Route::post('/forgot-password', [PasswordResetLinkController::class, 'store'])
+                ->middleware('guest')
+                ->name('password.email');
+
+// Registration page
+Route::get('/register', [RegisteredUserController::class, 'create'])
+                ->middleware('guest')
+                ->name('register');
+
+// Handle registration POST
+Route::post('/register', [RegisteredUserController::class, 'store'])
+                ->middleware('guest');
+
+
+
+
+
+
 
 ```
 

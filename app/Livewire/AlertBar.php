@@ -24,7 +24,7 @@ class AlertBar extends Component
         $this->fadeInTime = $fadeInTime;
         $this->fadeOutTime = $fadeOutTime;
         $this->showTime = $showTime;
-        $this->emit('alertShown');
+        $this->dispatch('alertShown');
     }
 
     public function dismiss()

@@ -45,8 +45,8 @@ The `AlertBar` component is used to display notifications, errors, or warnings t
 ### Class Code
 
 ```php
-// app/Http/Livewire/AlertBar.php
-namespace App\Http\Livewire;
+// app/Livewire/AlertBar.php
+namespace App\Livewire;
 
 use Illuminate\View\View;
 use Livewire\Component;

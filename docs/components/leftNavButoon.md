@@ -48,8 +48,8 @@ The `LeftNavButton` component represents a button in the left navigation of the 
 ### Class Code
 
 ```php
-// app/Http/Livewire/LeftNavButton.php
-namespace App\Http\Livewire;
+// app/Livewire/LeftNavButton.php
+namespace App\Livewire;
 
 use Illuminate\View\View;
 use Livewire\Component;

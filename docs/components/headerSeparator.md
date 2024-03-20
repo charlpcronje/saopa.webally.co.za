@@ -13,8 +13,8 @@ The `HeaderSeparator` component represents a separator between elements in the h
 ### Class Code
 
 ```php
-// app/Http/Livewire/HeaderSeparator.php
-namespace App\Http\Livewire;
+// app/Livewire/HeaderSeparator.php
+namespace App\Livewire;
 
 use Illuminate\View\View;
 use Livewire\Component;

@@ -14,8 +14,8 @@ The `HeaderButton` component represents a button in the header bar of the applic
 ### Class Code
 
 ```php
-// app/Http/Livewire/HeaderButton.php
-namespace App\Http\Livewire;
+// app/Livewire/HeaderButton.php
+namespace App\Livewire;
 
 use Illuminate\View\View;
 use Livewire\Component;

@@ -26,8 +26,8 @@ The `HeaderDropdown` component represents a dropdown menu in the header bar of t
 ### Class Code
 
 ```php
-// app/Http/Livewire/HeaderDropdown.php
-namespace App\Http\Livewire;
+// app/Livewire/HeaderDropdown.php
+namespace App\Livewire;
 
 use Illuminate\View\View;
 use Livewire\Component;

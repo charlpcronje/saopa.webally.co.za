@@ -18,9 +18,9 @@
             @error('password') <span class="text-red-500">{{ $message }}</span> @enderror
         </div>
         <div class="mb-6">
-            <button type="submit" class="w-full red-button-class">
+            <x-primary-button class="w-full red-button-class">
                 {{ __('Sign In') }}
-            </button>
+            </x-primary-button>
         </div>
         <div class="flex flex-col items-start text-sm">
             <a href="{{ route('password.request') }}" class="link-forgot-password font-semibold hover:underline mb-2">{{ __('Forgot Password') }}</a>

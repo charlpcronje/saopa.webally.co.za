@@ -1,5 +1,5 @@
 <?php
-// app/Http/Livewire/LeftNavSubButton.php
+// app/Livewire/LeftNavSubButton.php
 namespace App\Livewire;
 
 use Illuminate\View\View;

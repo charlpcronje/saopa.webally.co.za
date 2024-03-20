@@ -1,15 +1,12 @@
 {{-- resources/views/livewire/sidebar.blade.php --}}
 <aside class="sidebar bg-gray-800 text-white w-64 min-h-screen">
-    <div class="branding-block bg-gray-900 p-4">
+    <div class="branding-block" style="background-color:#D33026; padding:18px">
         <!-- Branding block content -->
-        <h1 class="text-xl font-bold">SAPOA Awards</h1>
-        <h2 class="text-gray-400">Dashboard</h2>
+        <h2 class="font-bold" style="font-size:14px; font-weight:bold">SAPOA Awards <span class="text-sm" style="font-weight:100">DASHBOARD</span></h2>
     </div>
     <nav class="left-navigation p-4 space-y-2">
         <livewire:left-nav-button icon="search" text="Search" />
-        {{--
         <livewire:left-nav-button icon="dashboard_white" text="Dashboard" link="/dashboard" />
-        --}}
         <livewire:left-nav-button icon="chevron_down" text="Admin" :has-sub-buttons="true">
             <livewire:left-nav-sub-button text="View Admins" link="/admins" />
             <livewire:left-nav-sub-button text="Link Admins" link="/link-admins" />
