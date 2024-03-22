@@ -1,3 +1,4 @@
+{{-- resources/views/livewire/circular-graph.blade.php --}}
 <div class="relative">
     <svg class="w-40 h-40">
         <circle class="text-gray-300" stroke-width="10" stroke="currentColor" fill="transparent" r="60" cx="80" cy="80" />

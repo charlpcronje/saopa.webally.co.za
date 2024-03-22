@@ -1,3 +1,4 @@
+{{-- resources/views/livewire/entry-details.blade.php --}}
 <div>
     <h1>{{ $entry->title }}</h1>
 

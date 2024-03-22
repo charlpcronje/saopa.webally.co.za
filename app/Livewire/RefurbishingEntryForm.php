@@ -1,6 +1,6 @@
 <?php
-
-namespace App\Http\Livewire\Entries;
+// app/Livewire/RefurbishingEntryForm.php
+namespace App\Livewire\Entries;
 
 use Livewire\Component;
 use Livewire\WithFileUploads;

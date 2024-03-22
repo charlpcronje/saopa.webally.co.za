@@ -1,3 +1,4 @@
+{{-- resources/views/livewire/user-registration-form.blade.php --}}
 <div>
     <form wire:submit.prevent="submit" class="space-y-4">
         <div>

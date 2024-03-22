@@ -7,230 +7,207 @@
 | 3 | ./vite.config.js | 16 | 28 | 50 |
 | 4 | ./tailwind.config.js | 23 | 38 | 96 |
 | 5 | ./postcss.config.js | 8 | 13 | 22 |
-| 6 | ./tree.md | 268 | 536 | 1830 |
-| 7 | ./cspell.json | 10 | 16 | 51 |
-| 8 | ./app/Console/Kernel.php | 29 | 52 | 102 |
-| 9 | ./app/Exceptions/Handler.php | 32 | 71 | 110 |
-| 10 | ./app/Http/Kernel.php | 74 | 169 | 339 |
-| 11 | ./app/Http/Controllers/Controller.php | 14 | 22 | 30 |
-| 12 | ./app/Http/Controllers/ProfileController.php | 62 | 102 | 286 |
-| 13 | ./app/Http/Controllers/JudgeController.php | 1 | 0 | 0 |
-| 14 | ./app/Http/Controllers/Auth/AuthenticatedSessionController.php | 49 | 78 | 185 |
-| 15 | ./app/Http/Controllers/Auth/ConfirmablePasswordController.php | 42 | 77 | 180 |
-| 16 | ./app/Http/Controllers/Auth/EmailVerificationNotificationController.php | 26 | 45 | 107 |
-| 17 | ./app/Http/Controllers/Auth/EmailVerificationPromptController.php | 23 | 42 | 84 |
-| 18 | ./app/Http/Controllers/Auth/NewPasswordController.php | 63 | 201 | 402 |
-| 19 | ./app/Http/Controllers/Auth/PasswordController.php | 30 | 57 | 143 |
-| 20 | ./app/Http/Controllers/Auth/PasswordResetLinkController.php | 45 | 127 | 236 |
-| 21 | ./app/Http/Controllers/Auth/RegisteredUserController.php | 59 | 133 | 336 |
-| 22 | ./app/Http/Controllers/Auth/VerifyEmailController.php | 29 | 53 | 139 |
-| 23 | ./app/Http/Middleware/Authenticate.php | 18 | 47 | 72 |
-| 24 | ./app/Http/Middleware/EncryptCookies.php | 13 | 21 | 27 |
-| 25 | ./app/Http/Middleware/PreventRequestsDuringMaintenance.php | 13 | 21 | 27 |
-| 26 | ./app/Http/Middleware/RedirectIfAuthenticated.php | 25 | 47 | 101 |
-| 27 | ./app/Http/Middleware/TrimStrings.php | 15 | 23 | 35 |
-| 28 | ./app/Http/Middleware/TrustHosts.php | 16 | 25 | 39 |
-| 29 | ./app/Http/Middleware/TrustProxies.php | 18 | 33 | 54 |
-| 30 | ./app/Http/Middleware/ValidateSignature.php | 23 | 51 | 78 |
-| 31 | ./app/Http/Middleware/VerifyCsrfToken.php | 13 | 21 | 27 |
-| 32 | ./app/Http/Middleware/ForceHttpsMiddleware.php | 19 | 31 | 80 |
-| 33 | ./app/Http/Middleware/CheckRole.php | 24 | 59 | 137 |
-| 34 | ./app/Http/Requests/ProfileUpdateRequest.php | 25 | 56 | 121 |
-| 35 | ./app/Http/Requests/Auth/LoginRequest.php | 86 | 183 | 405 |
-| 36 | ./app/Models/User.php | 62 | 103 | 205 |
-| 37 | ./app/Models/Entry.php | 72 | 100 | 242 |
-| 38 | ./app/Models/EntryImage.php | 14 | 27 | 53 |
-| 39 | ./app/Models/Role.php | 19 | 28 | 50 |
-| 40 | ./app/Models/Invoice.php | 34 | 46 | 94 |
-| 41 | ./app/Models/Judge.php | 20 | 28 | 56 |
-| 42 | ./app/Models/Rating.php | 26 | 36 | 73 |
-| 43 | ./app/Models/Criteria.php | 16 | 22 | 37 |
-| 44 | ./app/Models/EntryDocument.php | 14 | 27 | 53 |
-| 45 | ./app/Models/EntryArchitecturalDrawing.php | 16 | 22 | 37 |
-| 46 | ./app/Models/InvoiceItem.php | 24 | 32 | 63 |
-| 47 | ./app/Providers/AppServiceProvider.php | 40 | 72 | 241 |
-| 48 | ./app/Providers/AuthServiceProvider.php | 27 | 56 | 79 |
-| 49 | ./app/Providers/BroadcastServiceProvider.php | 20 | 31 | 53 |
-| 50 | ./app/Providers/EventServiceProvider.php | 39 | 84 | 128 |
-| 51 | ./app/Providers/RouteServiceProvider.php | 39 | 88 | 201 |
-| 52 | ./app/View/Components/AppLayout.php | 18 | 35 | 52 |
-| 53 | ./app/View/Components/GuestLayout.php | 18 | 35 | 52 |
-| 54 | ./app/View/Components/Checkbox.php | 23 | 38 | 69 |
-| 55 | ./app/View/Components/AuthCard.php | 19 | 37 | 50 |
-| 56 | ./app/View/Components/PrimaryButton.php | 14 | 20 | 31 |
-| 57 | ./app/Livewire/SvgIcon.php | 46 | 96 | 211 |
-| 58 | ./app/Livewire/SearchButton.php | 21 | 32 | 55 |
-| 59 | ./app/Livewire/LeftNavButton.php | 48 | 135 | 226 |
-| 60 | ./app/Livewire/LeftNavSubButton.php | 25 | 57 | 100 |
-| 61 | ./app/Livewire/Sidebar.php | 15 | 23 | 36 |
-| 62 | ./app/Livewire/Headerbar.php | 15 | 22 | 34 |
-| 63 | ./app/Livewire/AlertBar.php | 39 | 104 | 194 |
-| 64 | ./app/Livewire/LoginForm.php | 41 | 82 | 230 |
-| 65 | ./app/Livewire/AdminDashboard.php | 14 | 23 | 41 |
-| 66 | ./app/Livewire/JudgeProfile.php | 14 | 20 | 31 |
-| 67 | ./app/Livewire/UserProfile.php | 13 | 20 | 38 |
-| 68 | ./app/Livewire/Dashboard.php | 22 | 43 | 108 |
-| 69 | ./app/Livewire/EntryTable.php | 16 | 24 | 60 |
-| 70 | ./app/Livewire/EntryDetails.php | 23 | 35 | 70 |
-| 71 | ./app/Livewire/RefurbishingEntryForm.php | 47 | 95 | 169 |
-| 72 | ./app/Livewire/InteriorDesignEntryForm.php | 47 | 96 | 170 |
-| 73 | ./app/Livewire/JudgeRegistrationForm.php | 57 | 120 | 277 |
-| 74 | ./app/Livewire/UserRegistrationForm.php | 39 | 72 | 157 |
-| 75 | ./app/Livewire/PaymentGateway.php | 58 | 125 | 276 |
-| 76 | ./app/Livewire/EntryCard.php | 22 | 34 | 57 |
-| 77 | ./app/Livewire/EntryRatingForm.php | 48 | 84 | 198 |
-| 78 | ./app/Livewire/FileUpload.php | 37 | 71 | 132 |
-| 79 | ./app/Livewire/PaymentForm.php | 60 | 141 | 280 |
-| 80 | ./app/Livewire/ProgressBar.php | 21 | 30 | 52 |
-| 81 | ./app/Livewire/CircularGraph.php | 21 | 30 | 52 |
-| 82 | ./app/Livewire/HeaderButton.php | 21 | 35 | 59 |
-| 83 | ./app/Livewire/HeaderDropdown.php | 27 | 49 | 86 |
-| 84 | ./app/Livewire/HeaderSeparator.php | 16 | 23 | 36 |
-| 85 | ./app/Livewire/UserProfileBlock.php | 14 | 18 | 29 |
-| 86 | ./app/Livewire/GoogleFont.php | 28 | 54 | 102 |
-| 87 | ./app/Livewire/Judge/Dashboard.php | 28 | 45 | 110 |
-| 88 | ./app/Livewire/Admin/Dashboard.php | 46 | 100 | 273 |
-| 89 | ./app/Livewire/User/Dashboard.php | 34 | 66 | 293 |
-| 90 | ./app/Livewire/User/EntryIndex.php | 14 | 18 | 29 |
-| 91 | ./app/Livewire/User/EntryCreate.php | 14 | 18 | 29 |
-| 92 | ./app/Livewire/User/InvoiceIndex.php | 14 | 18 | 29 |
-| 93 | ./app/Livewire/User/InvoiceShow.php | 14 | 18 | 29 |
-| 94 | ./app/Livewire/Entries/BuildingEntryForm.php | 114 | 267 | 677 |
-| 95 | ./app/Enums/UserRole.php | 13 | 24 | 35 |
-| 96 | ./bootstrap/app.php | 29 | 37 | 83 |
-| 97 | ./bootstrap/cache/packages.php | 84 | 159 | 273 |
-| 98 | ./bootstrap/cache/services.php | 259 | 700 | 1503 |
-| 99 | ./config/app.php | 43 | 90 | 241 |
-| 100 | ./config/auth.php | 43 | 91 | 168 |
-| 101 | ./config/broadcasting.php | 52 | 115 | 276 |
-| 102 | ./config/cache.php | 81 | 175 | 425 |
-| 103 | ./config/cors.php | 15 | 37 | 86 |
-| 104 | ./config/database.php | 77 | 190 | 505 |
-| 105 | ./config/filesystems.php | 45 | 95 | 231 |
-| 106 | ./config/hashing.php | 25 | 46 | 81 |
-| 107 | ./config/logging.php | 98 | 233 | 573 |
-| 108 | ./config/mail.php | 91 | 199 | 448 |
-| 109 | ./config/queue.php | 69 | 165 | 380 |
-| 110 | ./config/sanctum.php | 29 | 55 | 127 |
-| 111 | ./config/services.php | 23 | 48 | 116 |
-| 112 | ./config/session.php | 59 | 137 | 292 |
-| 113 | ./config/view.php | 16 | 25 | 49 |
-| 114 | ./config/livewire.php | 161 | 621 | 1707 |
-| 115 | ./config/debugbar.php | 323 | 1558 | 3346 |
-| 116 | ./database/migrations/2014_10_12_000000_create_users_table.php | 33 | 54 | 152 |
-| 117 | ./database/migrations/2014_10_12_100000_create_password_reset_tokens_table.php | 29 | 50 | 122 |
-| 118 | ./database/migrations/2019_08_19_000000_create_failed_jobs_table.php | 33 | 54 | 156 |
-| 119 | ./database/migrations/2019_12_14_000001_create_personal_access_tokens_table.php | 34 | 56 | 175 |
-| 120 | ./database/migrations/2024_02_28_022350_create_entries_table.php | 58 | 99 | 403 |
-| 121 | ./database/migrations/2024_02_28_022350_create_entry_docs_table.php | 29 | 50 | 157 |
-| 122 | ./database/migrations/2024_02_28_022350_create_entry_images_table.php | 29 | 49 | 156 |
-| 123 | ./database/migrations/2024_02_28_030000_date_add_role_id_to_users_table.php | 28 | 53 | 196 |
-| 124 | ./database/migrations/2024_02_28_040000_create_roles_table.php | 22 | 36 | 84 |
-| 125 | ./database/migrations/2024_02_28_045000_add_judge_details_to_users_table.php | 37 | 84 | 234 |
-| 126 | ./database/migrations/2024_03_17_045001_create_invoices_table.php | 31 | 50 | 199 |
-| 127 | ./database/migrations/2024_03_17_450002_create_invoice_items_table.php | 31 | 48 | 189 |
-| 128 | ./database/migrations/2024_03_18_013747_add_status_column_to_entries_table.php | 33 | 60 | 132 |
-| 129 | ./database/migrations/2024_03_18_020116_add_status_column_to_invoices_table.php | 33 | 60 | 132 |
-| 130 | ./public/index.php | 57 | 182 | 502 |
-| 131 | ./public/ntunnel_mysql.php | 559 | 1455 | 4169 |
-| 132 | ./public/css/custom.css | 165 | 309 | 527 |
-| 133 | ./resources/css/app.css | 5 | 9 | 17 |
-| 134 | ./resources/js/app.js | 3 | 4 | 6 |
-| 135 | ./resources/js/bootstrap.js | 34 | 151 | 221 |
-| 136 | ./resources/views/dashboard.blade.php | 42 | 140 | 263 |
-| 137 | ./resources/views/application.blade.php | 42 | 140 | 263 |
-| 138 | ./resources/views/addJudge.blade.php | 42 | 140 | 263 |
-| 139 | ./resources/views/auth/confirm-password.blade.php | 29 | 66 | 176 |
-| 140 | ./resources/views/auth/forgot-password.blade.php | 27 | 96 | 228 |
-| 141 | ./resources/views/auth/login.blade.php | 32 | 102 | 306 |
-| 142 | ./resources/views/auth/register.blade.php | 80 | 284 | 847 |
-| 143 | ./resources/views/auth/reset-password.blade.php | 41 | 112 | 354 |
-| 144 | ./resources/views/auth/verify-email.blade.php | 33 | 120 | 251 |
-| 145 | ./resources/views/components/application-logo.blade.php | 5 | 315 | 340 |
-| 146 | ./resources/views/components/auth-session-status.blade.php | 9 | 19 | 55 |
-| 147 | ./resources/views/components/danger-button.blade.php | 5 | 37 | 77 |
-| 148 | ./resources/views/components/dropdown-link.blade.php | 3 | 24 | 56 |
-| 149 | ./resources/views/components/dropdown.blade.php | 45 | 119 | 280 |
-| 150 | ./resources/views/components/input-error.blade.php | 11 | 25 | 75 |
-| 151 | ./resources/views/components/input-label.blade.php | 7 | 19 | 52 |
-| 152 | ./resources/views/components/modal.blade.php | 80 | 243 | 655 |
-| 153 | ./resources/views/components/nav-link.blade.php | 13 | 56 | 110 |
-| 154 | ./resources/views/components/primary-button.blade.php | 6 | 39 | 84 |
-| 155 | ./resources/views/components/responsive-nav-link.blade.php | 13 | 63 | 125 |
-| 156 | ./resources/views/components/secondary-button.blade.php | 5 | 38 | 78 |
-| 157 | ./resources/views/components/text-input.blade.php | 5 | 23 | 60 |
-| 158 | ./resources/views/components/checkbox.blade.php | 6 | 32 | 90 |
-| 159 | ./resources/views/components/auth-card.blade.php | 10 | 30 | 69 |
-| 160 | ./resources/views/components/left-nav.blade.php | 20 | 55 | 181 |
-| 161 | ./resources/views/components/top-nav.blade.php | 22 | 50 | 142 |
-| 162 | ./resources/views/components/layouts/main.blade.php | 33 | 73 | 225 |
-| 163 | ./resources/views/components/layouts/blank.blade.php | 21 | 50 | 166 |
-| 164 | ./resources/views/components/layouts/dashboard.blade.php | 24 | 60 | 216 |
-| 165 | ./resources/views/components/layouts/app.blade.php | 32 | 74 | 223 |
-| 166 | ./resources/views/layouts/app.blade.php | 34 | 72 | 216 |
-| 167 | ./resources/views/layouts/guest.blade.php | 33 | 93 | 268 |
-| 168 | ./resources/views/layouts/navigation.blade.php | 102 | 326 | 911 |
-| 169 | ./resources/views/profile/edit.blade.php | 31 | 60 | 175 |
-| 170 | ./resources/views/profile/partials/delete-user-form.blade.php | 57 | 171 | 419 |
-| 171 | ./resources/views/profile/partials/update-password-form.blade.php | 50 | 136 | 416 |
-| 172 | ./resources/views/profile/partials/update-profile-information-form.blade.php | 66 | 192 | 541 |
-| 173 | ./resources/views/livewire/svg-icon.blade.php | 4 | 19 | 52 |
-| 174 | ./resources/views/livewire/search-button.blade.php | 6 | 24 | 63 |
-| 175 | ./resources/views/livewire/left-nav-button.blade.php | 39 | 173 | 347 |
-| 176 | ./resources/views/livewire/left-nav-sub-button.blade.php | 8 | 25 | 66 |
-| 177 | ./resources/views/livewire/sidebar.blade.php | 27 | 109 | 351 |
-| 178 | ./resources/views/livewire/headerbar.blade.php | 30 | 63 | 195 |
-| 179 | ./resources/views/livewire/alert-bar.blade.php | 35 | 148 | 335 |
-| 180 | ./resources/views/livewire/login-form.blade.php | 30 | 104 | 333 |
-| 181 | ./resources/views/livewire/admin-dashboard.blade.php | 1 | 1 | 1 |
-| 182 | ./resources/views/livewire/judge-profile.blade.php | 5 | 15 | 32 |
-| 183 | ./resources/views/livewire/user-profile.blade.php | 6 | 15 | 32 |
-| 184 | ./resources/views/livewire/show-posts.blade.php | 4 | 17 | 26 |
-| 185 | ./resources/views/livewire/dashboard.blade.php | 30 | 49 | 175 |
-| 186 | ./resources/views/livewire/entry-table.blade.php | 28 | 84 | 275 |
-| 187 | ./resources/views/livewire/entry-details.blade.php | 30 | 57 | 179 |
-| 188 | ./resources/views/livewire/building-entry-form.blade.php | 60 | 166 | 491 |
-| 189 | ./resources/views/livewire/refurbishing-entry-form.blade.php | 60 | 169 | 494 |
-| 190 | ./resources/views/livewire/interior-design-entry-form.blade.php | 60 | 170 | 495 |
-| 191 | ./resources/views/livewire/judge-registration-form.blade.php | 1 | 0 | 0 |
-| 192 | ./resources/views/livewire/user-registration-form.blade.php | 23 | 51 | 208 |
-| 193 | ./resources/views/livewire/payment-gateway.blade.php | 29 | 70 | 274 |
-| 194 | ./resources/views/livewire/entry-card.blade.php | 19 | 69 | 218 |
-| 195 | ./resources/views/livewire/entry-rating-form.blade.php | 25 | 85 | 246 |
-| 196 | ./resources/views/livewire/file-upload.blade.php | 34 | 91 | 277 |
-| 197 | ./resources/views/livewire/payment-form.blade.php | 39 | 150 | 471 |
-| 198 | ./resources/views/livewire/progress-bar.blade.php | 8 | 24 | 71 |
-| 199 | ./resources/views/livewire/circular-graph.blade.php | 11 | 46 | 140 |
-| 200 | ./resources/views/livewire/pagination.blade.php | 47 | 118 | 420 |
-| 201 | ./resources/views/livewire/filter.blade.php | 10 | 26 | 104 |
-| 202 | ./resources/views/livewire/sorting.blade.php | 10 | 31 | 109 |
-| 203 | ./resources/views/livewire/dashboard-statistic-card.blade.php | 9 | 27 | 81 |
-| 204 | ./resources/views/livewire/notification.blade.php | 13 | 36 | 95 |
-| 205 | ./resources/views/livewire/confirmation-modal.blade.php | 12 | 59 | 152 |
-| 206 | ./resources/views/livewire/entry-index.blade.php | 4 | 10 | 20 |
-| 207 | ./resources/views/livewire/entry-create.blade.php | 4 | 10 | 19 |
-| 208 | ./resources/views/livewire/invoice-index.blade.php | 4 | 16 | 26 |
-| 209 | ./resources/views/livewire/invoice-show.blade.php | 4 | 7 | 16 |
-| 210 | ./resources/views/livewire/header-button.blade.php | 4 | 12 | 37 |
-| 211 | ./resources/views/livewire/header-dropdown.blade.php | 15 | 59 | 153 |
-| 212 | ./resources/views/livewire/header-separator.blade.php | 4 | 11 | 32 |
-| 213 | ./resources/views/livewire/user-profile-block.blade.php | 13 | 44 | 113 |
-| 214 | ./resources/views/livewire/google-font.blade.php | 8 | 38 | 100 |
-| 215 | ./resources/views/livewire/admin/dashboard.blade.php | 74 | 269 | 669 |
-| 216 | ./resources/views/livewire/judge/dashboard.blade.php | 40 | 145 | 371 |
-| 217 | ./resources/views/livewire/user/dashboard.blade.php | 78 | 262 | 780 |
-| 218 | ./routes/api.php | 21 | 60 | 171 |
-| 219 | ./routes/channels.php | 20 | 61 | 168 |
-| 220 | ./routes/console.php | 21 | 61 | 171 |
-| 221 | ./routes/web.php | 127 | 235 | 927 |
-| 222 | ./routes/auth.php | 61 | 88 | 429 |
-|  | Total | 8360 | 21054 | 52573 |
+| 6 | ./app/Console/Kernel.php | 29 | 52 | 102 |
+| 7 | ./app/Exceptions/Handler.php | 32 | 71 | 110 |
+| 8 | ./app/Http/Kernel.php | 74 | 169 | 339 |
+| 9 | ./app/Http/Controllers/Controller.php | 14 | 22 | 30 |
+| 10 | ./app/Http/Controllers/Auth/AuthenticatedSessionController.php | 49 | 78 | 185 |
+| 11 | ./app/Http/Controllers/Auth/ConfirmablePasswordController.php | 42 | 77 | 180 |
+| 12 | ./app/Http/Controllers/Auth/EmailVerificationNotificationController.php | 26 | 45 | 107 |
+| 13 | ./app/Http/Controllers/Auth/EmailVerificationPromptController.php | 23 | 42 | 84 |
+| 14 | ./app/Http/Controllers/Auth/NewPasswordController.php | 63 | 201 | 402 |
+| 15 | ./app/Http/Controllers/Auth/PasswordController.php | 30 | 57 | 143 |
+| 16 | ./app/Http/Controllers/Auth/PasswordResetLinkController.php | 45 | 127 | 236 |
+| 17 | ./app/Http/Controllers/Auth/RegisteredUserController.php | 56 | 117 | 288 |
+| 18 | ./app/Http/Controllers/Auth/VerifyEmailController.php | 29 | 53 | 139 |
+| 19 | ./app/Http/Middleware/Authenticate.php | 18 | 47 | 72 |
+| 20 | ./app/Http/Middleware/EncryptCookies.php | 13 | 21 | 27 |
+| 21 | ./app/Http/Middleware/PreventRequestsDuringMaintenance.php | 13 | 21 | 27 |
+| 22 | ./app/Http/Middleware/RedirectIfAuthenticated.php | 25 | 47 | 101 |
+| 23 | ./app/Http/Middleware/TrimStrings.php | 15 | 23 | 35 |
+| 24 | ./app/Http/Middleware/TrustHosts.php | 16 | 25 | 39 |
+| 25 | ./app/Http/Middleware/TrustProxies.php | 18 | 33 | 54 |
+| 26 | ./app/Http/Middleware/ValidateSignature.php | 23 | 51 | 78 |
+| 27 | ./app/Http/Middleware/VerifyCsrfToken.php | 13 | 21 | 27 |
+| 28 | ./app/Http/Middleware/ForceHttpsMiddleware.php | 19 | 31 | 80 |
+| 29 | ./app/Http/Middleware/CheckRole.php | 24 | 59 | 137 |
+| 30 | ./app/Http/Requests/ProfileUpdateRequest.php | 25 | 56 | 121 |
+| 31 | ./app/Http/Requests/Auth/LoginRequest.php | 86 | 183 | 405 |
+| 32 | ./app/Models/User.php | 62 | 103 | 205 |
+| 33 | ./app/Models/Entry.php | 72 | 100 | 242 |
+| 34 | ./app/Models/EntryImage.php | 14 | 27 | 53 |
+| 35 | ./app/Models/Role.php | 19 | 28 | 50 |
+| 36 | ./app/Models/Invoice.php | 34 | 46 | 94 |
+| 37 | ./app/Models/Judge.php | 20 | 28 | 56 |
+| 38 | ./app/Models/Rating.php | 26 | 36 | 73 |
+| 39 | ./app/Models/Criteria.php | 16 | 22 | 37 |
+| 40 | ./app/Models/EntryDocument.php | 14 | 27 | 53 |
+| 41 | ./app/Models/EntryArchitecturalDrawing.php | 16 | 22 | 37 |
+| 42 | ./app/Models/InvoiceItem.php | 24 | 32 | 63 |
+| 43 | ./app/Providers/AppServiceProvider.php | 40 | 72 | 241 |
+| 44 | ./app/Providers/AuthServiceProvider.php | 27 | 56 | 79 |
+| 45 | ./app/Providers/BroadcastServiceProvider.php | 20 | 31 | 53 |
+| 46 | ./app/Providers/EventServiceProvider.php | 39 | 84 | 128 |
+| 47 | ./app/Providers/RouteServiceProvider.php | 39 | 88 | 201 |
+| 48 | ./app/View/Components/AppLayout.php | 18 | 35 | 52 |
+| 49 | ./app/View/Components/GuestLayout.php | 18 | 35 | 52 |
+| 50 | ./app/View/Components/Checkbox.php | 23 | 38 | 69 |
+| 51 | ./app/View/Components/AuthCard.php | 19 | 37 | 50 |
+| 52 | ./app/View/Components/PrimaryButton.php | 14 | 20 | 31 |
+| 53 | ./app/Livewire/SvgIcon.php | 46 | 96 | 211 |
+| 54 | ./app/Livewire/SearchButton.php | 21 | 32 | 55 |
+| 55 | ./app/Livewire/LeftNavButton.php | 48 | 130 | 221 |
+| 56 | ./app/Livewire/LeftNavSubButton.php | 25 | 57 | 100 |
+| 57 | ./app/Livewire/Sidebar.php | 15 | 23 | 36 |
+| 58 | ./app/Livewire/Headerbar.php | 14 | 20 | 31 |
+| 59 | ./app/Livewire/AlertBar.php | 39 | 104 | 194 |
+| 60 | ./app/Livewire/LoginForm.php | 41 | 82 | 230 |
+| 61 | ./app/Livewire/JudgeProfile.php | 14 | 20 | 31 |
+| 62 | ./app/Livewire/UserProfile.php | 13 | 20 | 38 |
+| 63 | ./app/Livewire/EntryTable.php | 16 | 26 | 62 |
+| 64 | ./app/Livewire/EntryDetails.php | 23 | 37 | 72 |
+| 65 | ./app/Livewire/RefurbishingEntryForm.php | 47 | 97 | 171 |
+| 66 | ./app/Livewire/InteriorDesignEntryForm.php | 47 | 96 | 170 |
+| 67 | ./app/Livewire/JudgeRegistrationForm.php | 57 | 120 | 277 |
+| 68 | ./app/Livewire/UserRegistrationForm.php | 39 | 74 | 159 |
+| 69 | ./app/Livewire/PaymentGateway.php | 58 | 127 | 278 |
+| 70 | ./app/Livewire/EntryCard.php | 22 | 34 | 57 |
+| 71 | ./app/Livewire/EntryRatingForm.php | 48 | 84 | 198 |
+| 72 | ./app/Livewire/FileUpload.php | 37 | 71 | 132 |
+| 73 | ./app/Livewire/PaymentForm.php | 60 | 141 | 280 |
+| 74 | ./app/Livewire/ProgressBar.php | 21 | 30 | 52 |
+| 75 | ./app/Livewire/CircularGraph.php | 21 | 30 | 52 |
+| 76 | ./app/Livewire/HeaderButton.php | 21 | 35 | 59 |
+| 77 | ./app/Livewire/HeaderDropdown.php | 27 | 49 | 86 |
+| 78 | ./app/Livewire/HeaderSeparator.php | 16 | 23 | 36 |
+| 79 | ./app/Livewire/UserProfileBlock.php | 14 | 20 | 31 |
+| 80 | ./app/Livewire/GoogleFont.php | 28 | 54 | 102 |
+| 81 | ./app/Livewire/Favicon.php | 15 | 27 | 38 |
+| 82 | ./app/Livewire/Judge/Dashboard.php | 28 | 45 | 110 |
+| 83 | ./app/Livewire/Admin/Dashboard.php | 46 | 100 | 273 |
+| 84 | ./app/Livewire/User/Dashboard.php | 34 | 66 | 293 |
+| 85 | ./app/Livewire/User/EntryIndex.php | 14 | 18 | 29 |
+| 86 | ./app/Livewire/User/EntryCreate.php | 14 | 18 | 29 |
+| 87 | ./app/Livewire/User/InvoiceIndex.php | 14 | 18 | 29 |
+| 88 | ./app/Livewire/User/InvoiceShow.php | 14 | 18 | 29 |
+| 89 | ./app/Livewire/User/Register.php | 47 | 94 | 266 |
+| 90 | ./app/Livewire/Entries/BuildingEntryForm.php | 114 | 267 | 677 |
+| 91 | ./app/Enums/UserRole.php | 13 | 24 | 35 |
+| 92 | ./bootstrap/app.php | 29 | 37 | 83 |
+| 93 | ./bootstrap/cache/packages.php | 84 | 159 | 273 |
+| 94 | ./bootstrap/cache/services.php | 259 | 700 | 1503 |
+| 95 | ./config/app.php | 43 | 90 | 241 |
+| 96 | ./config/auth.php | 43 | 91 | 168 |
+| 97 | ./config/broadcasting.php | 52 | 115 | 276 |
+| 98 | ./config/cache.php | 81 | 175 | 425 |
+| 99 | ./config/cors.php | 15 | 37 | 86 |
+| 100 | ./config/database.php | 77 | 190 | 505 |
+| 101 | ./config/filesystems.php | 45 | 95 | 231 |
+| 102 | ./config/hashing.php | 25 | 46 | 81 |
+| 103 | ./config/logging.php | 98 | 233 | 573 |
+| 104 | ./config/mail.php | 91 | 199 | 448 |
+| 105 | ./config/queue.php | 69 | 165 | 380 |
+| 106 | ./config/sanctum.php | 29 | 55 | 127 |
+| 107 | ./config/services.php | 23 | 48 | 116 |
+| 108 | ./config/session.php | 59 | 137 | 292 |
+| 109 | ./config/view.php | 16 | 25 | 49 |
+| 110 | ./config/livewire.php | 161 | 621 | 1707 |
+| 111 | ./config/debugbar.php | 323 | 1558 | 3346 |
+| 112 | ./database/migrations/2014_10_12_000000_create_users_table.php | 33 | 54 | 152 |
+| 113 | ./database/migrations/2014_10_12_100000_create_password_reset_tokens_table.php | 29 | 50 | 122 |
+| 114 | ./database/migrations/2019_08_19_000000_create_failed_jobs_table.php | 33 | 54 | 156 |
+| 115 | ./database/migrations/2019_12_14_000001_create_personal_access_tokens_table.php | 34 | 56 | 175 |
+| 116 | ./database/migrations/2024_02_28_022350_create_entries_table.php | 58 | 99 | 403 |
+| 117 | ./database/migrations/2024_02_28_022350_create_entry_docs_table.php | 29 | 50 | 157 |
+| 118 | ./database/migrations/2024_02_28_022350_create_entry_images_table.php | 29 | 49 | 156 |
+| 119 | ./database/migrations/2024_02_28_030000_date_add_role_id_to_users_table.php | 28 | 53 | 196 |
+| 120 | ./database/migrations/2024_02_28_040000_create_roles_table.php | 22 | 36 | 84 |
+| 121 | ./database/migrations/2024_02_28_045000_add_judge_details_to_users_table.php | 37 | 84 | 234 |
+| 122 | ./database/migrations/2024_03_17_045001_create_invoices_table.php | 31 | 50 | 199 |
+| 123 | ./database/migrations/2024_03_17_450002_create_invoice_items_table.php | 31 | 48 | 189 |
+| 124 | ./database/migrations/2024_03_18_013747_add_status_column_to_entries_table.php | 33 | 62 | 134 |
+| 125 | ./database/migrations/2024_03_18_020116_add_status_column_to_invoices_table.php | 33 | 62 | 134 |
+| 126 | ./public/index.php | 36 | 58 | 139 |
+| 127 | ./public/css/custom.css | 171 | 319 | 545 |
+| 128 | ./resources/css/app.css | 5 | 9 | 17 |
+| 129 | ./resources/js/app.js | 3 | 4 | 6 |
+| 130 | ./resources/js/bootstrap.js | 6 | 12 | 22 |
+| 131 | ./resources/views/auth/confirm-password.blade.php | 29 | 66 | 176 |
+| 132 | ./resources/views/auth/forgot-password.blade.php | 27 | 96 | 228 |
+| 133 | ./resources/views/auth/login.blade.php | 32 | 102 | 306 |
+| 134 | ./resources/views/auth/register.blade.php | 56 | 187 | 581 |
+| 135 | ./resources/views/auth/reset-password.blade.php | 41 | 112 | 354 |
+| 136 | ./resources/views/auth/verify-email.blade.php | 33 | 120 | 251 |
+| 137 | ./resources/views/components/auth-session-status.blade.php | 9 | 19 | 55 |
+| 138 | ./resources/views/components/primary-button.blade.php | 6 | 39 | 84 |
+| 139 | ./resources/views/components/layouts/main.blade.php | 35 | 78 | 234 |
+| 140 | ./resources/views/components/layouts/blank.blade.php | 23 | 51 | 162 |
+| 141 | ./resources/views/components/layouts/dashboard.blade.php | 22 | 51 | 162 |
+| 142 | ./resources/views/components/layouts/app.blade.php | 35 | 78 | 234 |
+| 143 | ./resources/views/layouts/app.blade.php | 34 | 72 | 216 |
+| 144 | ./resources/views/layouts/guest.blade.php | 33 | 92 | 259 |
+| 145 | ./resources/views/layouts/navigation.blade.php | 102 | 326 | 911 |
+| 146 | ./resources/views/profile/edit.blade.php | 31 | 60 | 175 |
+| 147 | ./resources/views/profile/partials/delete-user-form.blade.php | 57 | 171 | 419 |
+| 148 | ./resources/views/profile/partials/update-password-form.blade.php | 50 | 136 | 416 |
+| 149 | ./resources/views/profile/partials/update-profile-information-form.blade.php | 66 | 192 | 541 |
+| 150 | ./resources/views/livewire/svg-icon.blade.php | 4 | 19 | 52 |
+| 151 | ./resources/views/livewire/search-button.blade.php | 5 | 20 | 56 |
+| 152 | ./resources/views/livewire/left-nav-button.blade.php | 39 | 168 | 342 |
+| 153 | ./resources/views/livewire/left-nav-sub-button.blade.php | 8 | 25 | 66 |
+| 154 | ./resources/views/livewire/sidebar.blade.php | 27 | 109 | 351 |
+| 155 | ./resources/views/livewire/headerbar.blade.php | 30 | 65 | 198 |
+| 156 | ./resources/views/livewire/alert-bar.blade.php | 35 | 148 | 335 |
+| 157 | ./resources/views/livewire/login-form.blade.php | 30 | 104 | 333 |
+| 158 | ./resources/views/livewire/judge-profile.blade.php | 5 | 15 | 32 |
+| 159 | ./resources/views/livewire/user-profile.blade.php | 6 | 15 | 32 |
+| 160 | ./resources/views/livewire/show-posts.blade.php | 5 | 20 | 33 |
+| 161 | ./resources/views/livewire/entry-table.blade.php | 29 | 87 | 282 |
+| 162 | ./resources/views/livewire/entry-details.blade.php | 31 | 60 | 186 |
+| 163 | ./resources/views/livewire/building-entry-form.blade.php | 61 | 169 | 498 |
+| 164 | ./resources/views/livewire/refurbishing-entry-form.blade.php | 61 | 172 | 501 |
+| 165 | ./resources/views/livewire/interior-design-entry-form.blade.php | 61 | 173 | 502 |
+| 166 | ./resources/views/livewire/judge-registration-form.blade.php | 3 | 5 | 13 |
+| 167 | ./resources/views/livewire/user-registration-form.blade.php | 24 | 54 | 215 |
+| 168 | ./resources/views/livewire/payment-gateway.blade.php | 30 | 73 | 281 |
+| 169 | ./resources/views/livewire/entry-card.blade.php | 19 | 69 | 218 |
+| 170 | ./resources/views/livewire/entry-rating-form.blade.php | 26 | 88 | 253 |
+| 171 | ./resources/views/livewire/file-upload.blade.php | 35 | 94 | 284 |
+| 172 | ./resources/views/livewire/payment-form.blade.php | 40 | 153 | 478 |
+| 173 | ./resources/views/livewire/progress-bar.blade.php | 9 | 27 | 78 |
+| 174 | ./resources/views/livewire/circular-graph.blade.php | 12 | 49 | 147 |
+| 175 | ./resources/views/livewire/pagination.blade.php | 48 | 121 | 427 |
+| 176 | ./resources/views/livewire/filter.blade.php | 11 | 29 | 111 |
+| 177 | ./resources/views/livewire/sorting.blade.php | 10 | 31 | 109 |
+| 178 | ./resources/views/livewire/dashboard-statistic-card.blade.php | 10 | 30 | 88 |
+| 179 | ./resources/views/livewire/notification.blade.php | 14 | 39 | 102 |
+| 180 | ./resources/views/livewire/confirmation-modal.blade.php | 13 | 62 | 159 |
+| 181 | ./resources/views/livewire/entry-index.blade.php | 5 | 13 | 27 |
+| 182 | ./resources/views/livewire/entry-create.blade.php | 5 | 13 | 26 |
+| 183 | ./resources/views/livewire/invoice-index.blade.php | 6 | 19 | 33 |
+| 184 | ./resources/views/livewire/invoice-show.blade.php | 5 | 10 | 23 |
+| 185 | ./resources/views/livewire/header-button.blade.php | 4 | 12 | 37 |
+| 186 | ./resources/views/livewire/header-dropdown.blade.php | 15 | 59 | 153 |
+| 187 | ./resources/views/livewire/header-separator.blade.php | 4 | 11 | 32 |
+| 188 | ./resources/views/livewire/user-profile-block.blade.php | 13 | 44 | 113 |
+| 189 | ./resources/views/livewire/google-font.blade.php | 8 | 31 | 93 |
+| 190 | ./resources/views/livewire/favicon.blade.php | 5 | 14 | 50 |
+| 191 | ./resources/views/livewire/admin/dashboard.blade.php | 75 | 272 | 676 |
+| 192 | ./resources/views/livewire/judge/dashboard.blade.php | 41 | 148 | 378 |
+| 193 | ./resources/views/livewire/user/dashboard.blade.php | 79 | 265 | 787 |
+| 194 | ./resources/views/livewire/user/register.blade.php | 39 | 154 | 471 |
+| 195 | ./routes/api.php | 21 | 60 | 171 |
+| 196 | ./routes/channels.php | 20 | 61 | 168 |
+| 197 | ./routes/console.php | 21 | 61 | 171 |
+| 198 | ./routes/web.php | 114 | 212 | 893 |
+| 199 | ./routes/auth.php | 61 | 88 | 429 |
+|  | Total | 7071 | 17255 | 42799 |
 
 
 ## Total Counts Across All Files. Tokenizer Used: NLTK's Punkt Tokenizer
-- Total Lines: 8360
-- Total Words: 21054
-- Total AI Tokens: 52573
+- Total Lines: 7071
+- Total Words: 17255
+- Total AI Tokens: 42799
 
 ## File: composer.json
 ```json
@@ -389,292 +366,6 @@ export default {
         autoprefixer: {},
     },
 };
-
-```
-
-## File: tree.md
-```md
-- **sapoa.webally.co.za/**
-    - [composer.json](composer.json)
-    - [package.json](package.json)
-    - [vite.config.js](vite.config.js)
-    - [tailwind.config.js](tailwind.config.js)
-    - [postcss.config.js](postcss.config.js)
-    - [tree.md](tree.md)
-    - [cspell.json](cspell.json)
-    - **app/**
-        - **Console/**
-            - [Kernel.php](app/Console/Kernel.php)
-        - **Exceptions/**
-            - [Handler.php](app/Exceptions/Handler.php)
-        - **Http/**
-            - [Kernel.php](app/Http/Kernel.php)
-            - **Controllers/**
-                - [Controller.php](app/Http/Controllers/Controller.php)
-                - [ProfileController.php](app/Http/Controllers/ProfileController.php)
-                - [JudgeController.php](app/Http/Controllers/JudgeController.php)
-                - **Auth/**
-                    - [AuthenticatedSessionController.php](app/Http/Controllers/Auth/AuthenticatedSessionController.php)
-                    - [ConfirmablePasswordController.php](app/Http/Controllers/Auth/ConfirmablePasswordController.php)
-                    - [EmailVerificationNotificationController.php](app/Http/Controllers/Auth/EmailVerificationNotificationController.php)
-                    - [EmailVerificationPromptController.php](app/Http/Controllers/Auth/EmailVerificationPromptController.php)
-                    - [NewPasswordController.php](app/Http/Controllers/Auth/NewPasswordController.php)
-                    - [PasswordController.php](app/Http/Controllers/Auth/PasswordController.php)
-                    - [PasswordResetLinkController.php](app/Http/Controllers/Auth/PasswordResetLinkController.php)
-                    - [RegisteredUserController.php](app/Http/Controllers/Auth/RegisteredUserController.php)
-                    - [VerifyEmailController.php](app/Http/Controllers/Auth/VerifyEmailController.php)
-            - **Middleware/**
-                - [Authenticate.php](app/Http/Middleware/Authenticate.php)
-                - [EncryptCookies.php](app/Http/Middleware/EncryptCookies.php)
-                - [PreventRequestsDuringMaintenance.php](app/Http/Middleware/PreventRequestsDuringMaintenance.php)
-                - [RedirectIfAuthenticated.php](app/Http/Middleware/RedirectIfAuthenticated.php)
-                - [TrimStrings.php](app/Http/Middleware/TrimStrings.php)
-                - [TrustHosts.php](app/Http/Middleware/TrustHosts.php)
-                - [TrustProxies.php](app/Http/Middleware/TrustProxies.php)
-                - [ValidateSignature.php](app/Http/Middleware/ValidateSignature.php)
-                - [VerifyCsrfToken.php](app/Http/Middleware/VerifyCsrfToken.php)
-                - [ForceHttpsMiddleware.php](app/Http/Middleware/ForceHttpsMiddleware.php)
-                - [CheckRole.php](app/Http/Middleware/CheckRole.php)
-            - **Requests/**
-                - [ProfileUpdateRequest.php](app/Http/Requests/ProfileUpdateRequest.php)
-                - **Auth/**
-                    - [LoginRequest.php](app/Http/Requests/Auth/LoginRequest.php)
-        - **Models/**
-            - [User.php](app/Models/User.php)
-            - [Entry.php](app/Models/Entry.php)
-            - [EntryImage.php](app/Models/EntryImage.php)
-            - [Role.php](app/Models/Role.php)
-            - [Invoice.php](app/Models/Invoice.php)
-            - [Judge.php](app/Models/Judge.php)
-            - [Rating.php](app/Models/Rating.php)
-            - [Criteria.php](app/Models/Criteria.php)
-            - [EntryDocument.php](app/Models/EntryDocument.php)
-            - [EntryArchitecturalDrawing.php](app/Models/EntryArchitecturalDrawing.php)
-            - [InvoiceItem.php](app/Models/InvoiceItem.php)
-        - **Providers/**
-            - [AppServiceProvider.php](app/Providers/AppServiceProvider.php)
-            - [AuthServiceProvider.php](app/Providers/AuthServiceProvider.php)
-            - [BroadcastServiceProvider.php](app/Providers/BroadcastServiceProvider.php)
-            - [EventServiceProvider.php](app/Providers/EventServiceProvider.php)
-            - [RouteServiceProvider.php](app/Providers/RouteServiceProvider.php)
-        - **View/**
-            - **Components/**
-                - [AppLayout.php](app/View/Components/AppLayout.php)
-                - [GuestLayout.php](app/View/Components/GuestLayout.php)
-                - [Checkbox.php](app/View/Components/Checkbox.php)
-                - [AuthCard.php](app/View/Components/AuthCard.php)
-                - [PrimaryButton.php](app/View/Components/PrimaryButton.php)
-        - **Livewire/**
-            - [SvgIcon.php](app/Livewire/SvgIcon.php)
-            - [SearchButton.php](app/Livewire/SearchButton.php)
-            - [LeftNavButton.php](app/Livewire/LeftNavButton.php)
-            - [LeftNavSubButton.php](app/Livewire/LeftNavSubButton.php)
-            - [Sidebar.php](app/Livewire/Sidebar.php)
-            - [Headerbar.php](app/Livewire/Headerbar.php)
-            - [AlertBar.php](app/Livewire/AlertBar.php)
-            - [LoginForm.php](app/Livewire/LoginForm.php)
-            - [AdminDashboard.php](app/Livewire/AdminDashboard.php)
-            - [JudgeProfile.php](app/Livewire/JudgeProfile.php)
-            - [UserProfile.php](app/Livewire/UserProfile.php)
-            - [Dashboard.php](app/Livewire/Dashboard.php)
-            - [EntryTable.php](app/Livewire/EntryTable.php)
-            - [EntryDetails.php](app/Livewire/EntryDetails.php)
-            - [RefurbishingEntryForm.php](app/Livewire/RefurbishingEntryForm.php)
-            - [InteriorDesignEntryForm.php](app/Livewire/InteriorDesignEntryForm.php)
-            - [JudgeRegistrationForm.php](app/Livewire/JudgeRegistrationForm.php)
-            - [UserRegistrationForm.php](app/Livewire/UserRegistrationForm.php)
-            - [PaymentGateway.php](app/Livewire/PaymentGateway.php)
-            - [EntryCard.php](app/Livewire/EntryCard.php)
-            - [EntryRatingForm.php](app/Livewire/EntryRatingForm.php)
-            - [FileUpload.php](app/Livewire/FileUpload.php)
-            - [PaymentForm.php](app/Livewire/PaymentForm.php)
-            - [ProgressBar.php](app/Livewire/ProgressBar.php)
-            - [CircularGraph.php](app/Livewire/CircularGraph.php)
-            - [HeaderButton.php](app/Livewire/HeaderButton.php)
-            - [HeaderDropdown.php](app/Livewire/HeaderDropdown.php)
-            - [HeaderSeparator.php](app/Livewire/HeaderSeparator.php)
-            - [UserProfileBlock.php](app/Livewire/UserProfileBlock.php)
-            - [GoogleFont.php](app/Livewire/GoogleFont.php)
-            - **Judge/**
-                - [Dashboard.php](app/Livewire/Judge/Dashboard.php)
-            - **Admin/**
-                - [Dashboard.php](app/Livewire/Admin/Dashboard.php)
-            - **User/**
-                - [Dashboard.php](app/Livewire/User/Dashboard.php)
-                - [EntryIndex.php](app/Livewire/User/EntryIndex.php)
-                - [EntryCreate.php](app/Livewire/User/EntryCreate.php)
-                - [InvoiceIndex.php](app/Livewire/User/InvoiceIndex.php)
-                - [InvoiceShow.php](app/Livewire/User/InvoiceShow.php)
-            - **Entries/**
-                - [BuildingEntryForm.php](app/Livewire/Entries/BuildingEntryForm.php)
-        - **Enums/**
-            - [UserRole.php](app/Enums/UserRole.php)
-    - **bootstrap/**
-        - [app.php](bootstrap/app.php)
-        - **cache/**
-            - [packages.php](bootstrap/cache/packages.php)
-            - [services.php](bootstrap/cache/services.php)
-        - **cachemkdir/**
-    - **config/**
-        - [app.php](config/app.php)
-        - [auth.php](config/auth.php)
-        - [broadcasting.php](config/broadcasting.php)
-        - [cache.php](config/cache.php)
-        - [cors.php](config/cors.php)
-        - [database.php](config/database.php)
-        - [filesystems.php](config/filesystems.php)
-        - [hashing.php](config/hashing.php)
-        - [logging.php](config/logging.php)
-        - [mail.php](config/mail.php)
-        - [queue.php](config/queue.php)
-        - [sanctum.php](config/sanctum.php)
-        - [services.php](config/services.php)
-        - [session.php](config/session.php)
-        - [view.php](config/view.php)
-        - [livewire.php](config/livewire.php)
-        - [debugbar.php](config/debugbar.php)
-    - **database/**
-        - **migrations/**
-            - [2014_10_12_000000_create_users_table.php](database/migrations/2014_10_12_000000_create_users_table.php)
-            - [2014_10_12_100000_create_password_reset_tokens_table.php](database/migrations/2014_10_12_100000_create_password_reset_tokens_table.php)
-            - [2019_08_19_000000_create_failed_jobs_table.php](database/migrations/2019_08_19_000000_create_failed_jobs_table.php)
-            - [2019_12_14_000001_create_personal_access_tokens_table.php](database/migrations/2019_12_14_000001_create_personal_access_tokens_table.php)
-            - [2024_02_28_022350_create_entries_table.php](database/migrations/2024_02_28_022350_create_entries_table.php)
-            - [2024_02_28_022350_create_entry_docs_table.php](database/migrations/2024_02_28_022350_create_entry_docs_table.php)
-            - [2024_02_28_022350_create_entry_images_table.php](database/migrations/2024_02_28_022350_create_entry_images_table.php)
-            - [2024_02_28_030000_date_add_role_id_to_users_table.php](database/migrations/2024_02_28_030000_date_add_role_id_to_users_table.php)
-            - [2024_02_28_040000_create_roles_table.php](database/migrations/2024_02_28_040000_create_roles_table.php)
-            - [2024_02_28_045000_add_judge_details_to_users_table.php](database/migrations/2024_02_28_045000_add_judge_details_to_users_table.php)
-            - [2024_03_17_045001_create_invoices_table.php](database/migrations/2024_03_17_045001_create_invoices_table.php)
-            - [2024_03_17_450002_create_invoice_items_table.php](database/migrations/2024_03_17_450002_create_invoice_items_table.php)
-            - [2024_03_18_013747_add_status_column_to_entries_table.php](database/migrations/2024_03_18_013747_add_status_column_to_entries_table.php)
-            - [2024_03_18_020116_add_status_column_to_invoices_table.php](database/migrations/2024_03_18_020116_add_status_column_to_invoices_table.php)
-    - **public/**
-        - [index.php](public/index.php)
-        - [ntunnel_mysql.php](public/ntunnel_mysql.php)
-        - **css/**
-            - [custom.css](public/css/custom.css)
-        - **images/**
-            - **icons/**
-    - **resources/**
-        - **css/**
-            - [app.css](resources/css/app.css)
-        - **js/**
-            - [app.js](resources/js/app.js)
-            - [bootstrap.js](resources/js/bootstrap.js)
-            - **components/**
-        - **views/**
-            - [dashboard.blade.php](resources/views/dashboard.blade.php)
-            - [application.blade.php](resources/views/application.blade.php)
-            - [addJudge.blade.php](resources/views/addJudge.blade.php)
-            - **auth/**
-                - [confirm-password.blade.php](resources/views/auth/confirm-password.blade.php)
-                - [forgot-password.blade.php](resources/views/auth/forgot-password.blade.php)
-                - [login.blade.php](resources/views/auth/login.blade.php)
-                - [register.blade.php](resources/views/auth/register.blade.php)
-                - [reset-password.blade.php](resources/views/auth/reset-password.blade.php)
-                - [verify-email.blade.php](resources/views/auth/verify-email.blade.php)
-            - **components/**
-                - [application-logo.blade.php](resources/views/components/application-logo.blade.php)
-                - [auth-session-status.blade.php](resources/views/components/auth-session-status.blade.php)
-                - [danger-button.blade.php](resources/views/components/danger-button.blade.php)
-                - [dropdown-link.blade.php](resources/views/components/dropdown-link.blade.php)
-                - [dropdown.blade.php](resources/views/components/dropdown.blade.php)
-                - [input-error.blade.php](resources/views/components/input-error.blade.php)
-                - [input-label.blade.php](resources/views/components/input-label.blade.php)
-                - [modal.blade.php](resources/views/components/modal.blade.php)
-                - [nav-link.blade.php](resources/views/components/nav-link.blade.php)
-                - [primary-button.blade.php](resources/views/components/primary-button.blade.php)
-                - [responsive-nav-link.blade.php](resources/views/components/responsive-nav-link.blade.php)
-                - [secondary-button.blade.php](resources/views/components/secondary-button.blade.php)
-                - [text-input.blade.php](resources/views/components/text-input.blade.php)
-                - [checkbox.blade.php](resources/views/components/checkbox.blade.php)
-                - [auth-card.blade.php](resources/views/components/auth-card.blade.php)
-                - [left-nav.blade.php](resources/views/components/left-nav.blade.php)
-                - [top-nav.blade.php](resources/views/components/top-nav.blade.php)
-                - **layouts/**
-                    - [main.blade.php](resources/views/components/layouts/main.blade.php)
-                    - [blank.blade.php](resources/views/components/layouts/blank.blade.php)
-                    - [dashboard.blade.php](resources/views/components/layouts/dashboard.blade.php)
-                    - [app.blade.php](resources/views/components/layouts/app.blade.php)
-            - **layouts/**
-                - [app.blade.php](resources/views/layouts/app.blade.php)
-                - [guest.blade.php](resources/views/layouts/guest.blade.php)
-                - [navigation.blade.php](resources/views/layouts/navigation.blade.php)
-            - **profile/**
-                - [edit.blade.php](resources/views/profile/edit.blade.php)
-                - **partials/**
-                    - [delete-user-form.blade.php](resources/views/profile/partials/delete-user-form.blade.php)
-                    - [update-password-form.blade.php](resources/views/profile/partials/update-password-form.blade.php)
-                    - [update-profile-information-form.blade.php](resources/views/profile/partials/update-profile-information-form.blade.php)
-            - **livewire/**
-                - [svg-icon.blade.php](resources/views/livewire/svg-icon.blade.php)
-                - [search-button.blade.php](resources/views/livewire/search-button.blade.php)
-                - [left-nav-button.blade.php](resources/views/livewire/left-nav-button.blade.php)
-                - [left-nav-sub-button.blade.php](resources/views/livewire/left-nav-sub-button.blade.php)
-                - [sidebar.blade.php](resources/views/livewire/sidebar.blade.php)
-                - [headerbar.blade.php](resources/views/livewire/headerbar.blade.php)
-                - [alert-bar.blade.php](resources/views/livewire/alert-bar.blade.php)
-                - [login-form.blade.php](resources/views/livewire/login-form.blade.php)
-                - [admin-dashboard.blade.php](resources/views/livewire/admin-dashboard.blade.php)
-                - [judge-profile.blade.php](resources/views/livewire/judge-profile.blade.php)
-                - [user-profile.blade.php](resources/views/livewire/user-profile.blade.php)
-                - [show-posts.blade.php](resources/views/livewire/show-posts.blade.php)
-                - [dashboard.blade.php](resources/views/livewire/dashboard.blade.php)
-                - [entry-table.blade.php](resources/views/livewire/entry-table.blade.php)
-                - [entry-details.blade.php](resources/views/livewire/entry-details.blade.php)
-                - [building-entry-form.blade.php](resources/views/livewire/building-entry-form.blade.php)
-                - [refurbishing-entry-form.blade.php](resources/views/livewire/refurbishing-entry-form.blade.php)
-                - [interior-design-entry-form.blade.php](resources/views/livewire/interior-design-entry-form.blade.php)
-                - [judge-registration-form.blade.php](resources/views/livewire/judge-registration-form.blade.php)
-                - [user-registration-form.blade.php](resources/views/livewire/user-registration-form.blade.php)
-                - [payment-gateway.blade.php](resources/views/livewire/payment-gateway.blade.php)
-                - [entry-card.blade.php](resources/views/livewire/entry-card.blade.php)
-                - [entry-rating-form.blade.php](resources/views/livewire/entry-rating-form.blade.php)
-                - [file-upload.blade.php](resources/views/livewire/file-upload.blade.php)
-                - [payment-form.blade.php](resources/views/livewire/payment-form.blade.php)
-                - [progress-bar.blade.php](resources/views/livewire/progress-bar.blade.php)
-                - [circular-graph.blade.php](resources/views/livewire/circular-graph.blade.php)
-                - [pagination.blade.php](resources/views/livewire/pagination.blade.php)
-                - [filter.blade.php](resources/views/livewire/filter.blade.php)
-                - [sorting.blade.php](resources/views/livewire/sorting.blade.php)
-                - [dashboard-statistic-card.blade.php](resources/views/livewire/dashboard-statistic-card.blade.php)
-                - [notification.blade.php](resources/views/livewire/notification.blade.php)
-                - [confirmation-modal.blade.php](resources/views/livewire/confirmation-modal.blade.php)
-                - [entry-index.blade.php](resources/views/livewire/entry-index.blade.php)
-                - [entry-create.blade.php](resources/views/livewire/entry-create.blade.php)
-                - [invoice-index.blade.php](resources/views/livewire/invoice-index.blade.php)
-                - [invoice-show.blade.php](resources/views/livewire/invoice-show.blade.php)
-                - [header-button.blade.php](resources/views/livewire/header-button.blade.php)
-                - [header-dropdown.blade.php](resources/views/livewire/header-dropdown.blade.php)
-                - [header-separator.blade.php](resources/views/livewire/header-separator.blade.php)
-                - [user-profile-block.blade.php](resources/views/livewire/user-profile-block.blade.php)
-                - [google-font.blade.php](resources/views/livewire/google-font.blade.php)
-                - **admin/**
-                    - [dashboard.blade.php](resources/views/livewire/admin/dashboard.blade.php)
-                - **judge/**
-                    - [dashboard.blade.php](resources/views/livewire/judge/dashboard.blade.php)
-                - **user/**
-                    - [dashboard.blade.php](resources/views/livewire/user/dashboard.blade.php)
-    - **routes/**
-        - [api.php](routes/api.php)
-        - [channels.php](routes/channels.php)
-        - [console.php](routes/console.php)
-        - [web.php](routes/web.php)
-        - [auth.php](routes/auth.php)
-```
-
-## File: cspell.json
-```json
-{
-    "version": "0.2",
-    "ignorePaths": [],
-    "dictionaryDefinitions": [],
-    "dictionaries": [],
-    "words": [],
-    "ignoreWords": [],
-    "import": []
-}
 
 ```
 
@@ -840,77 +531,6 @@ class Controller extends BaseController
 {
     use AuthorizesRequests, ValidatesRequests;
 }
-
-```
-
-## File: app/Http/Controllers/ProfileController.php
-```php
-<?php
-// app/Http/Controllers/ProfileController.php
-
-namespace App\Http\Controllers;
-
-use App\Http\Requests\ProfileUpdateRequest;
-use Illuminate\Http\RedirectResponse;
-use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Auth;
-use Illuminate\Support\Facades\Redirect;
-use Illuminate\View\View;
-
-class ProfileController extends Controller
-{
-    /**
-     * Display the user's profile form.
-     */
-    public function edit(Request $request): View
-    {
-        return view('profile.edit', [
-            'user' => $request->user(),
-        ]);
-    }
-
-    /**
-     * Update the user's profile information.
-     */
-    public function update(ProfileUpdateRequest $request): RedirectResponse
-    {
-        $request->user()->fill($request->validated());
-
-        if ($request->user()->isDirty('email')) {
-            $request->user()->email_verified_at = null;
-        }
-
-        $request->user()->save();
-
-        return Redirect::route('profile.edit')->with('status', 'profile-updated');
-    }
-
-    /**
-     * Delete the user's account.
-     */
-    public function destroy(Request $request): RedirectResponse
-    {
-        $request->validateWithBag('userDeletion', [
-            'password' => ['required', 'current_password'],
-        ]);
-
-        $user = $request->user();
-
-        Auth::logout();
-
-        $user->delete();
-
-        $request->session()->invalidate();
-        $request->session()->regenerateToken();
-
-        return Redirect::to('/');
-    }
-}
-
-```
-
-## File: app/Http/Controllers/JudgeController.php
-```php
 
 ```
 
@@ -1258,8 +878,6 @@ class RegisteredUserController extends Controller
         $request->validate([
             'name' => ['required', 'string', 'max:255'],
             'surname' => ['required', 'string', 'max:255'],
-            'company' => ['required', 'string', 'max:255'],
-            'mobile_number' => ['required', 'string', 'max:20'],
             'email' => ['required', 'string', 'lowercase', 'email', 'max:255', 'unique:'.User::class],
             'password' => ['required', 'confirmed', Rules\Password::defaults()],
         ]);
@@ -1267,8 +885,6 @@ class RegisteredUserController extends Controller
         $user = User::create([
             'name' => $request->name,
             'surname' => $request->surname,
-            'company' => $request->company,
-            'mobile_number' => $request->mobile_number,
             'email' => $request->email,
             'password' => Hash::make($request->password),
             'role_id' => Role::where('name', 'user')->first()->id,
@@ -1281,6 +897,7 @@ class RegisteredUserController extends Controller
         return redirect(RouteServiceProvider::HOME);
     }
 }
+
 ```
 
 ## File: app/Http/Controllers/Auth/VerifyEmailController.php
@@ -2387,7 +2004,7 @@ class SvgIcon extends Component
 ## File: app/Livewire/SearchButton.php
 ```php
 <?php
-// SearchButton.php
+// app/Livewire/SearchButton.php
 namespace App\Livewire;
 
 use Livewire\Component;
@@ -2412,7 +2029,7 @@ class SearchButton extends Component
 ## File: app/Livewire/LeftNavButton.php
 ```php
 <?php
-// app/Livewire/LeftNavButton.php - Iteration 1 - A+
+// app/Livewire/LeftNavButton.php
 namespace App\Livewire;
 
 use Livewire\Component;
@@ -2515,7 +2132,6 @@ class Sidebar extends Component
 // app/Livewire/Headerbar.php
 namespace App\Livewire;
 
-use Illuminate\View\View;
 use Livewire\Component;
 
 class Headerbar extends Component
@@ -2616,24 +2232,6 @@ class LoginForm extends Component
 }
 ```
 
-## File: app/Livewire/AdminDashboard.php
-```php
-<?php
-// app/Livewire/AdminDashboard.php
-
-namespace App\Livewire; // Corrected namespace
-use Livewire\Component;
-
-class AdminDashboard extends Component
-{
-    public function render()
-    {
-        return view('livewire.admin-dashboard')->layout('layouts.app');
-    }
-}
-
-```
-
 ## File: app/Livewire/JudgeProfile.php
 ```php
 <?php
@@ -2669,36 +2267,10 @@ class UserProfile extends Component
 }
 ```
 
-## File: app/Livewire/Dashboard.php
-```php
-<?php
-
-namespace App\Livewire;
-
-use Livewire\Component;
-use App\Models\Entry;
-use App\Models\Invoice;
-use App\Models\Judge;
-use App\Models\User;
-
-class Dashboard extends Component
-{
-    public function render()
-    {
-        $entries = Entry::count();
-        $invoices = Invoice::count();
-        $judges = Judge::count();
-        $recentlyActiveUsers = User::orderBy('last_login_at', 'desc')->take(10)->get();
-
-        return view('livewire.dashboard', compact('entries', 'invoices', 'judges', 'recentlyActiveUsers'));
-    }
-}
-```
-
 ## File: app/Livewire/EntryTable.php
 ```php
 <?php
-
+// app/Livewire/EntryTable.php
 namespace App\Http\Livewire\Entries;
 
 use Livewire\Component;
@@ -2718,7 +2290,7 @@ class EntryTable extends Component
 ## File: app/Livewire/EntryDetails.php
 ```php
 <?php
-
+// app/Livewire/EntryDetails.php
 namespace App\Http\Livewire\Entries;
 
 use Livewire\Component;
@@ -2745,8 +2317,8 @@ class EntryDetails extends Component
 ## File: app/Livewire/RefurbishingEntryForm.php
 ```php
 <?php
-
-namespace App\Http\Livewire\Entries;
+// app/Livewire/RefurbishingEntryForm.php
+namespace App\Livewire\Entries;
 
 use Livewire\Component;
 use Livewire\WithFileUploads;
@@ -2908,7 +2480,7 @@ class JudgeRegistrationForm extends Component
 ## File: app/Livewire/UserRegistrationForm.php
 ```php
 <?php
-
+// app/Livewire/UserRegistrationForm.php
 namespace App\Http\Livewire\Users;
 
 use Livewire\Component;
@@ -2951,8 +2523,8 @@ class UserRegistrationForm extends Component
 ## File: app/Livewire/PaymentGateway.php
 ```php
 <?php
-
-namespace App\Http\Livewire\Payments;
+// app/Livewire/PaymentGateway.php
+namespace App\Livewire\Payments;
 
 use Livewire\Component;
 use App\Models\Payment;
@@ -3091,9 +2663,9 @@ class EntryRatingForm extends Component
 ## File: app/Livewire/FileUpload.php
 ```php
 <?php
-// app/Http/Livewire/FileUpload.php
+// app/Livewire/FileUpload.php
 
-namespace App\Http\Livewire;
+namespace App\Livewire;
 
 use Livewire\Component;
 use Livewire\WithFileUploads;
@@ -3132,9 +2704,9 @@ class FileUpload extends Component
 ## File: app/Livewire/PaymentForm.php
 ```php
 <?php
-// app/Http/Livewire/PaymentForm.php
+// app/Livewire/PaymentForm.php
 
-namespace App\Http\Livewire;
+namespace App\Livewire;
 
 use Livewire\Component;
 use App\Services\PaymentGateway;
@@ -3196,9 +2768,9 @@ class PaymentForm extends Component
 ## File: app/Livewire/ProgressBar.php
 ```php
 <?php
-// app/Http/Livewire/ProgressBar.php
+// app/Livewire/ProgressBar.php
 
-namespace App\Http\Livewire;
+namespace App\Livewire;
 
 use Livewire\Component;
 
@@ -3322,7 +2894,7 @@ class HeaderSeparator extends Component
 ## File: app/Livewire/UserProfileBlock.php
 ```php
 <?php
-
+// app/Livewire/UserProfileBlock.php
 namespace App\Livewire;
 
 use Livewire\Component;
@@ -3364,6 +2936,25 @@ class GoogleFont extends Component
     public function render()
     {
         return view('livewire.google-font');
+    }
+}
+
+```
+
+## File: app/Livewire/Favicon.php
+```php
+<?php
+// app/Livewire/Favicon.php
+namespace App\Livewire;
+
+use Livewire\Component;
+
+class Favicon extends Component
+{
+    // Render method to return the view
+    public function render()
+    {
+        return view('livewire.favicon');
     }
 }
 
@@ -3556,6 +3147,57 @@ class InvoiceShow extends Component
     public function render()
     {
         return view('livewire.invoice-show');
+    }
+}
+
+```
+
+## File: app/Livewire/User/Register.php
+```php
+<?php
+// app/Livewire/User/Register.php
+namespace App\Livewire\User;
+
+use Livewire\Component;
+use App\Models\User;
+use App\Models\Role;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Hash;
+use Illuminate\Auth\Events\Registered;
+
+class Register extends Component
+{
+    public $name, $surname, $email, $password, $password_confirmation;
+
+    protected $rules = [
+        'name' => ['required', 'string', 'max:255'],
+        'surname' => ['required', 'string', 'max:255'],
+        'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
+        'password' => ['required', 'min:8', 'confirmed'],
+    ];
+
+    public function register()
+    {
+        $this->validate();
+
+        $user = User::create([
+            'name' => $this->name,
+            'surname' => $this->surname,
+            'email' => strtolower($this->email),
+            'password' => Hash::make($this->password),
+            'role_id' => Role::where('name', 'user')->first()->id,
+        ]);
+
+        event(new Registered($user));
+
+        Auth::login($user);
+
+        return redirect()->to('/');
+    }
+
+    public function render()
+    {
+        return view('user.register')->layout('layouts.blank');
     }
 }
 
@@ -4913,10 +4555,67 @@ return [
 
 return [
 
+    /*
+    |---------------------------------------------------------------------------
+    | Class Namespace
+    |---------------------------------------------------------------------------
+    |
+    | This value sets the root class namespace for Livewire component classes in
+    | your application. This value will change where component auto-discovery
+    | finds components. It's also referenced by the file creation commands.
+    |
+    */
+
     'class_namespace' => 'App\\Livewire',
+
+    /*
+    |---------------------------------------------------------------------------
+    | View Path
+    |---------------------------------------------------------------------------
+    |
+    | This value is used to specify where Livewire component Blade templates are
+    | stored when running file creation commands like `artisan make:livewire`.
+    | It is also used if you choose to omit a component's render() method.
+    |
+    */
+
     'view_path' => resource_path('views/livewire'),
+
+    /*
+    |---------------------------------------------------------------------------
+    | Layout
+    |---------------------------------------------------------------------------
+    | The view that will be used as the layout when rendering a single component
+    | as an entire page via `Route::get('/post/create', CreatePost::class);`.
+    | In this case, the view returned by CreatePost will render into $slot.
+    |
+    */
+
     'layout' => 'components.layouts.app',
+
+    /*
+    |---------------------------------------------------------------------------
+    | Lazy Loading Placeholder
+    |---------------------------------------------------------------------------
+    | Livewire allows you to lazy load components that would otherwise slow down
+    | the initial page load. Every component can have a custom placeholder or
+    | you can define the default placeholder view for all components below.
+    |
+    */
+
     'lazy_placeholder' => null,
+
+    /*
+    |---------------------------------------------------------------------------
+    | Temporary File Uploads
+    |---------------------------------------------------------------------------
+    |
+    | Livewire handles file uploads by storing uploads in a temporary directory
+    | before the file is stored permanently. All file uploads are directed to
+    | a global endpoint for temporary storage. You may configure this below:
+    |
+    */
+
     'temporary_file_upload' => [
         'disk' => null,        // Example: 'local', 's3'              | Default: 'default'
         'rules' => null,       // Example: ['file', 'mimes:png,jpg']  | Default: ['required', 'file', 'max:12288'] (12MB)
@@ -4930,14 +4629,85 @@ return [
         'max_upload_time' => 5, // Max duration (in minutes) before an upload is invalidated...
     ],
 
+    /*
+    |---------------------------------------------------------------------------
+    | Render On Redirect
+    |---------------------------------------------------------------------------
+    |
+    | This value determines if Livewire will run a component's `render()` method
+    | after a redirect has been triggered using something like `redirect(...)`
+    | Setting this to true will render the view once more before redirecting
+    |
+    */
+
     'render_on_redirect' => false,
+
+    /*
+    |---------------------------------------------------------------------------
+    | Eloquent Model Binding
+    |---------------------------------------------------------------------------
+    |
+    | Previous versions of Livewire supported binding directly to eloquent model
+    | properties using wire:model by default. However, this behavior has been
+    | deemed too "magical" and has therefore been put under a feature flag.
+    |
+    */
+
     'legacy_model_binding' => false,
+
+    /*
+    |---------------------------------------------------------------------------
+    | Auto-inject Frontend Assets
+    |---------------------------------------------------------------------------
+    |
+    | By default, Livewire automatically injects its JavaScript and CSS into the
+    | <head> and <body> of pages containing Livewire components. By disabling
+    | this behavior, you need to use @livewireStyles and @livewireScripts.
+    |
+    */
+
     'inject_assets' => true,
+
+    /*
+    |---------------------------------------------------------------------------
+    | Navigate (SPA mode)
+    |---------------------------------------------------------------------------
+    |
+    | By adding `wire:navigate` to links in your Livewire application, Livewire
+    | will prevent the default link handling and instead request those pages
+    | via AJAX, creating an SPA-like effect. Configure this behavior here.
+    |
+    */
+
     'navigate' => [
         'show_progress_bar' => true,
         'progress_bar_color' => '#2299dd',
     ],
+
+    /*
+    |---------------------------------------------------------------------------
+    | HTML Morph Markers
+    |---------------------------------------------------------------------------
+    |
+    | Livewire intelligently "morphs" existing HTML into the newly rendered HTML
+    | after each update. To make this process more reliable, Livewire injects
+    | "markers" into the rendered Blade surrounding @if, @class & @foreach.
+    |
+    */
+
     'inject_morph_markers' => true,
+
+    /*
+    |---------------------------------------------------------------------------
+    | Pagination Theme
+    |---------------------------------------------------------------------------
+    |
+    | When enabling Livewire's pagination feature by using the `WithPagination`
+    | trait, Livewire will use Tailwind templates to render pagination views
+    | on the page. If you want Bootstrap CSS, you can specify: "bootstrap"
+    |
+    */
+
     'pagination_theme' => 'tailwind',
 ];
 
@@ -4948,11 +4718,40 @@ return [
 <?php
 
 return [
+
+    /*
+     |--------------------------------------------------------------------------
+     | Debugbar Settings
+     |--------------------------------------------------------------------------
+     |
+     | Debugbar is enabled by default, when debug is set to true in app.php.
+     | You can override the value by setting enable to true or false instead of null.
+     |
+     | You can provide an array of URI's that must be ignored (eg. 'api/*')
+     |
+     */
+
     'enabled' => env('DEBUGBAR_ENABLED', null),
     'except' => [
         'telescope*',
         'horizon*',
     ],
+
+    /*
+     |--------------------------------------------------------------------------
+     | Storage settings
+     |--------------------------------------------------------------------------
+     |
+     | DebugBar stores data for session/ajax requests.
+     | You can disable this, so the debugbar stores data in headers/session,
+     | but this can cause problems with large data collectors.
+     | By default, file storage (in the storage folder) is used. Redis and PDO
+     | can also be used. For PDO, run the package migrations first.
+     |
+     | Warning: Enabling storage.open will allow everyone to access previous
+     | request, do not enable open storage in publicly available environments!
+     | Specify a callback if you want to limit based on IP or authentication.
+     */
     'storage' => [
         'enabled'    => true,
         'open'       => env('DEBUGBAR_OPEN_STORAGE', false), // bool/callback.
@@ -4963,15 +4762,117 @@ return [
         'hostname'   => '127.0.0.1', // Hostname to use with the "socket" driver
         'port'       => 2304, // Port to use with the "socket" driver
     ],
+
+    /*
+    |--------------------------------------------------------------------------
+    | Editor
+    |--------------------------------------------------------------------------
+    |
+    | Choose your preferred editor to use when clicking file name.
+    |
+    | Supported: "phpstorm", "vscode", "vscode-insiders", "vscode-remote",
+    |            "vscode-insiders-remote", "vscodium", "textmate", "emacs",
+    |            "sublime", "atom", "nova", "macvim", "idea", "netbeans",
+    |            "xdebug", "espresso"
+    |
+    */
+
     'editor' => env('DEBUGBAR_EDITOR') ?: env('IGNITION_EDITOR', 'phpstorm'),
+
+    /*
+    |--------------------------------------------------------------------------
+    | Remote Path Mapping
+    |--------------------------------------------------------------------------
+    |
+    | If you are using a remote dev server, like Laravel Homestead, Docker, or
+    | even a remote VPS, it will be necessary to specify your path mapping.
+    |
+    | Leaving one, or both of these, empty or null will not trigger the remote
+    | URL changes and Debugbar will treat your editor links as local files.
+    |
+    | "remote_sites_path" is an absolute base path for your sites or projects
+    | in Homestead, Vagrant, Docker, or another remote development server.
+    |
+    | Example value: "/home/vagrant/Code"
+    |
+    | "local_sites_path" is an absolute base path for your sites or projects
+    | on your local computer where your IDE or code editor is running on.
+    |
+    | Example values: "/Users/<name>/Code", "C:\Users\<name>\Documents\Code"
+    |
+    */
+
     'remote_sites_path' => env('DEBUGBAR_REMOTE_SITES_PATH'),
     'local_sites_path' => env('DEBUGBAR_LOCAL_SITES_PATH', env('IGNITION_LOCAL_SITES_PATH')),
+
+    /*
+     |--------------------------------------------------------------------------
+     | Vendors
+     |--------------------------------------------------------------------------
+     |
+     | Vendor files are included by default, but can be set to false.
+     | This can also be set to 'js' or 'css', to only include javascript or css vendor files.
+     | Vendor files are for css: font-awesome (including fonts) and highlight.js (css files)
+     | and for js: jquery and highlight.js
+     | So if you want syntax highlighting, set it to true.
+     | jQuery is set to not conflict with existing jQuery scripts.
+     |
+     */
+
     'include_vendors' => true,
+
+    /*
+     |--------------------------------------------------------------------------
+     | Capture Ajax Requests
+     |--------------------------------------------------------------------------
+     |
+     | The Debugbar can capture Ajax requests and display them. If you don't want this (ie. because of errors),
+     | you can use this option to disable sending the data through the headers.
+     |
+     | Optionally, you can also send ServerTiming headers on ajax requests for the Chrome DevTools.
+     |
+     | Note for your request to be identified as ajax requests they must either send the header
+     | X-Requested-With with the value XMLHttpRequest (most JS libraries send this), or have application/json as a Accept header.
+     |
+     | By default `ajax_handler_auto_show` is set to true allowing ajax requests to be shown automatically in the Debugbar.
+     | Changing `ajax_handler_auto_show` to false will prevent the Debugbar from reloading.
+     */
+
     'capture_ajax' => true,
     'add_ajax_timing' => false,
     'ajax_handler_auto_show' => true,
+
+    /*
+     |--------------------------------------------------------------------------
+     | Custom Error Handler for Deprecated warnings
+     |--------------------------------------------------------------------------
+     |
+     | When enabled, the Debugbar shows deprecated warnings for Symfony components
+     | in the Messages tab.
+     |
+     */
     'error_handler' => false,
+
+    /*
+     |--------------------------------------------------------------------------
+     | Clockwork integration
+     |--------------------------------------------------------------------------
+     |
+     | The Debugbar can emulate the Clockwork headers, so you can use the Chrome
+     | Extension, without the server-side code. It uses Debugbar collectors instead.
+     |
+     */
     'clockwork' => false,
+
+    /*
+     |--------------------------------------------------------------------------
+     | DataCollectors
+     |--------------------------------------------------------------------------
+     |
+     | Enable/disable DataCollectors
+     |
+     */
+
     'collectors' => [
         'phpinfo'         => true,  // Php version
         'messages'        => true,  // Messages
@@ -4998,6 +4899,16 @@ return [
         'livewire'        => true,  // Display Livewire (when available)
         'jobs'            => false, // Display dispatched jobs
     ],
+
+    /*
+     |--------------------------------------------------------------------------
+     | Extra options
+     |--------------------------------------------------------------------------
+     |
+     | Configure some DataCollectors
+     |
+     */
+
     'options' => [
         'time' => [
             'memory_usage' => false,  // Calculated by subtracting memory start and end, it may be inaccurate
@@ -5061,11 +4972,69 @@ return [
             'values' => true, // collect cache values
         ],
     ],
+
+    /*
+     |--------------------------------------------------------------------------
+     | Inject Debugbar in Response
+     |--------------------------------------------------------------------------
+     |
+     | Usually, the debugbar is added just before </body>, by listening to the
+     | Response after the App is done. If you disable this, you have to add them
+     | in your template yourself. See http://phpdebugbar.com/docs/rendering.html
+     |
+     */
+
     'inject' => true,
+
+    /*
+     |--------------------------------------------------------------------------
+     | DebugBar route prefix
+     |--------------------------------------------------------------------------
+     |
+     | Sometimes you want to set route prefix to be used by DebugBar to load
+     | its resources from. Usually the need comes from misconfigured web server or
+     | from trying to overcome bugs like this: http://trac.nginx.org/nginx/ticket/97
+     |
+     */
     'route_prefix' => '_debugbar',
+
+    /*
+     |--------------------------------------------------------------------------
+     | DebugBar route middleware
+     |--------------------------------------------------------------------------
+     |
+     | Additional middleware to run on the Debugbar routes
+     */
     'route_middleware' => [],
+
+    /*
+     |--------------------------------------------------------------------------
+     | DebugBar route domain
+     |--------------------------------------------------------------------------
+     |
+     | By default DebugBar route served from the same domain that request served.
+     | To override default domain, specify it as a non-empty value.
+     */
     'route_domain' => null,
+
+    /*
+     |--------------------------------------------------------------------------
+     | DebugBar theme
+     |--------------------------------------------------------------------------
+     |
+     | Switches between light and dark theme. If set to auto it will respect system preferences
+     | Possible values: auto, light, dark
+     */
     'theme' => env('DEBUGBAR_THEME', 'dark'),
+
+    /*
+     |--------------------------------------------------------------------------
+     | Backtrace stack limit
+     |--------------------------------------------------------------------------
+     |
+     | By default, the DebugBar limits the number of frames returned by the 'debug_backtrace()' function.
+     | If you need larger stacktraces, you can increase this number. Setting it to 0 will result in no limit.
+     */
     'debug_backtrace_limit' => 50,
 ];
 
@@ -5516,7 +5485,7 @@ class CreateInvoiceItemsTable extends Migration
 ## File: database/migrations/2024_03_18_013747_add_status_column_to_entries_table.php
 ```php
 <?php
-
+// database/migrations/2024_03_18_013747_add_status_column_to_entries_table.php
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
@@ -5553,7 +5522,7 @@ class AddStatusColumnToEntriesTable extends Migration
 ## File: database/migrations/2024_03_18_020116_add_status_column_to_invoices_table.php
 ```php
 <?php
-
+// database/migrations/2024_03_18_020116_add_status_column_to_invoices_table.php
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
@@ -5597,12 +5566,23 @@ use Illuminate\Http\Request;
 
 define('LARAVEL_START', microtime(true));
 
+/*
+| Check If The Application Is Under Maintenance
+*/
 
 if (file_exists($maintenance = __DIR__.'/../storage/framework/maintenance.php')) {
     require $maintenance;
 }
 
+/*
+| Register The Auto Loader
+*/
+
 require __DIR__.'/../vendor/autoload.php';
+
+/*
+| Run The Application
+*/
 
 $app = require_once __DIR__.'/../bootstrap/app.php';
 
@@ -5614,568 +5594,6 @@ $response = $kernel->handle(
 
 $kernel->terminate($request, $response);
 
-```
-
-## File: public/ntunnel_mysql.php
-```php
-<?php
-// public/ntunnel_mysql.php
-$versionNum = 206; // remark: require update CC_HTTP_TUNNEL_SCRIPT_LATEST_VERSION_MYSQL
-
-//set allowTestMenu to false to disable System/Server test page
-$allowTestMenu = true;
-
-$use_mysqli = function_exists("mysqli_connect");
-
-header("Content-Type: text/plain; charset=x-user-defined");
-error_reporting(0);
-set_time_limit(0);
-
-function phpversion_int()
-{
-	list($maVer, $miVer, $edVer) = preg_split("(/|\.|-)", phpversion());
-	return $maVer*10000 + $miVer*100 + $edVer;
-}
-
-if (phpversion_int() < 50300)
-{
-	set_magic_quotes_runtime(0);
-}
-
-function GetLongBinary($num)
-{
-	return pack("N",$num);
-}
-
-function GetShortBinary($num)
-{
-	return pack("n",$num);
-}
-
-function GetDummy($count)
-{
-	$str = "";
-	for($i=0;$i<$count;$i++)
-		$str .= "\x00";
-	return $str;
-}
-
-function GetBlock($val)
-{
-	$len = strlen($val);
-	if( $len < 254 )
-		return chr($len).$val;
-	else
-		return "\xFE".GetLongBinary($len).$val;
-}
-
-function EchoHeader($errno)
-{
-    global $versionNum;
-
-	$str = GetLongBinary(1111);
-	$str .= GetShortBinary($versionNum);
-	$str .= GetLongBinary($errno);
-	$str .= GetDummy(6);
-	echo $str;
-}
-
-function EchoConnInfo($conn)
-{
-	if ($GLOBALS['use_mysqli']) {
-		$str = GetBlock(mysqli_get_host_info($conn));
-		$str .= GetBlock(mysqli_get_proto_info($conn));
-		$str .= GetBlock(mysqli_get_server_info($conn));
-		echo $str;
-	} else {
-		$str = GetBlock(mysql_get_host_info($conn));
-		$str .= GetBlock(mysql_get_proto_info($conn));
-		$str .= GetBlock(mysql_get_server_info($conn));
-		echo $str;
-	}
-}
-
-function EchoResultSetHeader($errno, $affectrows, $insertid, $numfields, $numrows)
-{
-	$str = GetLongBinary($errno);
-	$str .= GetLongBinary($affectrows);
-	$str .= GetLongBinary($insertid);
-	$str .= GetLongBinary($numfields);
-	$str .= GetLongBinary($numrows);
-	$str .= GetDummy(12);
-	echo $str;
-}
-
-function EchoFieldsHeader($res, $numfields)
-{
-	$str = "";
-	for( $i = 0; $i < $numfields; $i++ ) {
-		if ($GLOBALS['use_mysqli']) {
-			$finfo = mysqli_fetch_field_direct($res, $i);
-			$str .= GetBlock($finfo->name);
-			$str .= GetBlock($finfo->table);
-			
-			$type = $finfo->type;
-			$length = $finfo->length;
-		
-			$str .= GetLongBinary($type);
-	
-			$intflag = $finfo->flags;
-			$str .= GetLongBinary($intflag);
-	
-			$str .= GetLongBinary($length);
-		} else {
-			$str .= GetBlock(mysql_field_name($res, $i));
-			$str .= GetBlock(mysql_field_table($res, $i));
-	
-			$type = mysql_field_type($res, $i);
-			$length = mysql_field_len($res, $i);
-			switch ($type) {
-				case "int":
-					if( $length > 11 ) $type = 8;
-					else $type = 3;
-					break;
-				case "real":
-					if( $length == 12 ) $type = 4;
-					elseif( $length == 22 ) $type = 5;
-					else $type = 0;
-					break;
-				case "null":
-					$type = 6;
-					break;
-				case "timestamp":
-					$type = 7;
-					break;
-				case "date":
-					$type = 10;
-					break;
-				case "time":
-					$type = 11;
-					break;
-				case "datetime":
-					$type = 12;
-					break;
-				case "year":
-					$type = 13;
-					break;
-				case "blob":
-					if( $length > 16777215 ) $type = 251;
-					elseif( $length > 65535 ) $type = 250;
-					elseif( $length > 255 ) $type = 252;
-					else $type = 249;
-					break;
-				default:
-					$type = 253;
-			}
-			$str .= GetLongBinary($type);
-	
-			$flags = explode( " ", mysql_field_flags ( $res, $i ) );
-			$intflag = 0;
-			if(in_array( "not_null", $flags )) $intflag += 1;
-			if(in_array( "primary_key", $flags )) $intflag += 2;
-			if(in_array( "unique_key", $flags )) $intflag += 4;
-			if(in_array( "multiple_key", $flags )) $intflag += 8;
-			if(in_array( "blob", $flags )) $intflag += 16;
-			if(in_array( "unsigned", $flags )) $intflag += 32;
-			if(in_array( "zerofill", $flags )) $intflag += 64;
-			if(in_array( "binary", $flags)) $intflag += 128;
-			if(in_array( "enum", $flags )) $intflag += 256;
-			if(in_array( "auto_increment", $flags )) $intflag += 512;
-			if(in_array( "timestamp", $flags )) $intflag += 1024;
-			if(in_array( "set", $flags )) $intflag += 2048;
-			$str .= GetLongBinary($intflag);
-	
-			$str .= GetLongBinary($length);
-		}
-	}
-	echo $str;
-}
-
-function EchoData($res, $numfields, $numrows)
-{
-	for( $i = 0; $i < $numrows; $i++ ) {
-		$str = "";
-		$row = null;
-		if ($GLOBALS['use_mysqli'])
-			$row = mysqli_fetch_row( $res );
-		else
-			$row = mysql_fetch_row( $res );
-		for( $j = 0; $j < $numfields; $j++ ){
-			if( is_null($row[$j]) )
-				$str .= "\xFF";
-			else
-				$str .= GetBlock($row[$j]);
-		}
-		echo $str;
-	}
-}
-
-
-function doSystemTest()
-{
-    global $versionNum;
-
-	function output($description, $succ, $resStr) {
-		echo "<tr><td class=\"TestDesc\">$description</td><td ";
-		echo ($succ)? "class=\"TestSucc\">$resStr[0]</td></tr>" : "class=\"TestFail\">$resStr[1]</td></tr>";
-	}
-	output("PHP version >= 4.0.5", phpversion_int() >= 40005, array("Yes (".phpversion().")", "No (".phpversion().")"));
-	output("mysql_connect() available", function_exists("mysql_connect"), array("Yes", "No"));
-	output("mysqli_connect() available", function_exists("mysqli_connect"), array("Yes", "No"));
-	if (phpversion_int() >= 40302 && substr($_SERVER["SERVER_SOFTWARE"], 0, 6) == "Apache" && function_exists("apache_get_modules")){
-		if (in_array("mod_security2", apache_get_modules()))
-			output("Mod Security 2 installed", false, array("No", "Yes"));
-	}
-    output("Current tunnel file version", true, array((int)($versionNum / 100) .".". ($versionNum % 100), ""));
-}
-
-/////////////////////////////////////////////////////////////////////////////
-////
-
-	if (phpversion_int() < 40005) {
-		EchoHeader(201);
-		echo GetBlock("unsupported php version");
-		exit();
-	}
-
-	if (phpversion_int() < 40010) {
-		global $HTTP_POST_VARS;
-		$_POST = &$HTTP_POST_VARS;	
-	}
-
-	if (!isset($_POST["actn"]) || !isset($_POST["host"]) || !isset($_POST["port"]) || !isset($_POST["login"])) {
-		$testMenu = $allowTestMenu;
-		if (!$testMenu){
-			EchoHeader(202);
-			echo GetBlock("invalid parameters");
-			exit();
-		}
-	}
-
-	if (!$testMenu){
-		if ($_POST["encodeBase64"] == '1') {
-			for($i=0;$i<count($_POST["q"]);$i++)
-				$_POST["q"][$i] = base64_decode($_POST["q"][$i]);
-		}
-		
-		if (!function_exists("mysql_connect") && !function_exists("mysqli_connect")) {
-			EchoHeader(203);
-			echo GetBlock("MySQL not supported on the server");
-			exit();
-		}
-		
-		$errno_c = 0;
-		$hs = $_POST["host"];
-		if ($use_mysqli) {
-			mysqli_report(MYSQLI_REPORT_OFF);
-
-			if( $_POST["port"] ) 
-				$conn = mysqli_connect($hs, $_POST["login"], $_POST["password"], '', $_POST["port"]);
-			else
-				$conn = mysqli_connect($hs, $_POST["login"], $_POST["password"]);
-			$errno_c = mysqli_connect_errno();
-			if($errno_c > 0) {
-				EchoHeader($errno_c);
-				echo GetBlock(mysqli_connect_error());
-				exit;
-			}
-			if (phpversion_int() >= 50005){  // for unicode database name
-				mysqli_set_charset($conn, 'UTF8');
-			}
-
-			if(($errno_c <= 0) && ( $_POST["db"] != "" )) {
-				$res = mysqli_select_db($conn, $_POST["db"] );
-				$errno_c = mysqli_errno($conn);
-			}
-
-			EchoHeader($errno_c);
-			if($errno_c > 0) {
-				echo GetBlock(mysqli_error($conn));
-			} elseif($_POST["actn"] == "C") {
-				EchoConnInfo($conn);
-			} elseif($_POST["actn"] == "Q") {
-				for($i=0;$i<count($_POST["q"]);$i++) {
-					$query = $_POST["q"][$i];
-					if($query == "") continue;
-					if (phpversion_int() < 50400){  
-						if(get_magic_quotes_gpc())
-							$query = stripslashes($query);
-					}
-					mysqli_real_query($conn, $query);
-                    $res = false;
-                    if (mysqli_field_count($conn))
-                        $res = mysqli_store_result($conn);
-					$errno = mysqli_errno($conn);
-					$affectedrows = mysqli_affected_rows($conn);
-					$insertid = mysqli_insert_id($conn);				
-					if (false !== $res) {
-						$numfields = mysqli_field_count($conn);
-						$numrows = mysqli_num_rows($res);
-					}
-					else {
-						$numfields = 0;
-						$numrows = 0;
-					}
-					EchoResultSetHeader($errno, $affectedrows, $insertid, $numfields, $numrows);
-					if($errno > 0)
-						echo GetBlock(mysqli_error($conn));
-					else {
-						if($numfields > 0) {
-							EchoFieldsHeader($res, $numfields);
-							EchoData($res, $numfields, $numrows);
-						} else {
-							if(phpversion_int() >= 40300)
-								echo GetBlock(mysqli_info($conn));
-							else
-								echo GetBlock("");
-						}
-					}
-					if($i<(count($_POST["q"])-1))
-						echo "\x01";
-					else
-						echo "\x00";
-					if (false !== $res)
-						mysqli_free_result($res);
-				}
-			}
-		} else {
-			if( $_POST["port"] ) $hs .= ":".$_POST["port"];
-			$conn = mysql_connect($hs, $_POST["login"], $_POST["password"]);
-			$errno_c = mysql_errno();
-			if (phpversion_int() >= 50203){  // for unicode database name
-				mysql_set_charset('UTF8', $conn);
-			}
-			if(($errno_c <= 0) && ( $_POST["db"] != "" )) {
-				$res = mysql_select_db( $_POST["db"], $conn);
-				$errno_c = mysql_errno();
-			}
-			
-			EchoHeader($errno_c);
-			if($errno_c > 0) {
-				echo GetBlock(mysql_error());
-			} elseif($_POST["actn"] == "C") {
-				EchoConnInfo($conn);
-			} elseif($_POST["actn"] == "Q") {
-				for($i=0;$i<count($_POST["q"]);$i++) {
-					$query = $_POST["q"][$i];
-					if($query == "") continue;
-					if (phpversion_int() < 50400){  
-						if(get_magic_quotes_gpc())
-							$query = stripslashes($query);
-					}
-					$res = mysql_query($query, $conn);
-					$errno = mysql_errno();
-					$affectedrows = mysql_affected_rows($conn);
-					$insertid = mysql_insert_id($conn);
-					$numfields = mysql_num_fields($res);
-					$numrows = mysql_num_rows($res);
-					EchoResultSetHeader($errno, $affectedrows, $insertid, $numfields, $numrows);
-					if($errno > 0)
-						echo GetBlock(mysql_error());
-					else {
-						if($numfields > 0) {
-							EchoFieldsHeader($res, $numfields);
-							EchoData($res, $numfields, $numrows);
-						} else {
-							if(phpversion_int() >= 40300)
-								echo GetBlock(mysql_info($conn));
-							else
-								echo GetBlock("");
-						}
-					}
-					if($i<(count($_POST["q"])-1))
-						echo "\x01";
-					else
-						echo "\x00";
-					mysql_free_result($res);
-				}
-			}
-		}
-		exit();
-	}
-
-	header("Content-Type: text/html");
-
-?>
-
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html>
-<head>
-	<title>Navicat HTTP Tunnel Tester</title>
-	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-	<style type="text/css">
-		body{
-			margin: 30px;
-			font-family: Tahoma;
-			font-weight: normal;
-			font-size: 14px;
-			color: #222222;
-		}
-		table{
-			width: 100%;
-			border: 0px;
-		}
-		input{
-			font-family:Tahoma,sans-serif;
-			border-style:solid;
-			border-color:#666666;
-			border-width:1px;
-		}
-		fieldset{
-			border-style:solid;
-			border-color:#666666;
-			border-width:1px;
-		}
-		.Title1{
-			font-size: 30px;
-			color: #003366;
-		}
-		.Title2{
-			font-size: 10px;
-			color: #999966;
-		}
-		.TestDesc{
-			width:70%
-		}
-		.TestSucc{
-			color: #00BB00;
-		}
-		.TestFail{
-			color: #DD0000;
-		}
-		.mysql{
-		}
-		.pgsql{
-			display:none;
-		}
-		.sqlite{
-			display:none;
-		}
-		#page{
-			max-width: 42em;
-			min-width: 36em;
-			border-width: 0px;
-			margin: auto auto;
-		}
-		#host, #dbfile{
-			width: 300px;
-		}
-		#port{
-			width: 75px;
-		}
-		#login, #password, #db{
-			width: 150px;
-		}
-		#Copyright{
-			text-align: right;
-			font-size: 10px;
-			color: #888888;
-		}
-	</style>
-	<script type="text/javascript">
-	function getInternetExplorerVersion(){
-		var ver = -1;
-		if (navigator.appName == "Microsoft Internet Explorer"){
-			var regex = new RegExp("MSIE ([0-9]{1,}[\.0-9]{0,})");
-			if (regex.exec(navigator.userAgent))
-				ver = parseFloat(RegExp.$1);
-		}
-		return ver;
-	}
-	function setText(element, text, succ){
-		element.className = (succ)?"TestSucc":"TestFail";
-		element.innerHTML = text;
-	}
-	function getByteAt(str, offset){
-		return str.charCodeAt(offset) & 0xff;
-	}
-	function getIntAt(binStr, offset){
-		return (getByteAt(binStr, offset) << 24)+
-			(getByteAt(binStr, offset+1) << 16)+
-			(getByteAt(binStr, offset+2) << 8)+
-			(getByteAt(binStr, offset+3) >>> 0);
-	}
-	function getBlockStr(binStr, offset){
-		if (getByteAt(binStr, offset) < 254)
-			return binStr.substring(offset+1, offset+1+binStr.charCodeAt(offset));
-		else
-			return binStr.substring(offset+5, offset+5+getIntAt(binStr, offset+1));
-	}
-	function doServerTest(){
-		var version = getInternetExplorerVersion();
-		if (version==-1 || version>=9.0){
-			var xmlhttp = (window.XMLHttpRequest)? new XMLHttpRequest() : xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
-			
-			xmlhttp.onreadystatechange=function(){
-				var outputDiv = document.getElementById("ServerTest");
-				if (xmlhttp.readyState == 4){
-					if (xmlhttp.status == 200){
-						var errno = getIntAt(xmlhttp.responseText, 6);
-						if (errno == 0)
-							setText(outputDiv, "Connection Success!", true);
-						else
-							setText(outputDiv, parseInt(errno)+" - "+getBlockStr(xmlhttp.responseText, 16), false);
-					}else
-						setText(outputDiv, "HTTP Error - "+xmlhttp.status, false);
-				}
-			}
-			
-			var params = "";
-			var form = document.getElementById("TestServerForm");
-			for (var i=0; i<form.elements.length; i++){
-				if (i>0) params += "&";
-				params += form.elements[i].id+"="+form.elements[i].value.replace("&", "%26");
-			}
-			
-			document.getElementById("ServerTest").className = "";
-			document.getElementById("ServerTest").innerHTML = "Connecting...";
-			xmlhttp.open("POST", "", true);
-			xmlhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-			xmlhttp.setRequestHeader("Content-length", params.length);
-			xmlhttp.setRequestHeader("Connection", "close");
-			xmlhttp.send(params);
-		}else{
-			document.getElementById("ServerTest").className = "";
-			document.getElementById("ServerTest").innerHTML = "Internet Explorer "+version+" is not supported, please use Internet explorer 9.0 or above, firefox, chrome or safari";
-		}
-	}
-	</script>
-</head>
-
-<body>
-<div id="page">
-<p>
-	<font class="Title1">Navicat&trade;</font><br>
-	<font class="Title2">The gateway to your database!</font>
-</p>
-<fieldset>
-	<legend>System Environment Test</legend>
-	<table>
-		<tr style="<?php echo "display:none"; ?>"><td width=70%>PHP installed properly</td><td class="TestFail">No</td></tr>
-		<?php echo doSystemTest();?>
-	</table>
-</fieldset>
-<br>
-<fieldset>
-	<legend>Server Test</legend>
-	<form id="TestServerForm" action="#" onSubmit="return false;">
-	<input type=hidden id="actn" value="C">
-	<table>
-		<tr class="mysql"><td width="35%">Hostname/IP Address:</td><td><input type=text id="host" placeholder="localhost"></td></tr>
-		<tr class="mysql"><td>Port:</td><td><input type=text id="port" placeholder="3306"></td></tr>
-		<tr class="pgsql"><td>Initial Database:</td><td><input type=text id="db" placeholder="template1"></td></tr>
-		<tr class="mysql"><td>Username:</td><td><input type=text id="login" placeholder="root"></td></tr>
-		<tr class="mysql"><td>Password:</td><td><input type=password id="password" placeholder=""></td></tr>
-		<tr class="sqlite"><td>Database File:</td><td><input type=text id="dbfile" placeholder="sqlite.db"></td></tr>
-		<tr><td></td><td><br><input id="TestButton" type="submit" value="Test Connection" onClick="doServerTest()"></td></tr>
-	</table>
-	</form>
-	<div id="ServerTest"><br></div>
-</fieldset>
-<p id="Copyright">Copyright &copy; PremiumSoft &trade; CyberTech Ltd. All Rights Reserved.</p>
-</div>
-</body>
-</html>
 ```
 
 ## File: public/css/custom.css
@@ -6203,9 +5621,15 @@ function doSystemTest()
 .padding-top-15 {
     padding-top:15px !important;
 }
+.padding-top-20 {
+    padding-top:15px !important;
+}
 .padding-top--5 {
     padding-top:-5px !important;
-} 
+}
+.padding-top--10 {
+    padding-top:-10px !important;
+}
 
 margin-right-10 {
     margin-right:10px !important;
@@ -6330,7 +5754,7 @@ margin-right-10 {
 /* Header bar */
 .header-bar-icon-button {
     margin-right: 10px;
-    padding-top: 5px;
+    padding-top: 0px;
 }
 
 .user-profile-block {
@@ -6366,154 +5790,10 @@ import './bootstrap';
 ## File: resources/js/bootstrap.js
 ```js
 // resources/js/bootstrap.js
-/**
- * We'll load the axios HTTP library which allows us to easily issue requests
- * to our Laravel back-end. This library automatically handles sending the
- * CSRF token as a header based on the value of the "XSRF" token cookie.
- */
-
 import axios from 'axios';
 window.axios = axios;
 
 window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
-
-```
-
-## File: resources/views/dashboard.blade.php
-```php
-{{-- resources/views/dashboard.blade.php --}}
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Application</title>
-    <style>
-        /* Reset margins and paddings */
-        body, html {
-            margin: 0;
-            padding: 0;
-            height: 100%;
-            overflow: hidden; /* Hide overflow to prevent scrollbars if the image is tall */
-        }
-
-        /* Container for the image with top alignment */
-        .image-container {
-            display: flex;
-            justify-content: center; /* Center horizontally */
-            border-left: 1px solid #CCCCCC;
-            border-right: 1px solid #CCCCCC;
-            margin-top: 0; /* No margin at the top */
-        }
-
-        /* Responsive image styling */
-        img {
-            display: block; /* Remove default inline properties */
-            max-width: 100%; /* Limit the image width to the viewport width */
-            height: auto; /* Maintain aspect ratio */
-            border-left:1px solid #CCC;
-            border-right:1px solid #CCC;
-        }
-    </style>
-</head>
-<body>
-    <div class="image-container">
-        <img src="{{ asset('images/dashboard.jpg') }}" alt="Application Image" style="width: 1217px;">
-    </div>
-</body>
-</html>
-
-```
-
-## File: resources/views/application.blade.php
-```php
-{{-- resources/views/application.blade.php --}}
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Application</title>
-    <style>
-        /* Reset margins and paddings */
-        body, html {
-            margin: 0;
-            padding: 0;
-            height: 100%;
-            overflow: hidden; /* Hide overflow to prevent scrollbars if the image is tall */
-        }
-
-        /* Container for the image with top alignment */
-        .image-container {
-            display: flex;
-            justify-content: center; /* Center horizontally */
-            border-left: 1px solid #CCCCCC;
-            border-right: 1px solid #CCCCCC;
-            margin-top: 0; /* No margin at the top */
-        }
-
-        /* Responsive image styling */
-        img {
-            display: block; /* Remove default inline properties */
-            max-width: 100%; /* Limit the image width to the viewport width */
-            height: auto; /* Maintain aspect ratio */
-            border-left:1px solid #CCC;
-            border-right:1px solid #CCC;
-        }
-    </style>
-</head>
-<body>
-    <div class="image-container">
-        <img src="{{ asset('images/application.jpg') }}" alt="Application Image" style="width: 1217px;">
-    </div>
-</body>
-</html>
-
-```
-
-## File: resources/views/addJudge.blade.php
-```php
-{{-- resources/views/addJudge.blade.php --}}
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Application</title>
-    <style>
-        /* Reset margins and paddings */
-        body, html {
-            margin: 0;
-            padding: 0;
-            height: 100%;
-            overflow: hidden; /* Hide overflow to prevent scrollbars if the image is tall */
-        }
-
-        /* Container for the image with top alignment */
-        .image-container {
-            display: flex;
-            justify-content: center; /* Center horizontally */
-            border-left: 1px solid #CCCCCC;
-            border-right: 1px solid #CCCCCC;
-            margin-top: 0; /* No margin at the top */
-        }
-
-        /* Responsive image styling */
-        img {
-            display: block; /* Remove default inline properties */
-            max-width: 100%; /* Limit the image width to the viewport width */
-            height: auto; /* Maintain aspect ratio */
-            border-left:1px solid #CCC;
-            border-right:1px solid #CCC;
-        }
-    </style>
-</head>
-<body>
-    <div class="image-container">
-        <img src="{{ asset('images/addJudge.png') }}" alt="Application Image" style="width: 1217px;">
-    </div>
-</body>
-</html>
 
 ```
 
@@ -6620,84 +5900,60 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 ## File: resources/views/auth/register.blade.php
 ```php
 {{-- resources/views/auth/register.blade.php --}}
-<x-guest-layout>
-    <div class="flex items-center justify-center min-h-screen">
-        <div class="w-full max-w-2xl p-6 bg-white rounded"> <!-- Adjusted max width for two columns -->
-            <div class="login-title text-center">
-                <h1 class="font-bold"><strong>SAPOA Awards</strong><span class="dashboard text-gray-700"> REGISTRATION</span></h1>
-            </div>
-
-            <form method="POST" action="{{ route('register') }}" class="form-container">
-                @csrf
-                <div class="flex flex-wrap -mx-3"> <!-- Added for two-column layout -->
-                    <div class="w-full md:w-1/2 px-3 mb-4"> <!-- Column 1 -->
-                        <div class="mb-4 flex justify-center">
-                            <input id="name" type="text" name="name" value="{{ old('name') }}" required autofocus placeholder="Name" class="input-field @error('name') is-invalid @enderror" />
-                            @error('name')
-                                <span class="invalid-feedback" role="alert">
-                                    <strong>{{ $message }}</strong>
-                                </span>
-                            @enderror
-                        </div>
-                        <div class="mb-4 flex justify-center">
-                            <input id="surname" type="text" name="surname" value="{{ old('surname') }}" required placeholder="Surname" class="input-field @error('surname') is-invalid @enderror" />
-                            @error('surname')
-                                <span class="invalid-feedback" role="alert">
-                                    <strong>{{ $message }}</strong>
-                                </span>
-                            @enderror
-                        </div>
-                        <div class="mb-4 flex justify-center">
-                            <input id="company" type="text" name="company" value="{{ old('company') }}" required placeholder="Company" class="input-field @error('company') is-invalid @enderror" />
-                            @error('company')
-                                <span class="invalid-feedback" role="alert">
-                                    <strong>{{ $message }}</strong>
-                                </span>
-                            @enderror
-                        </div>
-                    </div>
-                    <div class="w-full md:w-1/2 px-3"> <!-- Column 2 -->
-                        <div class="mb-4 flex justify-center">
-                            <input id="mobile_number" type="text" name="mobile_number" value="{{ old('mobile_number') }}" required placeholder="Mobile Number" class="input-field @error('mobile_number') is-invalid @enderror" />
-                            @error('mobile_number')
-                                <span class="invalid-feedback" role="alert">
-                                    <strong>{{ $message }}</strong>
-                                </span>
-                            @enderror
-                        </div>
-                        <div class="mb-4 flex justify-center">
-                            <input id="email" type="email" name="email" value="{{ old('email') }}" required placeholder="Email" class="input-field @error('email') is-invalid @enderror" />
-                            @error('email')
-                                <span class="invalid-feedback" role="alert">
-                                    <strong>{{ $message }}</strong>
-                                </span>
-                            @enderror
-                        </div>
-                        <div class="mb-4 flex justify-center">
-                            <input id="password" type="password" name="password" required placeholder="Password" class="input-field @error('password') is-invalid @enderror" />
-                            @error('password')
-                                <span class="invalid-feedback" role="alert">
-                                    <strong>{{ $message }}</strong>
-                                </span>
-                            @enderror
-                        </div>
-                        <div class="mb-6 flex justify-center">
-                            <input id="password_confirmation" type="password" name="password_confirmation" required placeholder="Confirm Password" class="input-field" />
-                        </div>
-                    </div>
-                </div>
-                <div class="mb-6">
-                    <x-primary-button class="w-full red-button-class">
-                        {{ __('Register') }}
-                    </x-primary-button>
-                </div>
-                <div class="flex flex-col items-start text-sm">
-                    <a href="{{ route('login') }}" class="link-register font-semibold hover:underline">{{ __('Already have an account? Login') }}</a>
-                </div>
-            </form>
+<div class="flex items-center justify-center min-h-screen">
+    <div class="w-full max-w-2xl p-6 bg-white rounded">
+        <div class="login-title text-center">
+            <h1 class="font-bold"><strong>SAPOA Awards</strong><span class="dashboard text-gray-700"> REGISTRATION</span></h1>
         </div>
+
+        <form method="POST" action="{{ route('register') }}" class="form-container">
+            @csrf
+            <div class="mb-4 flex justify-center">
+                <input id="name" type="text" name="name" value="{{ old('name') }}" required autofocus placeholder="Name" class="input-field @error('name') is-invalid @enderror" />
+                @error('name')
+                    <span class="invalid-feedback" role="alert">
+                        <strong>{{ $message }}</strong>
+                    </span>
+                @enderror
+            </div>
+            <div class="mb-4 flex justify-center">
+                <input id="surname" type="text" name="surname" value="{{ old('surname') }}" required placeholder="Surname" class="input-field @error('surname') is-invalid @enderror" />
+                @error('surname')
+                    <span class="invalid-feedback" role="alert">
+                        <strong>{{ $message }}</strong>
+                    </span>
+                @enderror
+            </div>
+            <div class="mb-4 flex justify-center">
+                <input id="email" type="email" name="email" value="{{ old('email') }}" required placeholder="Email" class="input-field @error('email') is-invalid @enderror" />
+                @error('email')
+                    <span class="invalid-feedback" role="alert">
+                        <strong>{{ $message }}</strong>
+                    </span>
+                @enderror
+            </div>
+            <div class="mb-4 flex justify-center">
+                <input id="password" type="password" name="password" required placeholder="Password" class="input-field @error('password') is-invalid @enderror" />
+                @error('password')
+                    <span class="invalid-feedback" role="alert">
+                        <strong>{{ $message }}</strong>
+                    </span>
+                @enderror
+            </div>
+            <div class="mb-6 flex justify-center">
+                <input id="password_confirmation" type="password" name="password_confirmation" required placeholder="Confirm Password" class="input-field" />
+            </div>
+            <div class="mb-6">
+                <x-primary-button class="w-full red-button-class">
+                    {{ __('Register') }}
+                </x-primary-button>
+            </div>
+            <div class="flex flex-col items-start text-sm">
+                <a href="{{ route('login') }}" class="link-register font-semibold hover:underline">{{ __('Already have an account? Login') }}</a>
+            </div>
+        </form>
     </div>
-</x-guest-layout>
+</div>
 
 ```
 
@@ -6783,7 +6039,6 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 
 ```
 
-
 ## File: resources/views/components/auth-session-status.blade.php
 ```php
 {{-- resources/views/components/auth-session-status.blade.php --}}
@@ -6797,198 +6052,6 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 
 ```
 
-## File: resources/views/components/danger-button.blade.php
-```php
-{{-- resources/views/components/danger-button.blade.php --}}
-<button {{ $attributes->merge(['type' => 'submit', 'class' => 'inline-flex items-center px-4 py-2 bg-red-600 border border-transparent rounded-md font-semibold text-xs text-white uppercase tracking-widest hover:bg-red-500 active:bg-red-700 focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-2 transition ease-in-out duration-150']) }}>
-    {{ $slot }}
-</button>
-
-```
-
-## File: resources/views/components/dropdown-link.blade.php
-```php
-{{-- resources/views/components/dropdown-link.blade.php --}}
-<a {{ $attributes->merge(['class' => 'block w-full px-4 py-2 text-start text-sm leading-5 text-gray-700 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 transition duration-150 ease-in-out']) }}>{{ $slot }}</a>
-
-```
-
-## File: resources/views/components/dropdown.blade.php
-```php
-{{-- resources/views/components/dropdown.blade.php --}}
-@props(['align' => 'right', 'width' => '48', 'contentClasses' => 'py-1 bg-white'])
-
-@php
-switch ($align) {
-    case 'left':
-        $alignmentClasses = 'ltr:origin-top-left rtl:origin-top-right start-0';
-        break;
-    case 'top':
-        $alignmentClasses = 'origin-top';
-        break;
-    case 'right':
-    default:
-        $alignmentClasses = 'ltr:origin-top-right rtl:origin-top-left end-0';
-        break;
-}
-
-switch ($width) {
-    case '48':
-        $width = 'w-48';
-        break;
-}
-@endphp
-
-<div class="relative" x-data="{ open: false }" @click.outside="open = false" @close.stop="open = false">
-    <div @click="open = ! open">
-        {{ $trigger }}
-    </div>
-
-    <div x-show="open"
-            x-transition:enter="transition ease-out duration-200"
-            x-transition:enter-start="opacity-0 scale-95"
-            x-transition:enter-end="opacity-100 scale-100"
-            x-transition:leave="transition ease-in duration-75"
-            x-transition:leave-start="opacity-100 scale-100"
-            x-transition:leave-end="opacity-0 scale-95"
-            class="absolute z-50 mt-2 {{ $width }} rounded-md shadow-lg {{ $alignmentClasses }}"
-            style="display: none;"
-            @click="open = false">
-        <div class="rounded-md ring-1 ring-black ring-opacity-5 {{ $contentClasses }}">
-            {{ $content }}
-        </div>
-    </div>
-</div>
-
-```
-
-## File: resources/views/components/input-error.blade.php
-```php
-{{-- resources/views/components/input-error.blade.php --}}
-@props(['messages'])
-
-@if ($messages)
-    <ul {{ $attributes->merge(['class' => 'text-sm text-red-600 space-y-1']) }}>
-        @foreach ((array) $messages as $message)
-            <li>{{ $message }}</li>
-        @endforeach
-    </ul>
-@endif
-
-```
-
-## File: resources/views/components/input-label.blade.php
-```php
-{{-- resources/views/components/input-label.blade.php --}}
-@props(['value'])
-
-<label {{ $attributes->merge(['class' => 'block font-medium text-sm text-gray-700']) }}>
-    {{ $value ?? $slot }}
-</label>
-
-```
-
-## File: resources/views/components/modal.blade.php
-```php
-{{-- resources/views/components/modal.blade.php --}}
-@props([
-    'name',
-    'show' => false,
-    'maxWidth' => '2xl'
-])
-
-@php
-$maxWidth = [
-    'sm' => 'sm:max-w-sm',
-    'md' => 'sm:max-w-md',
-    'lg' => 'sm:max-w-lg',
-    'xl' => 'sm:max-w-xl',
-    '2xl' => 'sm:max-w-2xl',
-][$maxWidth];
-@endphp
-
-<div
-    x-data="{
-        show: @js($show),
-        focusables() {
-            // All focusable element types...
-            let selector = 'a, button, input:not([type=\'hidden\']), textarea, select, details, [tabindex]:not([tabindex=\'-1\'])'
-            return [...$el.querySelectorAll(selector)]
-                // All non-disabled elements...
-                .filter(el => ! el.hasAttribute('disabled'))
-        },
-        firstFocusable() { return this.focusables()[0] },
-        lastFocusable() { return this.focusables().slice(-1)[0] },
-        nextFocusable() { return this.focusables()[this.nextFocusableIndex()] || this.firstFocusable() },
-        prevFocusable() { return this.focusables()[this.prevFocusableIndex()] || this.lastFocusable() },
-        nextFocusableIndex() { return (this.focusables().indexOf(document.activeElement) + 1) % (this.focusables().length + 1) },
-        prevFocusableIndex() { return Math.max(0, this.focusables().indexOf(document.activeElement)) -1 },
-    }"
-    x-init="$watch('show', value => {
-        if (value) {
-            document.body.classList.add('overflow-y-hidden');
-            {{ $attributes->has('focusable') ? 'setTimeout(() => firstFocusable().focus(), 100)' : '' }}
-        } else {
-            document.body.classList.remove('overflow-y-hidden');
-        }
-    })"
-    x-on:open-modal.window="$event.detail == '{{ $name }}' ? show = true : null"
-    x-on:close-modal.window="$event.detail == '{{ $name }}' ? show = false : null"
-    x-on:close.stop="show = false"
-    x-on:keydown.escape.window="show = false"
-    x-on:keydown.tab.prevent="$event.shiftKey || nextFocusable().focus()"
-    x-on:keydown.shift.tab.prevent="prevFocusable().focus()"
-    x-show="show"
-    class="fixed inset-0 overflow-y-auto px-4 py-6 sm:px-0 z-50"
-    style="display: {{ $show ? 'block' : 'none' }};"
->
-    <div
-        x-show="show"
-        class="fixed inset-0 transform transition-all"
-        x-on:click="show = false"
-        x-transition:enter="ease-out duration-300"
-        x-transition:enter-start="opacity-0"
-        x-transition:enter-end="opacity-100"
-        x-transition:leave="ease-in duration-200"
-        x-transition:leave-start="opacity-100"
-        x-transition:leave-end="opacity-0"
-    >
-        <div class="absolute inset-0 bg-gray-500 opacity-75"></div>
-    </div>
-
-    <div
-        x-show="show"
-        class="mb-6 bg-white rounded-lg overflow-hidden shadow-xl transform transition-all sm:w-full {{ $maxWidth }} sm:mx-auto"
-        x-transition:enter="ease-out duration-300"
-        x-transition:enter-start="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
-        x-transition:enter-end="opacity-100 translate-y-0 sm:scale-100"
-        x-transition:leave="ease-in duration-200"
-        x-transition:leave-start="opacity-100 translate-y-0 sm:scale-100"
-        x-transition:leave-end="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
-    >
-        {{ $slot }}
-    </div>
-</div>
-
-```
-
-## File: resources/views/components/nav-link.blade.php
-```php
-{{-- resources/views/components/nav-link.blade.php --}}
-@props(['active'])
-
-@php
-$classes = ($active ?? false)
-            ? 'inline-flex items-center px-1 pt-1 border-b-2 border-indigo-400 text-sm font-medium leading-5 text-gray-900 focus:outline-none focus:border-indigo-700 transition duration-150 ease-in-out'
-            : 'inline-flex items-center px-1 pt-1 border-b-2 border-transparent text-sm font-medium leading-5 text-gray-500 hover:text-gray-700 hover:border-gray-300 focus:outline-none focus:text-gray-700 focus:border-gray-300 transition duration-150 ease-in-out';
-@endphp
-
-<a {{ $attributes->merge(['class' => $classes]) }}>
-    {{ $slot }}
-</a>
-
-```
-
 ## File: resources/views/components/primary-button.blade.php
 ```php
 {{-- resources/views/components/primary-button.blade.php --}}
@@ -6996,115 +6059,6 @@ $classes = ($active ?? false)
 <button {{ $attributes->merge(['type' => 'submit', 'class' => 'inline-flex items-center px-4 py-2 bg-red-600 border border-transparent rounded-md font-semibold text-xs text-white uppercase tracking-widest hover:bg-red-700 active:bg-red-900 focus:outline-none focus:border-red-900 focus:ring focus:ring-red-300 disabled:opacity-25 transition']) }}>
     {{ $slot }}
 </button>
-
-```
-
-## File: resources/views/components/responsive-nav-link.blade.php
-```php
-{{-- resources/views/components/responsive-nav-link.blade.php --}}
-@props(['active'])
-
-@php
-$classes = ($active ?? false)
-            ? 'block w-full ps-3 pe-4 py-2 border-l-4 border-indigo-400 text-start text-base font-medium text-indigo-700 bg-indigo-50 focus:outline-none focus:text-indigo-800 focus:bg-indigo-100 focus:border-indigo-700 transition duration-150 ease-in-out'
-            : 'block w-full ps-3 pe-4 py-2 border-l-4 border-transparent text-start text-base font-medium text-gray-600 hover:text-gray-800 hover:bg-gray-50 hover:border-gray-300 focus:outline-none focus:text-gray-800 focus:bg-gray-50 focus:border-gray-300 transition duration-150 ease-in-out';
-@endphp
-
-<a {{ $attributes->merge(['class' => $classes]) }}>
-    {{ $slot }}
-</a>
-
-```
-
-## File: resources/views/components/secondary-button.blade.php
-```php
-{{-- resources/views/components/secondary-button.blade.php --}}
-<button {{ $attributes->merge(['type' => 'button', 'class' => 'inline-flex items-center px-4 py-2 bg-white border border-gray-300 rounded-md font-semibold text-xs text-gray-700 uppercase tracking-widest shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 disabled:opacity-25 transition ease-in-out duration-150']) }}>
-    {{ $slot }}
-</button>
-
-```
-
-## File: resources/views/components/text-input.blade.php
-```php
-{{-- resources/views/components/text-input.blade.php --}}
-@props(['disabled' => false])
-
-<input {{ $disabled ? 'disabled' : '' }} {!! $attributes->merge(['class' => 'border-gray-300 focus:border-indigo-500 focus:ring-indigo-500 rounded-md shadow-sm']) !!}>
-
-```
-
-## File: resources/views/components/checkbox.blade.php
-```php
-{{-- resources/views/components/checkbox.blade.php --}}
-<div>
-    <input type="checkbox" id="{{ $id }}" {{ $attributes->merge(['class' => 'rounded border-gray-300 text-indigo-600 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50']) }}>
-    <label for="{{ $id }}" class="ml-2 block text-sm text-gray-600">{{ $label }}</label>
-</div>
-
-```
-
-## File: resources/views/components/auth-card.blade.php
-```php
-{{-- resources/views/components/auth-card.blade.php --}}
-<div {{ $attributes->merge(['class' => 'max-w-md w-full space-y-8']) }}>
-    <div>
-        {{ $logo ?? '' }}
-    </div>
-    <div class="rounded-lg bg-white px-6 py-8 shadow-lg text-left">
-        {{ $slot }}
-    </div>
-</div>
-
-```
-
-## File: resources/views/components/left-nav.blade.php
-```php
-{{-- resources/views/components/left-nav.blade.php --}}
-{{-- /resources/views/components/left-nav.blade.php --}}
-<div x-data="leftNavComponent" @click.away="activeMenu = ''">
-    <ul class="nav-links">
-        <li>
-            <a href="#" @click="toggleSubMenu('dashboard')" :class="{'active': isActive('dashboard')}">Dashboard</a>
-            <div x-show="isActive('dashboard')">
-                {{-- Sub-menu items for Dashboard --}}
-            </div>
-        </li>
-        <li>
-            <a href="#" @click="toggleSubMenu('entries')" :class="{'active': isActive('entries')}">Entries</a>
-            <div x-show="isActive('entries')">
-                {{-- Sub-menu items for Entries --}}
-            </div>
-        </li>
-        {{-- Repeat for other main menu items --}}
-    </ul>
-</div>
-
-```
-
-## File: resources/views/components/top-nav.blade.php
-```php
-{{-- resources/views/components/top-nav.blade.php --}}
-{{-- /resources/views/components/top-nav.blade.php --}}
-<div x-data="topNavComponent">
-    <div class="top-nav">
-        {{-- Profile Button --}}
-        <div @click.away="profileDropdownOpen = false">
-            <button @click="toggleProfileDropdown()">Profile</button>
-            <div x-show="profileDropdownOpen">
-                {{-- Profile dropdown items --}}
-            </div>
-        </div>
-
-        {{-- Settings Button --}}
-        <div @click.away="settingsDropdownOpen = false">
-            <button @click="toggleSettingsDropdown()">Settings</button>
-            <div x-show="settingsDropdownOpen">
-                {{-- Settings dropdown items --}}
-            </div>
-        </div>
-    </div>
-</div>
 
 ```
 
@@ -7118,12 +6072,15 @@ $classes = ($active ?? false)
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{{ config('app.name', 'SAPOA Awards') }}</title>
     
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.bunny.net">
-    <link href="https://fonts.bunny.net/css?family=inter:400,700&display=swap" rel="stylesheet" />
+    <!-- Favicon -->
+    <livewire:favicon/>
 
-    <!-- Styles -->
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <!-- Fonts -->
+    <livewire:google-font font="Inter" weights="100..900" />
+
+    <!-- Styles and Script -->
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
+    <link href="{{ asset('css/custom.css') }}" rel="stylesheet">
 </head>
 <body>
     <div class="flex">
@@ -7140,7 +6097,6 @@ $classes = ($active ?? false)
             </main>
         </div>
     </div>
-    
 </body>
 </html>
 ```
@@ -7155,9 +6111,11 @@ $classes = ($active ?? false)
 
         <title>{{ $title ?? 'Page Title' }}</title>
 
+        <!-- Favicon -->
+        <livewire:favicon/>
+
         <!-- Fonts -->
-        <link rel="preconnect" href="https://fonts.bunny.net">
-        <link href="https://fonts.bunny.net/css?family=inter:400,700&display=swap" rel="stylesheet" />
+        <livewire:google-font font="Inter" weights="100..900" />
 
         <!-- Styles and Script -->
         @vite(['resources/css/app.css', 'resources/js/app.js'])
@@ -7179,14 +6137,12 @@ $classes = ($active ?? false)
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <title>{{ $title ?? 'Page Title' }}</title>
-        <!-- Fonts -->
-        <link rel="preconnect" href="https://fonts.bunny.net">
-        <link href="https://fonts.bunny.net/css?family=inter:400,700&display=swap" rel="stylesheet" />
+        <!-- Favicon -->
+        <livewire:favicon/>
 
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
-        
+        <!-- Fonts -->
+        <livewire:google-font font="Inter" weights="100..900" />
+
         <!-- Styles and Script -->
         @vite(['resources/css/app.css', 'resources/js/app.js'])
         <link href="{{ asset('css/custom.css') }}" rel="stylesheet">
@@ -7208,6 +6164,9 @@ $classes = ($active ?? false)
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{{ config('app.name', 'SAPOA Awards') }}</title>
     
+    <!-- Favicon -->
+    <livewire:favicon/>
+
     <!-- Fonts -->
     <livewire:google-font font="Inter" weights="100..900" />
 
@@ -7282,14 +6241,14 @@ $classes = ($active ?? false)
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <title>{{ config('app.name', 'SAPOA Awards') }}</title>
+    <!-- Favicon -->
+    <livewire:favicon/>
+
     <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.bunny.net">
-    <link href="https://fonts.bunny.net/css?family=inter:400,700&display=swap" rel="stylesheet" />
+    <livewire:google-font font="Inter" weights="100..900" />
 
-    <!-- Styles -->
+    <!-- Styles and Script -->
     @vite(['resources/css/app.css', 'resources/js/app.js'])
-
-    <!-- Custom Styles -->
     <link href="{{ asset('css/custom.css') }}" rel="stylesheet">
     @livewireStyles
 </head>
@@ -7309,6 +6268,111 @@ $classes = ($active ?? false)
 
 ```
 
+## File: resources/views/layouts/navigation.blade.php
+```php
+{{-- resources/views/layouts/navigation.blade.php --}}
+<nav x-data="{ open: false }" class="bg-white border-b border-gray-100">
+    <!-- Primary Navigation Menu -->
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between h-16">
+            <div class="flex">
+                <!-- Logo -->
+                <div class="shrink-0 flex items-center">
+                    <a href="{{-- route('dashboard') --}}">
+                        <x-application-logo class="block h-9 w-auto fill-current text-gray-800" />
+                    </a>
+                </div>
+
+                <!-- Navigation Links -->
+                <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
+                    <x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
+                        {{-- __('Dashboard') --}}
+                    </x-nav-link>
+                </div>
+            </div>
+
+            <!-- Settings Dropdown -->
+            <div class="hidden sm:flex sm:items-center sm:ms-6">
+                <x-dropdown align="right" width="48">
+                    <x-slot name="trigger">
+                        <button class="inline-flex items-center px-3 py-2 border border-transparent text-sm leading-4 font-medium rounded-md text-gray-500 bg-white hover:text-gray-700 focus:outline-none transition ease-in-out duration-150">
+                            <div>{{ Auth::user()->name }}</div>
+
+                            <div class="ms-1">
+                                <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+                                </svg>
+                            </div>
+                        </button>
+                    </x-slot>
+
+                    <x-slot name="content">
+                        <x-dropdown-link :href="route('profile.edit')">
+                            {{ __('Profile') }}
+                        </x-dropdown-link>
+
+                        <!-- Authentication -->
+                        <form method="POST" action="{{ route('logout') }}">
+                            @csrf
+
+                            <x-dropdown-link :href="route('logout')"
+                                    onclick="event.preventDefault();
+                                                this.closest('form').submit();">
+                                {{ __('Log Out') }}
+                            </x-dropdown-link>
+                        </form>
+                    </x-slot>
+                </x-dropdown>
+            </div>
+
+            <!-- Hamburger -->
+            <div class="-me-2 flex items-center sm:hidden">
+                <button @click="open = ! open" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-gray-500 transition duration-150 ease-in-out">
+                    <svg class="h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
+                        <path :class="{'hidden': open, 'inline-flex': ! open }" class="inline-flex" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        <path :class="{'hidden': ! open, 'inline-flex': open }" class="hidden" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Responsive Navigation Menu -->
+    <div :class="{'block': open, 'hidden': ! open}" class="hidden sm:hidden">
+        <div class="pt-2 pb-3 space-y-1">
+            <x-responsive-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
+                {{ __('Dashboard') }}
+            </x-responsive-nav-link>
+        </div>
+
+        <!-- Responsive Settings Options -->
+        <div class="pt-4 pb-1 border-t border-gray-200">
+            <div class="px-4">
+                <div class="font-medium text-base text-gray-800">{{ Auth::user()->name }}</div>
+                <div class="font-medium text-sm text-gray-500">{{ Auth::user()->email }}</div>
+            </div>
+
+            <div class="mt-3 space-y-1">
+                <x-responsive-nav-link :href="route('profile.edit')">
+                    {{ __('Profile') }}
+                </x-responsive-nav-link>
+
+                <!-- Authentication -->
+                <form method="POST" action="{{ route('logout') }}">
+                    @csrf
+
+                    <x-responsive-nav-link :href="route('logout')"
+                            onclick="event.preventDefault();
+                                        this.closest('form').submit();">
+                        {{ __('Log Out') }}
+                    </x-responsive-nav-link>
+                </form>
+            </div>
+        </div>
+    </div>
+</nav>
+
+```
 
 ## File: resources/views/profile/edit.blade.php
 ```php
@@ -7541,7 +6605,6 @@ $classes = ($active ?? false)
 ## File: resources/views/livewire/search-button.blade.php
 ```php
 {{-- resources/views/livewire/search-button.blade.php --}}
-<!-- Search button -->
 <button wire:click="toggleSearchInput" class="flex items-center px-4 py-2 text-gray-600 hover:text-gray-800 focus:outline-none">
     <livewire:svg-icon icon="search" class="w-5 h-5 mr-2" />
     <span>Search</span>
@@ -7550,7 +6613,7 @@ $classes = ($active ?? false)
 
 ## File: resources/views/livewire/left-nav-button.blade.php
 ```php
-{{-- resources/views/livewire/left-nav-button.blade.php - Iteration 2 - A+ --}}
+{{-- resources/views/livewire/left-nav-button.blade.php --}}
 <div>
     {{-- Check if this is a link or a button with sub-buttons --}}
     @if ($link)
@@ -7652,17 +6715,17 @@ $classes = ($active ?? false)
         <div class="header-bar-icon-button">
             <livewire:header-button icon="mail" />
         </div>
-        <div class="header-bar-icon-button padding-top-15">
+        <div class="header-bar-icon-button padding-top-20">
             <livewire:svg-icon icon="separator"/>
         </div>
-        <div class="padding-top--5 margin-right-10">
+        <div class="header-bar-icon-button margin-right-10">
             <livewire:user-profile-block />
         </div>
-        <div class="header-bar-icon-button" style="padding-top:15px">
+        <div class="header-bar-icon-button padding-top-20">
             <livewire:svg-icon icon="separator"/>
         </div>
-        <div>
-            <livewire:header-dropdown icon="cogwheel" />
+        <div class="header-bar-icon-button" style="margin-right:0px">
+            <livewire:header-button icon="cogwheel" />
         </div>
     </div>
 </header>
@@ -7741,11 +6804,6 @@ $classes = ($active ?? false)
 </div>
 ```
 
-## File: resources/views/livewire/admin-dashboard.blade.php
-```php
-www
-```
-
 ## File: resources/views/livewire/judge-profile.blade.php
 ```php
 {{-- resources/views/livewire/judge-profile.blade.php --}}
@@ -7767,48 +6825,16 @@ www
 
 ## File: resources/views/livewire/show-posts.blade.php
 ```php
+{{-- resources/views/livewire/show-posts.blade.php --}}
 <div>
     {{-- A good traveler has no fixed plans and is not intent upon arriving. --}}
 </div>
 
 ```
 
-## File: resources/views/livewire/dashboard.blade.php
-```php
-<div>
-    <div class="grid grid-cols-3 gap-4">
-        <div>
-            <h2>Entries</h2>
-            <div class="text-4xl">{{ $entries }}</div>
-        </div>
-
-        <div>
-            <h2>Invoices</h2>
-            <div class="text-4xl">{{ $invoices }}</div>
-        </div>
-
-        <div>
-            <h2>Judges</h2>
-            <div class="text-4xl">{{ $judges }}</div>
-        </div>
-    </div>
-
-    <div class="mt-8">
-        <h2>Recently Active Users</h2>
-        <ul>
-            @foreach ($recentlyActiveUsers as $user)
-                <li>
-                    <span>{{ $user->name }}</span>
-                    <span>{{ $user->last_login_at }}</span>
-                </li>
-            @endforeach
-        </ul>
-    </div>
-</div>
-```
-
 ## File: resources/views/livewire/entry-table.blade.php
 ```php
+{{-- resources/views/livewire/entry-table.blade.php --}}
 <div>
     <table class="table-auto w-full">
         <thead>
@@ -7841,6 +6867,7 @@ www
 
 ## File: resources/views/livewire/entry-details.blade.php
 ```php
+{{-- resources/views/livewire/entry-details.blade.php --}}
 <div>
     <h1>{{ $entry->title }}</h1>
 
@@ -7875,6 +6902,7 @@ www
 
 ## File: resources/views/livewire/building-entry-form.blade.php
 ```php
+{{-- resources/views/livewire/building-entry-form.blade.php --}}
 <div>
     <form wire:submit.prevent="submit" class="space-y-4">
         <!-- Basic Details Section -->
@@ -7939,6 +6967,7 @@ www
 
 ## File: resources/views/livewire/refurbishing-entry-form.blade.php
 ```php
+{{-- resources/views/livewire/refurbishing-entry-form.blade.php --}}
 <div>
     <form wire:submit.prevent="submit" class="space-y-4">
         <!-- Entry Basic Details Section -->
@@ -8003,6 +7032,7 @@ www
 
 ## File: resources/views/livewire/interior-design-entry-form.blade.php
 ```php
+{{-- resources/views/livewire/interior-design-entry-form.blade.php --}}
 <div>
     <form wire:submit.prevent="submit" class="space-y-4">
         <!-- Entry Basic Details Section -->
@@ -8067,11 +7097,14 @@ www
 
 ## File: resources/views/livewire/judge-registration-form.blade.php
 ```php
-
+{{-- resources/views/livewire/judge-registration-form.blade.php --}}
+<div>
+</div>
 ```
 
 ## File: resources/views/livewire/user-registration-form.blade.php
 ```php
+{{-- resources/views/livewire/user-registration-form.blade.php --}}
 <div>
     <form wire:submit.prevent="submit" class="space-y-4">
         <div>
@@ -8099,6 +7132,7 @@ www
 
 ## File: resources/views/livewire/payment-gateway.blade.php
 ```php
+{{-- resources/views/livewire/payment-gateway.blade.php --}}
 <div>
     <form wire:submit.prevent="submit" class="space-y-4">
         <div>
@@ -8155,6 +7189,7 @@ www
 
 ## File: resources/views/livewire/entry-rating-form.blade.php
 ```php
+{{-- resources/views/livewire/entry-rating-form.blade.php --}}
 <div>
     <h3 class="text-lg font-semibold mb-4">Rate Entry</h3>
     <form wire:submit.prevent="submitRating">
@@ -8184,6 +7219,7 @@ www
 
 ## File: resources/views/livewire/file-upload.blade.php
 ```php
+{{-- resources/views/livewire/file-upload.blade.php --}}
 <div>
     <div class="mb-4">
         <label for="file" class="block text-gray-700 font-bold mb-2">Select File</label>
@@ -8222,6 +7258,7 @@ www
 
 ## File: resources/views/livewire/payment-form.blade.php
 ```php
+{{-- resources/views/livewire/pagination.blade.php --}}
 <div>
     <h3 class="text-lg font-semibold mb-4">Payment Details</h3>
     <form wire:submit.prevent="processPayment">
@@ -8265,6 +7302,7 @@ www
 
 ## File: resources/views/livewire/progress-bar.blade.php
 ```php
+{{-- resources/views/livewire/progress-bar.blade.php --}}
 <div>
     <div class="bg-gray-200 rounded-full overflow-hidden">
         <div class="h-2 bg-blue-500 rounded-full" style="width: {{ $progress }}%"></div>
@@ -8277,6 +7315,7 @@ www
 
 ## File: resources/views/livewire/circular-graph.blade.php
 ```php
+{{-- resources/views/livewire/circular-graph.blade.php --}}
 <div class="relative">
     <svg class="w-40 h-40">
         <circle class="text-gray-300" stroke-width="10" stroke="currentColor" fill="transparent" r="60" cx="80" cy="80" />
@@ -8292,6 +7331,7 @@ www
 
 ## File: resources/views/livewire/pagination.blade.php
 ```php
+{{-- resources/views/livewire/pagination.blade.php --}}
 <div class="flex justify-center mt-8">
     @if ($paginator->hasPages())
         <nav role="navigation" aria-label="Pagination Navigation" class="flex justify-between">
@@ -8343,6 +7383,7 @@ www
 
 ## File: resources/views/livewire/filter.blade.php
 ```php
+{{-- resources/views/livewire/filter.blade.php --}}
 <div class="mb-4">
     <label for="filter" class="block text-gray-700 font-bold mb-2">Filter</label>
     <select id="filter" wire:model="selectedFilter" class="form-select w-full">
@@ -8371,6 +7412,7 @@ www
 
 ## File: resources/views/livewire/dashboard-statistic-card.blade.php
 ```php
+{{-- resources/views/livewire/dashboard-statistic-card.blade.php --}}
 <div class="bg-white rounded-lg shadow-md p-6">
     <div class="flex items-center justify-between">
         <div>
@@ -8384,6 +7426,7 @@ www
 
 ## File: resources/views/livewire/notification.blade.php
 ```php
+{{-- resources/views/livewire/notification.blade.php --}}
 <div class="fixed bottom-4 right-4 z-50">
     @if (session()->has('success'))
         <div class="bg-green-500 text-white px-4 py-3 rounded-lg shadow-md mb-4">
@@ -8401,6 +7444,7 @@ www
 
 ## File: resources/views/livewire/confirmation-modal.blade.php
 ```php
+{{-- resources/views/livewire/confirmation-modal.blade.php --}}
 <div class="fixed z-10 inset-0 overflow-y-auto" style="display: {{ $show ? 'block' : 'none' }}">
     <div class="flex items-center justify-center min-h-screen">
         <div class="bg-white rounded-lg shadow-md p-6">
@@ -8417,6 +7461,7 @@ www
 
 ## File: resources/views/livewire/entry-index.blade.php
 ```php
+{{-- resources/views/livewire/entry-index.blade.php --}}
 <div>
     {{-- Do your work, then step back. --}}
 </div>
@@ -8425,6 +7470,7 @@ www
 
 ## File: resources/views/livewire/entry-create.blade.php
 ```php
+{{-- resources/views/livewire/entry-create.blade.php --}}
 <div>
     {{-- Success is as dangerous as failure. --}}
 </div>
@@ -8433,6 +7479,8 @@ www
 
 ## File: resources/views/livewire/invoice-index.blade.php
 ```php
+{{-- resources/views/livewire/invoice-index.blade.php --}}
+
 <div>
     {{-- Because she competes with no one, no one can compete with her. --}}
 </div>
@@ -8441,6 +7489,7 @@ www
 
 ## File: resources/views/livewire/invoice-show.blade.php
 ```php
+{{-- resources/views/livewire/invoice-show.blade.php --}}
 <div>
     {{-- Be like water. --}}
 </div>
@@ -8501,7 +7550,7 @@ www
 
 ## File: resources/views/livewire/google-font.blade.php
 ```php
-{{-- G-L-GF-V1-A+ - View for the GoogleFont Livewire component --}}
+{{-- resources/views/livewire/google-font.blade.php --}}
 <div>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -8511,8 +7560,18 @@ www
 
 ```
 
+## File: resources/views/livewire/favicon.blade.php
+```php
+{{-- resources/views/livewire/favicon.blade.php --}}
+<div>
+    <link rel="icon" href="{{ asset('favicon.svg') }}" type="image/svg+xml"/>
+    <meta name="theme-color" content="#292929"/>
+</div>
+```
+
 ## File: resources/views/livewire/admin/dashboard.blade.php
 ```php
+{{-- resources/views/livewire/admin/dashboard.blade.php --}}
 <div>
     <h2 class="text-2xl font-semibold mb-4">Admin Dashboard</h2>
     
@@ -8591,6 +7650,7 @@ www
 
 ## File: resources/views/livewire/judge/dashboard.blade.php
 ```php
+{{-- resources/views/livewire/judge/dashboard.blade.php --}}
 <div>
     <h2 class="text-2xl font-semibold mb-4">Judge Dashboard</h2>
     
@@ -8635,6 +7695,7 @@ www
 
 ## File: resources/views/livewire/user/dashboard.blade.php
 ```php
+{{-- resources/views/livewire/user/dashboard.blade.php --}}
 <div>
     <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
         <div class="bg-white p-6 rounded-lg shadow">
@@ -8713,6 +7774,49 @@ www
         </div>
     </div>
 </div>
+```
+
+## File: resources/views/livewire/user/register.blade.php
+```php
+{{-- resources/views/livewire/auth/register.blade.php --}}
+<div class="flex items-center justify-center min-h-screen">
+    <div class="w-full max-w-2xl p-6 bg-white rounded">
+        <div class="login-title text-center">
+            <h1 class="font-bold"><strong>SAPOA Awards</strong><span class="dashboard text-gray-700"> REGISTRATION</span></h1>
+        </div>
+
+        <form wire:submit.prevent="register" class="form-container">
+            <div class="mb-4 flex justify-center">
+                <input wire:model.defer="name" type="text" required autofocus placeholder="Name" class="input-field @error('name') is-invalid @enderror" />
+                @error('name') <span class="invalid-feedback">{{ $message }}</span> @enderror
+            </div>
+            <div class="mb-4 flex justify-center">
+                <input wire:model.defer="surname" type="text" required placeholder="Surname" class="input-field @error('surname') is-invalid @enderror" />
+                @error('surname') <span class="invalid-feedback">{{ $message }}</span> @enderror
+            </div>
+            <div class="mb-4 flex justify-center">
+                <input wire:model.defer="email" type="email" required placeholder="Email" class="input-field @error('email') is-invalid @enderror" />
+                @error('email') <span class="invalid-feedback">{{ $message }}</span> @enderror
+            </div>
+            <div class="mb-4 flex justify-center">
+                <input wire:model.defer="password" type="password" required placeholder="Password" class="input-field @error('password') is-invalid @enderror" />
+                @error('password') <span class="invalid-feedback">{{ $message }}</span> @enderror
+            </div>
+            <div class="mb-6 flex justify-center">
+                <input wire:model.defer="password_confirmation" type="password" required placeholder="Confirm Password" class="input-field" />
+            </div>
+            <div class="mb-6">
+                <button type="submit" class="w-full red-button-class">
+                    Register
+                </button>
+            </div>
+            <div class="flex flex-col items-start text-sm">
+                <a href="{{ route('login') }}" class="link-register font-semibold hover:underline">Already have an account? Login</a>
+            </div>
+        </form>
+    </div>
+</div>
+
 ```
 
 ## File: routes/api.php
@@ -8794,27 +7898,22 @@ Artisan::command('inspire', function () {
 <?php
 // routes/web.php
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\Auth\AuthenticatedSessionController;
 use App\Http\Controllers\Auth\PasswordResetLinkController;
-use App\Http\Controllers\Auth\NewPasswordController;
-use App\Http\Controllers\Auth\RegisteredUserController;
 
 use App\Livewire\Admin\Dashboard as AdminDashboard;
 use App\Livewire\Judge\Dashboard as JudgeDashboard;
 use App\Livewire\User\Dashboard as UserDashboard;
 
 
-// Authentication
-
-# Login
-// Login page with Livewire
+### Authentication
+# Login / logout
 Route::get('/login',\App\Livewire\LoginForm::class)->name('login');
+Route::post('/logout', [AuthenticatedSessionController::class, 'destroy'])->middleware('auth')->name('logout');
 
-# Logout
-Route::post('/logout', [AuthenticatedSessionController::class, 'destroy'])
-                ->middleware('auth')
-                ->name('logout');
+# Register
+Route::get('/register', \App\Livewire\User\Register::class)->name('register');
+Route::get('/', \App\Livewire\User\Register::class)->name('register');
 
 
 
@@ -8903,14 +8002,6 @@ Route::post('/forgot-password', [PasswordResetLinkController::class, 'store'])
                 ->middleware('guest')
                 ->name('password.email');
 
-// Registration page
-Route::get('/register', [RegisteredUserController::class, 'create'])
-                ->middleware('guest')
-                ->name('register');
-
-// Handle registration POST
-Route::post('/register', [RegisteredUserController::class, 'store'])
-                ->middleware('guest');
 
 
 

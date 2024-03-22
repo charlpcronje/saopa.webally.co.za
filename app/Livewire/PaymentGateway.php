@@ -1,6 +1,6 @@
 <?php
-
-namespace App\Http\Livewire\Payments;
+// app/Livewire/PaymentGateway.php
+namespace App\Livewire\Payments;
 
 use Livewire\Component;
 use App\Models\Payment;

@@ -1,3 +1,4 @@
+{{-- resources/views/livewire/entry-rating-form.blade.php --}}
 <div>
     <h3 class="text-lg font-semibold mb-4">Rate Entry</h3>
     <form wire:submit.prevent="submitRating">

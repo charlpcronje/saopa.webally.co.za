@@ -1,3 +1,4 @@
+{{-- resources/views/livewire/interior-design-entry-form.blade.php --}}
 <div>
     <form wire:submit.prevent="submit" class="space-y-4">
         <!-- Entry Basic Details Section -->

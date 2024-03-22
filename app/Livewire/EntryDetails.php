@@ -1,5 +1,5 @@
 <?php
-
+// app/Livewire/EntryDetails.php
 namespace App\Http\Livewire\Entries;
 
 use Livewire\Component;

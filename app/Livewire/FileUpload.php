@@ -1,7 +1,7 @@
 <?php
-// app/Http/Livewire/FileUpload.php
+// app/Livewire/FileUpload.php
 
-namespace App\Http\Livewire;
+namespace App\Livewire;
 
 use Livewire\Component;
 use Livewire\WithFileUploads;

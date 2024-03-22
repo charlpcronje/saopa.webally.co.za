@@ -1,5 +1,5 @@
 <?php
-// SearchButton.php
+// app/Livewire/SearchButton.php
 namespace App\Livewire;
 
 use Livewire\Component;

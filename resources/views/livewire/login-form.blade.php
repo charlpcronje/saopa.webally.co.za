@@ -1,7 +1,5 @@
 {{-- resources/views/livewire/login-form.blade.php --}}
 <div class="w-full max-w-md p-6 bg-white rounded">
-    <livewire:alert-bar />
-
     <div class="login-title text-center">
         <h1 class="font-bold"><strong>SAPOA Awards</strong><span class="dashboard text-gray-700"> DASHBOARD</span></h1>
     </div>

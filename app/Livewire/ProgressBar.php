@@ -1,7 +1,7 @@
 <?php
-// app/Http/Livewire/ProgressBar.php
+// app/Livewire/ProgressBar.php
 
-namespace App\Http\Livewire;
+namespace App\Livewire;
 
 use Livewire\Component;
 

@@ -1,3 +1,4 @@
+{{-- resources/views/livewire/filter.blade.php --}}
 <div class="mb-4">
     <label for="filter" class="block text-gray-700 font-bold mb-2">Filter</label>
     <select id="filter" wire:model="selectedFilter" class="form-select w-full">

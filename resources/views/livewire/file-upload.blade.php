@@ -1,3 +1,4 @@
+{{-- resources/views/livewire/file-upload.blade.php --}}
 <div>
     <div class="mb-4">
         <label for="file" class="block text-gray-700 font-bold mb-2">Select File</label>

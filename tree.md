@@ -4,8 +4,6 @@
     - [vite.config.js](vite.config.js)
     - [tailwind.config.js](tailwind.config.js)
     - [postcss.config.js](postcss.config.js)
-    - [tree.md](tree.md)
-    - [cspell.json](cspell.json)
     - **app/**
         - **Console/**
             - [Kernel.php](app/Console/Kernel.php)
@@ -15,8 +13,6 @@
             - [Kernel.php](app/Http/Kernel.php)
             - **Controllers/**
                 - [Controller.php](app/Http/Controllers/Controller.php)
-                - [ProfileController.php](app/Http/Controllers/ProfileController.php)
-                - [JudgeController.php](app/Http/Controllers/JudgeController.php)
                 - **Auth/**
                     - [AuthenticatedSessionController.php](app/Http/Controllers/Auth/AuthenticatedSessionController.php)
                     - [ConfirmablePasswordController.php](app/Http/Controllers/Auth/ConfirmablePasswordController.php)
@@ -77,10 +73,8 @@
             - [Headerbar.php](app/Livewire/Headerbar.php)
             - [AlertBar.php](app/Livewire/AlertBar.php)
             - [LoginForm.php](app/Livewire/LoginForm.php)
-            - [AdminDashboard.php](app/Livewire/AdminDashboard.php)
             - [JudgeProfile.php](app/Livewire/JudgeProfile.php)
             - [UserProfile.php](app/Livewire/UserProfile.php)
-            - [Dashboard.php](app/Livewire/Dashboard.php)
             - [EntryTable.php](app/Livewire/EntryTable.php)
             - [EntryDetails.php](app/Livewire/EntryDetails.php)
             - [RefurbishingEntryForm.php](app/Livewire/RefurbishingEntryForm.php)
@@ -99,6 +93,7 @@
             - [HeaderSeparator.php](app/Livewire/HeaderSeparator.php)
             - [UserProfileBlock.php](app/Livewire/UserProfileBlock.php)
             - [GoogleFont.php](app/Livewire/GoogleFont.php)
+            - [Favicon.php](app/Livewire/Favicon.php)
             - **Judge/**
                 - [Dashboard.php](app/Livewire/Judge/Dashboard.php)
             - **Admin/**
@@ -109,6 +104,7 @@
                 - [EntryCreate.php](app/Livewire/User/EntryCreate.php)
                 - [InvoiceIndex.php](app/Livewire/User/InvoiceIndex.php)
                 - [InvoiceShow.php](app/Livewire/User/InvoiceShow.php)
+                - [Register.php](app/Livewire/User/Register.php)
             - **Entries/**
                 - [BuildingEntryForm.php](app/Livewire/Entries/BuildingEntryForm.php)
         - **Enums/**
@@ -155,7 +151,6 @@
             - [2024_03_18_020116_add_status_column_to_invoices_table.php](database/migrations/2024_03_18_020116_add_status_column_to_invoices_table.php)
     - **public/**
         - [index.php](public/index.php)
-        - [ntunnel_mysql.php](public/ntunnel_mysql.php)
         - **css/**
             - [custom.css](public/css/custom.css)
         - **images/**
@@ -168,9 +163,6 @@
             - [bootstrap.js](resources/js/bootstrap.js)
             - **components/**
         - **views/**
-            - [dashboard.blade.php](resources/views/dashboard.blade.php)
-            - [application.blade.php](resources/views/application.blade.php)
-            - [addJudge.blade.php](resources/views/addJudge.blade.php)
             - **auth/**
                 - [confirm-password.blade.php](resources/views/auth/confirm-password.blade.php)
                 - [forgot-password.blade.php](resources/views/auth/forgot-password.blade.php)
@@ -179,23 +171,8 @@
                 - [reset-password.blade.php](resources/views/auth/reset-password.blade.php)
                 - [verify-email.blade.php](resources/views/auth/verify-email.blade.php)
             - **components/**
-                - [application-logo.blade.php](resources/views/components/application-logo.blade.php)
                 - [auth-session-status.blade.php](resources/views/components/auth-session-status.blade.php)
-                - [danger-button.blade.php](resources/views/components/danger-button.blade.php)
-                - [dropdown-link.blade.php](resources/views/components/dropdown-link.blade.php)
-                - [dropdown.blade.php](resources/views/components/dropdown.blade.php)
-                - [input-error.blade.php](resources/views/components/input-error.blade.php)
-                - [input-label.blade.php](resources/views/components/input-label.blade.php)
-                - [modal.blade.php](resources/views/components/modal.blade.php)
-                - [nav-link.blade.php](resources/views/components/nav-link.blade.php)
                 - [primary-button.blade.php](resources/views/components/primary-button.blade.php)
-                - [responsive-nav-link.blade.php](resources/views/components/responsive-nav-link.blade.php)
-                - [secondary-button.blade.php](resources/views/components/secondary-button.blade.php)
-                - [text-input.blade.php](resources/views/components/text-input.blade.php)
-                - [checkbox.blade.php](resources/views/components/checkbox.blade.php)
-                - [auth-card.blade.php](resources/views/components/auth-card.blade.php)
-                - [left-nav.blade.php](resources/views/components/left-nav.blade.php)
-                - [top-nav.blade.php](resources/views/components/top-nav.blade.php)
                 - **layouts/**
                     - [main.blade.php](resources/views/components/layouts/main.blade.php)
                     - [blank.blade.php](resources/views/components/layouts/blank.blade.php)
@@ -220,11 +197,9 @@
                 - [headerbar.blade.php](resources/views/livewire/headerbar.blade.php)
                 - [alert-bar.blade.php](resources/views/livewire/alert-bar.blade.php)
                 - [login-form.blade.php](resources/views/livewire/login-form.blade.php)
-                - [admin-dashboard.blade.php](resources/views/livewire/admin-dashboard.blade.php)
                 - [judge-profile.blade.php](resources/views/livewire/judge-profile.blade.php)
                 - [user-profile.blade.php](resources/views/livewire/user-profile.blade.php)
                 - [show-posts.blade.php](resources/views/livewire/show-posts.blade.php)
-                - [dashboard.blade.php](resources/views/livewire/dashboard.blade.php)
                 - [entry-table.blade.php](resources/views/livewire/entry-table.blade.php)
                 - [entry-details.blade.php](resources/views/livewire/entry-details.blade.php)
                 - [building-entry-form.blade.php](resources/views/livewire/building-entry-form.blade.php)
@@ -254,12 +229,14 @@
                 - [header-separator.blade.php](resources/views/livewire/header-separator.blade.php)
                 - [user-profile-block.blade.php](resources/views/livewire/user-profile-block.blade.php)
                 - [google-font.blade.php](resources/views/livewire/google-font.blade.php)
+                - [favicon.blade.php](resources/views/livewire/favicon.blade.php)
                 - **admin/**
                     - [dashboard.blade.php](resources/views/livewire/admin/dashboard.blade.php)
                 - **judge/**
                     - [dashboard.blade.php](resources/views/livewire/judge/dashboard.blade.php)
                 - **user/**
                     - [dashboard.blade.php](resources/views/livewire/user/dashboard.blade.php)
+                    - [register.blade.php](resources/views/livewire/user/register.blade.php)
     - **routes/**
         - [api.php](routes/api.php)
         - [channels.php](routes/channels.php)

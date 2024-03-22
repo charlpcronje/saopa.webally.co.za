@@ -1,3 +1,4 @@
+{{-- resources/views/livewire/pagination.blade.php --}}
 <div>
     <h3 class="text-lg font-semibold mb-4">Payment Details</h3>
     <form wire:submit.prevent="processPayment">

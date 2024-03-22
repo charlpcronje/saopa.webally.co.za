@@ -1,7 +1,7 @@
 <?php
-// app/Http/Livewire/PaymentForm.php
+// app/Livewire/PaymentForm.php
 
-namespace App\Http\Livewire;
+namespace App\Livewire;
 
 use Livewire\Component;
 use App\Services\PaymentGateway;

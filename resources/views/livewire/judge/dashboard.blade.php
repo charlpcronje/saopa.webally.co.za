@@ -1,3 +1,4 @@
+{{-- resources/views/livewire/judge/dashboard.blade.php --}}
 <div>
     <h2 class="text-2xl font-semibold mb-4">Judge Dashboard</h2>
     

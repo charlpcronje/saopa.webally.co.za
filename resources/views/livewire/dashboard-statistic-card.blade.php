@@ -1,3 +1,4 @@
+{{-- resources/views/livewire/dashboard-statistic-card.blade.php --}}
 <div class="bg-white rounded-lg shadow-md p-6">
     <div class="flex items-center justify-between">
         <div>

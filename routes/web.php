@@ -1,81 +1,91 @@
 <?php
 // routes/web.php
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\Auth\AuthenticatedSessionController;
 use App\Http\Controllers\Auth\PasswordResetLinkController;
-use App\Http\Controllers\Auth\NewPasswordController;
-use App\Http\Controllers\Auth\RegisteredUserController;
 
-use App\Livewire\Admin\Dashboard as AdminDashboard;
-use App\Livewire\Judge\Dashboard as JudgeDashboard;
-use App\Livewire\User\Dashboard as UserDashboard;
-
-
-// Authentication
-
-# Login
-// Login page with Livewire
-Route::get('/login',\App\Livewire\LoginForm::class)->name('login');
-
-# Logout
-Route::post('/logout', [AuthenticatedSessionController::class, 'destroy'])
-                ->middleware('auth')
-                ->name('logout');
-
-
-
-
-
-
+##### AUTHENTICATION ROUTES
+# Redirect user based on their role to their respective dashboard
 Route::get('/', function () {
-    return view('auth.register');
-})->name('register');
-
-// Route::post('/register', [RegisterUserController::class, 'register'])->name('register');
+    if (Auth::check()) {
+        $user = Auth::user();
+        if ($user->hasRole('admin')) {
+            return redirect()->route('admin.dashboard');
+        } elseif ($user->hasRole('judge')) {
+            return redirect()->route('judge.dashboard');
+        } else {
+            return redirect()->route('user.dashboard');
+        }
+    } else {
+        return redirect()->route('register');
+    }
+})->name('home');
+Route::get('/register', \App\Livewire\User\Register::class)->name('register');
+#####
+# Login / logout & password reset routes
+Route::get('/forgot-password', \App\Livewire\Auth\ForgotPassword::class)->name('password.request');
+Route::get('/reset-password/{token}', \App\Livewire\Auth\ResetPassword::class)->name('password.reset');
+Route::get('/email/verify', \App\Livewire\Auth\VerifyEmail::class)->middleware('auth')->name('verification.notice');
+Route::get('/email/verify/{id}/{hash}', \App\Livewire\Auth\VerifyEmailHandler::class)->middleware(['auth', 'signed'])->name('verification.verify');
+Route::get('/email/resend', \App\Livewire\Auth\ResendVerificationEmail::class)->middleware(['auth', 'throttle:6,1'])->name('verification.send');
+##### Authentication
+# Login / logout
+Route::get('/login',\App\Livewire\LoginForm::class)->name('login');
+Route::post('/logout', [AuthenticatedSessionController::class, 'destroy'])->middleware('auth')->name('logout');
 
 
 Route::middleware(['auth'])->group(function () {
-    Route::get('/admin/dashboard', AdminDashboard::class)->name('admin.dashboard');
-    Route::get('/judge/dashboard', JudgeDashboard::class)->name('judge.dashboard');
-    Route::get('/user/dashboard', UserDashboard::class)->name('user.dashboard');
+    ##### 
+    # DASHBOARD ROUTES
+    Route::get('/admin/dashboard', App\Livewire\Admin\Dashboard::class)->name('admin.dashboard');
+    Route::get('/judge/dashboard', App\Livewire\Judge\Dashboard::class)->name('judge.dashboard');
+    Route::get('/user/dashboard', App\Livewire\Judge\Dashboard::class)->name('user.dashboard');
 
+    #####
+    # ENTRY ROUTES
     Route::get('/entries', \App\Livewire\User\EntryIndex::class)->name('entries.index');
     Route::get('/entries/create', \App\Livewire\User\EntryCreate::class)->name('entries.create');
+    Route::get('/entries/{entry}', function ($entry) {
+        return view('entries.show', ['entry' => $entry]);
+    })->name('entries.show');
+    Route::get('/judge/entries/{entry}', function ($entry) {
+        return view('judge.entries.show', ['entry' => $entry]);
+    })->name('judge.entries.show');
+
+
+    #####
+    # INVOICE ROUTES
     Route::get('/invoices', \App\Livewire\User\InvoiceIndex::class)->name('invoices.index');
     Route::get('/invoices/{invoice}', \App\Livewire\User\InvoiceShow::class)->name('invoices.show');
     
     
-    Route::get('/entries/{entry}', function ($entry) {
-        return view('entries.show', ['entry' => $entry]);
-    })->name('entries.show');
+
     
-    Route::get('/judge/entries/{entry}', function ($entry) {
-        return view('judge.entries.show', ['entry' => $entry]);
-    })->name('judge.entries.show');
+    
+    
 });
 
-// Route::get('/forgot-password', function () {
-//     return view('auth.forgot-password');
-// })->name('password.request');
+Route::get('/forgot-password', function () {
+    return view('auth.forgot-password');
+})->name('password.request');
 
-// Route::get('/reset-password/{token}', function ($token) {
-//     return view('auth.reset-password', ['token' => $token]);
-// })->name('password.reset');
+Route::get('/reset-password/{token}', function ($token) {
+    return view('auth.reset-password', ['token' => $token]);
+})->name('password.reset');
 
-// Route::get('/email/verify', function () {
-//     return view('auth.verify-email');
-// })->middleware('auth')->name('verification.notice');
+Route::get('/email/verify', function () {
+    return view('auth.verify-email');
+})->middleware('auth')->name('verification.notice');
 
-// Route::get('/email/verify/{id}/{hash}', function (EmailVerificationRequest $request) {
-//     $request->fulfill();
-//     return redirect('/home');
-// })->middleware(['auth', 'signed'])->name('verification.verify');
+Route::get('/email/verify/{id}/{hash}', function (EmailVerificationRequest $request) {
+    $request->fulfill();
+    return redirect('/home');
+})->middleware(['auth', 'signed'])->name('verification.verify');
 
-// Route::get('/email/resend', function (Request $request) {
-//     $request->user()->sendEmailVerificationNotification();
-//     return back()->with('message', 'Verification link sent!');
-// })->middleware(['auth', 'throttle:6,1'])->name('verification.send');
+Route::get('/email/resend', function (Request $request) {
+    $request->user()->sendEmailVerificationNotification();
+    return back()->with('message', 'Verification link sent!');
+})->middleware(['auth', 'throttle:6,1'])->name('verification.send');
 
 
 
@@ -110,14 +120,6 @@ Route::post('/forgot-password', [PasswordResetLinkController::class, 'store'])
                 ->middleware('guest')
                 ->name('password.email');
 
-// Registration page
-Route::get('/register', [RegisteredUserController::class, 'create'])
-                ->middleware('guest')
-                ->name('register');
-
-// Handle registration POST
-Route::post('/register', [RegisteredUserController::class, 'store'])
-                ->middleware('guest');
 
 
 

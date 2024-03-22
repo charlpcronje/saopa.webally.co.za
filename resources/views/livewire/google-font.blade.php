@@ -1,4 +1,4 @@
-{{-- G-L-GF-V1-A+ - View for the GoogleFont Livewire component --}}
+{{-- resources/views/livewire/google-font.blade.php --}}
 <div>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

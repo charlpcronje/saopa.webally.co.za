@@ -1,3 +1,4 @@
+{{-- resources/views/livewire/admin/dashboard.blade.php --}}
 <div>
     <h2 class="text-2xl font-semibold mb-4">Admin Dashboard</h2>
     

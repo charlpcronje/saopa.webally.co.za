@@ -1,17 +1,19 @@
+{{-- resources/views/livewire/user/dashboard.blade.php --}}
 <div>
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
-        <div class="bg-white p-6 rounded-lg shadow">
-            <h3 class="text-xl font-semibold mb-4">Entries</h3>
-            <p class="text-4xl font-bold">{{ $totalEntries }}</p>
-            <p class="mt-2">{{ $completedEntries }} of {{ $totalEntries }} entries completed</p>
+    <div class="dashboard-grid">
+        <div class="dashboard-item">
+            <h3 class="dashboard-item-title">Entries</h3>
+            <p class="dashboard-item-value"><span>0 of 0</span> entries completed</p>
         </div>
-        <div class="bg-white p-6 rounded-lg shadow">
-            <h3 class="text-xl font-semibold mb-4">Invoices</h3>
-            <p class="text-4xl font-bold">{{ $paidInvoices }} of {{ $totalInvoices }} invoices paid</p>
+    
+        <div class="dashboard-item">
+            <h3 class="dashboard-item-title">Invoices</h3>
+            <p class="dashboard-item-value"><span>0 of 0</span> invoices paid</p>
         </div>
-        <div class="bg-white p-6 rounded-lg shadow">
-            <h3 class="text-xl font-semibold mb-4">Competitions</h3>
-            <p class="text-4xl font-bold">No active competitions</p>
+    
+        <div class="dashboard-item">
+            <h3 class="dashboard-item-title">Competitions</h3>
+            <p class="dashboard-item-value">No active competitions</p>
         </div>
     </div>
 

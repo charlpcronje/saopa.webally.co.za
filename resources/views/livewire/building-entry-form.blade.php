@@ -1,3 +1,4 @@
+{{-- resources/views/livewire/building-entry-form.blade.php --}}
 <div>
     <form wire:submit.prevent="submit" class="space-y-4">
         <!-- Basic Details Section -->

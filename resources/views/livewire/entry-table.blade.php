@@ -1,3 +1,4 @@
+{{-- resources/views/livewire/entry-table.blade.php --}}
 <div>
     <table class="table-auto w-full">
         <thead>

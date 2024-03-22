@@ -1,3 +1,4 @@
+{{-- resources/views/livewire/pagination.blade.php --}}
 <div class="flex justify-center mt-8">
     @if ($paginator->hasPages())
         <nav role="navigation" aria-label="Pagination Navigation" class="flex justify-between">

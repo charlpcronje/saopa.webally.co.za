@@ -1,3 +1,4 @@
+{{-- resources/views/livewire/confirmation-modal.blade.php --}}
 <div class="fixed z-10 inset-0 overflow-y-auto" style="display: {{ $show ? 'block' : 'none' }}">
     <div class="flex items-center justify-center min-h-screen">
         <div class="bg-white rounded-lg shadow-md p-6">

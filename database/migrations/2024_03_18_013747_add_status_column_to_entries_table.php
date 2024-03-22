@@ -1,5 +1,5 @@
 <?php
-
+// database/migrations/2024_03_18_013747_add_status_column_to_entries_table.php
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;

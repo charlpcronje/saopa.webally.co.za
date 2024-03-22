@@ -1,5 +1,5 @@
 <?php
-
+// app/Livewire/UserProfileBlock.php
 namespace App\Livewire;
 
 use Livewire\Component;
