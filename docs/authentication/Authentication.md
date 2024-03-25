@@ -137,12 +137,9 @@ This setup allows you to define roles and assign them to users, and then use mid
 
 ### 5. Create Admin User
 
-
-Relevance:   10/10
-Accuracy:   10/10
-Performance:   10/10
-Simplicity:   9/10 (The process involves several steps and requires understanding of Laravel migrations, middleware, and Eloquent relationships.)
-Innovation:   9/10 (This approach is a standard way of implementing role-based access control in Laravel applications.)
+```sh
+php artisan tinker
+```
 
 
 f

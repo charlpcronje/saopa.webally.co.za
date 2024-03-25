@@ -20,31 +20,31 @@ Route::get('/', function () {
         return redirect()->route('register');
     }
 })->name('home');
-Route::get('/register', \App\Livewire\User\Register::class)->name('register');
+Route::get('/register', \App\Sapoa\Pages\User\Register::class)->name('register');
 #####
 # Login / logout & password reset routes
-Route::get('/forgot-password', \App\Livewire\Auth\ForgotPassword::class)->name('password.request');
-Route::get('/reset-password/{token}', \App\Livewire\Auth\ResetPassword::class)->name('password.reset');
-Route::get('/email/verify', \App\Livewire\Auth\VerifyEmail::class)->middleware('auth')->name('verification.notice');
-Route::get('/email/verify/{id}/{hash}', \App\Livewire\Auth\VerifyEmailHandler::class)->middleware(['auth', 'signed'])->name('verification.verify');
-Route::get('/email/resend', \App\Livewire\Auth\ResendVerificationEmail::class)->middleware(['auth', 'throttle:6,1'])->name('verification.send');
+Route::get('/forgot-password', \App\Sapoa\Auth\ForgotPassword::class)->name('password.request');
+Route::get('/reset-password/{token}', \App\Sapoa\Auth\ResetPassword::class)->name('password.reset');
+Route::get('/email/verify', \App\Sapoa\Auth\VerifyEmail::class)->middleware('auth')->name('verification.notice');
+Route::get('/email/verify/{id}/{hash}', \App\Sapoa\Auth\VerifyEmailHandler::class)->middleware(['auth', 'signed'])->name('verification.verify');
+Route::get('/email/resend', \App\Sapoa\Auth\ResendVerificationEmail::class)->middleware(['auth', 'throttle:6,1'])->name('verification.send');
 ##### Authentication
 # Login / logout
-Route::get('/login',\App\Livewire\LoginForm::class)->name('login');
-Route::post('/logout', [AuthenticatedSessionController::class, 'destroy'])->middleware('auth')->name('logout');
+Route::get('/login',\App\Sapoa\Forms\LoginForm::class)->name('login');
+Route::get('/logout', [AuthenticatedSessionController::class, 'destroy'])->middleware('auth')->name('logout');
 
 
 Route::middleware(['auth'])->group(function () {
     ##### 
     # DASHBOARD ROUTES
-    Route::get('/admin/dashboard', App\Livewire\Admin\Dashboard::class)->name('admin.dashboard');
-    Route::get('/judge/dashboard', App\Livewire\Judge\Dashboard::class)->name('judge.dashboard');
-    Route::get('/user/dashboard', App\Livewire\Judge\Dashboard::class)->name('user.dashboard');
+    // Dynamic Dashboard
+    Route::get('/dashboard', \App\Sapoa\Pages\DynamicDashboard::class)->name('dashboard');
 
     #####
     # ENTRY ROUTES
-    Route::get('/entries', \App\Livewire\User\EntryIndex::class)->name('entries.index');
-    Route::get('/entries/create', \App\Livewire\User\EntryCreate::class)->name('entries.create');
+    Route::get('/entries', \App\Sapoa\Pages\Entries\EntryIndex::class)->name('entries.index');
+    Route::get('/entries', \App\Sapoa\Pages\Entries\EntryIndex::class)->name('entries.index');
+    Route::get('/entries/create', \App\Sapoa\Pages\Entries\EntryCreate::class)->name('entries.create');
     Route::get('/entries/{entry}', function ($entry) {
         return view('entries.show', ['entry' => $entry]);
     })->name('entries.show');
@@ -55,8 +55,8 @@ Route::middleware(['auth'])->group(function () {
 
     #####
     # INVOICE ROUTES
-    Route::get('/invoices', \App\Livewire\User\InvoiceIndex::class)->name('invoices.index');
-    Route::get('/invoices/{invoice}', \App\Livewire\User\InvoiceShow::class)->name('invoices.show');
+    Route::get('/invoices', \App\Sapoa\Pages\Invoice\InvoiceIndex::class)->name('invoices.index');
+    Route::get('/invoices/{invoice}', \App\Sapoa\Pages\Invoice\InvoiceShow::class)->name('invoices.show');
     
     
 
@@ -65,27 +65,27 @@ Route::middleware(['auth'])->group(function () {
     
 });
 
-Route::get('/forgot-password', function () {
-    return view('auth.forgot-password');
-})->name('password.request');
+// Route::get('/forgot-password', function () {
+//     return view('auth.forgot-password');
+// })->name('password.request');
 
-Route::get('/reset-password/{token}', function ($token) {
-    return view('auth.reset-password', ['token' => $token]);
-})->name('password.reset');
+// Route::get('/reset-password/{token}', function ($token) {
+//     return view('auth.reset-password', ['token' => $token]);
+// })->name('password.reset');
 
-Route::get('/email/verify', function () {
-    return view('auth.verify-email');
-})->middleware('auth')->name('verification.notice');
+// Route::get('/email/verify', function () {
+//     return view('auth.verify-email');
+// })->middleware('auth')->name('verification.notice');
 
-Route::get('/email/verify/{id}/{hash}', function (EmailVerificationRequest $request) {
-    $request->fulfill();
-    return redirect('/home');
-})->middleware(['auth', 'signed'])->name('verification.verify');
+// Route::get('/email/verify/{id}/{hash}', function (EmailVerificationRequest $request) {
+//     $request->fulfill();
+//     return redirect('/home');
+// })->middleware(['auth', 'signed'])->name('verification.verify');
 
-Route::get('/email/resend', function (Request $request) {
-    $request->user()->sendEmailVerificationNotification();
-    return back()->with('message', 'Verification link sent!');
-})->middleware(['auth', 'throttle:6,1'])->name('verification.send');
+// Route::get('/email/resend', function (Request $request) {
+//     $request->user()->sendEmailVerificationNotification();
+//     return back()->with('message', 'Verification link sent!');
+// })->middleware(['auth', 'throttle:6,1'])->name('verification.send');
 
 
 
@@ -93,7 +93,7 @@ Route::get('/email/resend', function (Request $request) {
 
 /** Authentication routes */
 // Login page
-Route::get('/login',\App\Livewire\LoginForm::class)->name('login');
+Route::get('/login',\App\Sapoa\Forms\LoginForm::class)->name('login');
 
 // Route::get('/login', [AuthenticatedSessionController::class, 'create'])
 //                  ->middleware('guest')

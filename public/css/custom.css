@@ -275,3 +275,47 @@ margin-right-10 {
         grid-template-columns: 1fr;
     }
 }
+
+
+/* Alert Bar */
+/* Add this to your main CSS file */
+.alert-bar {
+    display: none; /* Initially hidden, shown by Alpine.js */
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 1rem;
+    z-index: 100; /* Ensure it's above other elements */
+    color: white;
+    text-align: center;
+}
+
+.alert-info {
+    background-color: #007bff;
+    border-color: #006fe6;
+}
+
+.alert-success {
+    background-color: #28a745;
+    border-color: #25963e;
+}
+
+.alert-warning {
+    background-color: #ffc107;
+    border-color: #e0a800;
+    color: black; /* For better contrast */
+}
+
+.alert-error {
+    background-color: #dc3545;
+    border-color: #c82333;
+}
+
+.alert-bar button {
+    background: none;
+    border: none;
+    color: inherit;
+    font-size: 1.5rem;
+    cursor: pointer;
+}

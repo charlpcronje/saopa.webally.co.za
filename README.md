@@ -2,6 +2,13 @@
 
 The SAPOA Awards Dashboard is a web application built using Laravel and Livewire. It provides a dashboard for managing entries, judges, and invoices for the SAPOA Awards competition.
 
+## System Config
+
+- [Email Configuration Config Document](./docs/handover/email.md)
+- [Performance and Error Logging / Handling](./docs/handover/telescope.md)
+- [Console Dashboard Login](./docs/handover/console.md)
+- [Environment Variables](./docs/handover/env.md)
+
 ## Development
 
 - [Authentication](./docs/authentication/Authentication.md) 
@@ -25,6 +32,10 @@ The SAPOA Awards Dashboard is a web application built using Laravel and Livewire
 - **Templating**
   - [Layout](./docs/templating/layout.md)
   - [YML Representation](./docs/templating/layout.yml)
+
+## Time saving directive replacement
+
+- [Update Livewire Directive to `<lw`](./docs/livewire/blade-file-updates.md)
 
 ## Features
 

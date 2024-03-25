@@ -7,13 +7,12 @@ This markdown document provides a comprehensive overview of the layout component
 1. [Sidebar Component](./components/sidebar.md)
 2. [Left Navigation Button Component](./components/leftNavButoon.md)
 3. [Left Navigation Sub-Button Component](./components/leftNavSubButton.md)
-4. [Haedr]
-5. [Header Button Component](./components/HeaderButton.md)
-6. [Header Dropdown Component](./components/headerDropdown.md)
-7. [Header Separator Component](./components/headerSeparator.md)
-8. [User Profile Block Component](./components/userProfileBlock.md)
-9. [Alert Bar Component](./components/alertBar.md)
-10. [Creating Livewire Page Components](./components/pageComponet.md)
+4. [Header Button Component](./components/HeaderButton.md)
+5. [Header Dropdown Component](./components/headerDropdown.md)
+6. [Header Separator Component](./components/headerSeparator.md)
+7. [User Profile Block Component](./components/userProfileBlock.md)
+8. [Alert Bar Component](./components/alertBar.md)
+9. [Creating Livewire Page Components](./components/pageComponet.md)
 
 ## Instructions and Generation
 

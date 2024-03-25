@@ -14,7 +14,7 @@ return [
     |
     */
 
-    'class_namespace' => 'App\\Livewire',
+    'class_namespace' => env('LIVEWIRE_CLASS_NAMESPACE', 'App\Sapoa'),
 
     /*
     |---------------------------------------------------------------------------
@@ -27,7 +27,7 @@ return [
     |
     */
 
-    'view_path' => resource_path('views/livewire'),
+    'view_path' => resource_path(env('LIVEWIRE_VIEW_PATH','views')),
 
     /*
     |---------------------------------------------------------------------------
@@ -39,7 +39,7 @@ return [
     |
     */
 
-    'layout' => 'components.layouts.app',
+    'layout' => env('LIVEWIRE_LAYOUT', 'layouts.dashboard'),
 
     /*
     |---------------------------------------------------------------------------
@@ -74,7 +74,7 @@ return [
             'mov', 'avi', 'wmv', 'mp3', 'm4a',
             'jpg', 'jpeg', 'mpga', 'webp', 'wma',
         ],
-        'max_upload_time' => 5, // Max duration (in minutes) before an upload is invalidated...
+        'max_upload_time' => 30, // Max duration (in minutes) before an upload is invalidated...
     ],
 
     /*

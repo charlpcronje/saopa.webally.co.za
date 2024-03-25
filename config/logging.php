@@ -19,6 +19,12 @@ return [
     // Log Channels
     // Available Drivers: "single", "daily", "slack", "syslog","errorlog", "monolog","custom", "stack"
     'channels' => [
+        'mail' => [
+            'driver' => 'single',
+            'path' => storage_path('logs/mail.log'),
+            'level' => 'debug',
+        ],
+
         'stack' => [
             'driver' => 'stack',
             'channels' => ['single'],

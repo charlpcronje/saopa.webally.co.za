@@ -1,1 +1,0 @@
-<title>SAPOA | {{ $title }}</title>

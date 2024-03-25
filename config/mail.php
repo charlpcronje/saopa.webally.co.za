@@ -47,7 +47,7 @@ return [
 
         'log' => [
             'transport' => 'log',
-            'channel' => env('MAIL_LOG_CHANNEL'),
+            'channel' => env('MAIL_LOG_CHANNEL','mail'),
         ],
 
         'array' => [
@@ -74,7 +74,7 @@ return [
 
     // Global "From" Address
     'from' => [
-        'address' => env('MAIL_FROM_ADDRESS', 'awards@sapoa.com'),
+        'address' => env('MAIL_FROM_ADDRESS', 'awards@sapoa.org.zas'),
         'name' => env('MAIL_FROM_NAME', 'SAPOA Awards'),
     ],
 
